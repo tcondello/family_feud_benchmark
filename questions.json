@@ -1,0 +1,133 @@
+{
+  "questions": [
+    {
+      "question": "Name an occupation that begins with the letter 'J.'",
+      "answers": [
+        {
+          "answer": "Janitor",
+          "score": 62
+        },
+        {
+          "answer": "Jeweler",
+          "score": 5
+        },
+        {
+          "answer": "Jockey",
+          "score": 4
+        },
+        {
+          "answer": "Journalist",
+          "score": 4
+        },
+        {
+          "answer": "Judge",
+          "score": 19
+        },
+        {
+          "answer": "Juggler",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name something that might be brewing",
+      "answer": [
+        {
+          "answer": "Coffee",
+          "score": 37
+        },
+        {
+          "answer": "Beer",
+          "score": 28
+        },
+        {
+          "answer": "Tea",
+          "score": 17
+        },
+        {
+          "answer": "Trouble",
+          "score": 8
+        },
+        {
+          "answer": "A Storm",
+          "score": 5
+        },
+        {
+          "answer": "A Plot",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name something with teeth",
+      "answer": [
+        {
+          "answer": "Animals",
+          "score": 66
+        },
+        {
+          "answer": "People",
+          "score": 19
+        },
+        {
+          "answer": "A Comb",
+          "score": 8
+        },
+        {
+          "answer": "A Zipper",
+          "score": 4
+        },
+        {
+          "answer": "A Saw",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name the most useful body part that begins with the letter 'L.'",
+      "answer": [
+        {
+          "answer": "Legs",
+          "score": 77
+        },
+        {
+          "answer": "Lips",
+          "score": 12
+        },
+        {
+          "answer": "Lungs",
+          "score": 6
+        },
+        {
+          "answer": "Liver",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something an athlete might break.",
+      "answer": [
+        {
+          "answer": "Bone",
+          "score": 80
+        },
+        {
+          "answer": "Body Part",
+          "score": 80
+        },
+        {
+          "answer": "A Record",
+          "score": 16
+        },
+        {
+          "answer": "Equipment",
+          "score": 2
+        },
+        {
+          "answer": "Rules",
+          "score": 2
+        }
+      ]
+    }
+  ]
+}
