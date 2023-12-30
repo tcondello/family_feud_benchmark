@@ -1,1 +1,28 @@
+### Personal Dev ###
 .env
+.vscode/*
+.history
+.github
+*.code-workspace
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+
+### CDK ###
+.ckd.staging
+cdk.out
+cdk.context.json
+-previous-parameters
+
+### SAM ###
+.aws-sam/
+
+### Web UI ###
+node_modules/
