@@ -1,0 +1,2436 @@
+{
+  "source": {
+    "name": "protoqa",
+    "split": "dev_crowdsourced",
+    "description": "ProtoQA Family Feud-style questions from iesl/protoqa-data (scraped fan-site surveys and/or crowdsourced clusters).",
+    "homepage": "https://github.com/iesl/protoqa-data",
+    "paper": "https://arxiv.org/abs/2005.00771",
+    "url": "https://raw.githubusercontent.com/iesl/protoqa-data/master/data/dev/dev.crowdsourced.jsonl"
+  },
+  "questions": [
+    {
+      "question": "Name something that is hard to guess about a person you are just meeting.",
+      "answers": [
+        {
+          "answer": "their age",
+          "score": 35
+        },
+        {
+          "answer": "thoughts",
+          "score": 28
+        },
+        {
+          "answer": "last name",
+          "score": 12
+        },
+        {
+          "answer": "his virginity",
+          "score": 11
+        },
+        {
+          "answer": "who are your parents",
+          "score": 6
+        },
+        {
+          "answer": "iq",
+          "score": 5
+        },
+        {
+          "answer": "underwear",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "What could be some of the reasons you could be called to your kid's school?",
+      "answers": [
+        {
+          "answer": "lacks of regulations",
+          "score": 33
+        },
+        {
+          "answer": "for an argument",
+          "score": 30
+        },
+        {
+          "answer": "an emergency",
+          "score": 16
+        },
+        {
+          "answer": "ratings",
+          "score": 6
+        },
+        {
+          "answer": "they miss a class",
+          "score": 6
+        },
+        {
+          "answer": "good grades",
+          "score": 2
+        },
+        {
+          "answer": "discussion",
+          "score": 1
+        },
+        {
+          "answer": "tuition fees",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something a monk probably would not own.",
+      "answers": [
+        {
+          "answer": "guns",
+          "score": 22
+        },
+        {
+          "answer": "preservative",
+          "score": 18
+        },
+        {
+          "answer": "cell phone",
+          "score": 16
+        },
+        {
+          "answer": "drug",
+          "score": 11
+        },
+        {
+          "answer": "have relationships",
+          "score": 9
+        },
+        {
+          "answer": "jewelry",
+          "score": 8
+        },
+        {
+          "answer": "cross",
+          "score": 4
+        },
+        {
+          "answer": "hair",
+          "score": 3
+        },
+        {
+          "answer": "pants",
+          "score": 2
+        },
+        {
+          "answer": "tattoo",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something that people usually do before they leave the house for work?",
+      "answers": [
+        {
+          "answer": "brush their teeth",
+          "score": 43
+        },
+        {
+          "answer": "eat something",
+          "score": 30
+        },
+        {
+          "answer": "dress",
+          "score": 7
+        },
+        {
+          "answer": "grab keys",
+          "score": 7
+        },
+        {
+          "answer": "looking",
+          "score": 5
+        },
+        {
+          "answer": "say gooobye",
+          "score": 4
+        },
+        {
+          "answer": "jogging",
+          "score": 1
+        },
+        {
+          "answer": "pray",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something you are likely making if you buy milk, eggs, sugar and cream.",
+      "answers": [
+        {
+          "answer": "cakes",
+          "score": 75
+        },
+        {
+          "answer": "pie",
+          "score": 9
+        },
+        {
+          "answer": "ice cream",
+          "score": 7
+        },
+        {
+          "answer": "pancakes",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a vegetable that is about as big as your head.",
+      "answers": [
+        {
+          "answer": "pumking",
+          "score": 54
+        },
+        {
+          "answer": "cabbage",
+          "score": 21
+        },
+        {
+          "answer": "melon",
+          "score": 17
+        },
+        {
+          "answer": "cucumber",
+          "score": 4
+        },
+        {
+          "answer": "cauliflower",
+          "score": 1
+        },
+        {
+          "answer": "potato",
+          "score": 1
+        },
+        {
+          "answer": "tomato",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a luxury people give up while traveling.",
+      "answers": [
+        {
+          "answer": "own house",
+          "score": 23
+        },
+        {
+          "answer": "luxury cars",
+          "score": 15
+        },
+        {
+          "answer": "read",
+          "score": 14
+        },
+        {
+          "answer": "toilet",
+          "score": 12
+        },
+        {
+          "answer": "restaurant",
+          "score": 10
+        },
+        {
+          "answer": "clothes",
+          "score": 8
+        },
+        {
+          "answer": "comfort",
+          "score": 6
+        },
+        {
+          "answer": "wine",
+          "score": 4
+        },
+        {
+          "answer": "family",
+          "score": 2
+        },
+        {
+          "answer": "your intimacy",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a sport that requires a lot of equipment.",
+      "answers": [
+        {
+          "answer": "football",
+          "score": 36
+        },
+        {
+          "answer": "hockey",
+          "score": 23
+        },
+        {
+          "answer": "soccer",
+          "score": 14
+        },
+        {
+          "answer": "baseball",
+          "score": 8
+        },
+        {
+          "answer": "golf",
+          "score": 5
+        },
+        {
+          "answer": "motocross",
+          "score": 4
+        },
+        {
+          "answer": "basketball",
+          "score": 2
+        },
+        {
+          "answer": "fencing",
+          "score": 2
+        },
+        {
+          "answer": "high jump",
+          "score": 1
+        },
+        {
+          "answer": "sky-diving",
+          "score": 1
+        },
+        {
+          "answer": "snowboard",
+          "score": 1
+        },
+        {
+          "answer": "swimming",
+          "score": 1
+        },
+        {
+          "answer": "tennis",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something people might turn their garage into.",
+      "answers": [
+        {
+          "answer": "party room",
+          "score": 29
+        },
+        {
+          "answer": "restaurant",
+          "score": 17
+        },
+        {
+          "answer": "workshop",
+          "score": 11
+        },
+        {
+          "answer": "cinema",
+          "score": 10
+        },
+        {
+          "answer": "man cave",
+          "score": 8
+        },
+        {
+          "answer": "storage",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something that keeps children safe.",
+      "answers": [
+        {
+          "answer": "seatbelt",
+          "score": 40
+        },
+        {
+          "answer": "parents",
+          "score": 14
+        },
+        {
+          "answer": "police",
+          "score": 10
+        },
+        {
+          "answer": "cot",
+          "score": 8
+        },
+        {
+          "answer": "fence",
+          "score": 7
+        },
+        {
+          "answer": "watch out",
+          "score": 7
+        },
+        {
+          "answer": "coats",
+          "score": 5
+        },
+        {
+          "answer": "doctor",
+          "score": 4
+        },
+        {
+          "answer": "cameras",
+          "score": 1
+        },
+        {
+          "answer": "walker",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name somewhere that has a pole.",
+      "answers": [
+        {
+          "answer": "the streets",
+          "score": 56
+        },
+        {
+          "answer": "movie theater",
+          "score": 12
+        },
+        {
+          "answer": "north pole",
+          "score": 7
+        },
+        {
+          "answer": "courtyard",
+          "score": 4
+        },
+        {
+          "answer": "flag pole",
+          "score": 3
+        },
+        {
+          "answer": "the park",
+          "score": 3
+        },
+        {
+          "answer": "golf course",
+          "score": 3
+        },
+        {
+          "answer": "fire station",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something that gets caught in your hair.",
+      "answers": [
+        {
+          "answer": "chewing gum",
+          "score": 23
+        },
+        {
+          "answer": "hair comb",
+          "score": 21
+        },
+        {
+          "answer": "band",
+          "score": 16
+        },
+        {
+          "answer": "lice",
+          "score": 10
+        },
+        {
+          "answer": "dust",
+          "score": 10
+        },
+        {
+          "answer": "a leaf",
+          "score": 7
+        },
+        {
+          "answer": "dandruff",
+          "score": 6
+        },
+        {
+          "answer": "fingers",
+          "score": 1
+        },
+        {
+          "answer": "thread",
+          "score": 1
+        },
+        {
+          "answer": "trash",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a piece of equipment that you are likely to find at your office and not at home?",
+      "answers": [
+        {
+          "answer": "photocopier",
+          "score": 37
+        },
+        {
+          "answer": "file cabinet",
+          "score": 15
+        },
+        {
+          "answer": "pc",
+          "score": 13
+        },
+        {
+          "answer": "clips",
+          "score": 11
+        },
+        {
+          "answer": "calculator",
+          "score": 10
+        },
+        {
+          "answer": "automatic drip coffee makers",
+          "score": 5
+        },
+        {
+          "answer": "typewriter",
+          "score": 4
+        },
+        {
+          "answer": "soccer",
+          "score": 2
+        },
+        {
+          "answer": "security system",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something that an athelete would not keep in her refrigerator.",
+      "answers": [
+        {
+          "answer": "fries",
+          "score": 36
+        },
+        {
+          "answer": "sports bra",
+          "score": 24
+        },
+        {
+          "answer": "soda",
+          "score": 24
+        },
+        {
+          "answer": "handbag",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name an item of clothing that you would not lend to someone.",
+      "answers": [
+        {
+          "answer": "underpants",
+          "score": 84
+        },
+        {
+          "answer": "sweater",
+          "score": 5
+        },
+        {
+          "answer": "sock",
+          "score": 5
+        },
+        {
+          "answer": "watch",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name a cause you are likely to donate to.",
+      "answers": [
+        {
+          "answer": "fight against cancer",
+          "score": 34
+        },
+        {
+          "answer": "children poverty",
+          "score": 16
+        },
+        {
+          "answer": "help people",
+          "score": 10
+        },
+        {
+          "answer": "american red cross",
+          "score": 7
+        },
+        {
+          "answer": "charity",
+          "score": 7
+        },
+        {
+          "answer": "dead",
+          "score": 6
+        },
+        {
+          "answer": "family emergency",
+          "score": 4
+        },
+        {
+          "answer": "climate warming",
+          "score": 4
+        },
+        {
+          "answer": "animal protection",
+          "score": 3
+        },
+        {
+          "answer": "god",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something they give away free to attract customers to a store.",
+      "answers": [
+        {
+          "answer": "sweet",
+          "score": 34
+        },
+        {
+          "answer": "sample",
+          "score": 26
+        },
+        {
+          "answer": "gift card",
+          "score": 14
+        },
+        {
+          "answer": "water",
+          "score": 7
+        },
+        {
+          "answer": "advertising flyers",
+          "score": 5
+        },
+        {
+          "answer": "fragrance",
+          "score": 4
+        },
+        {
+          "answer": "plastic bags",
+          "score": 4
+        },
+        {
+          "answer": "an iphone",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a popular dish made with cheese.",
+      "answers": [
+        {
+          "answer": "pizza",
+          "score": 27
+        },
+        {
+          "answer": "mac and cheese",
+          "score": 25
+        },
+        {
+          "answer": "hamburger",
+          "score": 11
+        },
+        {
+          "answer": "pasty",
+          "score": 9
+        },
+        {
+          "answer": "pasta",
+          "score": 8
+        },
+        {
+          "answer": "fondue",
+          "score": 3
+        },
+        {
+          "answer": "cachapa",
+          "score": 2
+        },
+        {
+          "answer": "nachos",
+          "score": 2
+        },
+        {
+          "answer": "quesadilla",
+          "score": 2
+        },
+        {
+          "answer": "aligot",
+          "score": 1
+        },
+        {
+          "answer": "arepa",
+          "score": 1
+        },
+        {
+          "answer": "cheese crisp",
+          "score": 1
+        },
+        {
+          "answer": "cheese noodles",
+          "score": 1
+        },
+        {
+          "answer": "ricotta",
+          "score": 1
+        },
+        {
+          "answer": "tartiflette",
+          "score": 1
+        },
+        {
+          "answer": "cheese sticks",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a reason why someone would wear gloves.",
+      "answers": [
+        {
+          "answer": "grabbing something hot",
+          "score": 38
+        },
+        {
+          "answer": "clean the house",
+          "score": 12
+        },
+        {
+          "answer": "exam",
+          "score": 10
+        },
+        {
+          "answer": "to protect",
+          "score": 9
+        },
+        {
+          "answer": "touch dangerous substances",
+          "score": 8
+        },
+        {
+          "answer": "to do exercise",
+          "score": 7
+        },
+        {
+          "answer": "not get dirty",
+          "score": 5
+        },
+        {
+          "answer": "hygiene",
+          "score": 3
+        },
+        {
+          "answer": "not to cut yourself",
+          "score": 2
+        },
+        {
+          "answer": "because it's cool",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a sign that two people are friends.",
+      "answers": [
+        {
+          "answer": "treatment",
+          "score": 35
+        },
+        {
+          "answer": "confidence",
+          "score": 19
+        },
+        {
+          "answer": "always seen together",
+          "score": 12
+        },
+        {
+          "answer": "they talk a lot",
+          "score": 12
+        },
+        {
+          "answer": "laughs",
+          "score": 4
+        },
+        {
+          "answer": "communication",
+          "score": 3
+        },
+        {
+          "answer": "greeting",
+          "score": 3
+        },
+        {
+          "answer": "they support each other",
+          "score": 2
+        },
+        {
+          "answer": "when they treat well",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something around the house that\u2019s often replaced.",
+      "answers": [
+        {
+          "answer": "lamps",
+          "score": 23
+        },
+        {
+          "answer": "paper",
+          "score": 15
+        },
+        {
+          "answer": "hose",
+          "score": 9
+        },
+        {
+          "answer": "food",
+          "score": 8
+        },
+        {
+          "answer": "chairs",
+          "score": 8
+        },
+        {
+          "answer": "carpet",
+          "score": 7
+        },
+        {
+          "answer": "computer",
+          "score": 5
+        },
+        {
+          "answer": "grass",
+          "score": 5
+        },
+        {
+          "answer": "paint",
+          "score": 4
+        },
+        {
+          "answer": "painting",
+          "score": 4
+        },
+        {
+          "answer": "ceramic",
+          "score": 3
+        },
+        {
+          "answer": "batteries",
+          "score": 2
+        },
+        {
+          "answer": "fence",
+          "score": 2
+        },
+        {
+          "answer": "keys",
+          "score": 1
+        },
+        {
+          "answer": "dog",
+          "score": 1
+        },
+        {
+          "answer": "water filter",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something parents tell their kids not to do",
+      "answers": [
+        {
+          "answer": "jump on the beds",
+          "score": 31
+        },
+        {
+          "answer": "consume drugs",
+          "score": 11
+        },
+        {
+          "answer": "fight",
+          "score": 11
+        },
+        {
+          "answer": "rob",
+          "score": 9
+        },
+        {
+          "answer": "run in circles",
+          "score": 9
+        },
+        {
+          "answer": "lie",
+          "score": 8
+        },
+        {
+          "answer": "say bad words",
+          "score": 4
+        },
+        {
+          "answer": "talk to strangers",
+          "score": 4
+        },
+        {
+          "answer": "cross the street alone",
+          "score": 3
+        },
+        {
+          "answer": "see pornography",
+          "score": 2
+        },
+        {
+          "answer": "have a boyfriend",
+          "score": 1
+        },
+        {
+          "answer": "be gay",
+          "score": 1
+        },
+        {
+          "answer": "sleep so much",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a job where you have to be awake at night.",
+      "answers": [
+        {
+          "answer": "watchmen",
+          "score": 63
+        },
+        {
+          "answer": "emergency doctor",
+          "score": 13
+        },
+        {
+          "answer": "dj",
+          "score": 8
+        },
+        {
+          "answer": "police",
+          "score": 6
+        },
+        {
+          "answer": "bakery",
+          "score": 5
+        },
+        {
+          "answer": "air traffic operator",
+          "score": 1
+        },
+        {
+          "answer": "programmer",
+          "score": 1
+        },
+        {
+          "answer": "taxi",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a complaint people have about their gym instructors.",
+      "answers": [
+        {
+          "answer": "they are very strict",
+          "score": 41
+        },
+        {
+          "answer": "insufficient attention",
+          "score": 15
+        },
+        {
+          "answer": "they are very rude",
+          "score": 13
+        },
+        {
+          "answer": "fat",
+          "score": 10
+        },
+        {
+          "answer": "they have a bad smell",
+          "score": 7
+        },
+        {
+          "answer": "annoying",
+          "score": 3
+        },
+        {
+          "answer": "character",
+          "score": 1
+        },
+        {
+          "answer": "clothing",
+          "score": 1
+        },
+        {
+          "answer": "high pay",
+          "score": 1
+        },
+        {
+          "answer": "food",
+          "score": 1
+        },
+        {
+          "answer": "they are strong",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something parents would criticize their children for having.",
+      "answers": [
+        {
+          "answer": "marijuana",
+          "score": 14
+        },
+        {
+          "answer": "spoiledness",
+          "score": 12
+        },
+        {
+          "answer": "tattoo",
+          "score": 11
+        },
+        {
+          "answer": "expensive car",
+          "score": 11
+        },
+        {
+          "answer": "lack of time",
+          "score": 10
+        },
+        {
+          "answer": "behavior",
+          "score": 9
+        },
+        {
+          "answer": "a firearm",
+          "score": 5
+        },
+        {
+          "answer": "gay friends",
+          "score": 4
+        },
+        {
+          "answer": "their ways of thinking",
+          "score": 4
+        },
+        {
+          "answer": "bad grades",
+          "score": 3
+        },
+        {
+          "answer": "work",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something people do with close friends that they wouldn't do with a stranger.",
+      "answers": [
+        {
+          "answer": "hangout",
+          "score": 29
+        },
+        {
+          "answer": "have private conversations",
+          "score": 15
+        },
+        {
+          "answer": "embrace",
+          "score": 14
+        },
+        {
+          "answer": "drink a lot",
+          "score": 13
+        },
+        {
+          "answer": "sleep together",
+          "score": 8
+        },
+        {
+          "answer": "talk",
+          "score": 6
+        },
+        {
+          "answer": "cry",
+          "score": 5
+        },
+        {
+          "answer": "have sex",
+          "score": 3
+        },
+        {
+          "answer": "birthday",
+          "score": 2
+        },
+        {
+          "answer": "lend money",
+          "score": 1
+        },
+        {
+          "answer": "run",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something people might buy for a house that they would not buy for an apartment.",
+      "answers": [
+        {
+          "answer": "a tree",
+          "score": 19
+        },
+        {
+          "answer": "water tank",
+          "score": 19
+        },
+        {
+          "answer": "furniture",
+          "score": 11
+        },
+        {
+          "answer": "garage things",
+          "score": 11
+        },
+        {
+          "answer": "dog pound",
+          "score": 11
+        },
+        {
+          "answer": "piano",
+          "score": 7
+        },
+        {
+          "answer": "barbecue grill",
+          "score": 4
+        },
+        {
+          "answer": "courtyard",
+          "score": 4
+        },
+        {
+          "answer": "assurance",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Instead of going to college, name something a person might do after high school.",
+      "answers": [
+        {
+          "answer": "labor",
+          "score": 68
+        },
+        {
+          "answer": "go to the movies",
+          "score": 10
+        },
+        {
+          "answer": "summer course",
+          "score": 5
+        },
+        {
+          "answer": "sleep",
+          "score": 3
+        },
+        {
+          "answer": "travel",
+          "score": 3
+        },
+        {
+          "answer": "study",
+          "score": 2
+        },
+        {
+          "answer": "serve your country",
+          "score": 2
+        },
+        {
+          "answer": "start a business",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something that people often remember for a long time, even when they get old.",
+      "answers": [
+        {
+          "answer": "the first person they fell in love",
+          "score": 30
+        },
+        {
+          "answer": "mother",
+          "score": 20
+        },
+        {
+          "answer": "name of family",
+          "score": 14
+        },
+        {
+          "answer": "childhood",
+          "score": 12
+        },
+        {
+          "answer": "birthday",
+          "score": 6
+        },
+        {
+          "answer": "happy moment",
+          "score": 5
+        },
+        {
+          "answer": "bad experiences",
+          "score": 2
+        },
+        {
+          "answer": "youth",
+          "score": 2
+        },
+        {
+          "answer": "achievements",
+          "score": 1
+        },
+        {
+          "answer": "graduation day",
+          "score": 1
+        },
+        {
+          "answer": "anniversaries",
+          "score": 1
+        },
+        {
+          "answer": "heat",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something that happens in real life but never makes the news.",
+      "answers": [
+        {
+          "answer": "neighbor fights",
+          "score": 49
+        },
+        {
+          "answer": "gardening",
+          "score": 20
+        },
+        {
+          "answer": "everyone is happy",
+          "score": 9
+        },
+        {
+          "answer": "groupsex",
+          "score": 9
+        },
+        {
+          "answer": "amazon scam",
+          "score": 4
+        },
+        {
+          "answer": "aliens",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name something specific that gets jumped.",
+      "answers": [
+        {
+          "answer": "kangaroos",
+          "score": 30
+        },
+        {
+          "answer": "frog",
+          "score": 15
+        },
+        {
+          "answer": "rabbit",
+          "score": 12
+        },
+        {
+          "answer": "cricket",
+          "score": 7
+        },
+        {
+          "answer": "fence",
+          "score": 6
+        },
+        {
+          "answer": "trampoline",
+          "score": 5
+        },
+        {
+          "answer": "a basketball",
+          "score": 4
+        },
+        {
+          "answer": "car engine",
+          "score": 3
+        },
+        {
+          "answer": "beds",
+          "score": 2
+        },
+        {
+          "answer": "jumper",
+          "score": 2
+        },
+        {
+          "answer": "dog",
+          "score": 1
+        },
+        {
+          "answer": "human",
+          "score": 1
+        },
+        {
+          "answer": "rope",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something at the store you would find on the same aisle as cereal.",
+      "answers": [
+        {
+          "answer": "candy",
+          "score": 39
+        },
+        {
+          "answer": "milk",
+          "score": 26
+        },
+        {
+          "answer": "grains",
+          "score": 13
+        },
+        {
+          "answer": "bread",
+          "score": 3
+        },
+        {
+          "answer": "nuts",
+          "score": 3
+        },
+        {
+          "answer": "chocolate",
+          "score": 2
+        },
+        {
+          "answer": "nutritional bars",
+          "score": 2
+        },
+        {
+          "answer": "spoons",
+          "score": 2
+        },
+        {
+          "answer": "doritos",
+          "score": 2
+        },
+        {
+          "answer": "deodorant",
+          "score": 2
+        },
+        {
+          "answer": "mayonnaise",
+          "score": 1
+        },
+        {
+          "answer": "salad",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something you need to make a pizza.",
+      "answers": [
+        {
+          "answer": "cheese",
+          "score": 47
+        },
+        {
+          "answer": "wheat flour",
+          "score": 32
+        },
+        {
+          "answer": "tomato",
+          "score": 13
+        },
+        {
+          "answer": "pepperoni",
+          "score": 2
+        },
+        {
+          "answer": "butter",
+          "score": 1
+        },
+        {
+          "answer": "ham",
+          "score": 1
+        },
+        {
+          "answer": "pasta",
+          "score": 1
+        },
+        {
+          "answer": "yeast",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a word you hear almost every coach say at a high school football game.",
+      "answers": [
+        {
+          "answer": "activate",
+          "score": 29
+        },
+        {
+          "answer": "hurry",
+          "score": 26
+        },
+        {
+          "answer": "let's go team",
+          "score": 12
+        },
+        {
+          "answer": "come on",
+          "score": 8
+        },
+        {
+          "answer": "defending",
+          "score": 5
+        },
+        {
+          "answer": "outside",
+          "score": 5
+        },
+        {
+          "answer": "nice bro",
+          "score": 3
+        },
+        {
+          "answer": "fault",
+          "score": 2
+        },
+        {
+          "answer": "goal",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a reason why a person might prefer to own a cat over a dog.",
+      "answers": [
+        {
+          "answer": "they are more quiet",
+          "score": 22
+        },
+        {
+          "answer": "because cats are less messy",
+          "score": 17
+        },
+        {
+          "answer": "small",
+          "score": 12
+        },
+        {
+          "answer": "they're adorable",
+          "score": 9
+        },
+        {
+          "answer": "affected",
+          "score": 8
+        },
+        {
+          "answer": "they eat mice",
+          "score": 7
+        },
+        {
+          "answer": "freedom",
+          "score": 4
+        },
+        {
+          "answer": "you don't have to take them out for a walk",
+          "score": 3
+        },
+        {
+          "answer": "they are clever",
+          "score": 3
+        },
+        {
+          "answer": "food",
+          "score": 2
+        },
+        {
+          "answer": "loyalty",
+          "score": 2
+        },
+        {
+          "answer": "good conduct",
+          "score": 1
+        },
+        {
+          "answer": "gusto personal",
+          "score": 1
+        },
+        {
+          "answer": "good smell",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name an animal that someone might teach to do tricks.",
+      "answers": [
+        {
+          "answer": "dogs",
+          "score": 87
+        },
+        {
+          "answer": "monkeys",
+          "score": 8
+        },
+        {
+          "answer": "dolphin",
+          "score": 2
+        },
+        {
+          "answer": "parrot",
+          "score": 2
+        },
+        {
+          "answer": "tiger",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something people do while getting checked by their dentist.",
+      "answers": [
+        {
+          "answer": "open their mouth",
+          "score": 23
+        },
+        {
+          "answer": "rest well",
+          "score": 21
+        },
+        {
+          "answer": "think",
+          "score": 15
+        },
+        {
+          "answer": "talking about their life",
+          "score": 10
+        },
+        {
+          "answer": "cry about it",
+          "score": 9
+        },
+        {
+          "answer": "cell phone",
+          "score": 6
+        },
+        {
+          "answer": "seated",
+          "score": 4
+        },
+        {
+          "answer": "watch tv",
+          "score": 3
+        },
+        {
+          "answer": "ahhhh",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a reason why someone might have to pull off to the side of the road while driving.",
+      "answers": [
+        {
+          "answer": "cars",
+          "score": 28
+        },
+        {
+          "answer": "a call",
+          "score": 15
+        },
+        {
+          "answer": "car accident",
+          "score": 12
+        },
+        {
+          "answer": "want to urinate",
+          "score": 10
+        },
+        {
+          "answer": "police",
+          "score": 6
+        },
+        {
+          "answer": "for an emergency",
+          "score": 3
+        },
+        {
+          "answer": "there is a cow on the road",
+          "score": 3
+        },
+        {
+          "answer": "fall sleep",
+          "score": 3
+        },
+        {
+          "answer": "drunk",
+          "score": 2
+        },
+        {
+          "answer": "help",
+          "score": 2
+        },
+        {
+          "answer": "kids",
+          "score": 2
+        },
+        {
+          "answer": "read a map",
+          "score": 1
+        },
+        {
+          "answer": "to eat",
+          "score": 1
+        },
+        {
+          "answer": "forget something",
+          "score": 1
+        },
+        {
+          "answer": "gasoline",
+          "score": 1
+        },
+        {
+          "answer": "to shit",
+          "score": 1
+        },
+        {
+          "answer": "traffic",
+          "score": 1
+        },
+        {
+          "answer": "for a traffic light",
+          "score": 1
+        },
+        {
+          "answer": "want to vomit",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Besides birds, name a pet people keep in an cage.",
+      "answers": [
+        {
+          "answer": "h\u00e1mster",
+          "score": 40
+        },
+        {
+          "answer": "monkeys",
+          "score": 14
+        },
+        {
+          "answer": "rabbit",
+          "score": 11
+        },
+        {
+          "answer": "snake",
+          "score": 10
+        },
+        {
+          "answer": "turkeys",
+          "score": 7
+        },
+        {
+          "answer": "mouse",
+          "score": 5
+        },
+        {
+          "answer": "lion",
+          "score": 4
+        },
+        {
+          "answer": "dogs",
+          "score": 4
+        },
+        {
+          "answer": "rat",
+          "score": 2
+        },
+        {
+          "answer": "chicken",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a reason why a child may not want to be friends with another child.",
+      "answers": [
+        {
+          "answer": "did something bad to him",
+          "score": 42
+        },
+        {
+          "answer": "by ugly",
+          "score": 13
+        },
+        {
+          "answer": "they don't like each other",
+          "score": 8
+        },
+        {
+          "answer": "shyness",
+          "score": 8
+        },
+        {
+          "answer": "fight",
+          "score": 7
+        },
+        {
+          "answer": "envy",
+          "score": 4
+        },
+        {
+          "answer": "social status",
+          "score": 1
+        },
+        {
+          "answer": "the sex of the children",
+          "score": 1
+        },
+        {
+          "answer": "he doesn't want to play with him",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a job which has a lot of power and influence which is not part of the government.",
+      "answers": [
+        {
+          "answer": "pdvsa",
+          "score": 24
+        },
+        {
+          "answer": "lawyer",
+          "score": 13
+        },
+        {
+          "answer": "advisors",
+          "score": 11
+        },
+        {
+          "answer": "policeman",
+          "score": 10
+        },
+        {
+          "answer": "caretaker",
+          "score": 8
+        },
+        {
+          "answer": "engineer",
+          "score": 5
+        },
+        {
+          "answer": "accountant",
+          "score": 5
+        },
+        {
+          "answer": "church",
+          "score": 4
+        },
+        {
+          "answer": "teacher",
+          "score": 3
+        },
+        {
+          "answer": "musician",
+          "score": 2
+        },
+        {
+          "answer": "broker",
+          "score": 2
+        },
+        {
+          "answer": "airport manager",
+          "score": 1
+        },
+        {
+          "answer": "athlete",
+          "score": 1
+        },
+        {
+          "answer": "contractor",
+          "score": 1
+        },
+        {
+          "answer": "drug traffic",
+          "score": 1
+        },
+        {
+          "answer": "journalism",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something that would cause you to stop speaking to your best friend.",
+      "answers": [
+        {
+          "answer": "betrayed",
+          "score": 43
+        },
+        {
+          "answer": "the insults",
+          "score": 20
+        },
+        {
+          "answer": "hypocrisy",
+          "score": 11
+        },
+        {
+          "answer": "girls",
+          "score": 8
+        },
+        {
+          "answer": "money",
+          "score": 4
+        },
+        {
+          "answer": "an emergency",
+          "score": 4
+        },
+        {
+          "answer": "belch",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something people buy that lasts a long time.",
+      "answers": [
+        {
+          "answer": "televisor",
+          "score": 20
+        },
+        {
+          "answer": "house",
+          "score": 15
+        },
+        {
+          "answer": "food dishes",
+          "score": 14
+        },
+        {
+          "answer": "old car",
+          "score": 9
+        },
+        {
+          "answer": "jackets",
+          "score": 9
+        },
+        {
+          "answer": "refrigerator",
+          "score": 7
+        },
+        {
+          "answer": "kitchen",
+          "score": 6
+        },
+        {
+          "answer": "shampoo",
+          "score": 5
+        },
+        {
+          "answer": "bed",
+          "score": 2
+        },
+        {
+          "answer": "broom",
+          "score": 2
+        },
+        {
+          "answer": "anvil",
+          "score": 2
+        },
+        {
+          "answer": "dog",
+          "score": 1
+        },
+        {
+          "answer": "ball",
+          "score": 1
+        },
+        {
+          "answer": "bicycle",
+          "score": 1
+        },
+        {
+          "answer": "christmas tree",
+          "score": 1
+        },
+        {
+          "answer": "dishes",
+          "score": 1
+        },
+        {
+          "answer": "pool",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name an activity that's often depicted in movies though people seldom do it in real life.",
+      "answers": [
+        {
+          "answer": "kill the black guy",
+          "score": 18
+        },
+        {
+          "answer": "fly through the skies and fall without a scratch",
+          "score": 14
+        },
+        {
+          "answer": "flight",
+          "score": 12
+        },
+        {
+          "answer": "have casual sex with a stranger",
+          "score": 10
+        },
+        {
+          "answer": "run",
+          "score": 8
+        },
+        {
+          "answer": "sing",
+          "score": 6
+        },
+        {
+          "answer": "sex",
+          "score": 5
+        },
+        {
+          "answer": "kiss in slow motion",
+          "score": 5
+        },
+        {
+          "answer": "walk alone in the dark",
+          "score": 4
+        },
+        {
+          "answer": "apologize",
+          "score": 2
+        },
+        {
+          "answer": "pranks",
+          "score": 2
+        },
+        {
+          "answer": "sacrifice",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something scary that people are no longer scared of when they get older.",
+      "answers": [
+        {
+          "answer": "darkness",
+          "score": 26
+        },
+        {
+          "answer": "ghost in the closet",
+          "score": 14
+        },
+        {
+          "answer": "dead",
+          "score": 12
+        },
+        {
+          "answer": "clowns",
+          "score": 9
+        },
+        {
+          "answer": "monsters in the closet",
+          "score": 9
+        },
+        {
+          "answer": "boogeyman",
+          "score": 8
+        },
+        {
+          "answer": "spiders",
+          "score": 5
+        },
+        {
+          "answer": "animals",
+          "score": 2
+        },
+        {
+          "answer": "films",
+          "score": 2
+        },
+        {
+          "answer": "doctor",
+          "score": 1
+        },
+        {
+          "answer": "oldness",
+          "score": 1
+        },
+        {
+          "answer": "lightning",
+          "score": 1
+        },
+        {
+          "answer": "live alone",
+          "score": 1
+        },
+        {
+          "answer": "police",
+          "score": 1
+        },
+        {
+          "answer": "raising kids",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something that would make someone change their return flight.",
+      "answers": [
+        {
+          "answer": "urgency",
+          "score": 33
+        },
+        {
+          "answer": "blizzard",
+          "score": 29
+        },
+        {
+          "answer": "cold",
+          "score": 7
+        },
+        {
+          "answer": "forget the passport",
+          "score": 6
+        },
+        {
+          "answer": "delay",
+          "score": 6
+        },
+        {
+          "answer": "found job",
+          "score": 6
+        },
+        {
+          "answer": "lack of money",
+          "score": 3
+        },
+        {
+          "answer": "bad news",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something a delivery person might see in someone's yard that would prevent them from delivering a package.",
+      "answers": [
+        {
+          "answer": "a bad dog",
+          "score": 61
+        },
+        {
+          "answer": "a murder",
+          "score": 6
+        },
+        {
+          "answer": "long grass",
+          "score": 4
+        },
+        {
+          "answer": "snake",
+          "score": 3
+        },
+        {
+          "answer": "don't delivery",
+          "score": 3
+        },
+        {
+          "answer": "naked people",
+          "score": 3
+        },
+        {
+          "answer": "guns",
+          "score": 2
+        },
+        {
+          "answer": "dog poop",
+          "score": 2
+        },
+        {
+          "answer": "traffic",
+          "score": 2
+        },
+        {
+          "answer": "the bottles",
+          "score": 2
+        },
+        {
+          "answer": "bicycle",
+          "score": 1
+        },
+        {
+          "answer": "broom",
+          "score": 1
+        },
+        {
+          "answer": "the clothes",
+          "score": 1
+        },
+        {
+          "answer": "toys",
+          "score": 1
+        },
+        {
+          "answer": "water sprinklers",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Tell me something a poor person might have which is smaller than most peoples.",
+      "answers": [
+        {
+          "answer": "house",
+          "score": 23
+        },
+        {
+          "answer": "250 million",
+          "score": 20
+        },
+        {
+          "answer": "nutrition",
+          "score": 9
+        },
+        {
+          "answer": "poor mind",
+          "score": 8
+        },
+        {
+          "answer": "humility",
+          "score": 8
+        },
+        {
+          "answer": "a cat",
+          "score": 6
+        },
+        {
+          "answer": "pants",
+          "score": 5
+        },
+        {
+          "answer": "bed",
+          "score": 3
+        },
+        {
+          "answer": "tv",
+          "score": 3
+        },
+        {
+          "answer": "a car",
+          "score": 2
+        },
+        {
+          "answer": "ball",
+          "score": 1
+        },
+        {
+          "answer": "book",
+          "score": 1
+        },
+        {
+          "answer": "cellphones",
+          "score": 1
+        },
+        {
+          "answer": "cigarette",
+          "score": 1
+        },
+        {
+          "answer": "bracelet",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something in your life that could cause you to lose weight.",
+      "answers": [
+        {
+          "answer": "sports.",
+          "score": 35
+        },
+        {
+          "answer": "hungry",
+          "score": 30
+        },
+        {
+          "answer": "sadness",
+          "score": 12
+        },
+        {
+          "answer": "tenia",
+          "score": 6
+        },
+        {
+          "answer": "amino acids",
+          "score": 4
+        },
+        {
+          "answer": "stress",
+          "score": 4
+        },
+        {
+          "answer": "sex",
+          "score": 3
+        },
+        {
+          "answer": "health",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a reason why you might give a waiter a good tip.",
+      "answers": [
+        {
+          "answer": "excellent service",
+          "score": 36
+        },
+        {
+          "answer": "be attentive to your customers",
+          "score": 29
+        },
+        {
+          "answer": "good conduct",
+          "score": 9
+        },
+        {
+          "answer": "amiability",
+          "score": 8
+        },
+        {
+          "answer": "speed",
+          "score": 5
+        },
+        {
+          "answer": "beauty",
+          "score": 2
+        },
+        {
+          "answer": "courtesy",
+          "score": 2
+        },
+        {
+          "answer": "good deal",
+          "score": 2
+        },
+        {
+          "answer": "good treat",
+          "score": 1
+        },
+        {
+          "answer": "being kind",
+          "score": 1
+        },
+        {
+          "answer": "suggestion",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name something that you might break on purpose.",
+      "answers": [
+        {
+          "answer": "a plate",
+          "score": 40
+        },
+        {
+          "answer": "envelope",
+          "score": 8
+        },
+        {
+          "answer": "eggs",
+          "score": 6
+        },
+        {
+          "answer": "pencil",
+          "score": 6
+        },
+        {
+          "answer": "jars",
+          "score": 6
+        },
+        {
+          "answer": "spaghetti",
+          "score": 5
+        },
+        {
+          "answer": "a mirror",
+          "score": 4
+        },
+        {
+          "answer": "phone",
+          "score": 4
+        },
+        {
+          "answer": "a balloon",
+          "score": 3
+        },
+        {
+          "answer": "ice",
+          "score": 3
+        },
+        {
+          "answer": "a packing",
+          "score": 2
+        },
+        {
+          "answer": "seal on a bottle",
+          "score": 1
+        },
+        {
+          "answer": "chair",
+          "score": 1
+        },
+        {
+          "answer": "guitar",
+          "score": 1
+        },
+        {
+          "answer": "heart",
+          "score": 1
+        },
+        {
+          "answer": "a dislocated finger",
+          "score": 1
+        },
+        {
+          "answer": "an old lamp",
+          "score": 1
+        },
+        {
+          "answer": "window",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question": "Name a place where you might have a long conversation with someone who works there.",
+      "answers": [
+        {
+          "answer": "mcdonalds",
+          "score": 31
+        },
+        {
+          "answer": "hospital",
+          "score": 14
+        },
+        {
+          "answer": "the bank",
+          "score": 12
+        },
+        {
+          "answer": "park",
+          "score": 10
+        },
+        {
+          "answer": "insurance companies",
+          "score": 9
+        },
+        {
+          "answer": "cloth store",
+          "score": 7
+        },
+        {
+          "answer": "cine",
+          "score": 3
+        },
+        {
+          "answer": "barbershop",
+          "score": 1
+        },
+        {
+          "answer": "car dealership",
+          "score": 1
+        },
+        {
+          "answer": "church",
+          "score": 1
+        },
+        {
+          "answer": "fire station",
+          "score": 1
+        },
+        {
+          "answer": "government agencies",
+          "score": 1
+        },
+        {
+          "answer": "library",
+          "score": 1
+        },
+        {
+          "answer": "a mechanical workshop",
+          "score": 1
+        },
+        {
+          "answer": "rest room",
+          "score": 1
+        }
+      ]
+    }
+  ]
+}

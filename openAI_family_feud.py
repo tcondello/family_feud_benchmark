@@ -23,8 +23,23 @@ def call_openAI(question):
     return response.choices[0].message.content
 
 
-f = open("question_list.json")
-data = json.load(f)
+# Prefer the combined multi-source set; fall back to the original Buzzfeed list.
+question_paths = (
+    "questions/all_questions.json",
+    "questions/question_list.json",
+    "question_list.json",
+)
+data = None
+for path in question_paths:
+    try:
+        with open(path, encoding="utf-8") as handle:
+            data = json.load(handle)
+        break
+    except FileNotFoundError:
+        continue
+if data is None:
+    raise FileNotFoundError(f"No question file found in {question_paths}")
+
 questions = data.get("questions")
 response_list = list()
 llm_dict = dict()
@@ -42,5 +57,5 @@ llm_dict["OpenAI"] = response_list
 
 json_object = json.dumps(llm_dict["OpenAI"], indent=4)
 
-with open("response_list.json", "w") as outfile:
+with open("responses/response_list.json", "w") as outfile:
     outfile.write(json_object)
