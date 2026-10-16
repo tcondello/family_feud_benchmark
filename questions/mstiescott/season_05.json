@@ -1,0 +1,6626 @@
+{
+  "source": {
+    "name": "mstiescott_neocities",
+    "description": "Survey questions and board answers transcribed from Family Feud TV episodes (face-off wording and on-screen answers/scores).",
+    "homepage": "https://mstiescott.neocities.org/feud5",
+    "season": 5,
+    "pages": [
+      "https://mstiescott.neocities.org/feud5s8a.html",
+      "https://mstiescott.neocities.org/feud5s7a.html",
+      "https://mstiescott.neocities.org/feud5s6a.html",
+      "https://mstiescott.neocities.org/feud5s5a.html",
+      "https://mstiescott.neocities.org/feud5s4a.html"
+    ]
+  },
+  "questions": [
+    {
+      "question": "A movie that starred Mel Gibson.",
+      "answers": [
+        {
+          "answer": "Lethal Weapon",
+          "score": 39
+        },
+        {
+          "answer": "Patriot",
+          "score": 3
+        },
+        {
+          "answer": "Braveheart",
+          "score": 28
+        },
+        {
+          "answer": "Payback",
+          "score": 3
+        },
+        {
+          "answer": "Mad Max",
+          "score": 10
+        },
+        {
+          "answer": "Ransom",
+          "score": 3
+        },
+        {
+          "answer": "What Women Want",
+          "score": 7
+        },
+        {
+          "answer": "Signs",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name a type of receipt that a wife might find in her cheating husband's pocket.",
+      "answers": [
+        {
+          "answer": "Hotel/Motel",
+          "score": 50
+        },
+        {
+          "answer": "Lingerie/Clothes",
+          "score": 4
+        },
+        {
+          "answer": "Jewelry Store",
+          "score": 21
+        },
+        {
+          "answer": "BAR",
+          "score": 2
+        },
+        {
+          "answer": "Florist",
+          "score": 10
+        },
+        {
+          "answer": "Perfume",
+          "score": 2
+        },
+        {
+          "answer": "Restaurant",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something you go outside in your bathrobe to do.",
+      "answers": [
+        {
+          "answer": "Get Newspaper",
+          "score": 60
+        },
+        {
+          "answer": "Give Kids Lunch",
+          "score": 3
+        },
+        {
+          "answer": "Take Out Trash",
+          "score": 13
+        },
+        {
+          "answer": "Talk To Neighbor",
+          "score": 3
+        },
+        {
+          "answer": "Get The Mail",
+          "score": 8
+        },
+        {
+          "answer": "Walk/Tend To Dog",
+          "score": 3
+        },
+        {
+          "answer": "Water The Lawn",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 women... Why might you marry a man you don't really love?",
+      "answers": [
+        {
+          "answer": "Money/Security",
+          "score": 81
+        },
+        {
+          "answer": "Companionship",
+          "score": 2
+        },
+        {
+          "answer": "He'S Great Lover",
+          "score": 3
+        },
+        {
+          "answer": "His Personality",
+          "score": 2
+        },
+        {
+          "answer": "Parents Made Me",
+          "score": 2
+        },
+        {
+          "answer": "He'S Handsome",
+          "score": 2
+        },
+        {
+          "answer": "Kids/Pregnant",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "If your cell phone rings while you're at church, who had better be calling?",
+      "answers": [
+        {
+          "answer": "The Lord",
+          "score": 61
+        },
+        {
+          "answer": "The Doctor",
+          "score": 3
+        },
+        {
+          "answer": "My Mother",
+          "score": 10
+        },
+        {
+          "answer": "My Boss",
+          "score": 3
+        },
+        {
+          "answer": "My Kids",
+          "score": 10
+        },
+        {
+          "answer": "My Spouse",
+          "score": 3
+        },
+        {
+          "answer": "My Sibling",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 married men... Name something you get every single Valentine's Day.",
+      "answers": [
+        {
+          "answer": "Card",
+          "score": 42
+        },
+        {
+          "answer": "Dinner",
+          "score": 4
+        },
+        {
+          "answer": "Kiss/Love",
+          "score": 18
+        },
+        {
+          "answer": "Cologne",
+          "score": 3
+        },
+        {
+          "answer": "Flowers",
+          "score": 15
+        },
+        {
+          "answer": "TIE",
+          "score": 3
+        },
+        {
+          "answer": "Candy/Chocolate",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something that comes in packs of six or twelve.",
+      "answers": [
+        {
+          "answer": "Soda",
+          "score": 36
+        },
+        {
+          "answer": "Donuts",
+          "score": 3
+        },
+        {
+          "answer": "Beer",
+          "score": 35
+        },
+        {
+          "answer": "GUM",
+          "score": 3
+        },
+        {
+          "answer": "Eggs",
+          "score": 9
+        },
+        {
+          "answer": "Toilet Tissue",
+          "score": 3
+        },
+        {
+          "answer": "Hot Dogs",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name a food that you hope you've got milk to go with.",
+      "answers": [
+        {
+          "answer": "Cereal",
+          "score": 60
+        },
+        {
+          "answer": "Cake",
+          "score": 2
+        },
+        {
+          "answer": "Cookies",
+          "score": 21
+        },
+        {
+          "answer": "Pancakes",
+          "score": 2
+        },
+        {
+          "answer": "Brownies",
+          "score": 3
+        },
+        {
+          "answer": "Peanut Butter",
+          "score": 2
+        },
+        {
+          "answer": "Macaroni & Cheese",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 men... If you wanted to be a ladies' man, name something you would need.",
+      "answers": [
+        {
+          "answer": "Big Bucks",
+          "score": 42
+        },
+        {
+          "answer": "Have Buff Bod",
+          "score": 8
+        },
+        {
+          "answer": "Flashy Car",
+          "score": 12
+        },
+        {
+          "answer": "Handsome Face",
+          "score": 7
+        },
+        {
+          "answer": "Charm/Gift Of Gab",
+          "score": 10
+        },
+        {
+          "answer": "Fine Threads",
+          "score": 5
+        },
+        {
+          "answer": "Have A Good Job",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something a man would hate to have his wife surprise him with.",
+      "answers": [
+        {
+          "answer": "An Affair",
+          "score": 44
+        },
+        {
+          "answer": "Surprise Party",
+          "score": 5
+        },
+        {
+          "answer": "Pregnancy/Baby",
+          "score": 21
+        },
+        {
+          "answer": "His Mistress",
+          "score": 3
+        },
+        {
+          "answer": "Big Bill",
+          "score": 8
+        },
+        {
+          "answer": "The In-Laws",
+          "score": 3
+        },
+        {
+          "answer": "Divorce/Separ.",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something you hope to have with you if you're ever lost in the wilderness.",
+      "answers": [
+        {
+          "answer": "Compass",
+          "score": 27
+        },
+        {
+          "answer": "GUN",
+          "score": 5
+        },
+        {
+          "answer": "Food/Water",
+          "score": 22
+        },
+        {
+          "answer": "Knife",
+          "score": 5
+        },
+        {
+          "answer": "Cell Phone",
+          "score": 22
+        },
+        {
+          "answer": "Flashlight",
+          "score": 4
+        },
+        {
+          "answer": "Matches/Lighter",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something you might go without when you're trying to save money.",
+      "answers": [
+        {
+          "answer": "Going/Eating Out",
+          "score": 36
+        },
+        {
+          "answer": "Sweets/Ice Cream",
+          "score": 6
+        },
+        {
+          "answer": "Clothes/Shoes",
+          "score": 22
+        },
+        {
+          "answer": "Cable Tv",
+          "score": 4
+        },
+        {
+          "answer": "Cigarettes",
+          "score": 11
+        },
+        {
+          "answer": "Travel/Vacation",
+          "score": 3
+        },
+        {
+          "answer": "Beer/Cocktails",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something that has the word \"super\" in it.",
+      "answers": [
+        {
+          "answer": "Superman",
+          "score": 47
+        },
+        {
+          "answer": "Super Glue",
+          "score": 6
+        },
+        {
+          "answer": "Supermarket",
+          "score": 9
+        },
+        {
+          "answer": "Supersize",
+          "score": 5
+        },
+        {
+          "answer": "Super Bowl",
+          "score": 9
+        },
+        {
+          "answer": "Superstar",
+          "score": 5
+        },
+        {
+          "answer": "Superintendent",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a Disney movie that made you cry.",
+      "answers": [
+        {
+          "answer": "Bambi",
+          "score": 38
+        },
+        {
+          "answer": "Snow White",
+          "score": 4
+        },
+        {
+          "answer": "Old Yeller",
+          "score": 20
+        },
+        {
+          "answer": "Dumbo",
+          "score": 3
+        },
+        {
+          "answer": "Lion King",
+          "score": 10
+        },
+        {
+          "answer": "Little Mermaid",
+          "score": 3
+        },
+        {
+          "answer": "Beauty & Beast",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Tell me something you might have to replace after a divorce.",
+      "answers": [
+        {
+          "answer": "House",
+          "score": 34
+        },
+        {
+          "answer": "Cash/Bank Account",
+          "score": 6
+        },
+        {
+          "answer": "Furniture/Elec.",
+          "score": 17
+        },
+        {
+          "answer": "Dishes",
+          "score": 3
+        },
+        {
+          "answer": "Spouse",
+          "score": 14
+        },
+        {
+          "answer": "Mind/Sanity",
+          "score": 3
+        },
+        {
+          "answer": "CAR",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name a bad habit you wish you could get rid of by taking a pill.",
+      "answers": [
+        {
+          "answer": "Smoking",
+          "score": 32
+        },
+        {
+          "answer": "Nagging",
+          "score": 3
+        },
+        {
+          "answer": "Nail Biting",
+          "score": 19
+        },
+        {
+          "answer": "Procrastinating",
+          "score": 3
+        },
+        {
+          "answer": "Overeating",
+          "score": 19
+        },
+        {
+          "answer": "Sucking My Thumb",
+          "score": 3
+        },
+        {
+          "answer": "Lying",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name a U.S. state that you'd consider moving to when you retire.",
+      "answers": [
+        {
+          "answer": "Florida",
+          "score": 33
+        },
+        {
+          "answer": "Pennsylvania",
+          "score": 7
+        },
+        {
+          "answer": "California",
+          "score": 19
+        },
+        {
+          "answer": "Georgia",
+          "score": 4
+        },
+        {
+          "answer": "Arizona",
+          "score": 8
+        },
+        {
+          "answer": "North Carolina",
+          "score": 4
+        },
+        {
+          "answer": "Hawaii",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something a woman needs to have before she gets married.",
+      "answers": [
+        {
+          "answer": "A Ring",
+          "score": 30
+        },
+        {
+          "answer": "Money/Bank Acct.",
+          "score": 5
+        },
+        {
+          "answer": "A Guy",
+          "score": 21
+        },
+        {
+          "answer": "A Blood Test",
+          "score": 4
+        },
+        {
+          "answer": "A Dress",
+          "score": 9
+        },
+        {
+          "answer": "A Hope Chest",
+          "score": 4
+        },
+        {
+          "answer": "A Job",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 women... Name something, late at night, you might ask your husband to do for you.",
+      "answers": [
+        {
+          "answer": "Honey, Massage",
+          "score": 27
+        },
+        {
+          "answer": "Honey, Get Lights",
+          "score": 5
+        },
+        {
+          "answer": "Honey, Get Drink",
+          "score": 26
+        },
+        {
+          "answer": "Honey, Snoring",
+          "score": 4
+        },
+        {
+          "answer": "Honey Let'S Do It",
+          "score": 6
+        },
+        {
+          "answer": "Honey, Trash Out",
+          "score": 4
+        },
+        {
+          "answer": "Honey, I'M Hungry",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something you'd never sell even if you were flat broke.",
+      "answers": [
+        {
+          "answer": "Ring/Jewelry",
+          "score": 26
+        },
+        {
+          "answer": "My Car",
+          "score": 6
+        },
+        {
+          "answer": "My Body",
+          "score": 14
+        },
+        {
+          "answer": "My Immortal Soul",
+          "score": 5
+        },
+        {
+          "answer": "Drugs",
+          "score": 13
+        },
+        {
+          "answer": "My Children",
+          "score": 5
+        },
+        {
+          "answer": "My House",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name a type of vehicle that's used in the military.",
+      "answers": [
+        {
+          "answer": "Jeep/Hummer",
+          "score": 70
+        },
+        {
+          "answer": "Submarine",
+          "score": 2
+        },
+        {
+          "answer": "Tank",
+          "score": 21
+        },
+        {
+          "answer": "Supply Truck",
+          "score": 2
+        },
+        {
+          "answer": "Airplane",
+          "score": 3
+        },
+        {
+          "answer": "Helicopter",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something people do with their index finger.",
+      "answers": [
+        {
+          "answer": "Point",
+          "score": 63
+        },
+        {
+          "answer": "Scratch",
+          "score": 2
+        },
+        {
+          "answer": "Pick Nose",
+          "score": 23
+        },
+        {
+          "answer": "Dial Phone",
+          "score": 2
+        },
+        {
+          "answer": "Apply Makeup",
+          "score": 6
+        },
+        {
+          "answer": "Wear A Ring",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name a famous rabbit.",
+      "answers": [
+        {
+          "answer": "Bugs Bunny",
+          "score": 56
+        },
+        {
+          "answer": "Easter Bunny",
+          "score": 3
+        },
+        {
+          "answer": "Peter Rabbit",
+          "score": 21
+        },
+        {
+          "answer": "Peter Cottontail",
+          "score": 3
+        },
+        {
+          "answer": "Roger Rabbit",
+          "score": 13
+        },
+        {
+          "answer": "Brer Rabbit",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name a way to make bathing a sexy experience.",
+      "answers": [
+        {
+          "answer": "Bring A Friend",
+          "score": 45
+        },
+        {
+          "answer": "Drink Wine",
+          "score": 3
+        },
+        {
+          "answer": "Bubbles/Bath Oil",
+          "score": 24
+        },
+        {
+          "answer": "Eat Fruit",
+          "score": 3
+        },
+        {
+          "answer": "Light Candles",
+          "score": 21
+        },
+        {
+          "answer": "Rose Petals",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name a movie monster you think could take Dracula in a fight.",
+      "answers": [
+        {
+          "answer": "Godzilla",
+          "score": 43
+        },
+        {
+          "answer": "Freddy Krueger",
+          "score": 5
+        },
+        {
+          "answer": "Frankenstein",
+          "score": 26
+        },
+        {
+          "answer": "Jason",
+          "score": 2
+        },
+        {
+          "answer": "King Kong",
+          "score": 13
+        },
+        {
+          "answer": "Wolfman/Werewolf",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name one thing people associate with leprechauns.",
+      "answers": [
+        {
+          "answer": "Rainbow/Gold",
+          "score": 39
+        },
+        {
+          "answer": "St. Patrick'S Day",
+          "score": 9
+        },
+        {
+          "answer": "Irish",
+          "score": 21
+        },
+        {
+          "answer": "Four-Leaf Clover",
+          "score": 9
+        },
+        {
+          "answer": "Good Luck",
+          "score": 12
+        },
+        {
+          "answer": "Green",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name a reason people take out a loan.",
+      "answers": [
+        {
+          "answer": "Buy A House",
+          "score": 57
+        },
+        {
+          "answer": "Start A Business",
+          "score": 3
+        },
+        {
+          "answer": "Buy A Car",
+          "score": 24
+        },
+        {
+          "answer": "Get Married",
+          "score": 2
+        },
+        {
+          "answer": "College",
+          "score": 8
+        },
+        {
+          "answer": "Consolidate Debt",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name a food women crave when they're pregnant.",
+      "answers": [
+        {
+          "answer": "Pickles",
+          "score": 53
+        },
+        {
+          "answer": "Watermelon",
+          "score": 2
+        },
+        {
+          "answer": "Ice Cream",
+          "score": 20
+        },
+        {
+          "answer": "Pumpkin Pie",
+          "score": 2
+        },
+        {
+          "answer": "Chocolate",
+          "score": 18
+        },
+        {
+          "answer": "Peanut Butter",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Give me a name that rhymes with \"Harry.\"",
+      "answers": [
+        {
+          "answer": "Larry",
+          "score": 35
+        },
+        {
+          "answer": "Perry",
+          "score": 4
+        },
+        {
+          "answer": "Barry",
+          "score": 31
+        },
+        {
+          "answer": "Terry",
+          "score": 4
+        },
+        {
+          "answer": "Mary",
+          "score": 19
+        },
+        {
+          "answer": "Kerry",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something a man might not notice his wife has changed.",
+      "answers": [
+        {
+          "answer": "Her Hair",
+          "score": 78
+        },
+        {
+          "answer": "Her Earrings",
+          "score": 2
+        },
+        {
+          "answer": "Her Nail Polish",
+          "score": 6
+        },
+        {
+          "answer": "Her Undies",
+          "score": 2
+        },
+        {
+          "answer": "The Furnishings",
+          "score": 6
+        },
+        {
+          "answer": "Her Weight",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "What excuse would a kid give their teacher for not turning in their homework?",
+      "answers": [
+        {
+          "answer": "\"Dog Ate It\"",
+          "score": 54
+        },
+        {
+          "answer": "Don'T Have Books",
+          "score": 3
+        },
+        {
+          "answer": "\"Forgot\"",
+          "score": 19
+        },
+        {
+          "answer": "\"Computer Broke\"",
+          "score": 3
+        },
+        {
+          "answer": "\"Was Sick\"",
+          "score": 11
+        },
+        {
+          "answer": "\"Lost It\"",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 men... Name something of yours that's dirty.",
+      "answers": [
+        {
+          "answer": "My Clothes/Shoes",
+          "score": 64
+        },
+        {
+          "answer": "My Body",
+          "score": 4
+        },
+        {
+          "answer": "My Car",
+          "score": 15
+        },
+        {
+          "answer": "My Mind",
+          "score": 3
+        },
+        {
+          "answer": "My Floor/Room",
+          "score": 6
+        },
+        {
+          "answer": "My Dishes",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Give me a word that rhymes with \"corn.\"",
+      "answers": [
+        {
+          "answer": "Horn",
+          "score": 55
+        },
+        {
+          "answer": "Thorn",
+          "score": 2
+        },
+        {
+          "answer": "Born",
+          "score": 19
+        },
+        {
+          "answer": "Torn",
+          "score": 2
+        },
+        {
+          "answer": "Porn",
+          "score": 15
+        },
+        {
+          "answer": "Mourn",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Tell me a word that rhymes with \"nude.\"",
+      "answers": [
+        {
+          "answer": "Rude",
+          "score": 37
+        },
+        {
+          "answer": "Food",
+          "score": 3
+        },
+        {
+          "answer": "Dude",
+          "score": 36
+        },
+        {
+          "answer": "Mood",
+          "score": 3
+        },
+        {
+          "answer": "Crude",
+          "score": 9
+        },
+        {
+          "answer": "Lewd",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name a reason why a spouse might end up spending the night on the couch.",
+      "answers": [
+        {
+          "answer": "Argument",
+          "score": 60
+        },
+        {
+          "answer": "Drunk",
+          "score": 5
+        },
+        {
+          "answer": "Tired/Fell Asleep",
+          "score": 16
+        },
+        {
+          "answer": "Sick",
+          "score": 2
+        },
+        {
+          "answer": "Came Home Late",
+          "score": 6
+        },
+        {
+          "answer": "Snoring",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a famous Matt or Matthew.",
+      "answers": [
+        {
+          "answer": "Matt Dillon",
+          "score": 49
+        },
+        {
+          "answer": "Matthew Perry",
+          "score": 5
+        },
+        {
+          "answer": "Matt Damon",
+          "score": 27
+        },
+        {
+          "answer": "Matt Lauer",
+          "score": 4
+        },
+        {
+          "answer": "Matt Leblanc",
+          "score": 5
+        },
+        {
+          "answer": "Matthew Broderick",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name any war.",
+      "answers": [
+        {
+          "answer": "World War Ii",
+          "score": 46
+        },
+        {
+          "answer": "The Korean War",
+          "score": 5
+        },
+        {
+          "answer": "The Civil War",
+          "score": 16
+        },
+        {
+          "answer": "Iraq War",
+          "score": 3
+        },
+        {
+          "answer": "The Vietnam War",
+          "score": 14
+        },
+        {
+          "answer": "The Gulf War",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "Name a place people drag themselves to because they think it's good for them.",
+      "answers": [
+        {
+          "answer": "To Church",
+          "score": 42
+        },
+        {
+          "answer": "The Dentist'S",
+          "score": 4
+        },
+        {
+          "answer": "To The Gym",
+          "score": 31
+        },
+        {
+          "answer": "To A Spa",
+          "score": 4
+        },
+        {
+          "answer": "Doctor'S/Hospital",
+          "score": 7
+        },
+        {
+          "answer": "Movies/Theater",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something that a person might have a phobia about.",
+      "answers": [
+        {
+          "answer": "Bugs",
+          "score": 40
+        },
+        {
+          "answer": "The Dark",
+          "score": 6
+        },
+        {
+          "answer": "Heights",
+          "score": 25
+        },
+        {
+          "answer": "Water",
+          "score": 5
+        },
+        {
+          "answer": "Enclosed Areas",
+          "score": 13
+        },
+        {
+          "answer": "Snakes",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a place you go where you turn your cell phone off.",
+      "answers": [
+        {
+          "answer": "Hospital/Dr.'S",
+          "score": 35
+        },
+        {
+          "answer": "Courthouse",
+          "score": 2
+        },
+        {
+          "answer": "Church",
+          "score": 33
+        },
+        {
+          "answer": "Home",
+          "score": 2
+        },
+        {
+          "answer": "Movie/Theater",
+          "score": 18
+        },
+        {
+          "answer": "Restaurant",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something every person in America should be able to afford.",
+      "answers": [
+        {
+          "answer": "Housing",
+          "score": 34
+        },
+        {
+          "answer": "Education",
+          "score": 5
+        },
+        {
+          "answer": "Healthcare/Drugs",
+          "score": 21
+        },
+        {
+          "answer": "TV",
+          "score": 4
+        },
+        {
+          "answer": "CAR",
+          "score": 17
+        },
+        {
+          "answer": "Food",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "question": "What would be the worst thing that you could be turned down for?",
+      "answers": [
+        {
+          "answer": "Loan",
+          "score": 27
+        },
+        {
+          "answer": "Credit Card",
+          "score": 12
+        },
+        {
+          "answer": "Job/Promotion",
+          "score": 24
+        },
+        {
+          "answer": "\"Nookie\"",
+          "score": 5
+        },
+        {
+          "answer": "Date/Prom",
+          "score": 15
+        },
+        {
+          "answer": "House/Mortgage",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "question": "Name a character in one of Shakespeare's plays.",
+      "answers": [
+        {
+          "answer": "Hamlet",
+          "score": 25
+        },
+        {
+          "answer": "Juliet",
+          "score": 7
+        },
+        {
+          "answer": "Romeo",
+          "score": 23
+        },
+        {
+          "answer": "Julius Caesar",
+          "score": 4
+        },
+        {
+          "answer": "Macbeth",
+          "score": 19
+        },
+        {
+          "answer": "Othello",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "question": "Name a subject at school you'd hate to find out a ten-year-old knows more about than you.",
+      "answers": [
+        {
+          "answer": "Math",
+          "score": 53
+        },
+        {
+          "answer": "Computers",
+          "score": 6
+        },
+        {
+          "answer": "History",
+          "score": 13
+        },
+        {
+          "answer": "English",
+          "score": 4
+        },
+        {
+          "answer": "Science",
+          "score": 9
+        },
+        {
+          "answer": "Sex Education",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name a flower that's also a girl's name.",
+      "answers": [
+        {
+          "answer": "Rose",
+          "score": 43
+        },
+        {
+          "answer": "Violet",
+          "score": 3
+        },
+        {
+          "answer": "Daisy",
+          "score": 24
+        },
+        {
+          "answer": "Jasmine",
+          "score": 2
+        },
+        {
+          "answer": "Lily",
+          "score": 16
+        },
+        {
+          "answer": "Iris",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something men worry about losing.",
+      "answers": [
+        {
+          "answer": "Their Hair",
+          "score": 69
+        },
+        {
+          "answer": "Their Body",
+          "score": 4
+        },
+        {
+          "answer": "Their Money",
+          "score": 7
+        },
+        {
+          "answer": "Their Job",
+          "score": 3
+        },
+        {
+          "answer": "A Woman",
+          "score": 5
+        },
+        {
+          "answer": "Their Libido",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something made for people to put their fingers in.",
+      "answers": [
+        {
+          "answer": "Glove",
+          "score": 68
+        },
+        {
+          "answer": "Fingerpaint",
+          "score": 3
+        },
+        {
+          "answer": "Ring",
+          "score": 9
+        },
+        {
+          "answer": "Chinese Handcuffs",
+          "score": 3
+        },
+        {
+          "answer": "Bowling Ball",
+          "score": 6
+        },
+        {
+          "answer": "Nose",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 women... Name something you would rather be than smart.",
+      "answers": [
+        {
+          "answer": "Rich",
+          "score": 58
+        },
+        {
+          "answer": "Be Powerful",
+          "score": 3
+        },
+        {
+          "answer": "Attractive",
+          "score": 14
+        },
+        {
+          "answer": "Be A Good Person",
+          "score": 3
+        },
+        {
+          "answer": "Healthy",
+          "score": 9
+        },
+        {
+          "answer": "Have Sex Appeal",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a way people pass the time in prison.",
+      "answers": [
+        {
+          "answer": "Reading",
+          "score": 47
+        },
+        {
+          "answer": "Writing",
+          "score": 4
+        },
+        {
+          "answer": "Lifting Weights",
+          "score": 22
+        },
+        {
+          "answer": "Playing Cards",
+          "score": 3
+        },
+        {
+          "answer": "Watching Tv",
+          "score": 13
+        },
+        {
+          "answer": "Making Lic. Plates",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name the most respected newspaper in America.",
+      "answers": [
+        {
+          "answer": "New York Times",
+          "score": 43
+        },
+        {
+          "answer": "Daily News",
+          "score": 6
+        },
+        {
+          "answer": "Wall St. Journal",
+          "score": 16
+        },
+        {
+          "answer": "Washington Post",
+          "score": 4
+        },
+        {
+          "answer": "National Enquirer",
+          "score": 14
+        },
+        {
+          "answer": "Usa Today",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Real or fictional, name a famous Betty.",
+      "answers": [
+        {
+          "answer": "Betty Boop",
+          "score": 39
+        },
+        {
+          "answer": "Betty Crocker",
+          "score": 10
+        },
+        {
+          "answer": "Betty Ford",
+          "score": 15
+        },
+        {
+          "answer": "Betty White",
+          "score": 7
+        },
+        {
+          "answer": "Bette Davis",
+          "score": 12
+        },
+        {
+          "answer": "Betty Rubble",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name an animal that can kill with its bite.",
+      "answers": [
+        {
+          "answer": "Snake",
+          "score": 38
+        },
+        {
+          "answer": "Alligator/Croc.",
+          "score": 6
+        },
+        {
+          "answer": "Tiger",
+          "score": 19
+        },
+        {
+          "answer": "Shark",
+          "score": 6
+        },
+        {
+          "answer": "Lion",
+          "score": 15
+        },
+        {
+          "answer": "Bear",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name a fat animal.",
+      "answers": [
+        {
+          "answer": "Pig/Hog",
+          "score": 33
+        },
+        {
+          "answer": "Walrus",
+          "score": 6
+        },
+        {
+          "answer": "Elephant",
+          "score": 31
+        },
+        {
+          "answer": "Bear",
+          "score": 6
+        },
+        {
+          "answer": "Hippopotamus",
+          "score": 9
+        },
+        {
+          "answer": "COW",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something that teeth do.",
+      "answers": [
+        {
+          "answer": "Chew",
+          "score": 49
+        },
+        {
+          "answer": "ROT",
+          "score": 4
+        },
+        {
+          "answer": "Chatter",
+          "score": 20
+        },
+        {
+          "answer": "Hurt",
+          "score": 3
+        },
+        {
+          "answer": "Bite",
+          "score": 10
+        },
+        {
+          "answer": "Grind",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a movie that contains the word \"king.\"",
+      "answers": [
+        {
+          "answer": "The King & I",
+          "score": 38
+        },
+        {
+          "answer": "Kingpin",
+          "score": 3
+        },
+        {
+          "answer": "Lion King",
+          "score": 25
+        },
+        {
+          "answer": "Three Kings",
+          "score": 2
+        },
+        {
+          "answer": "King Kong",
+          "score": 21
+        },
+        {
+          "answer": "Man Who Would Be",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name a country known for good-looking men.",
+      "answers": [
+        {
+          "answer": "United States",
+          "score": 33
+        },
+        {
+          "answer": "Mexico",
+          "score": 6
+        },
+        {
+          "answer": "Italy",
+          "score": 24
+        },
+        {
+          "answer": "Spain",
+          "score": 6
+        },
+        {
+          "answer": "France",
+          "score": 16
+        },
+        {
+          "answer": "Sweden",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name a famous movie that was all about a dog.",
+      "answers": [
+        {
+          "answer": "Lassie Come Home",
+          "score": 27
+        },
+        {
+          "answer": "Benji",
+          "score": 11
+        },
+        {
+          "answer": "101 Dalmatians",
+          "score": 20
+        },
+        {
+          "answer": "Beethoven",
+          "score": 6
+        },
+        {
+          "answer": "All Dogs...Heaven",
+          "score": 16
+        },
+        {
+          "answer": "Old Yeller",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "question": "Name an animal you hope never sits on you.",
+      "answers": [
+        {
+          "answer": "Elephant",
+          "score": 70
+        },
+        {
+          "answer": "Porcupine",
+          "score": 3
+        },
+        {
+          "answer": "Bear",
+          "score": 8
+        },
+        {
+          "answer": "Skunk",
+          "score": 3
+        },
+        {
+          "answer": "Hippopotamus",
+          "score": 4
+        },
+        {
+          "answer": "Lion",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name an important event you'd go to even if you were sick.",
+      "answers": [
+        {
+          "answer": "Wedding",
+          "score": 51
+        },
+        {
+          "answer": "Concert",
+          "score": 5
+        },
+        {
+          "answer": "Church Service",
+          "score": 14
+        },
+        {
+          "answer": "Sporting Event",
+          "score": 4
+        },
+        {
+          "answer": "Funeral",
+          "score": 10
+        },
+        {
+          "answer": "Graduation",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something magicians try to escape from.",
+      "answers": [
+        {
+          "answer": "Trunk/Box",
+          "score": 42
+        },
+        {
+          "answer": "Straitjacket",
+          "score": 4
+        },
+        {
+          "answer": "Chains",
+          "score": 22
+        },
+        {
+          "answer": "Cage",
+          "score": 3
+        },
+        {
+          "answer": "Water Tank",
+          "score": 11
+        },
+        {
+          "answer": "Handcuffs",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name the number one state people want to live in.",
+      "answers": [
+        {
+          "answer": "California",
+          "score": 32
+        },
+        {
+          "answer": "Washington",
+          "score": 6
+        },
+        {
+          "answer": "Florida",
+          "score": 27
+        },
+        {
+          "answer": "Pennsylvania",
+          "score": 5
+        },
+        {
+          "answer": "New York",
+          "score": 13
+        },
+        {
+          "answer": "Hawaii",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something a person with overly large feet might have a hard time doing.",
+      "answers": [
+        {
+          "answer": "Buying Shoes",
+          "score": 45
+        },
+        {
+          "answer": "Jumping Rope",
+          "score": 4
+        },
+        {
+          "answer": "Dancing",
+          "score": 17
+        },
+        {
+          "answer": "Putting Shoes On",
+          "score": 3
+        },
+        {
+          "answer": "Walking",
+          "score": 15
+        },
+        {
+          "answer": "Running",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 men... Tell me something no woman can resist.",
+      "answers": [
+        {
+          "answer": "Money",
+          "score": 22
+        },
+        {
+          "answer": "Jewelry",
+          "score": 8
+        },
+        {
+          "answer": "Charm/Compliments",
+          "score": 21
+        },
+        {
+          "answer": "Shopping/Sales",
+          "score": 5
+        },
+        {
+          "answer": "Looks/Body",
+          "score": 20
+        },
+        {
+          "answer": "Flowers",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "question": "Name a real or fictional person with \"Dick\" in his name.",
+      "answers": [
+        {
+          "answer": "Dick Tracy",
+          "score": 37
+        },
+        {
+          "answer": "Dick Cheney",
+          "score": 8
+        },
+        {
+          "answer": "Dick Van Dyke",
+          "score": 16
+        },
+        {
+          "answer": "Andy Dick",
+          "score": 7
+        },
+        {
+          "answer": "Dick Clark",
+          "score": 12
+        },
+        {
+          "answer": "Dick Nixon",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something people are afraid to ride on.",
+      "answers": [
+        {
+          "answer": "Roller Coaster",
+          "score": 44
+        },
+        {
+          "answer": "Bull",
+          "score": 4
+        },
+        {
+          "answer": "Airplane",
+          "score": 19
+        },
+        {
+          "answer": "Ferris Wheel",
+          "score": 4
+        },
+        {
+          "answer": "Horse",
+          "score": 10
+        },
+        {
+          "answer": "Motorcycle",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Based on what you've heard or believe, what do you think you'd find in heaven?",
+      "answers": [
+        {
+          "answer": "Angels",
+          "score": 31
+        },
+        {
+          "answer": "Clouds",
+          "score": 5
+        },
+        {
+          "answer": "God/Jesus",
+          "score": 23
+        },
+        {
+          "answer": "\"Pearly Gates\"",
+          "score": 5
+        },
+        {
+          "answer": "Peace/Happiness",
+          "score": 14
+        },
+        {
+          "answer": "Loved Ones",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name an animal that likes to stick out its tongue.",
+      "answers": [
+        {
+          "answer": "DOG",
+          "score": 40
+        },
+        {
+          "answer": "Frog",
+          "score": 5
+        },
+        {
+          "answer": "Snake",
+          "score": 20
+        },
+        {
+          "answer": "Monkey",
+          "score": 5
+        },
+        {
+          "answer": "Lizard/Iguana",
+          "score": 9
+        },
+        {
+          "answer": "Anteater",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something that has caused almost everyone to be late for work.",
+      "answers": [
+        {
+          "answer": "Overslept/Alarm",
+          "score": 35
+        },
+        {
+          "answer": "Problem W/ Kids",
+          "score": 5
+        },
+        {
+          "answer": "Traffic/Accident",
+          "score": 27
+        },
+        {
+          "answer": "Phone Call",
+          "score": 5
+        },
+        {
+          "answer": "Car Trouble",
+          "score": 9
+        },
+        {
+          "answer": "Bad Weather",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something that can cause a lot of damage to a home.",
+      "answers": [
+        {
+          "answer": "Fire",
+          "score": 35
+        },
+        {
+          "answer": "Hurricane",
+          "score": 8
+        },
+        {
+          "answer": "Water/Flood",
+          "score": 19
+        },
+        {
+          "answer": "Children",
+          "score": 5
+        },
+        {
+          "answer": "Tornado",
+          "score": 12
+        },
+        {
+          "answer": "Bugs",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Tell me a word you would use when describing Abraham Lincoln.",
+      "answers": [
+        {
+          "answer": "Tall",
+          "score": 32
+        },
+        {
+          "answer": "Money",
+          "score": 5
+        },
+        {
+          "answer": "Honest",
+          "score": 24
+        },
+        {
+          "answer": "Beard",
+          "score": 4
+        },
+        {
+          "answer": "President",
+          "score": 15
+        },
+        {
+          "answer": "Emancipator",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something hippies used to wear that may someday come back in style.",
+      "answers": [
+        {
+          "answer": "Bell-Bottoms",
+          "score": 45
+        },
+        {
+          "answer": "Long Hair",
+          "score": 6
+        },
+        {
+          "answer": "Tie-Dye",
+          "score": 16
+        },
+        {
+          "answer": "Granny Glasses",
+          "score": 3
+        },
+        {
+          "answer": "Beads",
+          "score": 10
+        },
+        {
+          "answer": "Headbands",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "If you were literally in the doghouse for the night, name something you'd like in there with you.",
+      "answers": [
+        {
+          "answer": "Blanket/Pillow",
+          "score": 30
+        },
+        {
+          "answer": "DOG",
+          "score": 5
+        },
+        {
+          "answer": "TV",
+          "score": 24
+        },
+        {
+          "answer": "Book/Bible",
+          "score": 5
+        },
+        {
+          "answer": "Significant Other",
+          "score": 12
+        },
+        {
+          "answer": "Food/Water",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Give me a word that rhymes with \"bump.\"",
+      "answers": [
+        {
+          "answer": "Lump",
+          "score": 35
+        },
+        {
+          "answer": "Rump",
+          "score": 7
+        },
+        {
+          "answer": "Hump",
+          "score": 17
+        },
+        {
+          "answer": "Dump",
+          "score": 5
+        },
+        {
+          "answer": "Jump",
+          "score": 13
+        },
+        {
+          "answer": "Stump",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 married women... If your husband asked you for a divorce Sunday night, what's the first thing you would do Monday morning?",
+      "answers": [
+        {
+          "answer": "See Lawyer/File",
+          "score": 35
+        },
+        {
+          "answer": "Change Locks",
+          "score": 7
+        },
+        {
+          "answer": "Leave House",
+          "score": 17
+        },
+        {
+          "answer": "Ask Him Why?",
+          "score": 4
+        },
+        {
+          "answer": "Kick Him Out",
+          "score": 12
+        },
+        {
+          "answer": "Clean Out Bank",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name a famous Tom.",
+      "answers": [
+        {
+          "answer": "Tom Hanks",
+          "score": 27
+        },
+        {
+          "answer": "Tom Sawyer",
+          "score": 5
+        },
+        {
+          "answer": "Tom Cruise",
+          "score": 26
+        },
+        {
+          "answer": "Tom Thumb",
+          "score": 5
+        },
+        {
+          "answer": "Tom Jones",
+          "score": 13
+        },
+        {
+          "answer": "Tom Arnold",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name a foreign accent that's pretty easy to imitate.",
+      "answers": [
+        {
+          "answer": "French",
+          "score": 26
+        },
+        {
+          "answer": "Jamaican",
+          "score": 6
+        },
+        {
+          "answer": "Spanish",
+          "score": 24
+        },
+        {
+          "answer": "German",
+          "score": 4
+        },
+        {
+          "answer": "British",
+          "score": 18
+        },
+        {
+          "answer": "Irish",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something in your house you have never cleaned under.",
+      "answers": [
+        {
+          "answer": "Stove/Oven",
+          "score": 25
+        },
+        {
+          "answer": "Sink",
+          "score": 5
+        },
+        {
+          "answer": "Refrigerator",
+          "score": 19
+        },
+        {
+          "answer": "Television",
+          "score": 5
+        },
+        {
+          "answer": "BED",
+          "score": 16
+        },
+        {
+          "answer": "Couch",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "question": "Name a fruit that would be almost impossible to stick up your nose.",
+      "answers": [
+        {
+          "answer": "Watermelon",
+          "score": 22
+        },
+        {
+          "answer": "Grape",
+          "score": 6
+        },
+        {
+          "answer": "Banana",
+          "score": 22
+        },
+        {
+          "answer": "Mango",
+          "score": 6
+        },
+        {
+          "answer": "Apple",
+          "score": 16
+        },
+        {
+          "answer": "Orange",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "question": "If diamonds are a girl's best friend, what's a guy's?",
+      "answers": [
+        {
+          "answer": "DOG",
+          "score": 22
+        },
+        {
+          "answer": "Sports",
+          "score": 8
+        },
+        {
+          "answer": "CAR",
+          "score": 19
+        },
+        {
+          "answer": "Remote/Tv",
+          "score": 6
+        },
+        {
+          "answer": "Women/Sex",
+          "score": 18
+        },
+        {
+          "answer": "Money",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "Tell me something that's harder to do backwards than forwards.",
+      "answers": [
+        {
+          "answer": "Walk",
+          "score": 39
+        },
+        {
+          "answer": "Read",
+          "score": 5
+        },
+        {
+          "answer": "RUN",
+          "score": 17
+        },
+        {
+          "answer": "Ride A Bike",
+          "score": 5
+        },
+        {
+          "answer": "Drive",
+          "score": 10
+        },
+        {
+          "answer": "Ice-Skate/Skate",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name a celebrity who probably still makes millions a year even though they're six feet under.",
+      "answers": [
+        {
+          "answer": "Elvis Presley",
+          "score": 53
+        },
+        {
+          "answer": "Marilyn Monroe",
+          "score": 4
+        },
+        {
+          "answer": "Bob Hope",
+          "score": 9
+        },
+        {
+          "answer": "John Lennon",
+          "score": 3
+        },
+        {
+          "answer": "Tupac Shakur",
+          "score": 7
+        },
+        {
+          "answer": "Frank Sinatra",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Which U.S. city would you be most afraid to live in?",
+      "answers": [
+        {
+          "answer": "New York",
+          "score": 40
+        },
+        {
+          "answer": "Chicago",
+          "score": 6
+        },
+        {
+          "answer": "Los Angeles",
+          "score": 13
+        },
+        {
+          "answer": "Philadelphia",
+          "score": 6
+        },
+        {
+          "answer": "Detroit",
+          "score": 11
+        },
+        {
+          "answer": "Washington, D.C.",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something you'd hate to discover had expired.",
+      "answers": [
+        {
+          "answer": "Driver'S License",
+          "score": 37
+        },
+        {
+          "answer": "Car Registration",
+          "score": 5
+        },
+        {
+          "answer": "Milk",
+          "score": 18
+        },
+        {
+          "answer": "My Own Life",
+          "score": 3
+        },
+        {
+          "answer": "Credit Card",
+          "score": 12
+        },
+        {
+          "answer": "Insurance",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 women... Name something women do for their little boys that they also do for their husbands.",
+      "answers": [
+        {
+          "answer": "Cook",
+          "score": 26
+        },
+        {
+          "answer": "Dress Them",
+          "score": 7
+        },
+        {
+          "answer": "Clean Up After",
+          "score": 16
+        },
+        {
+          "answer": "Shop For Them",
+          "score": 7
+        },
+        {
+          "answer": "Laundry",
+          "score": 15
+        },
+        {
+          "answer": "Kiss/Hug",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name something that you might take from a restaurant.",
+      "answers": [
+        {
+          "answer": "Silverware",
+          "score": 19
+        },
+        {
+          "answer": "Sweetener/Sugar",
+          "score": 7
+        },
+        {
+          "answer": "Leftovers",
+          "score": 18
+        },
+        {
+          "answer": "Napkin",
+          "score": 7
+        },
+        {
+          "answer": "Salt/Peppershaker",
+          "score": 16
+        },
+        {
+          "answer": "Glass/Cup",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "question": "Name a male actor with gray hair who women consider sexy.",
+      "answers": [
+        {
+          "answer": "Sean Connery",
+          "score": 32
+        },
+        {
+          "answer": "Burt Reynolds",
+          "score": 5
+        },
+        {
+          "answer": "Richard Gere",
+          "score": 16
+        },
+        {
+          "answer": "Mel Gibson",
+          "score": 5
+        },
+        {
+          "answer": "George Clooney",
+          "score": 12
+        },
+        {
+          "answer": "Clint Eastwood",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Real or fictional, tell me someone who has the word \"Little\" in their name.",
+      "answers": [
+        {
+          "answer": "Little Richard",
+          "score": 31
+        },
+        {
+          "answer": "Little Boy Blue",
+          "score": 7
+        },
+        {
+          "answer": "Rich Little",
+          "score": 12
+        },
+        {
+          "answer": "Lil' Bow Wow",
+          "score": 6
+        },
+        {
+          "answer": "Stuart Little",
+          "score": 12
+        },
+        {
+          "answer": "Little John",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Besides Jesus, name a religious figure you would like to ride across the country with in a car.",
+      "answers": [
+        {
+          "answer": "Moses",
+          "score": 26
+        },
+        {
+          "answer": "Dalai Lama",
+          "score": 7
+        },
+        {
+          "answer": "GOD",
+          "score": 15
+        },
+        {
+          "answer": "Mother Theresa",
+          "score": 7
+        },
+        {
+          "answer": "Buddha",
+          "score": 14
+        },
+        {
+          "answer": "Mary Magdalene",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name an animal whose name children mispronounce.",
+      "answers": [
+        {
+          "answer": "Rhinoceros",
+          "score": 28
+        },
+        {
+          "answer": "Alligator",
+          "score": 3
+        },
+        {
+          "answer": "Elephant",
+          "score": 17
+        },
+        {
+          "answer": "Crocodile",
+          "score": 3
+        },
+        {
+          "answer": "Hippopotamus",
+          "score": 17
+        },
+        {
+          "answer": "Giraffe",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name an occupation in which you'd get to hear a lot of good gossip.",
+      "answers": [
+        {
+          "answer": "Hairdresser",
+          "score": 27
+        },
+        {
+          "answer": "Reporter",
+          "score": 7
+        },
+        {
+          "answer": "Nurse",
+          "score": 12
+        },
+        {
+          "answer": "Operator",
+          "score": 6
+        },
+        {
+          "answer": "Clergy",
+          "score": 10
+        },
+        {
+          "answer": "Secretary/Recept.",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name something that slows down a line at the supermarket.",
+      "answers": [
+        {
+          "answer": "Check Writing",
+          "score": 22
+        },
+        {
+          "answer": "Food Stamps",
+          "score": 7
+        },
+        {
+          "answer": "Price Check",
+          "score": 17
+        },
+        {
+          "answer": "Cashier",
+          "score": 7
+        },
+        {
+          "answer": "Too Much Stuff",
+          "score": 10
+        },
+        {
+          "answer": "Coupons",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something some people do faster than others.",
+      "answers": [
+        {
+          "answer": "RUN",
+          "score": 22
+        },
+        {
+          "answer": "Type",
+          "score": 9
+        },
+        {
+          "answer": "Read",
+          "score": 14
+        },
+        {
+          "answer": "Talk",
+          "score": 6
+        },
+        {
+          "answer": "Walk",
+          "score": 11
+        },
+        {
+          "answer": "EAT",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "What's the last thing you did before you left the house this morning?",
+      "answers": [
+        {
+          "answer": "Locked Door",
+          "score": 38
+        },
+        {
+          "answer": "Brushed Teeth",
+          "score": 4
+        },
+        {
+          "answer": "Turned Lights Off",
+          "score": 8
+        },
+        {
+          "answer": "Took Care Of Pets",
+          "score": 4
+        },
+        {
+          "answer": "Kissed Family Bye",
+          "score": 8
+        },
+        {
+          "answer": "Drank Coffee/Ate",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Who is the best-known person alive today?",
+      "answers": [
+        {
+          "answer": "George W. Bush",
+          "score": 22
+        },
+        {
+          "answer": "Michael Jackson",
+          "score": 8
+        },
+        {
+          "answer": "The Pope",
+          "score": 13
+        },
+        {
+          "answer": "Bill Gates",
+          "score": 5
+        },
+        {
+          "answer": "Bill Clinton",
+          "score": 10
+        },
+        {
+          "answer": "Saddam Hussein",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name a famous outlaw from the old west.",
+      "answers": [
+        {
+          "answer": "Jesse James",
+          "score": 60
+        },
+        {
+          "answer": "Doc Holliday",
+          "score": 2
+        },
+        {
+          "answer": "Billy The Kid",
+          "score": 32
+        },
+        {
+          "answer": "Wild Bill Hickok",
+          "score": 4
+        },
+        {
+          "answer": "Butch Cassidy",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something in his house a little kid might think a monster is hiding.",
+      "answers": [
+        {
+          "answer": "In The Closet",
+          "score": 59
+        },
+        {
+          "answer": "\"Upstairs\"",
+          "score": 2
+        },
+        {
+          "answer": "Under The Bed",
+          "score": 34
+        },
+        {
+          "answer": "In The Basement",
+          "score": 3
+        },
+        {
+          "answer": "In The Attic",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Besides the Rose Bowl, name a bowl game.",
+      "answers": [
+        {
+          "answer": "Super Bowl",
+          "score": 39
+        },
+        {
+          "answer": "Peach Bowl",
+          "score": 2
+        },
+        {
+          "answer": "Orange Bowl",
+          "score": 38
+        },
+        {
+          "answer": "Sugar Bowl",
+          "score": 14
+        },
+        {
+          "answer": "Cotton Bowl",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "We asked 100 women... Name something you'd do with an engagement ring if your fianc\u00e9 called it off.",
+      "answers": [
+        {
+          "answer": "Sell It",
+          "score": 37
+        },
+        {
+          "answer": "Toss It",
+          "score": 3
+        },
+        {
+          "answer": "Keep It/Wear",
+          "score": 35
+        },
+        {
+          "answer": "Give It Back",
+          "score": 19
+        },
+        {
+          "answer": "Make New Jewelry",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a book you go to for answers.",
+      "answers": [
+        {
+          "answer": "Dictionary",
+          "score": 62
+        },
+        {
+          "answer": "Almanac",
+          "score": 2
+        },
+        {
+          "answer": "Encyclopedia",
+          "score": 19
+        },
+        {
+          "answer": "Bible",
+          "score": 14
+        },
+        {
+          "answer": "Cookbook",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Tell me a phrase that begins with the words, \"Over the...\"",
+      "answers": [
+        {
+          "answer": "Hill",
+          "score": 60
+        },
+        {
+          "answer": "TOP",
+          "score": 4
+        },
+        {
+          "answer": "Rainbow",
+          "score": 18
+        },
+        {
+          "answer": "Mountain",
+          "score": 12
+        },
+        {
+          "answer": "River",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name a character from the fictional town of Mayberry on \"The Andy Griffith Show.\"",
+      "answers": [
+        {
+          "answer": "Opie",
+          "score": 53
+        },
+        {
+          "answer": "Goober",
+          "score": 6
+        },
+        {
+          "answer": "Aunt Bee",
+          "score": 14
+        },
+        {
+          "answer": "Andy",
+          "score": 13
+        },
+        {
+          "answer": "Barney",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 women... Specifically, tell me the sexiest part about Brad Pitt.",
+      "answers": [
+        {
+          "answer": "His Bod",
+          "score": 43
+        },
+        {
+          "answer": "His Jaw",
+          "score": 2
+        },
+        {
+          "answer": "His Eyes",
+          "score": 33
+        },
+        {
+          "answer": "His Smile",
+          "score": 14
+        },
+        {
+          "answer": "His Hair",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something you don't want to find in restaurant food.",
+      "answers": [
+        {
+          "answer": "Hair",
+          "score": 38
+        },
+        {
+          "answer": "Dirt",
+          "score": 2
+        },
+        {
+          "answer": "FLY",
+          "score": 29
+        },
+        {
+          "answer": "Roach",
+          "score": 27
+        },
+        {
+          "answer": "RAT",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name a gift you bring someone who's invited you for dinner.",
+      "answers": [
+        {
+          "answer": "Wine",
+          "score": 66
+        },
+        {
+          "answer": "Candle",
+          "score": 2
+        },
+        {
+          "answer": "Cake/Pie",
+          "score": 14
+        },
+        {
+          "answer": "Flowers/Plant",
+          "score": 14
+        },
+        {
+          "answer": "Box Of Candy",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a well-known Frank or Frankie.",
+      "answers": [
+        {
+          "answer": "Frank Sinatra",
+          "score": 64
+        },
+        {
+          "answer": "Frank Gifford",
+          "score": 3
+        },
+        {
+          "answer": "Frankie Avalon",
+          "score": 19
+        },
+        {
+          "answer": "Frankie Muniz",
+          "score": 7
+        },
+        {
+          "answer": "Frank L. Wright",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name an animal with spots.",
+      "answers": [
+        {
+          "answer": "Leopard",
+          "score": 62
+        },
+        {
+          "answer": "Giraffe",
+          "score": 3
+        },
+        {
+          "answer": "Dalmatian",
+          "score": 18
+        },
+        {
+          "answer": "Tiger",
+          "score": 8
+        },
+        {
+          "answer": "Cheetah",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something you might see a firefighter carry.",
+      "answers": [
+        {
+          "answer": "A Hose",
+          "score": 61
+        },
+        {
+          "answer": "An Oxygen Tank",
+          "score": 2
+        },
+        {
+          "answer": "An Axe",
+          "score": 29
+        },
+        {
+          "answer": "A Ladder",
+          "score": 4
+        },
+        {
+          "answer": "A Victim",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "What is the most common order a back-seat driver yells to the driver?",
+      "answers": [
+        {
+          "answer": "\"Slow Down!\"",
+          "score": 46
+        },
+        {
+          "answer": "\"Speed Up!\"",
+          "score": 6
+        },
+        {
+          "answer": "\"Watch Out!\"",
+          "score": 23
+        },
+        {
+          "answer": "\"Stop!\"",
+          "score": 16
+        },
+        {
+          "answer": "\"Turn Here!\"",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something you might see on a table when a poker game is in progress.",
+      "answers": [
+        {
+          "answer": "Poker Chips",
+          "score": 45
+        },
+        {
+          "answer": "Drinks",
+          "score": 4
+        },
+        {
+          "answer": "Money",
+          "score": 24
+        },
+        {
+          "answer": "Cards",
+          "score": 21
+        },
+        {
+          "answer": "Cigarette/Ashtray",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Tell me an animal that starts with the letter \"H.\"",
+      "answers": [
+        {
+          "answer": "Horse",
+          "score": 37
+        },
+        {
+          "answer": "Hamster",
+          "score": 3
+        },
+        {
+          "answer": "Hippopotamus",
+          "score": 31
+        },
+        {
+          "answer": "Hyena",
+          "score": 20
+        },
+        {
+          "answer": "HOG",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something people purposely buy damaged so they can get a discount.",
+      "answers": [
+        {
+          "answer": "Clothing/Shoes",
+          "score": 36
+        },
+        {
+          "answer": "CAR",
+          "score": 5
+        },
+        {
+          "answer": "Canned Goods",
+          "score": 21
+        },
+        {
+          "answer": "Appliances",
+          "score": 19
+        },
+        {
+          "answer": "Furniture",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "question": "Name something babies love to throw.",
+      "answers": [
+        {
+          "answer": "Toys",
+          "score": 35
+        },
+        {
+          "answer": "Pacifier",
+          "score": 2
+        },
+        {
+          "answer": "Food",
+          "score": 32
+        },
+        {
+          "answer": "Bottle",
+          "score": 24
+        },
+        {
+          "answer": "Tantrum",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Who is the greatest female tennis player ever?",
+      "answers": [
+        {
+          "answer": "Serena Williams",
+          "score": 28
+        },
+        {
+          "answer": "Chris Evert",
+          "score": 6
+        },
+        {
+          "answer": "Billie Jean King",
+          "score": 25
+        },
+        {
+          "answer": "M. Navratilova",
+          "score": 21
+        },
+        {
+          "answer": "Venus Williams",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "question": "Name an animal that moves its tail a lot.",
+      "answers": [
+        {
+          "answer": "DOG",
+          "score": 65
+        },
+        {
+          "answer": "Horse",
+          "score": 2
+        },
+        {
+          "answer": "CAT",
+          "score": 25
+        },
+        {
+          "answer": "Monkey",
+          "score": 3
+        },
+        {
+          "answer": "COW",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something students do when they forget to study for a test.",
+      "answers": [
+        {
+          "answer": "Cheat",
+          "score": 48
+        },
+        {
+          "answer": "Cut School",
+          "score": 4
+        },
+        {
+          "answer": "Cram",
+          "score": 19
+        },
+        {
+          "answer": "Fail",
+          "score": 14
+        },
+        {
+          "answer": "Play Sick",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "question": "Name any one of Britain's royal family.",
+      "answers": [
+        {
+          "answer": "Prince Charles",
+          "score": 44
+        },
+        {
+          "answer": "Prince Philip",
+          "score": 7
+        },
+        {
+          "answer": "Queen Elizabeth",
+          "score": 25
+        },
+        {
+          "answer": "Princess Diana",
+          "score": 12
+        },
+        {
+          "answer": "Prince William",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name a famous Harry.",
+      "answers": [
+        {
+          "answer": "Harry Potter",
+          "score": 42
+        },
+        {
+          "answer": "Harry Houdini",
+          "score": 6
+        },
+        {
+          "answer": "Harry Truman",
+          "score": 27
+        },
+        {
+          "answer": "\"Dirty Harry\"",
+          "score": 11
+        },
+        {
+          "answer": "Harry Belafonte",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 married men... Which of the seven dwarfs describes your wife in bed?",
+      "answers": [
+        {
+          "answer": "Happy",
+          "score": 50
+        },
+        {
+          "answer": "Dopey",
+          "score": 4
+        },
+        {
+          "answer": "Sleepy",
+          "score": 27
+        },
+        {
+          "answer": "Bashful",
+          "score": 8
+        },
+        {
+          "answer": "Grumpy",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something for which Dorothy and her friends asked the Wizard of Oz.",
+      "answers": [
+        {
+          "answer": "For A Heart",
+          "score": 43
+        },
+        {
+          "answer": "Where Road Go?",
+          "score": 4
+        },
+        {
+          "answer": "To Go Home",
+          "score": 31
+        },
+        {
+          "answer": "For Courage",
+          "score": 10
+        },
+        {
+          "answer": "For A Brain",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something specific a pirate might have hidden in his treasure chest.",
+      "answers": [
+        {
+          "answer": "Gold/Coins",
+          "score": 65
+        },
+        {
+          "answer": "Booze",
+          "score": 2
+        },
+        {
+          "answer": "Jewels",
+          "score": 18
+        },
+        {
+          "answer": "Weapons",
+          "score": 7
+        },
+        {
+          "answer": "Maps",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name something a husband does for his wife when he's feeling guilty.",
+      "answers": [
+        {
+          "answer": "Buys Her Flowers",
+          "score": 55
+        },
+        {
+          "answer": "Does The Chores",
+          "score": 3
+        },
+        {
+          "answer": "Buys Jewelry/Gift",
+          "score": 24
+        },
+        {
+          "answer": "Cooks/Out To Eat",
+          "score": 10
+        },
+        {
+          "answer": "Buys Her Candy",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name a job that teenagers do when they need money.",
+      "answers": [
+        {
+          "answer": "Restaurant Worker",
+          "score": 32
+        },
+        {
+          "answer": "Lifeguard",
+          "score": 4
+        },
+        {
+          "answer": "Yard Work",
+          "score": 26
+        },
+        {
+          "answer": "Babysit",
+          "score": 20
+        },
+        {
+          "answer": "Supermarket",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "question": "What do you imagine is the biggest disadvantage to being tall?",
+      "answers": [
+        {
+          "answer": "Bump Head/Ceiling",
+          "score": 45
+        },
+        {
+          "answer": "Short Beds",
+          "score": 9
+        },
+        {
+          "answer": "Small Cars",
+          "score": 14
+        },
+        {
+          "answer": "Finding Partners",
+          "score": 13
+        },
+        {
+          "answer": "Clothes/Shoes",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "question": "Name something that's routinely done to a person when he's arrested.",
+      "answers": [
+        {
+          "answer": "Handcuffed",
+          "score": 38
+        },
+        {
+          "answer": "Questioned",
+          "score": 4
+        },
+        {
+          "answer": "Read Rights",
+          "score": 36
+        },
+        {
+          "answer": "Fingerprinted",
+          "score": 10
+        },
+        {
+          "answer": "Mug Shot",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a reason why someone might go a whole day without eating.",
+      "answers": [
+        {
+          "answer": "Fasting/Religion",
+          "score": 37
+        },
+        {
+          "answer": "Depressed/Stress",
+          "score": 7
+        },
+        {
+          "answer": "Dieting",
+          "score": 31
+        },
+        {
+          "answer": "Forgot/Busy",
+          "score": 10
+        },
+        {
+          "answer": "Sick",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something a really cheap airline might make passengers do for themselves.",
+      "answers": [
+        {
+          "answer": "Get Food/Drinks",
+          "score": 35
+        },
+        {
+          "answer": "Fly The Plane",
+          "score": 5
+        },
+        {
+          "answer": "Load Luggage",
+          "score": 30
+        },
+        {
+          "answer": "Find Own Seat",
+          "score": 17
+        },
+        {
+          "answer": "Blanket/Pillows",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something associated with New Orleans.",
+      "answers": [
+        {
+          "answer": "Mardi Gras/Party",
+          "score": 60
+        },
+        {
+          "answer": "Voodoo",
+          "score": 3
+        },
+        {
+          "answer": "Cajun Food",
+          "score": 17
+        },
+        {
+          "answer": "Jazz",
+          "score": 8
+        },
+        {
+          "answer": "Bourbon St.",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something that starts with the word \"virgin.\"",
+      "answers": [
+        {
+          "answer": "Virgin Mary",
+          "score": 57
+        },
+        {
+          "answer": "Virgin Records",
+          "score": 3
+        },
+        {
+          "answer": "Virgin Olive Oil",
+          "score": 16
+        },
+        {
+          "answer": "Virgin Islands",
+          "score": 14
+        },
+        {
+          "answer": "Virgin Margarita",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name something you've been bitten by.",
+      "answers": [
+        {
+          "answer": "Mosquito",
+          "score": 54
+        },
+        {
+          "answer": "Snake",
+          "score": 3
+        },
+        {
+          "answer": "DOG",
+          "score": 19
+        },
+        {
+          "answer": "Spider",
+          "score": 9
+        },
+        {
+          "answer": "BEE",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something specfic that people do to calm down after an argument.",
+      "answers": [
+        {
+          "answer": "Take A Walk/Leave",
+          "score": 52
+        },
+        {
+          "answer": "Count To 10",
+          "score": 5
+        },
+        {
+          "answer": "Take Deep Breath",
+          "score": 17
+        },
+        {
+          "answer": "Have A Smoke",
+          "score": 10
+        },
+        {
+          "answer": "Make Up/Apologize",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something new mothers spend most of their time doing.",
+      "answers": [
+        {
+          "answer": "Changing Diapers",
+          "score": 35
+        },
+        {
+          "answer": "Babysitting",
+          "score": 5
+        },
+        {
+          "answer": "Feed/Nursing Baby",
+          "score": 28
+        },
+        {
+          "answer": "Hold/Rocking Baby",
+          "score": 20
+        },
+        {
+          "answer": "Doing Laundry",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something a department store Santa might hate about his job.",
+      "answers": [
+        {
+          "answer": "Hates The Kids",
+          "score": 67
+        },
+        {
+          "answer": "Hates Sitting",
+          "score": 3
+        },
+        {
+          "answer": "Hates The Adults",
+          "score": 8
+        },
+        {
+          "answer": "Hates The Hours",
+          "score": 7
+        },
+        {
+          "answer": "Hates The Costume",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something that birds do.",
+      "answers": [
+        {
+          "answer": "They Fly",
+          "score": 51
+        },
+        {
+          "answer": "They Build Nests",
+          "score": 6
+        },
+        {
+          "answer": "They Chirp/Sing",
+          "score": 21
+        },
+        {
+          "answer": "They Peck",
+          "score": 7
+        },
+        {
+          "answer": "They Poop",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Give me a nickname short people get tired of hearing.",
+      "answers": [
+        {
+          "answer": "\"Shorty\"",
+          "score": 51
+        },
+        {
+          "answer": "\"Tiny\"",
+          "score": 4
+        },
+        {
+          "answer": "\"Midget\"",
+          "score": 13
+        },
+        {
+          "answer": "\"Shrimp\"",
+          "score": 13
+        },
+        {
+          "answer": "\"Pee Wee\"",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "Name a famous cartoon dog.",
+      "answers": [
+        {
+          "answer": "Snoopy",
+          "score": 46
+        },
+        {
+          "answer": "Goofy",
+          "score": 3
+        },
+        {
+          "answer": "Scooby-Doo",
+          "score": 20
+        },
+        {
+          "answer": "Pluto",
+          "score": 18
+        },
+        {
+          "answer": "Clifford",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name a specific part of a skinny dipper that usually doesn't look so skinny.",
+      "answers": [
+        {
+          "answer": "Bottom",
+          "score": 42
+        },
+        {
+          "answer": "Thighs",
+          "score": 8
+        },
+        {
+          "answer": "Stomach",
+          "score": 23
+        },
+        {
+          "answer": "Chest",
+          "score": 11
+        },
+        {
+          "answer": "Hips",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something a teenage boy might borrow from his father without asking.",
+      "answers": [
+        {
+          "answer": "CAR",
+          "score": 36
+        },
+        {
+          "answer": "Money",
+          "score": 6
+        },
+        {
+          "answer": "Tie/Clothes",
+          "score": 13
+        },
+        {
+          "answer": "Razor/Shaver",
+          "score": 18
+        },
+        {
+          "answer": "Cologne",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "When going on vacation, what's the worst thing to forget to pack?",
+      "answers": [
+        {
+          "answer": "Toiletries",
+          "score": 29
+        },
+        {
+          "answer": "Camera",
+          "score": 6
+        },
+        {
+          "answer": "Clothes/Shoes",
+          "score": 28
+        },
+        {
+          "answer": "Money/Credit Card",
+          "score": 20
+        },
+        {
+          "answer": "Medication",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 married men... Name something about your wife you wouldn't dare criticize.",
+      "answers": [
+        {
+          "answer": "Her Weight/Figure",
+          "score": 46
+        },
+        {
+          "answer": "Her Parents",
+          "score": 3
+        },
+        {
+          "answer": "Her Cooking",
+          "score": 19
+        },
+        {
+          "answer": "Hair/Face",
+          "score": 18
+        },
+        {
+          "answer": "Way She Dresses",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something people do during which they hate to be disturbed.",
+      "answers": [
+        {
+          "answer": "Sleeping",
+          "score": 36
+        },
+        {
+          "answer": "Restroom/Shower",
+          "score": 6
+        },
+        {
+          "answer": "Reading",
+          "score": 25
+        },
+        {
+          "answer": "Making \"Whoopie\"",
+          "score": 13
+        },
+        {
+          "answer": "Watch'G Tv/Movies",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "Past or present, name an actress who played one of Charlie's Angels.",
+      "answers": [
+        {
+          "answer": "Farrah Fawcett",
+          "score": 33
+        },
+        {
+          "answer": "Cameron Diaz",
+          "score": 8
+        },
+        {
+          "answer": "Drew Barrymore",
+          "score": 25
+        },
+        {
+          "answer": "Lucy Liu",
+          "score": 16
+        },
+        {
+          "answer": "Kate Jackson",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name some personal information you don't feel is anyone's business but your own.",
+      "answers": [
+        {
+          "answer": "Sex Life",
+          "score": 30
+        },
+        {
+          "answer": "Social Security",
+          "score": 8
+        },
+        {
+          "answer": "AGE",
+          "score": 22
+        },
+        {
+          "answer": "Income",
+          "score": 17
+        },
+        {
+          "answer": "Weight",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "question": "Name a strong woman who people love to criticize.",
+      "answers": [
+        {
+          "answer": "Hillary Clinton",
+          "score": 50
+        },
+        {
+          "answer": "Barbara Bush",
+          "score": 2
+        },
+        {
+          "answer": "Martha Stewart",
+          "score": 18
+        },
+        {
+          "answer": "Oprah Winfrey",
+          "score": 16
+        },
+        {
+          "answer": "Madonna",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something that could embarrass an actor onstage.",
+      "answers": [
+        {
+          "answer": "Ye Forgeteth Line",
+          "score": 48
+        },
+        {
+          "answer": "Ye Breaketh Wind",
+          "score": 5
+        },
+        {
+          "answer": "Tripeth/Falleth",
+          "score": 21
+        },
+        {
+          "answer": "Ye Pants Falleth",
+          "score": 10
+        },
+        {
+          "answer": "Ye Fly Unzippeth",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a movie about a horse.",
+      "answers": [
+        {
+          "answer": "Seabiscuit",
+          "score": 46
+        },
+        {
+          "answer": "My Friend Flicka",
+          "score": 5
+        },
+        {
+          "answer": "Black Beauty",
+          "score": 16
+        },
+        {
+          "answer": "Black Stallion",
+          "score": 14
+        },
+        {
+          "answer": "National Velvet",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something a child might do right before going to bed.",
+      "answers": [
+        {
+          "answer": "Pray",
+          "score": 43
+        },
+        {
+          "answer": "EAT",
+          "score": 3
+        },
+        {
+          "answer": "Go To Bathroom",
+          "score": 21
+        },
+        {
+          "answer": "Brush Teeth",
+          "score": 16
+        },
+        {
+          "answer": "Drink Water",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something on an elephant that's huge.",
+      "answers": [
+        {
+          "answer": "Trunk",
+          "score": 38
+        },
+        {
+          "answer": "Head",
+          "score": 4
+        },
+        {
+          "answer": "Ears",
+          "score": 30
+        },
+        {
+          "answer": "Tusks",
+          "score": 13
+        },
+        {
+          "answer": "Body",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something Madonna will probably still be doing when she's 80.",
+      "answers": [
+        {
+          "answer": "Singing",
+          "score": 56
+        },
+        {
+          "answer": "Dressing Sexy",
+          "score": 7
+        },
+        {
+          "answer": "Dancing",
+          "score": 10
+        },
+        {
+          "answer": "Making Love",
+          "score": 9
+        },
+        {
+          "answer": "Kissing Girls",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something people try to peek through.",
+      "answers": [
+        {
+          "answer": "Windows",
+          "score": 44
+        },
+        {
+          "answer": "Blinds",
+          "score": 7
+        },
+        {
+          "answer": "Keyholes",
+          "score": 18
+        },
+        {
+          "answer": "Curtains",
+          "score": 12
+        },
+        {
+          "answer": "Peepholes",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something people get kicked out of.",
+      "answers": [
+        {
+          "answer": "School",
+          "score": 29
+        },
+        {
+          "answer": "Sporting Event",
+          "score": 6
+        },
+        {
+          "answer": "Bar/Nightclub",
+          "score": 28
+        },
+        {
+          "answer": "House/Apartment",
+          "score": 20
+        },
+        {
+          "answer": "Movie Theater",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Past or present, name a famous couple you knew would have problems.",
+      "answers": [
+        {
+          "answer": "Ben & Jen",
+          "score": 57
+        },
+        {
+          "answer": "Michael & Lisa M.",
+          "score": 4
+        },
+        {
+          "answer": "Bill & Hillary",
+          "score": 14
+        },
+        {
+          "answer": "Bobby & Whitney",
+          "score": 9
+        },
+        {
+          "answer": "Jen & P. Diddy",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name a Christmas song you know most of the words to.",
+      "answers": [
+        {
+          "answer": "Jingle Bells",
+          "score": 46
+        },
+        {
+          "answer": "Red Nose Reindeer",
+          "score": 4
+        },
+        {
+          "answer": "Silent Night",
+          "score": 22
+        },
+        {
+          "answer": "White Christmas",
+          "score": 12
+        },
+        {
+          "answer": "Santa Coming Town",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something a husband asks his wife to carry in her purse for him.",
+      "answers": [
+        {
+          "answer": "Wallet/Money",
+          "score": 36
+        },
+        {
+          "answer": "GUN",
+          "score": 5
+        },
+        {
+          "answer": "Keys",
+          "score": 26
+        },
+        {
+          "answer": "Cell Phone",
+          "score": 15
+        },
+        {
+          "answer": "Glasses",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 women... What does it take to get your lover in the mood?",
+      "answers": [
+        {
+          "answer": "Nothing",
+          "score": 33
+        },
+        {
+          "answer": "A Lil' Drinky-Poo",
+          "score": 3
+        },
+        {
+          "answer": "Music/Singing",
+          "score": 29
+        },
+        {
+          "answer": "A Kiss",
+          "score": 14
+        },
+        {
+          "answer": "A Caress/Touch",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name someone from the Bible whose name begins with the letter \"M.\"",
+      "answers": [
+        {
+          "answer": "Moses",
+          "score": 45
+        },
+        {
+          "answer": "Malachi",
+          "score": 3
+        },
+        {
+          "answer": "Matthew",
+          "score": 20
+        },
+        {
+          "answer": "Mark",
+          "score": 10
+        },
+        {
+          "answer": "Mary",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something a soldier in the Army might have to go without for a while.",
+      "answers": [
+        {
+          "answer": "Good Food",
+          "score": 33
+        },
+        {
+          "answer": "Seeing Family",
+          "score": 4
+        },
+        {
+          "answer": "Lovemaking",
+          "score": 27
+        },
+        {
+          "answer": "Sleep/Bed",
+          "score": 14
+        },
+        {
+          "answer": "Bathing",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 women... Name something a good bachelorette party needs.",
+      "answers": [
+        {
+          "answer": "\"Naughty Nudies\"",
+          "score": 49
+        },
+        {
+          "answer": "Girlfriends",
+          "score": 6
+        },
+        {
+          "answer": "Booze",
+          "score": 13
+        },
+        {
+          "answer": "Music",
+          "score": 10
+        },
+        {
+          "answer": "Food",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name a famous judge.",
+      "answers": [
+        {
+          "answer": "Judge Judy",
+          "score": 40
+        },
+        {
+          "answer": "Judge Ito",
+          "score": 5
+        },
+        {
+          "answer": "Judge Joe Brown",
+          "score": 19
+        },
+        {
+          "answer": "Sandra O'Connor",
+          "score": 12
+        },
+        {
+          "answer": "Judge Mathis",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name a public place where you might see quarreling lovers make a scene.",
+      "answers": [
+        {
+          "answer": "Restaurant",
+          "score": 28
+        },
+        {
+          "answer": "Movie/Theater",
+          "score": 10
+        },
+        {
+          "answer": "Park",
+          "score": 22
+        },
+        {
+          "answer": "Bar/Nightclub",
+          "score": 13
+        },
+        {
+          "answer": "Mall",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "question": "Tell me something people do in the woods.",
+      "answers": [
+        {
+          "answer": "Camp",
+          "score": 32
+        },
+        {
+          "answer": "Make A Fire",
+          "score": 4
+        },
+        {
+          "answer": "Hunt",
+          "score": 31
+        },
+        {
+          "answer": "Hike",
+          "score": 11
+        },
+        {
+          "answer": "\"Tinkle\"",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 married men... When your wife is talking to you, what are you thinking about?",
+      "answers": [
+        {
+          "answer": "SEX",
+          "score": 27
+        },
+        {
+          "answer": "Why She Complains",
+          "score": 5
+        },
+        {
+          "answer": "Topic At Hand",
+          "score": 23
+        },
+        {
+          "answer": "I Love Her",
+          "score": 22
+        },
+        {
+          "answer": "Golf/Sports",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something little boys don't like.",
+      "answers": [
+        {
+          "answer": "Girls",
+          "score": 54
+        },
+        {
+          "answer": "Kisses",
+          "score": 4
+        },
+        {
+          "answer": "Baths",
+          "score": 12
+        },
+        {
+          "answer": "Vegetables",
+          "score": 8
+        },
+        {
+          "answer": "Dolls",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something people associate with a caveman.",
+      "answers": [
+        {
+          "answer": "Carry Clubs",
+          "score": 55
+        },
+        {
+          "answer": "Grunting/Speech",
+          "score": 5
+        },
+        {
+          "answer": "Cavewoman",
+          "score": 9
+        },
+        {
+          "answer": "Fire",
+          "score": 7
+        },
+        {
+          "answer": "Fur Outfit",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a food that's sloppy to eat.",
+      "answers": [
+        {
+          "answer": "Sloppy Joes",
+          "score": 43
+        },
+        {
+          "answer": "Pizza",
+          "score": 5
+        },
+        {
+          "answer": "Spaghetti",
+          "score": 22
+        },
+        {
+          "answer": "Ribs",
+          "score": 6
+        },
+        {
+          "answer": "Soup/Chili",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Of all the talk shows, which one has the funniest host?",
+      "answers": [
+        {
+          "answer": "Jay Leno",
+          "score": 36
+        },
+        {
+          "answer": "Wayne Brady",
+          "score": 4
+        },
+        {
+          "answer": "Jerry Springer",
+          "score": 19
+        },
+        {
+          "answer": "David Letterman",
+          "score": 13
+        },
+        {
+          "answer": "Oprah Winfrey",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Tell me one word women use to describe very attractive men.",
+      "answers": [
+        {
+          "answer": "\"Hot\"",
+          "score": 31
+        },
+        {
+          "answer": "\"Sexy\"",
+          "score": 9
+        },
+        {
+          "answer": "\"Hunk\"",
+          "score": 20
+        },
+        {
+          "answer": "\"Handsome\"",
+          "score": 12
+        },
+        {
+          "answer": "\"Fine\"",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name something the laziest person in the world might put next to their bed so they can roll over and use it.",
+      "answers": [
+        {
+          "answer": "Remote Control/Tv",
+          "score": 34
+        },
+        {
+          "answer": "Microwave",
+          "score": 3
+        },
+        {
+          "answer": "Toilet",
+          "score": 28
+        },
+        {
+          "answer": "Refrigerator",
+          "score": 9
+        },
+        {
+          "answer": "Telephone",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Tell me something you really didn't want to do, so you pretended you were sick.",
+      "answers": [
+        {
+          "answer": "Work",
+          "score": 52
+        },
+        {
+          "answer": "A Date",
+          "score": 5
+        },
+        {
+          "answer": "School",
+          "score": 8
+        },
+        {
+          "answer": "Family Gathering",
+          "score": 8
+        },
+        {
+          "answer": "Party/Wedding",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something a man might get his tie caught in.",
+      "answers": [
+        {
+          "answer": "Door",
+          "score": 41
+        },
+        {
+          "answer": "Drawer",
+          "score": 5
+        },
+        {
+          "answer": "Zipper",
+          "score": 22
+        },
+        {
+          "answer": "Paper Shredder",
+          "score": 7
+        },
+        {
+          "answer": "Window",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name a way in which people treat their dogs like humans.",
+      "answers": [
+        {
+          "answer": "Sleep With Them",
+          "score": 22
+        },
+        {
+          "answer": "Kiss Them",
+          "score": 6
+        },
+        {
+          "answer": "Talk To Them",
+          "score": 19
+        },
+        {
+          "answer": "Dress Them",
+          "score": 17
+        },
+        {
+          "answer": "Feed Them",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "question": "Name a rock star who's older than the president of the United States.",
+      "answers": [
+        {
+          "answer": "Mick Jagger",
+          "score": 36
+        },
+        {
+          "answer": "Paul Mccartney",
+          "score": 4
+        },
+        {
+          "answer": "Tina Turner",
+          "score": 18
+        },
+        {
+          "answer": "Steven Tyler",
+          "score": 13
+        },
+        {
+          "answer": "Ozzy Osbourne",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 married women... If you could hypnotize your husband, name something you would make him do for you.",
+      "answers": [
+        {
+          "answer": "You Will Clean",
+          "score": 26
+        },
+        {
+          "answer": "You Will Massage",
+          "score": 10
+        },
+        {
+          "answer": "You'Ll Buy Gifts",
+          "score": 21
+        },
+        {
+          "answer": "You Will Cook",
+          "score": 12
+        },
+        {
+          "answer": "You'Ll Make Love",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 married women... Name a part of your husband's body you think is cute.",
+      "answers": [
+        {
+          "answer": "Tush",
+          "score": 27
+        },
+        {
+          "answer": "Legs",
+          "score": 7
+        },
+        {
+          "answer": "Chest",
+          "score": 25
+        },
+        {
+          "answer": "Smile/Lips",
+          "score": 10
+        },
+        {
+          "answer": "Eyes",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something people have less of as they get older.",
+      "answers": [
+        {
+          "answer": "Hair",
+          "score": 40
+        },
+        {
+          "answer": "Patience",
+          "score": 7
+        },
+        {
+          "answer": "Energy/Vitality",
+          "score": 12
+        },
+        {
+          "answer": "Appetite",
+          "score": 9
+        },
+        {
+          "answer": "Teeth",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name a reason parents might not approve of their daughter's boyfriend.",
+      "answers": [
+        {
+          "answer": "He'S A \"Bad Boy\"",
+          "score": 25
+        },
+        {
+          "answer": "Too Old",
+          "score": 11
+        },
+        {
+          "answer": "Has Piercings",
+          "score": 16
+        },
+        {
+          "answer": "No Job",
+          "score": 13
+        },
+        {
+          "answer": "Sloppy Dresser",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "What would be the worst thing to be allergic to?",
+      "answers": [
+        {
+          "answer": "Food",
+          "score": 32
+        },
+        {
+          "answer": "Money",
+          "score": 7
+        },
+        {
+          "answer": "People",
+          "score": 17
+        },
+        {
+          "answer": "Water",
+          "score": 12
+        },
+        {
+          "answer": "Animals",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name an occupation whose members have to be especially careful with their fingers.",
+      "answers": [
+        {
+          "answer": "Doctor",
+          "score": 29
+        },
+        {
+          "answer": "Hand Model",
+          "score": 6
+        },
+        {
+          "answer": "Musician",
+          "score": 19
+        },
+        {
+          "answer": "Machinist/Driller",
+          "score": 12
+        },
+        {
+          "answer": "Butcher",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 college guys... Name a job you'd love to have at the Playboy mansion.",
+      "answers": [
+        {
+          "answer": "Pool Boy",
+          "score": 29
+        },
+        {
+          "answer": "Guard",
+          "score": 10
+        },
+        {
+          "answer": "Butler",
+          "score": 13
+        },
+        {
+          "answer": "Chauffeur",
+          "score": 12
+        },
+        {
+          "answer": "Photographer",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "Name a place which most people remember going for the first time.",
+      "answers": [
+        {
+          "answer": "School",
+          "score": 28
+        },
+        {
+          "answer": "Movie",
+          "score": 6
+        },
+        {
+          "answer": "Amusement Park",
+          "score": 25
+        },
+        {
+          "answer": "Baseball Game",
+          "score": 10
+        },
+        {
+          "answer": "Beach",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 married women... Name a reason you'd sleep in a separate bed.",
+      "answers": [
+        {
+          "answer": "Angry",
+          "score": 27
+        },
+        {
+          "answer": "Don'T Like A/C",
+          "score": 8
+        },
+        {
+          "answer": "Snoring",
+          "score": 17
+        },
+        {
+          "answer": "Sick",
+          "score": 13
+        },
+        {
+          "answer": "No Desire Hubby",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 women... Name something specific women think they know more about than men.",
+      "answers": [
+        {
+          "answer": "Cooking",
+          "score": 36
+        },
+        {
+          "answer": "Love/Relationship",
+          "score": 7
+        },
+        {
+          "answer": "Cleaning",
+          "score": 12
+        },
+        {
+          "answer": "Raising Children",
+          "score": 11
+        },
+        {
+          "answer": "Finances",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "We surveyed 100 men... Name an article of clothing you'd like to wear most if you had to dress up like a woman.",
+      "answers": [
+        {
+          "answer": "Dress",
+          "score": 30
+        },
+        {
+          "answer": "Skirt",
+          "score": 6
+        },
+        {
+          "answer": "Heels/Shoes",
+          "score": 19
+        },
+        {
+          "answer": "Panties/Thong",
+          "score": 12
+        },
+        {
+          "answer": "BRA",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something inconsiderate people do at the supermarket.",
+      "answers": [
+        {
+          "answer": "Cut In Line",
+          "score": 29
+        },
+        {
+          "answer": "Handle Food",
+          "score": 6
+        },
+        {
+          "answer": "Open/Eat Food",
+          "score": 16
+        },
+        {
+          "answer": "Bang Into Cart",
+          "score": 12
+        },
+        {
+          "answer": "Leave Cart",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "What are people talking about when they brag they've never had a single one in their lives?",
+      "answers": [
+        {
+          "answer": "Traffic Ticket",
+          "score": 25
+        },
+        {
+          "answer": "Cavity",
+          "score": 5
+        },
+        {
+          "answer": "Cigarette",
+          "score": 20
+        },
+        {
+          "answer": "Accident",
+          "score": 17
+        },
+        {
+          "answer": "Affair",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something that Texas is famous for.",
+      "answers": [
+        {
+          "answer": "Food",
+          "score": 22
+        },
+        {
+          "answer": "Saloons",
+          "score": 5
+        },
+        {
+          "answer": "Longhorn Cattle",
+          "score": 19
+        },
+        {
+          "answer": "Cowboys/Hats",
+          "score": 16
+        },
+        {
+          "answer": "OIL",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Besides Richard Karn, name a famous Richard.",
+      "answers": [
+        {
+          "answer": "Richard Nixon",
+          "score": 34
+        },
+        {
+          "answer": "Richard Dawson",
+          "score": 6
+        },
+        {
+          "answer": "Richard Gere",
+          "score": 14
+        },
+        {
+          "answer": "Richard Burton",
+          "score": 9
+        },
+        {
+          "answer": "Richard Pryor",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Tell me something that's supposed to keep you young.",
+      "answers": [
+        {
+          "answer": "Exercise",
+          "score": 41
+        },
+        {
+          "answer": "Vitamins/Herbs",
+          "score": 5
+        },
+        {
+          "answer": "Face Cream/Lotion",
+          "score": 12
+        },
+        {
+          "answer": "Children",
+          "score": 6
+        },
+        {
+          "answer": "Sleep",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Tell me something your dogs get to do that you wish you could do.",
+      "answers": [
+        {
+          "answer": "Sleep All Day",
+          "score": 41
+        },
+        {
+          "answer": "Jump",
+          "score": 5
+        },
+        {
+          "answer": "Run Around",
+          "score": 8
+        },
+        {
+          "answer": "Pee In Public",
+          "score": 7
+        },
+        {
+          "answer": "Lick Self",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something found in the Garden of Eden.",
+      "answers": [
+        {
+          "answer": "Apple",
+          "score": 69
+        },
+        {
+          "answer": "Snake",
+          "score": 15
+        },
+        {
+          "answer": "Tree",
+          "score": 9
+        },
+        {
+          "answer": "Adam And Eve",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name a part of a woman's body that's very attractive when it's long.",
+      "answers": [
+        {
+          "answer": "Legs",
+          "score": 58
+        },
+        {
+          "answer": "Hair",
+          "score": 33
+        },
+        {
+          "answer": "Fingers/Nails",
+          "score": 7
+        },
+        {
+          "answer": "Neck",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a vegetable that begins with the letter \"B.\"",
+      "answers": [
+        {
+          "answer": "Broccoli",
+          "score": 55
+        },
+        {
+          "answer": "Beets",
+          "score": 37
+        },
+        {
+          "answer": "Beans",
+          "score": 6
+        },
+        {
+          "answer": "Butternut Squash",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a breed of dog that starts with the letter \"C.\"",
+      "answers": [
+        {
+          "answer": "Collie",
+          "score": 47
+        },
+        {
+          "answer": "Chihuahua",
+          "score": 27
+        },
+        {
+          "answer": "Cocker Spaniel",
+          "score": 15
+        },
+        {
+          "answer": "Chow Chow",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "Name a device used for cutting.",
+      "answers": [
+        {
+          "answer": "Knife",
+          "score": 46
+        },
+        {
+          "answer": "Scissors",
+          "score": 41
+        },
+        {
+          "answer": "SAW",
+          "score": 11
+        },
+        {
+          "answer": "AXE",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Give me a name for someone who has to know everybody's business.",
+      "answers": [
+        {
+          "answer": "\"Nosy\"",
+          "score": 45
+        },
+        {
+          "answer": "\"Busybody\"",
+          "score": 38
+        },
+        {
+          "answer": "\"Gossip\"",
+          "score": 9
+        },
+        {
+          "answer": "\"Snoop\"",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something people like to do around a campfire.",
+      "answers": [
+        {
+          "answer": "Sing",
+          "score": 36
+        },
+        {
+          "answer": "Cook/Eat",
+          "score": 34
+        },
+        {
+          "answer": "Tell Stories/Talk",
+          "score": 27
+        },
+        {
+          "answer": "Snuggle/Sit",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name the most useful body part that begins with the letter \"L.\"",
+      "answers": [
+        {
+          "answer": "Legs",
+          "score": 77
+        },
+        {
+          "answer": "Lips",
+          "score": 12
+        },
+        {
+          "answer": "Lungs",
+          "score": 6
+        },
+        {
+          "answer": "Liver",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something in a divorce settlement that can't be divided in half.",
+      "answers": [
+        {
+          "answer": "Child",
+          "score": 67
+        },
+        {
+          "answer": "House",
+          "score": 18
+        },
+        {
+          "answer": "PET",
+          "score": 9
+        },
+        {
+          "answer": "CAR",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name a sport where the ball might be bigger than your head.",
+      "answers": [
+        {
+          "answer": "Basketball",
+          "score": 64
+        },
+        {
+          "answer": "Soccer",
+          "score": 16
+        },
+        {
+          "answer": "Volleyball",
+          "score": 14
+        },
+        {
+          "answer": "Bowling",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something about Peter Pan that's different from the average boy.",
+      "answers": [
+        {
+          "answer": "He Can Fly",
+          "score": 77
+        },
+        {
+          "answer": "He Wears Tights",
+          "score": 10
+        },
+        {
+          "answer": "Never Grows Up",
+          "score": 7
+        },
+        {
+          "answer": "He'S Not Real",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something that you sometimes don't bother to take off when you go to bed.",
+      "answers": [
+        {
+          "answer": "Clothes/Shoes",
+          "score": 72
+        },
+        {
+          "answer": "Jewelry",
+          "score": 13
+        },
+        {
+          "answer": "Makeup",
+          "score": 11
+        },
+        {
+          "answer": "Dentures",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a specific door you should knock on before entering.",
+      "answers": [
+        {
+          "answer": "Front Door",
+          "score": 65
+        },
+        {
+          "answer": "Bathroom Door",
+          "score": 24
+        },
+        {
+          "answer": "Bedroom Door",
+          "score": 5
+        },
+        {
+          "answer": "Office Door",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name a place people go when they might take a lot of coins with them.",
+      "answers": [
+        {
+          "answer": "Casinos",
+          "score": 62
+        },
+        {
+          "answer": "Video Arcade",
+          "score": 26
+        },
+        {
+          "answer": "Laundromat",
+          "score": 8
+        },
+        {
+          "answer": "Bank",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a popular brand of men's underwear.",
+      "answers": [
+        {
+          "answer": "Hanes",
+          "score": 59
+        },
+        {
+          "answer": "Fruit Of The Loom",
+          "score": 22
+        },
+        {
+          "answer": "Jockey",
+          "score": 11
+        },
+        {
+          "answer": "Calvin Klein",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a fictional character with two identities.",
+      "answers": [
+        {
+          "answer": "Superman/Clark K.",
+          "score": 47
+        },
+        {
+          "answer": "Dr. Jekyll/Hyde",
+          "score": 38
+        },
+        {
+          "answer": "Spiderman/Peter P",
+          "score": 8
+        },
+        {
+          "answer": "Hulk/Bruce B.",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "What do you do when another driver cuts you off in traffic?",
+      "answers": [
+        {
+          "answer": "Curse/Yell",
+          "score": 39
+        },
+        {
+          "answer": "Ignore Them",
+          "score": 25
+        },
+        {
+          "answer": "Flip Off/Gesture",
+          "score": 19
+        },
+        {
+          "answer": "Honk Horn",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "question": "If he ran out of money, name something of value a man might bet in a poker game.",
+      "answers": [
+        {
+          "answer": "Watch",
+          "score": 37
+        },
+        {
+          "answer": "CAR",
+          "score": 30
+        },
+        {
+          "answer": "Jewelry/Ring",
+          "score": 23
+        },
+        {
+          "answer": "House",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name a place where you might see Santa before Christmas.",
+      "answers": [
+        {
+          "answer": "Malls/Stores",
+          "score": 86
+        },
+        {
+          "answer": "Tv/Movies",
+          "score": 7
+        },
+        {
+          "answer": "Street Corners",
+          "score": 2
+        },
+        {
+          "answer": "Parades",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a musical instrument that a child prodigy might play.",
+      "answers": [
+        {
+          "answer": "Piano",
+          "score": 53
+        },
+        {
+          "answer": "Violin",
+          "score": 34
+        },
+        {
+          "answer": "Guitar",
+          "score": 5
+        },
+        {
+          "answer": "Flute",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Tell me a phrase people yell out when somebody knocks on the door.",
+      "answers": [
+        {
+          "answer": "\"Who Is It?\"",
+          "score": 66
+        },
+        {
+          "answer": "\"Come In\"",
+          "score": 15
+        },
+        {
+          "answer": "\"I'M Coming\"",
+          "score": 10
+        },
+        {
+          "answer": "\"Just A Minute\"",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name an animal a child dreams about owning.",
+      "answers": [
+        {
+          "answer": "DOG",
+          "score": 64
+        },
+        {
+          "answer": "Pony",
+          "score": 25
+        },
+        {
+          "answer": "Elephant",
+          "score": 4
+        },
+        {
+          "answer": "Monkey",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name something a millionaire probably has more than one of.",
+      "answers": [
+        {
+          "answer": "CAR",
+          "score": 64
+        },
+        {
+          "answer": "House",
+          "score": 21
+        },
+        {
+          "answer": "One Million",
+          "score": 7
+        },
+        {
+          "answer": "Girlfriend",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name a kind of bank that doesn't deal in money.",
+      "answers": [
+        {
+          "answer": "Blood Bank",
+          "score": 57
+        },
+        {
+          "answer": "Sperm Bank",
+          "score": 26
+        },
+        {
+          "answer": "Food Bank",
+          "score": 8
+        },
+        {
+          "answer": "River Bank",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "What do most people look forward to doing on Sunday morning?",
+      "answers": [
+        {
+          "answer": "Sleeping/Relaxing",
+          "score": 51
+        },
+        {
+          "answer": "Going To Church",
+          "score": 23
+        },
+        {
+          "answer": "Reading Newspaper",
+          "score": 17
+        },
+        {
+          "answer": "Watching Tv",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Give me a word that rhymes with \"spouse.\"",
+      "answers": [
+        {
+          "answer": "Mouse",
+          "score": 45
+        },
+        {
+          "answer": "House",
+          "score": 27
+        },
+        {
+          "answer": "Louse",
+          "score": 22
+        },
+        {
+          "answer": "Douse",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name something people buy for the beach that contains the word \"beach.\"",
+      "answers": [
+        {
+          "answer": "Ball",
+          "score": 50
+        },
+        {
+          "answer": "Towel/Blanket",
+          "score": 34
+        },
+        {
+          "answer": "Chair",
+          "score": 7
+        },
+        {
+          "answer": "Umbrella",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something that has a face.",
+      "answers": [
+        {
+          "answer": "Clock/Watch",
+          "score": 44
+        },
+        {
+          "answer": "Person",
+          "score": 33
+        },
+        {
+          "answer": "Animal",
+          "score": 16
+        },
+        {
+          "answer": "Mask",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question": "Name a specific place where you'd see bunk beds.",
+      "answers": [
+        {
+          "answer": "Kid'S Bedroom",
+          "score": 70
+        },
+        {
+          "answer": "Summer Camp",
+          "score": 11
+        },
+        {
+          "answer": "Military Barracks",
+          "score": 7
+        },
+        {
+          "answer": "Furniture Store",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something a husband usually asks his wife's permission to do.",
+      "answers": [
+        {
+          "answer": "Out With The Guys",
+          "score": 66
+        },
+        {
+          "answer": "Spend Money",
+          "score": 15
+        },
+        {
+          "answer": "Trip/Camping",
+          "score": 8
+        },
+        {
+          "answer": "Go Golfing",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name a beverage kids drink with dinner.",
+      "answers": [
+        {
+          "answer": "Milk",
+          "score": 65
+        },
+        {
+          "answer": "Soda",
+          "score": 15
+        },
+        {
+          "answer": "Fruit Juice",
+          "score": 8
+        },
+        {
+          "answer": "TEA",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name a part of their bodies pregnant women complain about.",
+      "answers": [
+        {
+          "answer": "Back",
+          "score": 36
+        },
+        {
+          "answer": "Stomach",
+          "score": 28
+        },
+        {
+          "answer": "Feet/Ankles",
+          "score": 23
+        },
+        {
+          "answer": "Legs",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something that comes in small, medium, and large.",
+      "answers": [
+        {
+          "answer": "Clothes",
+          "score": 60
+        },
+        {
+          "answer": "Drinks",
+          "score": 23
+        },
+        {
+          "answer": "People",
+          "score": 6
+        },
+        {
+          "answer": "Fries",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something you'd hate to lose at the mall.",
+      "answers": [
+        {
+          "answer": "Purse/Wallet",
+          "score": 58
+        },
+        {
+          "answer": "Keys",
+          "score": 20
+        },
+        {
+          "answer": "CAR",
+          "score": 8
+        },
+        {
+          "answer": "Kids",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something people give to others as proof of their love.",
+      "answers": [
+        {
+          "answer": "Ring/Jewelry",
+          "score": 56
+        },
+        {
+          "answer": "Flowers",
+          "score": 29
+        },
+        {
+          "answer": "Kiss",
+          "score": 5
+        },
+        {
+          "answer": "Money",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name the thing you like to do most at a party.",
+      "answers": [
+        {
+          "answer": "Dance",
+          "score": 45
+        },
+        {
+          "answer": "Talk/Mingle",
+          "score": 28
+        },
+        {
+          "answer": "Drink",
+          "score": 16
+        },
+        {
+          "answer": "EAT",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name an activity where your fingers might get tired.",
+      "answers": [
+        {
+          "answer": "Typing",
+          "score": 67
+        },
+        {
+          "answer": "Playing Piano",
+          "score": 14
+        },
+        {
+          "answer": "Knit/Needlepoint",
+          "score": 6
+        },
+        {
+          "answer": "Video Games",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Tell me something described as \"prime.\"",
+      "answers": [
+        {
+          "answer": "Prime Ribs/Meat",
+          "score": 64
+        },
+        {
+          "answer": "Prime Time",
+          "score": 16
+        },
+        {
+          "answer": "Prime Rate",
+          "score": 7
+        },
+        {
+          "answer": "Prime Suspect",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something a man owns that he doesn't like his wife to use.",
+      "answers": [
+        {
+          "answer": "His Razor",
+          "score": 50
+        },
+        {
+          "answer": "His Car/Truck",
+          "score": 24
+        },
+        {
+          "answer": "His Tools",
+          "score": 13
+        },
+        {
+          "answer": "His Underwear",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name an invention that has brought people closer together.",
+      "answers": [
+        {
+          "answer": "Phone",
+          "score": 45
+        },
+        {
+          "answer": "Computer/Internet",
+          "score": 27
+        },
+        {
+          "answer": "Television",
+          "score": 12
+        },
+        {
+          "answer": "CAR",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name a place dogs are known to drink from.",
+      "answers": [
+        {
+          "answer": "Toilet",
+          "score": 43
+        },
+        {
+          "answer": "Dish/Bowl",
+          "score": 31
+        },
+        {
+          "answer": "Street/Puddle",
+          "score": 12
+        },
+        {
+          "answer": "Pool",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question": "Name something Scotch.",
+      "answers": [
+        {
+          "answer": "Tape",
+          "score": 39
+        },
+        {
+          "answer": "Whiskey",
+          "score": 38
+        },
+        {
+          "answer": "Kilt",
+          "score": 11
+        },
+        {
+          "answer": "Butterscotch",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something your body tells you it's time to do.",
+      "answers": [
+        {
+          "answer": "Sleep",
+          "score": 33
+        },
+        {
+          "answer": "EAT",
+          "score": 28
+        },
+        {
+          "answer": "Go To Bathroom",
+          "score": 28
+        },
+        {
+          "answer": "Wake Up",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name something that whistles.",
+      "answers": [
+        {
+          "answer": "Teakettle",
+          "score": 29
+        },
+        {
+          "answer": "Train",
+          "score": 28
+        },
+        {
+          "answer": "Bird",
+          "score": 21
+        },
+        {
+          "answer": "A Person",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "question": "Name something you own that you talk to as if it were a person.",
+      "answers": [
+        {
+          "answer": "Pets",
+          "score": 49
+        },
+        {
+          "answer": "Plants",
+          "score": 16
+        },
+        {
+          "answer": "CAR",
+          "score": 15
+        },
+        {
+          "answer": "Television",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "Name something associated with ancient Egypt.",
+      "answers": [
+        {
+          "answer": "The Pyramids",
+          "score": 61
+        },
+        {
+          "answer": "Pharaohs/King Tut",
+          "score": 11
+        },
+        {
+          "answer": "The Sphinx",
+          "score": 10
+        },
+        {
+          "answer": "The Mummies",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name something people do at the airport while waiting for an airplane.",
+      "answers": [
+        {
+          "answer": "Read",
+          "score": 52
+        },
+        {
+          "answer": "Eat/Drink",
+          "score": 30
+        },
+        {
+          "answer": "Sleep",
+          "score": 5
+        },
+        {
+          "answer": "Watch People",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name an occupation in which people have a chance to become famous.",
+      "answers": [
+        {
+          "answer": "Acting",
+          "score": 50
+        },
+        {
+          "answer": "Musician/Singer",
+          "score": 19
+        },
+        {
+          "answer": "Athlete",
+          "score": 16
+        },
+        {
+          "answer": "Politician",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something specific that people grind.",
+      "answers": [
+        {
+          "answer": "Teeth",
+          "score": 40
+        },
+        {
+          "answer": "Coffee",
+          "score": 35
+        },
+        {
+          "answer": "Pepper",
+          "score": 10
+        },
+        {
+          "answer": "Meat",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something you look out for when you're driving.",
+      "answers": [
+        {
+          "answer": "Pedestrians",
+          "score": 49
+        },
+        {
+          "answer": "Other Cars",
+          "score": 31
+        },
+        {
+          "answer": "Drunk Drivers",
+          "score": 5
+        },
+        {
+          "answer": "Animals",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something that people get dismissed from.",
+      "answers": [
+        {
+          "answer": "School",
+          "score": 48
+        },
+        {
+          "answer": "Jury Duty/Court",
+          "score": 21
+        },
+        {
+          "answer": "JOB",
+          "score": 15
+        },
+        {
+          "answer": "Military",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name a tradition observed at baseball games.",
+      "answers": [
+        {
+          "answer": "National Anthem",
+          "score": 45
+        },
+        {
+          "answer": "Eating/Drinking",
+          "score": 28
+        },
+        {
+          "answer": "7Th Inn'G Stretch",
+          "score": 13
+        },
+        {
+          "answer": "Doing \"The Wave\"",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Give a word to describe something that is untrue.",
+      "answers": [
+        {
+          "answer": "Lie/Liar",
+          "score": 44
+        },
+        {
+          "answer": "False/Falsehood",
+          "score": 38
+        },
+        {
+          "answer": "Fake",
+          "score": 4
+        },
+        {
+          "answer": "FIB",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Give me a word that starts with the letter \"Z.\"",
+      "answers": [
+        {
+          "answer": "Zebra",
+          "score": 69
+        },
+        {
+          "answer": "ZOO",
+          "score": 13
+        },
+        {
+          "answer": "Zinc",
+          "score": 3
+        },
+        {
+          "answer": "Zipper",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question": "Name something on your body that moves when you jump around.",
+      "answers": [
+        {
+          "answer": "Chest",
+          "score": 46
+        },
+        {
+          "answer": "Arms",
+          "score": 24
+        },
+        {
+          "answer": "Hair",
+          "score": 10
+        },
+        {
+          "answer": "Belly",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Tell me something that has the word \"hood\" in it.",
+      "answers": [
+        {
+          "answer": "Neighborhood",
+          "score": 65
+        },
+        {
+          "answer": "Robin Hood",
+          "score": 13
+        },
+        {
+          "answer": "Childhood",
+          "score": 5
+        },
+        {
+          "answer": "Fatherhood",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something people skip.",
+      "answers": [
+        {
+          "answer": "Meals",
+          "score": 50
+        },
+        {
+          "answer": "Class",
+          "score": 16
+        },
+        {
+          "answer": "Rope",
+          "score": 16
+        },
+        {
+          "answer": "Work",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something an inconsiderate person will hog from others.",
+      "answers": [
+        {
+          "answer": "Food",
+          "score": 44
+        },
+        {
+          "answer": "Remote Control",
+          "score": 32
+        },
+        {
+          "answer": "Bathroom",
+          "score": 7
+        },
+        {
+          "answer": "Covers",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name a reason it's good to be Jennifer Lopez.",
+      "answers": [
+        {
+          "answer": "\"Got Bucks\"",
+          "score": 35
+        },
+        {
+          "answer": "\"Got Ben\"",
+          "score": 22
+        },
+        {
+          "answer": "\"Got Back/Bod\"",
+          "score": 19
+        },
+        {
+          "answer": "\"Got Beauty\"",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "question": "Name a place where you have used a lot of excuses.",
+      "answers": [
+        {
+          "answer": "Work",
+          "score": 53
+        },
+        {
+          "answer": "School",
+          "score": 21
+        },
+        {
+          "answer": "Doctor/Dentist",
+          "score": 7
+        },
+        {
+          "answer": "BAR",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question": "Name something that rumbles.",
+      "answers": [
+        {
+          "answer": "Thunder/Storms",
+          "score": 32
+        },
+        {
+          "answer": "Stomachs",
+          "score": 28
+        },
+        {
+          "answer": "Car/Engines",
+          "score": 16
+        },
+        {
+          "answer": "Earthquakes",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name something associated with a witch.",
+      "answers": [
+        {
+          "answer": "Broomstick",
+          "score": 50
+        },
+        {
+          "answer": "Halloween",
+          "score": 19
+        },
+        {
+          "answer": "Pointed Hat",
+          "score": 8
+        },
+        {
+          "answer": "Spells/Magic Brew",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question": "Name a specific household chore a bachelor neglects.",
+      "answers": [
+        {
+          "answer": "Doing Dishes",
+          "score": 36
+        },
+        {
+          "answer": "Cleaning Bathroom",
+          "score": 22
+        },
+        {
+          "answer": "Dusting",
+          "score": 15
+        },
+        {
+          "answer": "Doing Laundry",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Name something you'd like to be hypnotized to stop doing.",
+      "answers": [
+        {
+          "answer": "Smoking",
+          "score": 54
+        },
+        {
+          "answer": "Overeating",
+          "score": 14
+        },
+        {
+          "answer": "Drinking",
+          "score": 7
+        },
+        {
+          "answer": "Snoring",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question": "Name something people walk out on.",
+      "answers": [
+        {
+          "answer": "A Movie",
+          "score": 37
+        },
+        {
+          "answer": "A Relationship",
+          "score": 21
+        },
+        {
+          "answer": "An Argument",
+          "score": 12
+        },
+        {
+          "answer": "A Deck",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question": "Name something you see in almost every hamster's cage.",
+      "answers": [
+        {
+          "answer": "Wheel",
+          "score": 37
+        },
+        {
+          "answer": "Hamster",
+          "score": 18
+        },
+        {
+          "answer": "Food",
+          "score": 12
+        },
+        {
+          "answer": "Water Bottle",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question": "Name something people sterilize.",
+      "answers": [
+        {
+          "answer": "Baby Bottle",
+          "score": 39
+        },
+        {
+          "answer": "Needle",
+          "score": 16
+        },
+        {
+          "answer": "Thermometer",
+          "score": 9
+        },
+        {
+          "answer": "Scalpel",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question": "Tell me a prank kids pull on Halloween.",
+      "answers": [
+        {
+          "answer": "Egg Houses",
+          "score": 31
+        },
+        {
+          "answer": "T.P. Houses",
+          "score": 14
+        },
+        {
+          "answer": "Ding-Dong Ditches",
+          "score": 13
+        },
+        {
+          "answer": "Smash Pumpkins",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "question": "Name something on a car that might break but wouldn't keep you from driving it.",
+      "answers": [
+        {
+          "answer": "Lights",
+          "score": 24
+        },
+        {
+          "answer": "Window Wipers",
+          "score": 22
+        },
+        {
+          "answer": "Radio/Cd Player",
+          "score": 10
+        },
+        {
+          "answer": "Mirror",
+          "score": 8
+        }
+      ]
+    }
+  ]
+}
