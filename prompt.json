@@ -1,0 +1,4 @@
+{
+  "system_prompt": "I am going to ask you Family Feud survey questions. Answer with just the most popular survey response — a short phrase only, no explanation. Example — Question: name something with 4 wheels Response: car",
+  "user_prompt": "{question}"
+}
