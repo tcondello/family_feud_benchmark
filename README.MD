@@ -62,5 +62,22 @@ python run_benchmark.py \
 Wall-clock time tracks the slowest provider, not the sum of every model.
 Use `--sequential-models` only for the old one-at-a-time behavior.
 
+Instrumented answers (latency, tokens, estimated USD from `pricing.json`) are
+stored on new results. Compare misses across models:
+
+```bash
+python score_benchmark.py \
+  --responses responses/multi_provider_all_questions.json \
+  --questions questions/all_questions.json \
+  --output responses/multi_provider_all_scores.json
+
+python compare_misses.py \
+  --responses responses/multi_provider_all_questions.json \
+  --questions questions/all_questions.json \
+  --only-disagreements \
+  --output-json responses/miss_comparison.json \
+  --output-csv responses/miss_comparison.csv
+```
+
 `openAI_family_feud.py` remains as a single-provider OpenAI helper (now on
 `gpt-5.5`). Prefer `run_benchmark.py` for multi-provider runs.

@@ -7,13 +7,15 @@ import argparse
 import json
 import re
 from pathlib import Path
+from typing import Any
+
+from response_format import entry_metrics, entry_question, entry_response
 
 
 def normalize(text: str) -> str:
     text = text.lower().strip()
     text = re.sub(r"[^a-z0-9\s]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
-    # Drop leading articles for soft matching.
     for prefix in ("a ", "an ", "the "):
         if text.startswith(prefix):
             text = text[len(prefix) :]
@@ -63,6 +65,73 @@ def load_questions(path: str) -> dict[str, list[dict]]:
     return by_question
 
 
+def _mean(values: list[float]) -> float | None:
+    return round(sum(values) / len(values), 4) if values else None
+
+
+def score_model(
+    model_key: str, items: list[dict[str, Any]], boards: dict[str, list[dict]]
+) -> dict[str, Any]:
+    total = 0
+    hits = 0
+    points = 0
+    details = []
+    latencies: list[float] = []
+    prompt_tokens = 0
+    completion_tokens = 0
+    cost_usd = 0.0
+    instrumented = 0
+
+    for item in items:
+        if not isinstance(item, dict) or not item:
+            continue
+        question = entry_question(item)
+        answer = entry_response(item)
+        metrics = entry_metrics(item)
+        answers = boards.get(question, [])
+        score, matched = match_score(str(answer), answers)
+        total += 1
+        if score > 0:
+            hits += 1
+            points += score
+        detail = {
+            "question": question,
+            "response": answer,
+            "matched": matched,
+            "score": score,
+            "hit": score > 0,
+        }
+        if metrics["latency_s"] is not None:
+            detail["latency_s"] = metrics["latency_s"]
+            latencies.append(float(metrics["latency_s"]))
+            instrumented += 1
+        if metrics["prompt_tokens"] is not None:
+            detail["prompt_tokens"] = metrics["prompt_tokens"]
+            prompt_tokens += int(metrics["prompt_tokens"] or 0)
+        if metrics["completion_tokens"] is not None:
+            detail["completion_tokens"] = metrics["completion_tokens"]
+            completion_tokens += int(metrics["completion_tokens"] or 0)
+        if metrics["cost_usd"] is not None:
+            detail["cost_usd"] = metrics["cost_usd"]
+            cost_usd += float(metrics["cost_usd"] or 0.0)
+        details.append(detail)
+
+    summary: dict[str, Any] = {
+        "questions": total,
+        "hits": hits,
+        "hit_rate": round(hits / total, 4) if total else 0.0,
+        "points": points,
+        "avg_points": round(points / total, 2) if total else 0.0,
+        "instrumented_answers": instrumented,
+        "avg_latency_s": _mean(latencies),
+        "prompt_tokens": prompt_tokens or None,
+        "completion_tokens": completion_tokens or None,
+        "cost_usd": round(cost_usd, 6) if instrumented else None,
+        "details": details,
+    }
+    return summary
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -86,46 +155,23 @@ def main() -> None:
     with open(args.responses, encoding="utf-8") as handle:
         responses = json.load(handle)
 
-    # Support both legacy list format and multi-provider dict format.
     if isinstance(responses, list):
         responses = {"legacy": responses}
 
     summary: dict[str, dict] = {}
     for model_key, items in responses.items():
-        total = 0
-        hits = 0
-        points = 0
-        details = []
-        for item in items:
-            if not isinstance(item, dict) or not item:
-                continue
-            question, answer = next(iter(item.items()))
-            answers = boards.get(question, [])
-            score, matched = match_score(str(answer), answers)
-            total += 1
-            if score > 0:
-                hits += 1
-                points += score
-            details.append(
-                {
-                    "question": question,
-                    "response": answer,
-                    "matched": matched,
-                    "score": score,
-                }
-            )
-        summary[model_key] = {
-            "questions": total,
-            "hits": hits,
-            "hit_rate": round(hits / total, 4) if total else 0.0,
-            "points": points,
-            "avg_points": round(points / total, 2) if total else 0.0,
-            "details": details,
-        }
+        model_summary = score_model(model_key, items, boards)
+        summary[model_key] = model_summary
+        extra = ""
+        if model_summary["avg_latency_s"] is not None:
+            extra += f" avg_latency={model_summary['avg_latency_s']:.2f}s"
+        if model_summary["cost_usd"] is not None:
+            extra += f" cost=${model_summary['cost_usd']:.4f}"
         print(
-            f"{model_key}: hits={hits}/{total} "
-            f"({summary[model_key]['hit_rate']:.1%}) "
-            f"points={points} avg={summary[model_key]['avg_points']}"
+            f"{model_key}: hits={model_summary['hits']}/{model_summary['questions']} "
+            f"({model_summary['hit_rate']:.1%}) "
+            f"points={model_summary['points']} avg={model_summary['avg_points']}"
+            f"{extra}"
         )
 
     output = Path(args.output)

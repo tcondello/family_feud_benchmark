@@ -21,7 +21,11 @@ from typing import Any, Callable
 
 from dotenv import load_dotenv
 
+from response_format import make_result_entry
+
 load_dotenv()
+
+PRICING_PATH = Path(__file__).resolve().parent / "pricing.json"
 
 SYSTEM_PROMPT = (
     "I am going to ask you a series of questions. When you answer I want you to "
@@ -47,6 +51,38 @@ class ModelSpec:
     @property
     def key(self) -> str:
         return f"{self.provider}/{self.label}"
+
+
+@dataclass
+class QueryResult:
+    text: str
+    latency_s: float = 0.0
+    prompt_tokens: int = 0
+    completion_tokens: int = 0
+
+
+def load_pricing() -> dict[str, dict[str, float]]:
+    if not PRICING_PATH.exists():
+        return {}
+    raw = json.loads(PRICING_PATH.read_text(encoding="utf-8"))
+    return {
+        key: value
+        for key, value in raw.items()
+        if isinstance(value, dict) and "input" in value and "output" in value
+    }
+
+
+PRICING = load_pricing()
+
+
+def estimate_cost_usd(model_key: str, prompt_tokens: int, completion_tokens: int) -> float:
+    rates = PRICING.get(model_key)
+    if not rates:
+        return 0.0
+    return (
+        (prompt_tokens / 1_000_000.0) * float(rates["input"])
+        + (completion_tokens / 1_000_000.0) * float(rates["output"])
+    )
 
 
 # Latest working chat models verified against the injected runtime secrets.
@@ -187,7 +223,7 @@ def _retry_delay_seconds(exc: Exception, fallback: float) -> float:
     return fallback
 
 
-def with_retries(fn: Callable[[], str], *, attempts: int = 8) -> str:
+def with_retries(fn: Callable[[], QueryResult], *, attempts: int = 8) -> QueryResult:
     delay = 1.0
     last_exc: Exception | None = None
     for attempt in range(1, attempts + 1):
@@ -220,10 +256,20 @@ def with_retries(fn: Callable[[], str], *, attempts: int = 8) -> str:
     raise RuntimeError(f"unreachable retry loop: {last_exc}")
 
 
-def call_openai(model: str, question: str) -> str:
+def _usage_from_openai(response: Any) -> tuple[int, int]:
+    usage = getattr(response, "usage", None)
+    if not usage:
+        return 0, 0
+    return int(getattr(usage, "prompt_tokens", 0) or 0), int(
+        getattr(usage, "completion_tokens", 0) or 0
+    )
+
+
+def call_openai(model: str, question: str) -> QueryResult:
     client = get_openai_client()
 
-    def _call() -> str:
+    def _call() -> QueryResult:
+        start = time.perf_counter()
         response = client.chat.completions.create(
             model=model,
             messages=[
@@ -232,36 +278,54 @@ def call_openai(model: str, question: str) -> str:
             ],
             max_completion_tokens=256,
         )
-        return clean_answer(response.choices[0].message.content)
+        latency = time.perf_counter() - start
+        prompt_tok, completion_tok = _usage_from_openai(response)
+        return QueryResult(
+            text=clean_answer(response.choices[0].message.content),
+            latency_s=latency,
+            prompt_tokens=prompt_tok,
+            completion_tokens=completion_tok,
+        )
 
     return with_retries(_call)
 
 
-def call_anthropic(model: str, question: str) -> str:
+def call_anthropic(model: str, question: str) -> QueryResult:
     client = get_anthropic_client()
 
-    def _call() -> str:
+    def _call() -> QueryResult:
+        start = time.perf_counter()
         response = client.messages.create(
             model=model,
             max_tokens=64,
             system=SYSTEM_PROMPT,
             messages=[{"role": "user", "content": question}],
         )
+        latency = time.perf_counter() - start
         text = "".join(
             block.text for block in response.content if hasattr(block, "text")
         )
-        return clean_answer(text)
+        usage = getattr(response, "usage", None)
+        prompt_tok = int(getattr(usage, "input_tokens", 0) or 0) if usage else 0
+        completion_tok = int(getattr(usage, "output_tokens", 0) or 0) if usage else 0
+        return QueryResult(
+            text=clean_answer(text),
+            latency_s=latency,
+            prompt_tokens=prompt_tok,
+            completion_tokens=completion_tok,
+        )
 
     return with_retries(_call)
 
 
-def call_google(model: str, question: str) -> str:
+def call_google(model: str, question: str) -> QueryResult:
     from google.genai import types
 
     client = get_google_client()
 
-    def _call() -> str:
+    def _call() -> QueryResult:
         with _GOOGLE_CALL_LOCK:
+            start = time.perf_counter()
             response = client.models.generate_content(
                 model=model,
                 contents=question,
@@ -270,15 +334,27 @@ def call_google(model: str, question: str) -> str:
                     max_output_tokens=1024,
                 ),
             )
-            return clean_answer(getattr(response, "text", None))
+            latency = time.perf_counter() - start
+            usage = getattr(response, "usage_metadata", None)
+            prompt_tok = int(getattr(usage, "prompt_token_count", 0) or 0) if usage else 0
+            completion_tok = (
+                int(getattr(usage, "candidates_token_count", 0) or 0) if usage else 0
+            )
+            return QueryResult(
+                text=clean_answer(getattr(response, "text", None)),
+                latency_s=latency,
+                prompt_tokens=prompt_tok,
+                completion_tokens=completion_tok,
+            )
 
     return with_retries(_call)
 
 
-def call_fireworks(model: str, question: str) -> str:
+def call_fireworks(model: str, question: str) -> QueryResult:
     client = get_fireworks_client()
 
-    def _call() -> str:
+    def _call() -> QueryResult:
+        start = time.perf_counter()
         response = client.chat.completions.create(
             model=model,
             messages=[
@@ -288,16 +364,23 @@ def call_fireworks(model: str, question: str) -> str:
             max_tokens=512,
             temperature=0,
         )
+        latency = time.perf_counter() - start
         message = response.choices[0].message
-        return extract_message_answer(
-            message.content,
-            getattr(message, "reasoning_content", None),
+        prompt_tok, completion_tok = _usage_from_openai(response)
+        return QueryResult(
+            text=extract_message_answer(
+                message.content,
+                getattr(message, "reasoning_content", None),
+            ),
+            latency_s=latency,
+            prompt_tokens=prompt_tok,
+            completion_tokens=completion_tok,
         )
 
     return with_retries(_call)
 
 
-CALLERS: dict[str, Callable[[str, str], str]] = {
+CALLERS: dict[str, Callable[[str, str], QueryResult]] = {
     "openai": call_openai,
     "anthropic": call_anthropic,
     "google": call_google,
@@ -318,7 +401,7 @@ def available_models(selected: set[str] | None = None) -> list[ModelSpec]:
     return models
 
 
-def load_existing_results(path: Path) -> dict[str, list[dict[str, str]]]:
+def load_existing_results(path: Path) -> dict[str, list[dict[str, Any]]]:
     if not path.exists():
         return {}
     try:
@@ -330,7 +413,7 @@ def load_existing_results(path: Path) -> dict[str, list[dict[str, str]]]:
     return {}
 
 
-def write_results(path: Path, results: dict[str, list[dict[str, str]]]) -> None:
+def write_results(path: Path, results: dict[str, list[dict[str, Any]]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(results, indent=4) + "\n", encoding="utf-8")
@@ -342,17 +425,17 @@ def run_model_parallel(
     questions: list[dict],
     *,
     sleep_s: float,
-    existing: list[dict[str, str]] | None,
+    existing: list[dict[str, Any]] | None,
     workers: int,
-    results: dict[str, list[dict[str, str]]],
+    results: dict[str, list[dict[str, Any]]],
     output_path: Path,
-) -> list[dict[str, str]]:
+) -> list[dict[str, Any]]:
     """Fill answers for one model with in-flight concurrency (TriBonds-style)."""
     caller = CALLERS[spec.provider]
     start_index = len(existing or [])
     total = len(questions)
     # Pre-size slot list so out-of-order worker completions stay ordered.
-    slots: list[dict[str, str] | None] = [None] * total
+    slots: list[dict[str, Any] | None] = [None] * total
     for i, item in enumerate(existing or []):
         slots[i] = item
 
@@ -374,39 +457,57 @@ def run_model_parallel(
     completed = start_index
     lock = threading.Lock()
 
-    def answer_one(index: int) -> tuple[int, dict[str, str]]:
+    def answer_one(index: int) -> tuple[int, dict[str, Any]]:
         item = questions[index]
         question = item.get("question") or ""
         if not question:
-            return index, {"": ""}
+            return index, make_result_entry("", "")
         try:
-            answer = caller(spec.model, question)
+            result = caller(spec.model, question)
         except Exception as exc:  # noqa: BLE001
-            answer = f"ERROR: {type(exc).__name__}: {exc}"
+            result = QueryResult(text=f"ERROR: {type(exc).__name__}: {exc}")
         if sleep_s > 0:
             time.sleep(sleep_s)
-        return index, {question: answer}
+        cost = estimate_cost_usd(
+            spec.key, result.prompt_tokens, result.completion_tokens
+        )
+        return index, make_result_entry(
+            question,
+            result.text,
+            latency_s=result.latency_s,
+            prompt_tokens=result.prompt_tokens,
+            completion_tokens=result.completion_tokens,
+            cost_usd=cost,
+        )
 
     with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
         futures = {pool.submit(answer_one, idx): idx for idx in pending_indices}
         for future in as_completed(futures):
             index, payload = future.result()
-            question, answer = next(iter(payload.items()))
+            question = str(payload.get("question", ""))
+            answer = str(payload.get("response", ""))
+            latency = payload.get("latency_s")
+            cost = payload.get("cost_usd")
             with lock:
                 slots[index] = payload
                 completed += 1
                 done_since_checkpoint += 1
+                extra = ""
+                if latency is not None:
+                    extra = f" ({latency:.2f}s"
+                    if cost:
+                        extra += f", ${cost:.6f}"
+                    extra += ")"
                 print(
-                    f"[{spec.key} {completed}/{total}] {question} -> {answer}",
+                    f"[{spec.key} {completed}/{total}] {question} -> {answer}{extra}",
                     flush=True,
                 )
                 if (
                     done_since_checkpoint >= CHECKPOINT_EVERY
                     or completed == total
                 ):
-                    snapshot = [s for s in slots if s is not None]
                     # Only checkpoint contiguous prefix so resume stays correct.
-                    contiguous: list[dict[str, str]] = []
+                    contiguous: list[dict[str, Any]] = []
                     for slot in slots:
                         if slot is None:
                             break
