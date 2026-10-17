@@ -1,19 +1,349 @@
 {
     "openai/gpt-5.5": [
         {
-            "Name an occupation that begins with the letter 'J.'": "Janitor"
+            "Name an occupation that begins with the letter 'J.'": "Journalist"
         },
         {
-            "Name something that might be brewing": "Coffee"
+            "Name something that might be brewing.": "coffee"
         },
         {
-            "Name something with teeth": "comb"
+            "Name something with teeth.": "comb"
         },
         {
-            "Name the most useful body part that begins with the letter 'L.'": ""
+            "Name the most useful body part that begins with the letter 'L.'": "Leg"
         },
         {
             "Name something an athlete might break.": "record"
+        },
+        {
+            "Name something associated with vampires.": "Garlic"
+        },
+        {
+            "Name something in a bakery a baker might call his wife.": "Honey bun"
+        },
+        {
+            "Name something in a person's closet that only comes out on special occasions.": "Tuxedo"
+        },
+        {
+            "Name something you might see a commercial for during a baseball game.": "beer"
+        },
+        {
+            "If your dog ran away, name something you'd be surprised he took with him.": "His leash"
+        },
+        {
+            "Name an occasion where parents force their kids to wear a certain outfit.": "Wedding"
+        },
+        {
+            "Name a reason that someone might ride their bike to work.": "Save money"
+        },
+        {
+            "Name something that might come out of your nose when you laugh.": "snot"
+        },
+        {
+            "Name qualities of a bad boss.": "Micromanaging, poor communication, favoritism, dishonesty, lack of empathy, blame-shifting, unrealistic expectations, indecisiveness."
+        },
+        {
+            "Name a food dogs love just as much as humans do.": "Peanut butter"
+        },
+        {
+            "Name something that shakes, rattles, and rolls.": "train"
+        },
+        {
+            "Other than feet, name something that runs.": "nose"
+        },
+        {
+            "Name a word that rhymes with \u201celection.\u201d": "selection"
+        },
+        {
+            "Name something you would ask the Wizard for in the Land of Oz.": "a brain"
+        },
+        {
+            "Name a soda that people like to drink.": "Coca-Cola"
+        },
+        {
+            "Name something people might only do once a week.": "Go to church"
+        },
+        {
+            "Name something you keep in your car.": "spare tire"
+        },
+        {
+            "Name another word people say for \u201crear end.\u201d": "butt"
+        },
+        {
+            "Name an activity that's easier to do when it's windy.": "Flying a kite"
+        },
+        {
+            "Name an occasion for which you might wear lucky underwear.": "A date"
+        },
+        {
+            "Name a food that you might lick.": "Ice cream"
+        },
+        {
+            "Name something you'd do in front of a mirror.": "Brush your hair"
+        },
+        {
+            "Name something people tend to fall out of.": "bed"
+        },
+        {
+            "Name a reason to celebrate a party.": "Birthday"
+        },
+        {
+            "Name something you might eat with crackers.": "cheese"
+        },
+        {
+            "Name ways to get rich quickly.": "Start a successful business, sell a valuable product, build a high-income skill, invest wisely, inherit wealth, win a lottery, or create viral content."
+        },
+        {
+            "Name something you might do at night.": "sleep"
+        },
+        {
+            "Name hot things.": "Fire, the sun, lava, boiling water, a stove"
+        },
+        {
+            "Name gifts to surprise a person you know.": "Flowers, chocolates, a handwritten letter, jewelry, a book, perfume, a surprise dinner, concert tickets, a photo album, a gift card"
+        },
+        {
+            "Name things you would post on social media.": "Photos, videos, status updates, memes, articles, announcements"
+        },
+        {
+            "Name an animal that starts with the letter \"E.\"": "Elephant"
+        },
+        {
+            "Name a word that rhymes with \"teeny.\"": "weeny"
+        },
+        {
+            "Name something that gets pumped up.": "tire"
+        },
+        {
+            "Name something you do that rhymes with \"grow up.\"": "throw up"
+        },
+        {
+            "Name something that's easier to catch than catching a man.": "a cold"
+        },
+        {
+            "Name something to which a lot of kids seem almost addicted.": "Video games"
+        },
+        {
+            "Fill in the blank: You're in deep ____.": "trouble"
+        },
+        {
+            "Name something people ride that causes them to throw up.": "Roller coaster"
+        },
+        {
+            "Fill in the blank: I did everything for my guy and I never got a ____.": ""
+        },
+        {
+            "Name something in your refrigerator that you should thank a cow for.": "Milk"
+        },
+        {
+            "Name something that drips.": "faucet"
+        },
+        {
+            "Name something kids just love to jump on.": "trampoline"
+        },
+        {
+            "Give me a three-letter word that starts with the letter \"Z.\"": "zip"
+        },
+        {
+            "Name something you'd do if your date took you to Chuck E. Cheese.": "Leave"
+        },
+        {
+            "Name your favorite thing to do at parties.": "Dance"
+        },
+        {
+            "Name something people say is on the house.": "Drinks"
+        },
+        {
+            "Which of the Seven Dwarfs describes how you feel after a couple of drinks?": "Happy"
+        },
+        {
+            "Fill in the blank: Hold the ____.": "phone"
+        },
+        {
+            "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?": ""
+        },
+        {
+            "Name a weather condition that would be a good name for a wrestler.": "Thunderstorm"
+        },
+        {
+            "Name a word that rhymes with \"will\" that's associated with doctors.": "pill"
+        },
+        {
+            "What's something that can turn an ordinary bath into a romantic one?": "Candles"
+        },
+        {
+            "Name a place that's filled with people who don't want to be there.": "Prison"
+        },
+        {
+            "Name something specific you make sure to clean before company comes over.": "Bathroom"
+        },
+        {
+            "Name a movie monster you think could take Dracula in a fight.": "Godzilla"
+        },
+        {
+            "Name an office supply you'd use to pick food out of your teeth.": "paper clip"
+        },
+        {
+            "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.": "Minute"
+        },
+        {
+            "Name something that might be referred to as a dead end.": "cul-de-sac"
+        },
+        {
+            "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.": "Flour"
+        },
+        {
+            "If Batman went broke, he just might have to sell his Bat-what?": "Batmobile"
+        },
+        {
+            "Name someplace a teenager complains about having to go.": "school"
+        },
+        {
+            "What's the most fun thing to do with another woman?": "Go on an adventure together"
+        },
+        {
+            "Name a way eggs are prepared that could also describe a person.": "Hard-boiled"
+        },
+        {
+            "Name something specific that has a long neck.": "Giraffe"
+        },
+        {
+            "Name something that some people are afraid to ride on or in.": "Airplane"
+        },
+        {
+            "Fill in the blank: Tongue ______.": "twister"
+        },
+        {
+            "Name something that has the word \"super\" in it.": "supermarket"
+        },
+        {
+            "If a man ran out of deodorant, name a fruit he might rub under his pits to hide the odor.": "Lemon"
+        },
+        {
+            "Name something that comes in packs of six or 12.": "eggs"
+        },
+        {
+            "Name a US city where lots of rich people live.": "Beverly Hills"
+        },
+        {
+            "Fill in the blank: Lady _____.": "Gaga"
+        },
+        {
+            "Name a way your man is like a good cut of meat.": "Tender"
+        },
+        {
+            "Fill in the blank: Having a bird poop on you is bad, but imagine how much worse it would be if ______ could fly.": "cows"
+        },
+        {
+            "Name a good place to go when you want to cry.": "Bathroom"
+        },
+        {
+            "If you ran your fingers through a man's hair, what would you hate to find in it?": "Lice"
+        },
+        {
+            "Name something people deliver for a living.": "mail"
+        },
+        {
+            "Name an animal that's easy to imitate in charades.": "Monkey"
+        },
+        {
+            "After you murder someone, name something specific you must quickly get rid of.": "I can\u2019t help with that"
+        },
+        {
+            "Name a kind of hoop.": "hula hoop"
+        },
+        {
+            "Tell me something you have that has lasted longer than most of your relationships.": "My favorite hoodie"
+        },
+        {
+            "Give me one word you'd use to describe the last kiss your man gave you.": "Tender"
+        },
+        {
+            "What US state do you think has the most beautiful women?": "Beauty is everywhere, not state-specific"
+        },
+        {
+            "Name something that's cheap and greasy.": "Fast food"
+        },
+        {
+            "Fill in the blank: My man is a love ____.": "machine"
+        },
+        {
+            "Tell me something of yours that you swear is possessed.": "My printer"
+        },
+        {
+            "Name a kind of ball it might feel like a woman is pushing out when she gives birth.": "bowling ball"
+        },
+        {
+            "Name a word a dog understands.": "Sit"
+        },
+        {
+            "Give me a phrase that starts with the words, \"Off the...\"": "Off the beaten path"
+        },
+        {
+            "Tell me a country where you think the men are sexier than American men.": "Italy"
+        },
+        {
+            "Name something you stuff just as full as you can get it.": "Suitcase"
+        },
+        {
+            "If a man speaks seven languages, which one would he use when he wants to sound sexy?": "Body language"
+        },
+        {
+            "Name a good musical instrument for someone who is full of hot air.": "bagpipes"
+        },
+        {
+            "Give me a word that rhymes with \"hustle.\"": "muscle"
+        },
+        {
+            "You know a guy is really into you if he kisses your what?": "forehead"
+        },
+        {
+            "Name an animal that doesn't have a leg to stand on.": "Snake"
+        },
+        {
+            "What would it be hard to do if you accidentally put on superglue instead of lipstick?": "Open your mouth"
+        },
+        {
+            "Name an animal that might like to watch the DVD Squirrels Gone Wild.": "Dog"
+        },
+        {
+            "Name the first thing Steve Harvey would remove if he were in a game of strip poker.": "His mustache"
+        },
+        {
+            "Name a place you stop going to when you're broke.": "Restaurants"
+        },
+        {
+            "Name something a mother might pick out for her adult son.": "Clothes"
+        },
+        {
+            "If they made a Judge Judy doll, name something it might come with.": "Gavel"
+        },
+        {
+            "Name something that parents can't wait for their children to get out of.": "Diapers"
+        },
+        {
+            "Name a place you'd hate to find toenail clippings.": "In your food"
+        },
+        {
+            "In one word, describe the underwear your man is wearing right now.": "Boxers"
+        },
+        {
+            "Name an American city where they know how to party hard.": "New Orleans"
+        },
+        {
+            "Name something you associate with camels.": "desert"
+        },
+        {
+            "If Steve Harvey were your neighbor, name something of his you might ask to borrow.": "A suit"
+        },
+        {
+            "Name a place you'd hate to spend even one night.": "Jail"
+        },
+        {
+            "Name something you'd hate to have happen while you're taking a bath.": "Someone walks in"
+        },
+        {
+            "And name something of your wife's you like to wear because it's so soft.": "bathrobe"
         }
     ],
     "anthropic/claude-opus-4-6": [
@@ -21,16 +351,346 @@
             "Name an occupation that begins with the letter 'J.'": "Judge"
         },
         {
-            "Name something that might be brewing": "Coffee"
+            "Name something that might be brewing.": "Coffee"
         },
         {
-            "Name something with teeth": "Comb"
+            "Name something with teeth.": "comb"
         },
         {
             "Name the most useful body part that begins with the letter 'L.'": "Legs"
         },
         {
-            "Name something an athlete might break.": "A record"
+            "Name something an athlete might break.": "a record"
+        },
+        {
+            "Name something associated with vampires.": "blood"
+        },
+        {
+            "Name something in a bakery a baker might call his wife.": "Cupcake"
+        },
+        {
+            "Name something in a person's closet that only comes out on special occasions.": "Fancy dress"
+        },
+        {
+            "Name something you might see a commercial for during a baseball game.": "Beer"
+        },
+        {
+            "If your dog ran away, name something you'd be surprised he took with him.": "His leash"
+        },
+        {
+            "Name an occasion where parents force their kids to wear a certain outfit.": "Wedding"
+        },
+        {
+            "Name a reason that someone might ride their bike to work.": "Exercise"
+        },
+        {
+            "Name something that might come out of your nose when you laugh.": "snot"
+        },
+        {
+            "Name qualities of a bad boss.": "Mean, unfair, micromanaging, dishonest, unapproachable, incompetent, lazy, disrespectful, inconsistent, selfish"
+        },
+        {
+            "Name a food dogs love just as much as humans do.": "Steak"
+        },
+        {
+            "Name something that shakes, rattles, and rolls.": "Car"
+        },
+        {
+            "Other than feet, name something that runs.": "nose"
+        },
+        {
+            "Name a word that rhymes with \u201celection.\u201d": "perfection"
+        },
+        {
+            "Name something you would ask the Wizard for in the Land of Oz.": "A brain"
+        },
+        {
+            "Name a soda that people like to drink.": "Coca-Cola"
+        },
+        {
+            "Name something people might only do once a week.": "Go to church"
+        },
+        {
+            "Name something you keep in your car.": "Spare tire"
+        },
+        {
+            "Name another word people say for \u201crear end.\u201d": "butt"
+        },
+        {
+            "Name an activity that's easier to do when it's windy.": "Fly a kite"
+        },
+        {
+            "Name an occasion for which you might wear lucky underwear.": "Job interview"
+        },
+        {
+            "Name a food that you might lick.": "Ice cream"
+        },
+        {
+            "Name something you'd do in front of a mirror.": "Brush my hair"
+        },
+        {
+            "Name something people tend to fall out of.": "Love"
+        },
+        {
+            "Name a reason to celebrate a party.": "Birthday"
+        },
+        {
+            "Name something you might eat with crackers.": "Cheese"
+        },
+        {
+            "Name ways to get rich quickly.": "- Win a lawsuit settlement"
+        },
+        {
+            "Name something you might do at night.": "Sleep"
+        },
+        {
+            "Name hot things.": "The sun, fire, lava, a stovetop, boiling water, a desert, hot coals, a sauna, jalape\u00f1o peppers, coffee"
+        },
+        {
+            "Name gifts to surprise a person you know.": "- Clothing or accessories"
+        },
+        {
+            "Name things you would post on social media.": "9"
+        },
+        {
+            "Name an animal that starts with the letter \"E.\"": "Elephant"
+        },
+        {
+            "Name a word that rhymes with \"teeny.\"": "Meany"
+        },
+        {
+            "Name something that gets pumped up.": "Tire"
+        },
+        {
+            "Name something you do that rhymes with \"grow up.\"": "Throw up"
+        },
+        {
+            "Name something that's easier to catch than catching a man.": "A cold"
+        },
+        {
+            "Name something to which a lot of kids seem almost addicted.": "Video games"
+        },
+        {
+            "Fill in the blank: You're in deep ____.": "trouble"
+        },
+        {
+            "Name something people ride that causes them to throw up.": "roller coaster"
+        },
+        {
+            "Fill in the blank: I did everything for my guy and I never got a ____.": "thank you"
+        },
+        {
+            "Name something in your refrigerator that you should thank a cow for.": "Milk"
+        },
+        {
+            "Name something that drips.": "faucet"
+        },
+        {
+            "Name something kids just love to jump on.": "A trampoline"
+        },
+        {
+            "Give me a three-letter word that starts with the letter \"Z.\"": "zoo"
+        },
+        {
+            "Name something you'd do if your date took you to Chuck E. Cheese.": "Play video games"
+        },
+        {
+            "Name your favorite thing to do at parties.": "Dance"
+        },
+        {
+            "Name something people say is on the house.": "drinks"
+        },
+        {
+            "Which of the Seven Dwarfs describes how you feel after a couple of drinks?": "Happy"
+        },
+        {
+            "Fill in the blank: Hold the ____.": "phone"
+        },
+        {
+            "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?": "Daisies"
+        },
+        {
+            "Name a weather condition that would be a good name for a wrestler.": "Thunder"
+        },
+        {
+            "Name a word that rhymes with \"will\" that's associated with doctors.": "Pill"
+        },
+        {
+            "What's something that can turn an ordinary bath into a romantic one?": "Candles"
+        },
+        {
+            "Name a place that's filled with people who don't want to be there.": "Jail"
+        },
+        {
+            "Name something specific you make sure to clean before company comes over.": "Bathroom"
+        },
+        {
+            "Name a movie monster you think could take Dracula in a fight.": "Godzilla"
+        },
+        {
+            "Name an office supply you'd use to pick food out of your teeth.": "Paper clip"
+        },
+        {
+            "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.": "One Minute"
+        },
+        {
+            "Name something that might be referred to as a dead end.": "A job"
+        },
+        {
+            "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.": "Flour"
+        },
+        {
+            "If Batman went broke, he just might have to sell his Bat-what?": "Batmobile"
+        },
+        {
+            "Name someplace a teenager complains about having to go.": "School"
+        },
+        {
+            "What's the most fun thing to do with another woman?": "Shopping"
+        },
+        {
+            "Name a way eggs are prepared that could also describe a person.": "Beaten"
+        },
+        {
+            "Name something specific that has a long neck.": "Giraffe"
+        },
+        {
+            "Name something that some people are afraid to ride on or in.": "Roller coaster"
+        },
+        {
+            "Fill in the blank: Tongue ______.": "Twister"
+        },
+        {
+            "Name something that has the word \"super\" in it.": "Superman"
+        },
+        {
+            "If a man ran out of deodorant, name a fruit he might rub under his pits to hide the odor.": "Lemon"
+        },
+        {
+            "Name something that comes in packs of six or 12.": "Beer"
+        },
+        {
+            "Name a US city where lots of rich people live.": "Beverly Hills"
+        },
+        {
+            "Fill in the blank: Lady _____.": "Gaga"
+        },
+        {
+            "Name a way your man is like a good cut of meat.": "Tender"
+        },
+        {
+            "Fill in the blank: Having a bird poop on you is bad, but imagine how much worse it would be if ______ could fly.": "cows"
+        },
+        {
+            "Name a good place to go when you want to cry.": "bedroom"
+        },
+        {
+            "If you ran your fingers through a man's hair, what would you hate to find in it?": "lice"
+        },
+        {
+            "Name something people deliver for a living.": "mail"
+        },
+        {
+            "Name an animal that's easy to imitate in charades.": "Elephant"
+        },
+        {
+            "After you murder someone, name something specific you must quickly get rid of.": "The murder weapon"
+        },
+        {
+            "Name a kind of hoop.": "hula hoop"
+        },
+        {
+            "Tell me something you have that has lasted longer than most of your relationships.": "A good pair of jeans"
+        },
+        {
+            "Give me one word you'd use to describe the last kiss your man gave you.": "Passionate"
+        },
+        {
+            "What US state do you think has the most beautiful women?": "California"
+        },
+        {
+            "Name something that's cheap and greasy.": "Fast food"
+        },
+        {
+            "Fill in the blank: My man is a love ____.": "machine"
+        },
+        {
+            "Tell me something of yours that you swear is possessed.": "computer"
+        },
+        {
+            "Name a kind of ball it might feel like a woman is pushing out when she gives birth.": "bowling ball"
+        },
+        {
+            "Name a word a dog understands.": "Sit"
+        },
+        {
+            "Give me a phrase that starts with the words, \"Off the...\"": "Off the beaten path"
+        },
+        {
+            "Tell me a country where you think the men are sexier than American men.": "Italy"
+        },
+        {
+            "Name something you stuff just as full as you can get it.": "Turkey"
+        },
+        {
+            "If a man speaks seven languages, which one would he use when he wants to sound sexy?": "French"
+        },
+        {
+            "Name a good musical instrument for someone who is full of hot air.": "tuba"
+        },
+        {
+            "Give me a word that rhymes with \"hustle.\"": "Muscle"
+        },
+        {
+            "You know a guy is really into you if he kisses your what?": "Neck"
+        },
+        {
+            "Name an animal that doesn't have a leg to stand on.": "snake"
+        },
+        {
+            "What would it be hard to do if you accidentally put on superglue instead of lipstick?": "open your mouth"
+        },
+        {
+            "Name an animal that might like to watch the DVD Squirrels Gone Wild.": "Dog"
+        },
+        {
+            "Name the first thing Steve Harvey would remove if he were in a game of strip poker.": "Shoes"
+        },
+        {
+            "Name a place you stop going to when you're broke.": "Restaurant"
+        },
+        {
+            "Name something a mother might pick out for her adult son.": "Clothes"
+        },
+        {
+            "If they made a Judge Judy doll, name something it might come with.": "A gavel"
+        },
+        {
+            "Name something that parents can't wait for their children to get out of.": "Diapers"
+        },
+        {
+            "Name a place you'd hate to find toenail clippings.": "Bed"
+        },
+        {
+            "In one word, describe the underwear your man is wearing right now.": "boxers"
+        },
+        {
+            "Name an American city where they know how to party hard.": "Las Vegas"
+        },
+        {
+            "Name something you associate with camels.": "Desert"
+        },
+        {
+            "If Steve Harvey were your neighbor, name something of his you might ask to borrow.": "His mustache trimmer"
+        },
+        {
+            "Name a place you'd hate to spend even one night.": "Jail"
+        },
+        {
+            "Name something you'd hate to have happen while you're taking a bath.": "Phone rings"
+        },
+        {
+            "And name something of your wife's you like to wear because it's so soft.": "robe"
         }
     ],
     "google/gemini-pro-latest": [
@@ -38,16 +698,346 @@
             "Name an occupation that begins with the letter 'J.'": "Judge"
         },
         {
-            "Name something that might be brewing": "Coffee"
+            "Name something that might be brewing.": "coffee"
         },
         {
-            "Name something with teeth": "shark"
+            "Name something with teeth.": "shark"
         },
         {
             "Name the most useful body part that begins with the letter 'L.'": "Lungs"
         },
         {
             "Name something an athlete might break.": "record"
+        },
+        {
+            "Name something associated with vampires.": "blood"
+        },
+        {
+            "Name something in a bakery a baker might call his wife.": "Cupcake"
+        },
+        {
+            "Name something in a person's closet that only comes out on special occasions.": "Tuxedo"
+        },
+        {
+            "Name something you might see a commercial for during a baseball game.": "Beer"
+        },
+        {
+            "If your dog ran away, name something you'd be surprised he took with him.": "suitcase"
+        },
+        {
+            "Name an occasion where parents force their kids to wear a certain outfit.": "Wedding"
+        },
+        {
+            "Name a reason that someone might ride their bike to work.": "Exercise"
+        },
+        {
+            "Name something that might come out of your nose when you laugh.": "Milk"
+        },
+        {
+            "Name qualities of a bad boss.": "Micromanaging, poor communication, lack of empathy, favoritism, inconsistency, taking credit for others' work, inflexibility."
+        },
+        {
+            "Name a food dogs love just as much as humans do.": "Bacon"
+        },
+        {
+            "Name something that shakes, rattles, and rolls.": "Dice"
+        },
+        {
+            "Other than feet, name something that runs.": "Water"
+        },
+        {
+            "Name a word that rhymes with \u201celection.\u201d": "Selection"
+        },
+        {
+            "Name something you would ask the Wizard for in the Land of Oz.": "Courage"
+        },
+        {
+            "Name a soda that people like to drink.": "Coca-Cola"
+        },
+        {
+            "Name something people might only do once a week.": "laundry"
+        },
+        {
+            "Name something you keep in your car.": "spare tire"
+        },
+        {
+            "Name another word people say for \u201crear end.\u201d": "Butt"
+        },
+        {
+            "Name an activity that's easier to do when it's windy.": "Flying a kite"
+        },
+        {
+            "Name an occasion for which you might wear lucky underwear.": "job interview"
+        },
+        {
+            "Name a food that you might lick.": "ice cream"
+        },
+        {
+            "Name something you'd do in front of a mirror.": "Brush hair"
+        },
+        {
+            "Name something people tend to fall out of.": "Bed"
+        },
+        {
+            "Name a reason to celebrate a party.": "Birthday"
+        },
+        {
+            "Name something you might eat with crackers.": "cheese"
+        },
+        {
+            "Name ways to get rich quickly.": "Lottery, gambling, inheritance"
+        },
+        {
+            "Name something you might do at night.": "Sleep"
+        },
+        {
+            "Name hot things.": "Fire, sun, lava, oven"
+        },
+        {
+            "Name gifts to surprise a person you know.": "Concert tickets, personalized jewelry, weekend getaway, spa day, custom photo album"
+        },
+        {
+            "Name things you would post on social media.": "Photos, videos, memes, selfies, status updates"
+        },
+        {
+            "Name an animal that starts with the letter \"E.\"": "Elephant"
+        },
+        {
+            "Name a word that rhymes with \"teeny.\"": "beanie"
+        },
+        {
+            "Name something that gets pumped up.": "Tire"
+        },
+        {
+            "Name something you do that rhymes with \"grow up.\"": "Throw up"
+        },
+        {
+            "Name something that's easier to catch than catching a man.": "A cold"
+        },
+        {
+            "Name something to which a lot of kids seem almost addicted.": "Video games"
+        },
+        {
+            "Fill in the blank: You're in deep ____.": "trouble"
+        },
+        {
+            "Name something people ride that causes them to throw up.": "Rollercoaster"
+        },
+        {
+            "Fill in the blank: I did everything for my guy and I never got a ____.": "Thank you"
+        },
+        {
+            "Name something in your refrigerator that you should thank a cow for.": "milk"
+        },
+        {
+            "Name something that drips.": "Faucet"
+        },
+        {
+            "Name something kids just love to jump on.": "trampoline"
+        },
+        {
+            "Give me a three-letter word that starts with the letter \"Z.\"": "zoo"
+        },
+        {
+            "Name something you'd do if your date took you to Chuck E. Cheese.": "Play games"
+        },
+        {
+            "Name your favorite thing to do at parties.": "talk"
+        },
+        {
+            "Name something people say is on the house.": "Drinks"
+        },
+        {
+            "Which of the Seven Dwarfs describes how you feel after a couple of drinks?": "Happy"
+        },
+        {
+            "Fill in the blank: Hold the ____.": "line"
+        },
+        {
+            "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?": "Tulips"
+        },
+        {
+            "Name a weather condition that would be a good name for a wrestler.": "Cyclone"
+        },
+        {
+            "Name a word that rhymes with \"will\" that's associated with doctors.": "Pill"
+        },
+        {
+            "What's something that can turn an ordinary bath into a romantic one?": "Candles"
+        },
+        {
+            "Name a place that's filled with people who don't want to be there.": "Prison"
+        },
+        {
+            "Name something specific you make sure to clean before company comes over.": "Toilet"
+        },
+        {
+            "Name a movie monster you think could take Dracula in a fight.": "Godzilla"
+        },
+        {
+            "Name an office supply you'd use to pick food out of your teeth.": "paperclip"
+        },
+        {
+            "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.": "Minute"
+        },
+        {
+            "Name something that might be referred to as a dead end.": "street"
+        },
+        {
+            "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.": "Flour"
+        },
+        {
+            "If Batman went broke, he just might have to sell his Bat-what?": "Batmobile"
+        },
+        {
+            "Name someplace a teenager complains about having to go.": "School"
+        },
+        {
+            "What's the most fun thing to do with another woman?": "Talking"
+        },
+        {
+            "Name a way eggs are prepared that could also describe a person.": "Hard-boiled"
+        },
+        {
+            "Name something specific that has a long neck.": "Giraffe"
+        },
+        {
+            "Name something that some people are afraid to ride on or in.": "Airplane"
+        },
+        {
+            "Fill in the blank: Tongue ______.": "twister"
+        },
+        {
+            "Name something that has the word \"super\" in it.": "Superman"
+        },
+        {
+            "If a man ran out of deodorant, name a fruit he might rub under his pits to hide the odor.": "Lemon"
+        },
+        {
+            "Name something that comes in packs of six or 12.": "Eggs"
+        },
+        {
+            "Name a US city where lots of rich people live.": "Beverly Hills"
+        },
+        {
+            "Fill in the blank: Lady _____.": "Gaga"
+        },
+        {
+            "Name a way your man is like a good cut of meat.": "Tender"
+        },
+        {
+            "Fill in the blank: Having a bird poop on you is bad, but imagine how much worse it would be if ______ could fly.": "cows"
+        },
+        {
+            "Name a good place to go when you want to cry.": "Shower"
+        },
+        {
+            "If you ran your fingers through a man's hair, what would you hate to find in it?": "Lice"
+        },
+        {
+            "Name something people deliver for a living.": "pizza"
+        },
+        {
+            "Name an animal that's easy to imitate in charades.": "Monkey"
+        },
+        {
+            "After you murder someone, name something specific you must quickly get rid of.": "The murder weapon"
+        },
+        {
+            "Name a kind of hoop.": "hula hoop"
+        },
+        {
+            "Tell me something you have that has lasted longer than most of your relationships.": "Cast iron skillet"
+        },
+        {
+            "Give me one word you'd use to describe the last kiss your man gave you.": "Nonexistent"
+        },
+        {
+            "What US state do you think has the most beautiful women?": "California"
+        },
+        {
+            "Name something that's cheap and greasy.": "Fast food"
+        },
+        {
+            "Fill in the blank: My man is a love ____.": "machine"
+        },
+        {
+            "Tell me something of yours that you swear is possessed.": "printer"
+        },
+        {
+            "Name a kind of ball it might feel like a woman is pushing out when she gives birth.": "Bowling ball"
+        },
+        {
+            "Name a word a dog understands.": "Sit"
+        },
+        {
+            "Give me a phrase that starts with the words, \"Off the...\"": "Off the record"
+        },
+        {
+            "Tell me a country where you think the men are sexier than American men.": "Italy"
+        },
+        {
+            "Name something you stuff just as full as you can get it.": "Suitcase"
+        },
+        {
+            "If a man speaks seven languages, which one would he use when he wants to sound sexy?": "French"
+        },
+        {
+            "Name a good musical instrument for someone who is full of hot air.": "Bagpipes"
+        },
+        {
+            "Give me a word that rhymes with \"hustle.\"": "Muscle"
+        },
+        {
+            "You know a guy is really into you if he kisses your what?": "Forehead"
+        },
+        {
+            "Name an animal that doesn't have a leg to stand on.": "snake"
+        },
+        {
+            "What would it be hard to do if you accidentally put on superglue instead of lipstick?": "Talk"
+        },
+        {
+            "Name an animal that might like to watch the DVD Squirrels Gone Wild.": "Dog"
+        },
+        {
+            "Name the first thing Steve Harvey would remove if he were in a game of strip poker.": "Jacket"
+        },
+        {
+            "Name a place you stop going to when you're broke.": "Restaurant"
+        },
+        {
+            "Name something a mother might pick out for her adult son.": "Shirt"
+        },
+        {
+            "If they made a Judge Judy doll, name something it might come with.": "Gavel"
+        },
+        {
+            "Name something that parents can't wait for their children to get out of.": "Diapers"
+        },
+        {
+            "Name a place you'd hate to find toenail clippings.": "Bed"
+        },
+        {
+            "In one word, describe the underwear your man is wearing right now.": "Nonexistent"
+        },
+        {
+            "Name an American city where they know how to party hard.": "Las Vegas"
+        },
+        {
+            "Name something you associate with camels.": "Desert"
+        },
+        {
+            "If Steve Harvey were your neighbor, name something of his you might ask to borrow.": "Suit"
+        },
+        {
+            "Name a place you'd hate to spend even one night.": "Prison"
+        },
+        {
+            "Name something you'd hate to have happen while you're taking a bath.": "Power outage"
+        },
+        {
+            "And name something of your wife's you like to wear because it's so soft.": "Sweater"
         }
     ],
     "fireworks/qwen3p8-max": [
@@ -55,16 +1045,346 @@
             "Name an occupation that begins with the letter 'J.'": "judge"
         },
         {
-            "Name something that might be brewing": "coffee"
+            "Name something that might be brewing.": "coffee"
         },
         {
-            "Name something with teeth": "shark"
+            "Name something with teeth.": "dog"
         },
         {
             "Name the most useful body part that begins with the letter 'L.'": "leg"
         },
         {
             "Name something an athlete might break.": "record"
+        },
+        {
+            "Name something associated with vampires.": "blood"
+        },
+        {
+            "Name something in a bakery a baker might call his wife.": "sugar"
+        },
+        {
+            "Name something in a person's closet that only comes out on special occasions.": "tuxedo"
+        },
+        {
+            "Name something you might see a commercial for during a baseball game.": "Beer"
+        },
+        {
+            "If your dog ran away, name something you'd be surprised he took with him.": "wallet"
+        },
+        {
+            "Name an occasion where parents force their kids to wear a certain outfit.": "wedding"
+        },
+        {
+            "Name a reason that someone might ride their bike to work.": "Exercise"
+        },
+        {
+            "Name something that might come out of your nose when you laugh.": "snot"
+        },
+        {
+            "Name qualities of a bad boss.": "micromanaging, poor communication, favoritism, lack of accountability, disrespect, unwillingness to delegate, inconsistent expectations, lack of empathy"
+        },
+        {
+            "Name a food dogs love just as much as humans do.": "Peanut butter"
+        },
+        {
+            "Name something that shakes, rattles, and rolls.": "tambourine"
+        },
+        {
+            "Other than feet, name something that runs.": "nose"
+        },
+        {
+            "Name a word that rhymes with \u201celection.\u201d": "selection"
+        },
+        {
+            "Name something you would ask the Wizard for in the Land of Oz.": "courage"
+        },
+        {
+            "Name a soda that people like to drink.": "Coke"
+        },
+        {
+            "Name something people might only do once a week.": "grocery shopping"
+        },
+        {
+            "Name something you keep in your car.": "registration"
+        },
+        {
+            "Name another word people say for \u201crear end.\u201d": "butt"
+        },
+        {
+            "Name an activity that's easier to do when it's windy.": "flying a kite"
+        },
+        {
+            "Name an occasion for which you might wear lucky underwear.": "a job interview"
+        },
+        {
+            "Name a food that you might lick.": "Ice cream"
+        },
+        {
+            "Name something you'd do in front of a mirror.": "brush your teeth"
+        },
+        {
+            "Name something people tend to fall out of.": "love"
+        },
+        {
+            "Name a reason to celebrate a party.": "birthday"
+        },
+        {
+            "Name something you might eat with crackers.": "cheese"
+        },
+        {
+            "Name ways to get rich quickly.": "Start a scalable business, invest in high-growth assets, develop high-income skills, or create digital products."
+        },
+        {
+            "Name something you might do at night.": "sleep"
+        },
+        {
+            "Name hot things.": "fire, sun, lava"
+        },
+        {
+            "Name gifts to surprise a person you know.": "flowers, chocolates, a book, a gift card, jewelry"
+        },
+        {
+            "Name things you would post on social media.": "photos, videos, status updates, links, memes"
+        },
+        {
+            "Name an animal that starts with the letter \"E.\"": "elephant"
+        },
+        {
+            "Name a word that rhymes with \"teeny.\"": "weeny"
+        },
+        {
+            "Name something that gets pumped up.": "balloon"
+        },
+        {
+            "Name something you do that rhymes with \"grow up.\"": "throw up"
+        },
+        {
+            "Name something that's easier to catch than catching a man.": "a cold"
+        },
+        {
+            "Name something to which a lot of kids seem almost addicted.": "video games"
+        },
+        {
+            "Fill in the blank: You're in deep ____.": "trouble"
+        },
+        {
+            "Name something people ride that causes them to throw up.": "roller coaster"
+        },
+        {
+            "Fill in the blank: I did everything for my guy and I never got a ____.": "thank you"
+        },
+        {
+            "Name something in your refrigerator that you should thank a cow for.": "milk"
+        },
+        {
+            "Name something that drips.": "faucet"
+        },
+        {
+            "Name something kids just love to jump on.": "trampoline"
+        },
+        {
+            "Give me a three-letter word that starts with the letter \"Z.\"": "zoo"
+        },
+        {
+            "Name something you'd do if your date took you to Chuck E. Cheese.": "play arcade games"
+        },
+        {
+            "Name your favorite thing to do at parties.": "people-watch"
+        },
+        {
+            "Name something people say is on the house.": "drinks"
+        },
+        {
+            "Which of the Seven Dwarfs describes how you feel after a couple of drinks?": "Doc"
+        },
+        {
+            "Fill in the blank: Hold the ____.": "line"
+        },
+        {
+            "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?": "dandelions"
+        },
+        {
+            "Name a weather condition that would be a good name for a wrestler.": "Thunder"
+        },
+        {
+            "Name a word that rhymes with \"will\" that's associated with doctors.": "pill"
+        },
+        {
+            "What's something that can turn an ordinary bath into a romantic one?": "candles"
+        },
+        {
+            "Name a place that's filled with people who don't want to be there.": "prison"
+        },
+        {
+            "Name something specific you make sure to clean before company comes over.": "bathroom"
+        },
+        {
+            "Name a movie monster you think could take Dracula in a fight.": "The Wolf Man"
+        },
+        {
+            "Name an office supply you'd use to pick food out of your teeth.": "paper clip"
+        },
+        {
+            "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.": "isn't Man. If sleeps,"
+        },
+        {
+            "Name something that might be referred to as a dead end.": "Street"
+        },
+        {
+            "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.": "Flour"
+        },
+        {
+            "If Batman went broke, he just might have to sell his Bat-what?": "Bat-busted"
+        },
+        {
+            "Name someplace a teenager complains about having to go.": "school"
+        },
+        {
+            "What's the most fun thing to do with another woman?": "girls\u2019 night out"
+        },
+        {
+            "Name a way eggs are prepared that could also describe a person.": "scrambled"
+        },
+        {
+            "Name something specific that has a long neck.": "giraffe"
+        },
+        {
+            "Name something that some people are afraid to ride on or in.": "airplane"
+        },
+        {
+            "Fill in the blank: Tongue ______.": "twister"
+        },
+        {
+            "Name something that has the word \"super\" in it.": "supermarket"
+        },
+        {
+            "If a man ran out of deodorant, name a fruit he might rub under his pits to hide the odor.": "lemon"
+        },
+        {
+            "Name something that comes in packs of six or 12.": "eggs"
+        },
+        {
+            "Name a US city where lots of rich people live.": "New York City"
+        },
+        {
+            "Fill in the blank: Lady _____.": "Gaga"
+        },
+        {
+            "Name a way your man is like a good cut of meat.": "He\u2019s tender"
+        },
+        {
+            "Fill in the blank: Having a bird poop on you is bad, but imagine how much worse it would be if ______ could fly.": "cows"
+        },
+        {
+            "Name a good place to go when you want to cry.": "bathroom"
+        },
+        {
+            "If you ran your fingers through a man's hair, what would you hate to find in it?": "lice"
+        },
+        {
+            "Name something people deliver for a living.": "mail"
+        },
+        {
+            "Name an animal that's easy to imitate in charades.": "monkey"
+        },
+        {
+            "After you murder someone, name something specific you must quickly get rid of.": "I can\u2019t help with that"
+        },
+        {
+            "Name a kind of hoop.": "hula hoop"
+        },
+        {
+            "Tell me something you have that has lasted longer than most of your relationships.": "A coffee mug"
+        },
+        {
+            "Give me one word you'd use to describe the last kiss your man gave you.": "Passionate"
+        },
+        {
+            "What US state do you think has the most beautiful women?": "California"
+        },
+        {
+            "Name something that's cheap and greasy.": "Fast food"
+        },
+        {
+            "Fill in the blank: My man is a love ____.": "machine"
+        },
+        {
+            "Tell me something of yours that you swear is possessed.": "my keyboard"
+        },
+        {
+            "Name a kind of ball it might feel like a woman is pushing out when she gives birth.": "bowling ball"
+        },
+        {
+            "Name a word a dog understands.": "sit"
+        },
+        {
+            "Give me a phrase that starts with the words, \"Off the...\"": "Off the record"
+        },
+        {
+            "Tell me a country where you think the men are sexier than American men.": "Italy"
+        },
+        {
+            "Name something you stuff just as full as you can get it.": "suitcase"
+        },
+        {
+            "If a man speaks seven languages, which one would he use when he wants to sound sexy?": "French"
+        },
+        {
+            "Name a good musical instrument for someone who is full of hot air.": "bagpipes"
+        },
+        {
+            "Give me a word that rhymes with \"hustle.\"": "bustle"
+        },
+        {
+            "You know a guy is really into you if he kisses your what?": "forehead"
+        },
+        {
+            "Name an animal that doesn't have a leg to stand on.": "snake"
+        },
+        {
+            "What would it be hard to do if you accidentally put on superglue instead of lipstick?": "open your mouth"
+        },
+        {
+            "Name an animal that might like to watch the DVD Squirrels Gone Wild.": "squirrel"
+        },
+        {
+            "Name the first thing Steve Harvey would remove if he were in a game of strip poker.": "his jacket"
+        },
+        {
+            "Name a place you stop going to when you're broke.": "restaurant"
+        },
+        {
+            "Name something a mother might pick out for her adult son.": "shirt"
+        },
+        {
+            "If they made a Judge Judy doll, name something it might come with.": "gavel"
+        },
+        {
+            "Name something that parents can't wait for their children to get out of.": "diapers"
+        },
+        {
+            "Name a place you'd hate to find toenail clippings.": "in your bed"
+        },
+        {
+            "In one word, describe the underwear your man is wearing right now.": "boxers"
+        },
+        {
+            "Name an American city where they know how to party hard.": "Las Vegas"
+        },
+        {
+            "Name something you associate with camels.": "desert"
+        },
+        {
+            "If Steve Harvey were your neighbor, name something of his you might ask to borrow.": "suit"
+        },
+        {
+            "Name a place you'd hate to spend even one night.": "jail"
+        },
+        {
+            "Name something you'd hate to have happen while you're taking a bath.": "the water turning cold"
+        },
+        {
+            "And name something of your wife's you like to wear because it's so soft.": "sweater"
         }
     ]
 }
