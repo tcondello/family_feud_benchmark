@@ -50,12 +50,14 @@ python score_benchmark.py \
 python run_benchmark.py --list-models
 python run_benchmark.py --providers openai anthropic --limit 10
 
-# Full combined set with resume/checkpoints
+# Full combined set with resume/checkpoints (all models in parallel)
 python run_benchmark.py \
   --questions questions/all_questions.json \
   --output responses/multi_provider_all_questions.json \
-  --resume
+  --resume \
+  --workers 8
 ```
+
 
 `openAI_family_feud.py` remains as a single-provider OpenAI helper (now on
 `gpt-5.5`). Prefer `run_benchmark.py` for multi-provider runs.
