@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Run the Family Feud benchmark across the latest models for each configured provider."""
+"""Run the Family Feud benchmark across providers — TriBonds-style concurrency.
+
+All enabled models run in parallel (one worker pool per model). Within each
+model, multiple questions can be in flight at once. Results checkpoint to JSON
+and are resume-safe.
+"""
 
 from __future__ import annotations
 
@@ -7,7 +12,9 @@ import argparse
 import json
 import os
 import re
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable
@@ -72,6 +79,8 @@ PROVIDER_ENV = {
 }
 
 _CLIENTS: dict[str, Any] = {}
+_CLIENT_LOCK = threading.Lock()
+_RESULTS_LOCK = threading.Lock()
 
 
 def load_questions(path: str | None) -> tuple[list[dict], str]:
@@ -95,20 +104,17 @@ def clean_answer(text: str | None) -> str:
     if not text:
         return ""
     cleaned = text.strip().strip('"').strip("'")
-    # Prefer the last non-empty line for chatty / reasoning-style models.
     lines = [line.strip() for line in cleaned.splitlines() if line.strip()]
     if lines:
         cleaned = lines[-1]
     cleaned = re.sub(r"^(answer|response)\s*:\s*", "", cleaned, flags=re.I)
     cleaned = cleaned.strip().strip('"').strip("'")
-    # Drop trailing period for short survey answers.
     if cleaned.endswith(".") and cleaned.count(" ") <= 4:
         cleaned = cleaned[:-1]
     return cleaned
 
 
 def extract_message_answer(content: str | None, reasoning: str | None = None) -> str:
-    """Prefer visible content; fall back to short quoted spans in reasoning traces."""
     direct = clean_answer(content)
     if direct and len(direct.split()) <= 8:
         return direct
@@ -121,41 +127,50 @@ def extract_message_answer(content: str | None, reasoning: str | None = None) ->
     return ""
 
 
+def _cached_client(name: str, factory: Callable[[], Any]) -> Any:
+    with _CLIENT_LOCK:
+        if name not in _CLIENTS:
+            _CLIENTS[name] = factory()
+        return _CLIENTS[name]
+
+
 def get_openai_client():
-    if "openai" not in _CLIENTS:
+    def factory():
         from openai import OpenAI
 
-        _CLIENTS["openai"] = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    return _CLIENTS["openai"]
+        return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
+    return _cached_client("openai", factory)
 
 
 def get_anthropic_client():
-    if "anthropic" not in _CLIENTS:
+    def factory():
         import anthropic
 
-        _CLIENTS["anthropic"] = anthropic.Anthropic(
-            api_key=os.environ["ANTHROPIC_API_KEY"]
-        )
-    return _CLIENTS["anthropic"]
+        return anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+
+    return _cached_client("anthropic", factory)
 
 
 def get_google_client():
-    if "google" not in _CLIENTS:
+    def factory():
         from google import genai
 
-        _CLIENTS["google"] = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
-    return _CLIENTS["google"]
+        return genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+
+    return _cached_client("google", factory)
 
 
 def get_fireworks_client():
-    if "fireworks" not in _CLIENTS:
+    def factory():
         from openai import OpenAI
 
-        _CLIENTS["fireworks"] = OpenAI(
+        return OpenAI(
             api_key=os.environ["FIREWORKS_API_KEY"],
             base_url="https://api.fireworks.ai/inference/v1",
         )
-    return _CLIENTS["fireworks"]
+
+    return _cached_client("fireworks", factory)
 
 
 def with_retries(fn: Callable[[], str], *, attempts: int = 5) -> str:
@@ -180,7 +195,10 @@ def with_retries(fn: Callable[[], str], *, attempts: int = 5) -> str:
             } or "429" in str(exc) or "500" in str(exc) or "503" in str(exc)
             if not retryable or attempt == attempts:
                 raise
-            print(f"retry {attempt}/{attempts} after {name}: sleeping {delay:.1f}s")
+            print(
+                f"retry {attempt}/{attempts} after {name}: sleeping {delay:.1f}s",
+                flush=True,
+            )
             time.sleep(delay)
             delay = min(delay * 2, 60.0)
     raise RuntimeError(f"unreachable retry loop: {last_exc}")
@@ -196,7 +214,7 @@ def call_openai(model: str, question: str) -> str:
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": question},
             ],
-            max_completion_tokens=128,
+            max_completion_tokens=256,
         )
         return clean_answer(response.choices[0].message.content)
 
@@ -227,8 +245,6 @@ def call_google(model: str, question: str) -> str:
     client = get_google_client()
 
     def _call() -> str:
-        # gemini-pro-latest uses mandatory thinking tokens; keep headroom so the
-        # visible answer is not truncated to an empty / partial string.
         response = client.models.generate_content(
             model=model,
             contents=question,
@@ -304,37 +320,100 @@ def write_results(path: Path, results: dict[str, list[dict[str, str]]]) -> None:
     tmp.replace(path)
 
 
-def run_model(
+def run_model_parallel(
     spec: ModelSpec,
     questions: list[dict],
     *,
     sleep_s: float,
     existing: list[dict[str, str]] | None,
-    on_checkpoint: Callable[[list[dict[str, str]]], None] | None = None,
+    workers: int,
+    results: dict[str, list[dict[str, str]]],
+    output_path: Path,
 ) -> list[dict[str, str]]:
+    """Fill answers for one model with in-flight concurrency (TriBonds-style)."""
     caller = CALLERS[spec.provider]
-    responses = list(existing or [])
-    start_index = len(responses)
-    if start_index:
-        print(f"[{spec.key}] resuming at {start_index + 1}/{len(questions)}")
+    start_index = len(existing or [])
+    total = len(questions)
+    # Pre-size slot list so out-of-order worker completions stay ordered.
+    slots: list[dict[str, str] | None] = [None] * total
+    for i, item in enumerate(existing or []):
+        slots[i] = item
 
-    for index, item in enumerate(questions, start=1):
-        if index <= start_index:
-            continue
-        question = item.get("question")
+    pending_indices = list(range(start_index, total))
+    if start_index:
+        print(
+            f"[{spec.key}] resuming at {start_index + 1}/{total} "
+            f"(workers={workers})",
+            flush=True,
+        )
+    else:
+        print(f"[{spec.key}] starting 1/{total} (workers={workers})", flush=True)
+
+    if not pending_indices:
+        print(f"[{spec.key}] already complete ({total} answers)", flush=True)
+        return [s for s in slots if s is not None]
+
+    done_since_checkpoint = 0
+    completed = start_index
+    lock = threading.Lock()
+
+    def answer_one(index: int) -> tuple[int, dict[str, str]]:
+        item = questions[index]
+        question = item.get("question") or ""
         if not question:
-            continue
+            return index, {"": ""}
         try:
             answer = caller(spec.model, question)
-        except Exception as exc:  # noqa: BLE001 - keep the run going
+        except Exception as exc:  # noqa: BLE001
             answer = f"ERROR: {type(exc).__name__}: {exc}"
-        print(f"[{spec.key} {index}/{len(questions)}] {question} -> {answer}", flush=True)
-        responses.append({question: answer})
-        if on_checkpoint and (index % CHECKPOINT_EVERY == 0 or index == len(questions)):
-            on_checkpoint(responses)
         if sleep_s > 0:
             time.sleep(sleep_s)
-    return responses
+        return index, {question: answer}
+
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+        futures = {pool.submit(answer_one, idx): idx for idx in pending_indices}
+        for future in as_completed(futures):
+            index, payload = future.result()
+            question, answer = next(iter(payload.items()))
+            with lock:
+                slots[index] = payload
+                completed += 1
+                done_since_checkpoint += 1
+                print(
+                    f"[{spec.key} {completed}/{total}] {question} -> {answer}",
+                    flush=True,
+                )
+                if (
+                    done_since_checkpoint >= CHECKPOINT_EVERY
+                    or completed == total
+                ):
+                    snapshot = [s for s in slots if s is not None]
+                    # Only checkpoint contiguous prefix so resume stays correct.
+                    contiguous: list[dict[str, str]] = []
+                    for slot in slots:
+                        if slot is None:
+                            break
+                        contiguous.append(slot)
+                    with _RESULTS_LOCK:
+                        results[spec.key] = contiguous
+                        write_results(output_path, results)
+                    print(
+                        f"checkpoint {spec.key}: {len(contiguous)}/{total} "
+                        f"-> {output_path}",
+                        flush=True,
+                    )
+                    done_since_checkpoint = 0
+
+    contiguous = []
+    for slot in slots:
+        if slot is None:
+            break
+        contiguous.append(slot)
+    with _RESULTS_LOCK:
+        results[spec.key] = contiguous
+        write_results(output_path, results)
+    print(f"finished {spec.key}: {len(contiguous)} answers", flush=True)
+    return contiguous
 
 
 def parse_args() -> argparse.Namespace:
@@ -359,7 +438,7 @@ def parse_args() -> argparse.Namespace:
         "--sleep",
         type=float,
         default=0.0,
-        help="Optional delay between requests (seconds)",
+        help="Optional delay after each request (seconds)",
     )
     parser.add_argument(
         "--output",
@@ -370,6 +449,17 @@ def parse_args() -> argparse.Namespace:
         "--resume",
         action="store_true",
         help="Resume from an existing --output checkpoint if present",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=8,
+        help="In-flight requests per model (default: 8)",
+    )
+    parser.add_argument(
+        "--sequential-models",
+        action="store_true",
+        help="Run models one after another instead of all providers in parallel",
     )
     parser.add_argument(
         "--list-models",
@@ -401,36 +491,51 @@ def main() -> None:
 
     print(f"questions={len(questions)} source={source}", flush=True)
     print("models=" + ", ".join(spec.key for spec in models), flush=True)
+    print(
+        f"concurrency: models_parallel={not args.sequential_models} "
+        f"workers_per_model={args.workers}",
+        flush=True,
+    )
     if args.resume and results:
         print(
             "resume counts="
-            + ", ".join(f"{k}:{len(v)}" for k, v in results.items()),
+            + ", ".join(f"{k}:{len(v)}" for k, v in sorted(results.items())),
             flush=True,
         )
 
-    for spec in models:
+    def run_one(spec: ModelSpec) -> None:
         existing = results.get(spec.key) if args.resume else None
         if existing and len(existing) >= len(questions):
-            print(f"[{spec.key}] already complete ({len(existing)} answers)", flush=True)
-            continue
-
-        def checkpoint(responses: list[dict[str, str]], key: str = spec.key) -> None:
-            results[key] = responses
-            write_results(output_path, results)
-            print(f"checkpoint {key}: {len(responses)}/{len(questions)} -> {output_path}", flush=True)
-
-        results[spec.key] = run_model(
+            print(
+                f"[{spec.key}] already complete ({len(existing)} answers)",
+                flush=True,
+            )
+            return
+        run_model_parallel(
             spec,
             questions,
             sleep_s=args.sleep,
             existing=existing,
-            on_checkpoint=checkpoint,
+            workers=args.workers,
+            results=results,
+            output_path=output_path,
         )
-        write_results(output_path, results)
-        print(f"finished {spec.key}: {len(results[spec.key])} answers", flush=True)
+
+    if args.sequential_models:
+        for spec in models:
+            run_one(spec)
+    else:
+        # TriBonds pattern: hit every provider at once.
+        with ThreadPoolExecutor(max_workers=len(models)) as pool:
+            list(pool.map(run_one, models))
 
     write_results(output_path, results)
     print(f"wrote {output_path}", flush=True)
+    print(
+        "final counts="
+        + ", ".join(f"{k}:{len(v)}" for k, v in sorted(results.items())),
+        flush=True,
+    )
 
 
 if __name__ == "__main__":
