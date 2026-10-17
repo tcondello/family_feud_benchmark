@@ -10,7 +10,7 @@ import re
 import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Callable
+from typing import Any, Callable
 
 from dotenv import load_dotenv
 
@@ -27,6 +27,8 @@ QUESTION_PATHS = (
     "questions/question_list.json",
     "question_list.json",
 )
+
+CHECKPOINT_EVERY = 25
 
 
 @dataclass(frozen=True)
@@ -50,6 +52,16 @@ LATEST_MODELS: tuple[ModelSpec, ...] = (
         "accounts/fireworks/models/qwen3p8-max",
         "qwen3p8-max",
     ),
+    ModelSpec(
+        "fireworks",
+        "accounts/fireworks/models/ember-1",
+        "ember-1",
+    ),
+    ModelSpec(
+        "fireworks",
+        "accounts/fireworks/models/kimi-k3",
+        "kimi-k3",
+    ),
 )
 
 PROVIDER_ENV = {
@@ -58,6 +70,8 @@ PROVIDER_ENV = {
     "google": "GOOGLE_API_KEY",
     "fireworks": "FIREWORKS_API_KEY",
 }
+
+_CLIENTS: dict[str, Any] = {}
 
 
 def load_questions(path: str | None) -> tuple[list[dict], str]:
@@ -107,74 +121,147 @@ def extract_message_answer(content: str | None, reasoning: str | None = None) ->
     return ""
 
 
-def call_openai(model: str, question: str) -> str:
-    from openai import OpenAI
+def get_openai_client():
+    if "openai" not in _CLIENTS:
+        from openai import OpenAI
 
-    client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": question},
-        ],
-        max_completion_tokens=128,
-    )
-    return clean_answer(response.choices[0].message.content)
+        _CLIENTS["openai"] = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+    return _CLIENTS["openai"]
+
+
+def get_anthropic_client():
+    if "anthropic" not in _CLIENTS:
+        import anthropic
+
+        _CLIENTS["anthropic"] = anthropic.Anthropic(
+            api_key=os.environ["ANTHROPIC_API_KEY"]
+        )
+    return _CLIENTS["anthropic"]
+
+
+def get_google_client():
+    if "google" not in _CLIENTS:
+        from google import genai
+
+        _CLIENTS["google"] = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+    return _CLIENTS["google"]
+
+
+def get_fireworks_client():
+    if "fireworks" not in _CLIENTS:
+        from openai import OpenAI
+
+        _CLIENTS["fireworks"] = OpenAI(
+            api_key=os.environ["FIREWORKS_API_KEY"],
+            base_url="https://api.fireworks.ai/inference/v1",
+        )
+    return _CLIENTS["fireworks"]
+
+
+def with_retries(fn: Callable[[], str], *, attempts: int = 5) -> str:
+    delay = 1.0
+    last_exc: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return fn()
+        except Exception as exc:  # noqa: BLE001
+            last_exc = exc
+            name = type(exc).__name__
+            retryable = name in {
+                "RateLimitError",
+                "APIConnectionError",
+                "APITimeoutError",
+                "InternalServerError",
+                "ServiceUnavailableError",
+                "ResourceExhausted",
+                "TooManyRequests",
+                "ClientError",
+                "ServerError",
+            } or "429" in str(exc) or "500" in str(exc) or "503" in str(exc)
+            if not retryable or attempt == attempts:
+                raise
+            print(f"retry {attempt}/{attempts} after {name}: sleeping {delay:.1f}s")
+            time.sleep(delay)
+            delay = min(delay * 2, 60.0)
+    raise RuntimeError(f"unreachable retry loop: {last_exc}")
+
+
+def call_openai(model: str, question: str) -> str:
+    client = get_openai_client()
+
+    def _call() -> str:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": question},
+            ],
+            max_completion_tokens=128,
+        )
+        return clean_answer(response.choices[0].message.content)
+
+    return with_retries(_call)
 
 
 def call_anthropic(model: str, question: str) -> str:
-    import anthropic
+    client = get_anthropic_client()
 
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    response = client.messages.create(
-        model=model,
-        max_tokens=64,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": question}],
-    )
-    text = "".join(block.text for block in response.content if hasattr(block, "text"))
-    return clean_answer(text)
+    def _call() -> str:
+        response = client.messages.create(
+            model=model,
+            max_tokens=64,
+            system=SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": question}],
+        )
+        text = "".join(
+            block.text for block in response.content if hasattr(block, "text")
+        )
+        return clean_answer(text)
+
+    return with_retries(_call)
 
 
 def call_google(model: str, question: str) -> str:
-    from google import genai
     from google.genai import types
 
-    client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
-    # gemini-pro-latest uses mandatory thinking tokens; keep headroom so the
-    # visible answer is not truncated to an empty / partial string.
-    response = client.models.generate_content(
-        model=model,
-        contents=question,
-        config=types.GenerateContentConfig(
-            system_instruction=SYSTEM_PROMPT,
-            max_output_tokens=1024,
-        ),
-    )
-    return clean_answer(getattr(response, "text", None))
+    client = get_google_client()
+
+    def _call() -> str:
+        # gemini-pro-latest uses mandatory thinking tokens; keep headroom so the
+        # visible answer is not truncated to an empty / partial string.
+        response = client.models.generate_content(
+            model=model,
+            contents=question,
+            config=types.GenerateContentConfig(
+                system_instruction=SYSTEM_PROMPT,
+                max_output_tokens=1024,
+            ),
+        )
+        return clean_answer(getattr(response, "text", None))
+
+    return with_retries(_call)
 
 
 def call_fireworks(model: str, question: str) -> str:
-    from openai import OpenAI
+    client = get_fireworks_client()
 
-    client = OpenAI(
-        api_key=os.environ["FIREWORKS_API_KEY"],
-        base_url="https://api.fireworks.ai/inference/v1",
-    )
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": question},
-        ],
-        max_tokens=512,
-        temperature=0,
-    )
-    message = response.choices[0].message
-    return extract_message_answer(
-        message.content,
-        getattr(message, "reasoning_content", None),
-    )
+    def _call() -> str:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": question},
+            ],
+            max_tokens=512,
+            temperature=0,
+        )
+        message = response.choices[0].message
+        return extract_message_answer(
+            message.content,
+            getattr(message, "reasoning_content", None),
+        )
+
+    return with_retries(_call)
 
 
 CALLERS: dict[str, Callable[[str, str], str]] = {
@@ -198,15 +285,42 @@ def available_models(selected: set[str] | None = None) -> list[ModelSpec]:
     return models
 
 
+def load_existing_results(path: Path) -> dict[str, list[dict[str, str]]]:
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    if isinstance(data, dict):
+        return data
+    return {}
+
+
+def write_results(path: Path, results: dict[str, list[dict[str, str]]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(results, indent=4) + "\n", encoding="utf-8")
+    tmp.replace(path)
+
+
 def run_model(
     spec: ModelSpec,
     questions: list[dict],
     *,
     sleep_s: float,
+    existing: list[dict[str, str]] | None,
+    on_checkpoint: Callable[[list[dict[str, str]]], None] | None = None,
 ) -> list[dict[str, str]]:
     caller = CALLERS[spec.provider]
-    responses: list[dict[str, str]] = []
+    responses = list(existing or [])
+    start_index = len(responses)
+    if start_index:
+        print(f"[{spec.key}] resuming at {start_index + 1}/{len(questions)}")
+
     for index, item in enumerate(questions, start=1):
+        if index <= start_index:
+            continue
         question = item.get("question")
         if not question:
             continue
@@ -214,8 +328,10 @@ def run_model(
             answer = caller(spec.model, question)
         except Exception as exc:  # noqa: BLE001 - keep the run going
             answer = f"ERROR: {type(exc).__name__}: {exc}"
-        print(f"[{spec.key} {index}/{len(questions)}] {question} -> {answer}")
+        print(f"[{spec.key} {index}/{len(questions)}] {question} -> {answer}", flush=True)
         responses.append({question: answer})
+        if on_checkpoint and (index % CHECKPOINT_EVERY == 0 or index == len(questions)):
+            on_checkpoint(responses)
         if sleep_s > 0:
             time.sleep(sleep_s)
     return responses
@@ -251,6 +367,11 @@ def parse_args() -> argparse.Namespace:
         help="Where to write the combined response JSON",
     )
     parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Resume from an existing --output checkpoint if present",
+    )
+    parser.add_argument(
         "--list-models",
         action="store_true",
         help="Print the configured latest models and exit",
@@ -275,17 +396,41 @@ def main() -> None:
     if args.limit is not None:
         questions = questions[: args.limit]
 
-    print(f"questions={len(questions)} source={source}")
-    print("models=" + ", ".join(spec.key for spec in models))
-
-    results: dict[str, list[dict[str, str]]] = {}
-    for spec in models:
-        results[spec.key] = run_model(spec, questions, sleep_s=args.sleep)
-
     output_path = Path(args.output)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(json.dumps(results, indent=4) + "\n", encoding="utf-8")
-    print(f"wrote {output_path}")
+    results = load_existing_results(output_path) if args.resume else {}
+
+    print(f"questions={len(questions)} source={source}", flush=True)
+    print("models=" + ", ".join(spec.key for spec in models), flush=True)
+    if args.resume and results:
+        print(
+            "resume counts="
+            + ", ".join(f"{k}:{len(v)}" for k, v in results.items()),
+            flush=True,
+        )
+
+    for spec in models:
+        existing = results.get(spec.key) if args.resume else None
+        if existing and len(existing) >= len(questions):
+            print(f"[{spec.key}] already complete ({len(existing)} answers)", flush=True)
+            continue
+
+        def checkpoint(responses: list[dict[str, str]], key: str = spec.key) -> None:
+            results[key] = responses
+            write_results(output_path, results)
+            print(f"checkpoint {key}: {len(responses)}/{len(questions)} -> {output_path}", flush=True)
+
+        results[spec.key] = run_model(
+            spec,
+            questions,
+            sleep_s=args.sleep,
+            existing=existing,
+            on_checkpoint=checkpoint,
+        )
+        write_results(output_path, results)
+        print(f"finished {spec.key}: {len(results[spec.key])} answers", flush=True)
+
+    write_results(output_path, results)
+    print(f"wrote {output_path}", flush=True)
 
 
 if __name__ == "__main__":

@@ -43,10 +43,18 @@ python score_benchmark.py \
 | Anthropic  | `claude-opus-4-6`                          | `ANTHROPIC_API_KEY`  |
 | Google     | `gemini-pro-latest`                        | `GOOGLE_API_KEY`     |
 | Fireworks  | `accounts/fireworks/models/qwen3p8-max`    | `FIREWORKS_API_KEY`  |
+| Fireworks  | `accounts/fireworks/models/ember-1`        | `FIREWORKS_API_KEY`  |
+| Fireworks  | `accounts/fireworks/models/kimi-k3`        | `FIREWORKS_API_KEY`  |
 
 ```bash
 python run_benchmark.py --list-models
 python run_benchmark.py --providers openai anthropic --limit 10
+
+# Full combined set with resume/checkpoints
+python run_benchmark.py \
+  --questions questions/all_questions.json \
+  --output responses/multi_provider_all_questions.json \
+  --resume
 ```
 
 `openAI_family_feud.py` remains as a single-provider OpenAI helper (now on
