@@ -175,7 +175,19 @@ def get_fireworks_client():
     return _cached_client("fireworks", factory)
 
 
-def with_retries(fn: Callable[[], str], *, attempts: int = 5) -> str:
+def _retry_delay_seconds(exc: Exception, fallback: float) -> float:
+    """Prefer provider-advertised retry delays (e.g. Gemini RetryInfo)."""
+    text = str(exc)
+    match = re.search(r"retry in ([0-9]+(?:\.[0-9]+)?)s", text, flags=re.I)
+    if match:
+        return min(max(float(match.group(1)) + 1.0, fallback), 120.0)
+    match = re.search(r"'retryDelay':\s*'([0-9]+)s'", text)
+    if match:
+        return min(max(float(match.group(1)) + 1.0, fallback), 120.0)
+    return fallback
+
+
+def with_retries(fn: Callable[[], str], *, attempts: int = 8) -> str:
     delay = 1.0
     last_exc: Exception | None = None
     for attempt in range(1, attempts + 1):
@@ -184,6 +196,7 @@ def with_retries(fn: Callable[[], str], *, attempts: int = 5) -> str:
         except Exception as exc:  # noqa: BLE001
             last_exc = exc
             name = type(exc).__name__
+            msg = str(exc)
             retryable = name in {
                 "RateLimitError",
                 "APIConnectionError",
@@ -194,14 +207,15 @@ def with_retries(fn: Callable[[], str], *, attempts: int = 5) -> str:
                 "TooManyRequests",
                 "ClientError",
                 "ServerError",
-            } or "429" in str(exc) or "500" in str(exc) or "503" in str(exc)
+            } or "429" in msg or "500" in msg or "503" in msg or "RESOURCE_EXHAUSTED" in msg
             if not retryable or attempt == attempts:
                 raise
+            sleep_for = _retry_delay_seconds(exc, delay)
             print(
-                f"retry {attempt}/{attempts} after {name}: sleeping {delay:.1f}s",
+                f"retry {attempt}/{attempts} after {name}: sleeping {sleep_for:.1f}s",
                 flush=True,
             )
-            time.sleep(delay)
+            time.sleep(sleep_for)
             delay = min(delay * 2, 60.0)
     raise RuntimeError(f"unreachable retry loop: {last_exc}")
 

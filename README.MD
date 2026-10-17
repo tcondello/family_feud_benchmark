@@ -50,7 +50,8 @@ python score_benchmark.py \
 python run_benchmark.py --list-models
 python run_benchmark.py --providers openai anthropic --limit 10
 
-# Full combined set with resume/checkpoints (all models in parallel)
+# Full combined set — TriBonds-style concurrency:
+# all providers in parallel + multiple in-flight requests per model
 python run_benchmark.py \
   --questions questions/all_questions.json \
   --output responses/multi_provider_all_questions.json \
@@ -58,6 +59,8 @@ python run_benchmark.py \
   --workers 8
 ```
 
+Wall-clock time tracks the slowest provider, not the sum of every model.
+Use `--sequential-models` only for the old one-at-a-time behavior.
 
 `openAI_family_feud.py` remains as a single-provider OpenAI helper (now on
 `gpt-5.5`). Prefer `run_benchmark.py` for multi-provider runs.
