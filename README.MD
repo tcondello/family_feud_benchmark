@@ -20,10 +20,75 @@ for one source.
 
 ```bash
 pip install -r requirements.txt
-# set OPENAI_API_KEY in .env
-python openAI_family_feud.py
+# Runtime secrets / .env:
+#   OPENAI_API_KEY, ANTHROPIC_API_KEY, GOOGLE_API_KEY, FIREWORKS_API_KEY
+
+# Smoke test (5 questions x latest model per provider)
+python run_benchmark.py --questions questions/test_questions.json
+
+# Full combined set
+python run_benchmark.py
+
+# Score responses against the survey boards
+python score_benchmark.py \
+  --responses responses/multi_provider_response_list.json \
+  --questions questions/test_questions.json
 ```
 
-`openAI_family_feud.py` currently reads `question_list.json` from the working
-directory; point it at `questions/all_questions.json` (or copy/symlink) to use
-the expanded set.
+### Latest models used
+
+| Provider   | Model                                      | Secret               |
+|------------|--------------------------------------------|----------------------|
+| OpenAI     | `gpt-5.5`                                  | `OPENAI_API_KEY`     |
+| Anthropic  | `claude-opus-4-6`                          | `ANTHROPIC_API_KEY`  |
+| Google     | `gemini-pro-latest`                        | `GOOGLE_API_KEY`     |
+| Fireworks  | `accounts/fireworks/models/qwen3p8-max`    | `FIREWORKS_API_KEY`  |
+| Fireworks  | `accounts/fireworks/models/ember-1`        | `FIREWORKS_API_KEY`  |
+| Fireworks  | `accounts/fireworks/models/kimi-k3`        | `FIREWORKS_API_KEY`  |
+
+```bash
+python run_benchmark.py --list-models
+python run_benchmark.py --providers openai anthropic --limit 10
+
+# Full combined set — TriBonds-style concurrency:
+# all providers in parallel + multiple in-flight requests per model
+python run_benchmark.py \
+  --questions questions/all_questions.json \
+  --output responses/multi_provider_all_questions.json \
+  --resume \
+  --workers 8
+```
+
+Wall-clock time tracks the slowest provider, not the sum of every model.
+Use `--sequential-models` only for the old one-at-a-time behavior.
+
+Re-query blank/empty answers in place:
+
+```bash
+python run_benchmark.py \
+  --questions questions/all_questions.json \
+  --output responses/multi_provider_all_questions.json \
+  --refill-blanks \
+  --providers gpt-5.5 qwen3p8-max \
+  --workers 8
+```
+
+Instrumented answers (latency, tokens, estimated USD from `pricing.json`) are
+stored on new results. Compare misses across models:
+
+```bash
+python score_benchmark.py \
+  --responses responses/multi_provider_all_questions.json \
+  --questions questions/all_questions.json \
+  --output responses/multi_provider_all_scores.json
+
+python compare_misses.py \
+  --responses responses/multi_provider_all_questions.json \
+  --questions questions/all_questions.json \
+  --only-disagreements \
+  --output-json responses/miss_comparison.json \
+  --output-csv responses/miss_comparison.csv
+```
+
+`openAI_family_feud.py` remains as a single-provider OpenAI helper (now on
+`gpt-5.5`). Prefer `run_benchmark.py` for multi-provider runs.

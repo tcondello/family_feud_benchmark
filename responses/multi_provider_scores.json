@@ -1,0 +1,2798 @@
+{
+  "openai/gpt-5.5": {
+    "questions": 115,
+    "hits": 87,
+    "hit_rate": 0.7565,
+    "points": 3047,
+    "avg_points": 26.5,
+    "details": [
+      {
+        "question": "Name an occupation that begins with the letter 'J.'",
+        "response": "Journalist",
+        "matched": "Journalist",
+        "score": 4
+      },
+      {
+        "question": "Name something that might be brewing.",
+        "response": "coffee",
+        "matched": "Coffee",
+        "score": 37
+      },
+      {
+        "question": "Name something with teeth.",
+        "response": "comb",
+        "matched": "A Comb",
+        "score": 8
+      },
+      {
+        "question": "Name the most useful body part that begins with the letter 'L.'",
+        "response": "Leg",
+        "matched": "Legs",
+        "score": 77
+      },
+      {
+        "question": "Name something an athlete might break.",
+        "response": "record",
+        "matched": "A Record",
+        "score": 16
+      },
+      {
+        "question": "Name something associated with vampires.",
+        "response": "Garlic",
+        "matched": "Garlic",
+        "score": 9
+      },
+      {
+        "question": "Name something in a bakery a baker might call his wife.",
+        "response": "Honey bun",
+        "matched": "Honey/Buns",
+        "score": 32
+      },
+      {
+        "question": "Name something in a person's closet that only comes out on special occasions.",
+        "response": "Tuxedo",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might see a commercial for during a baseball game.",
+        "response": "beer",
+        "matched": "Beer",
+        "score": 4
+      },
+      {
+        "question": "If your dog ran away, name something you'd be surprised he took with him.",
+        "response": "His leash",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an occasion where parents force their kids to wear a certain outfit.",
+        "response": "Wedding",
+        "matched": "Wedding",
+        "score": 26
+      },
+      {
+        "question": "Name a reason that someone might ride their bike to work.",
+        "response": "Save money",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that might come out of your nose when you laugh.",
+        "response": "snot",
+        "matched": "Snot",
+        "score": 48
+      },
+      {
+        "question": "Name qualities of a bad boss.",
+        "response": "Micromanaging, poor communication, favoritism, dishonesty, lack of empathy, blame-shifting, unrealistic expectations, indecisiveness.",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a food dogs love just as much as humans do.",
+        "response": "Peanut butter",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that shakes, rattles, and rolls.",
+        "response": "train",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Other than feet, name something that runs.",
+        "response": "nose",
+        "matched": "Nose",
+        "score": 8
+      },
+      {
+        "question": "Name a word that rhymes with \u201celection.\u201d",
+        "response": "selection",
+        "matched": "Selection",
+        "score": 32
+      },
+      {
+        "question": "Name something you would ask the Wizard for in the Land of Oz.",
+        "response": "a brain",
+        "matched": "A Brain",
+        "score": 7
+      },
+      {
+        "question": "Name a soda that people like to drink.",
+        "response": "Coca-Cola",
+        "matched": "Coca Cola",
+        "score": 39
+      },
+      {
+        "question": "Name something people might only do once a week.",
+        "response": "Go to church",
+        "matched": "Go to church",
+        "score": 15
+      },
+      {
+        "question": "Name something you keep in your car.",
+        "response": "spare tire",
+        "matched": "Spare Tire",
+        "score": 15
+      },
+      {
+        "question": "Name another word people say for \u201crear end.\u201d",
+        "response": "butt",
+        "matched": "Butt/Buttocks",
+        "score": 54
+      },
+      {
+        "question": "Name an activity that's easier to do when it's windy.",
+        "response": "Flying a kite",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an occasion for which you might wear lucky underwear.",
+        "response": "A date",
+        "matched": "Hot Date",
+        "score": 30
+      },
+      {
+        "question": "Name a food that you might lick.",
+        "response": "Ice cream",
+        "matched": "Ice cream",
+        "score": 40
+      },
+      {
+        "question": "Name something you'd do in front of a mirror.",
+        "response": "Brush your hair",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something people tend to fall out of.",
+        "response": "bed",
+        "matched": "Bed",
+        "score": 21
+      },
+      {
+        "question": "Name a reason to celebrate a party.",
+        "response": "Birthday",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might eat with crackers.",
+        "response": "cheese",
+        "matched": "Cheese",
+        "score": 24
+      },
+      {
+        "question": "Name ways to get rich quickly.",
+        "response": "Start a successful business, sell a valuable product, build a high-income skill, invest wisely, inherit wealth, win a lottery, or create viral content.",
+        "matched": "Invest",
+        "score": 28
+      },
+      {
+        "question": "Name something you might do at night.",
+        "response": "sleep",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name hot things.",
+        "response": "Fire, the sun, lava, boiling water, a stove",
+        "matched": "Fire",
+        "score": 26
+      },
+      {
+        "question": "Name gifts to surprise a person you know.",
+        "response": "Flowers, chocolates, a handwritten letter, jewelry, a book, perfume, a surprise dinner, concert tickets, a photo album, a gift card",
+        "matched": "Gift card",
+        "score": 20
+      },
+      {
+        "question": "Name things you would post on social media.",
+        "response": "Photos, videos, status updates, memes, articles, announcements",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an animal that starts with the letter \"E.\"",
+        "response": "Elephant",
+        "matched": "Elephant",
+        "score": 85
+      },
+      {
+        "question": "Name a word that rhymes with \"teeny.\"",
+        "response": "weeny",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that gets pumped up.",
+        "response": "tire",
+        "matched": "Tire",
+        "score": 48
+      },
+      {
+        "question": "Name something you do that rhymes with \"grow up.\"",
+        "response": "throw up",
+        "matched": "Throw up",
+        "score": 74
+      },
+      {
+        "question": "Name something that's easier to catch than catching a man.",
+        "response": "a cold",
+        "matched": "Cold/flu",
+        "score": 58
+      },
+      {
+        "question": "Name something to which a lot of kids seem almost addicted.",
+        "response": "Video games",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: You're in deep ____.",
+        "response": "trouble",
+        "matched": "Trouble",
+        "score": 22
+      },
+      {
+        "question": "Name something people ride that causes them to throw up.",
+        "response": "Roller coaster",
+        "matched": "Roller coaster",
+        "score": 56
+      },
+      {
+        "question": "Fill in the blank: I did everything for my guy and I never got a ____.",
+        "response": "",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something in your refrigerator that you should thank a cow for.",
+        "response": "Milk",
+        "matched": "Milk",
+        "score": 68
+      },
+      {
+        "question": "Name something that drips.",
+        "response": "faucet",
+        "matched": "Water/faucet",
+        "score": 92
+      },
+      {
+        "question": "Name something kids just love to jump on.",
+        "response": "trampoline",
+        "matched": "Trampoline",
+        "score": 20
+      },
+      {
+        "question": "Give me a three-letter word that starts with the letter \"Z.\"",
+        "response": "zip",
+        "matched": "Zip",
+        "score": 18
+      },
+      {
+        "question": "Name something you'd do if your date took you to Chuck E. Cheese.",
+        "response": "Leave",
+        "matched": "Leave/walk out",
+        "score": 28
+      },
+      {
+        "question": "Name your favorite thing to do at parties.",
+        "response": "Dance",
+        "matched": "Dance",
+        "score": 45
+      },
+      {
+        "question": "Name something people say is on the house.",
+        "response": "Drinks",
+        "matched": "Drink",
+        "score": 88
+      },
+      {
+        "question": "Which of the Seven Dwarfs describes how you feel after a couple of drinks?",
+        "response": "Happy",
+        "matched": "Happy",
+        "score": 56
+      },
+      {
+        "question": "Fill in the blank: Hold the ____.",
+        "response": "phone",
+        "matched": "Phone",
+        "score": 26
+      },
+      {
+        "question": "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?",
+        "response": "",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a weather condition that would be a good name for a wrestler.",
+        "response": "Thunderstorm",
+        "matched": "Thunder/thunderstorm",
+        "score": 16
+      },
+      {
+        "question": "Name a word that rhymes with \"will\" that's associated with doctors.",
+        "response": "pill",
+        "matched": "Pill",
+        "score": 22
+      },
+      {
+        "question": "What's something that can turn an ordinary bath into a romantic one?",
+        "response": "Candles",
+        "matched": "Candles",
+        "score": 39
+      },
+      {
+        "question": "Name a place that's filled with people who don't want to be there.",
+        "response": "Prison",
+        "matched": "Jail/prison",
+        "score": 36
+      },
+      {
+        "question": "Name something specific you make sure to clean before company comes over.",
+        "response": "Bathroom",
+        "matched": "Bathroom",
+        "score": 59
+      },
+      {
+        "question": "Name a movie monster you think could take Dracula in a fight.",
+        "response": "Godzilla",
+        "matched": "Godzilla",
+        "score": 43
+      },
+      {
+        "question": "Name an office supply you'd use to pick food out of your teeth.",
+        "response": "paper clip",
+        "matched": "Paper clip",
+        "score": 53
+      },
+      {
+        "question": "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.",
+        "response": "Minute",
+        "matched": "Minuteman",
+        "score": 14
+      },
+      {
+        "question": "Name something that might be referred to as a dead end.",
+        "response": "cul-de-sac",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.",
+        "response": "Flour",
+        "matched": "Flour",
+        "score": 70
+      },
+      {
+        "question": "If Batman went broke, he just might have to sell his Bat-what?",
+        "response": "Batmobile",
+        "matched": "Batmobile",
+        "score": 81
+      },
+      {
+        "question": "Name someplace a teenager complains about having to go.",
+        "response": "school",
+        "matched": "School/college",
+        "score": 56
+      },
+      {
+        "question": "What's the most fun thing to do with another woman?",
+        "response": "Go on an adventure together",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a way eggs are prepared that could also describe a person.",
+        "response": "Hard-boiled",
+        "matched": "Hard-boiled",
+        "score": 13
+      },
+      {
+        "question": "Name something specific that has a long neck.",
+        "response": "Giraffe",
+        "matched": "Giraffe",
+        "score": 78
+      },
+      {
+        "question": "Name something that some people are afraid to ride on or in.",
+        "response": "Airplane",
+        "matched": "Airplane",
+        "score": 44
+      },
+      {
+        "question": "Fill in the blank: Tongue ______.",
+        "response": "twister",
+        "matched": "Tongue twister",
+        "score": 10
+      },
+      {
+        "question": "Name something that has the word \"super\" in it.",
+        "response": "supermarket",
+        "matched": "Supermarket",
+        "score": 9
+      },
+      {
+        "question": "If a man ran out of deodorant, name a fruit he might rub under his pits to hide the odor.",
+        "response": "Lemon",
+        "matched": "Lemon",
+        "score": 35
+      },
+      {
+        "question": "Name something that comes in packs of six or 12.",
+        "response": "eggs",
+        "matched": "Eggs",
+        "score": 9
+      },
+      {
+        "question": "Name a US city where lots of rich people live.",
+        "response": "Beverly Hills",
+        "matched": "LA/Beverly Hills",
+        "score": 48
+      },
+      {
+        "question": "Fill in the blank: Lady _____.",
+        "response": "Gaga",
+        "matched": "Lady Gaga",
+        "score": 27
+      },
+      {
+        "question": "Name a way your man is like a good cut of meat.",
+        "response": "Tender",
+        "matched": "Tender",
+        "score": 19
+      },
+      {
+        "question": "Fill in the blank: Having a bird poop on you is bad, but imagine how much worse it would be if ______ could fly.",
+        "response": "cows",
+        "matched": "Cows",
+        "score": 22
+      },
+      {
+        "question": "Name a good place to go when you want to cry.",
+        "response": "Bathroom",
+        "matched": "Shower/bathroom",
+        "score": 27
+      },
+      {
+        "question": "If you ran your fingers through a man's hair, what would you hate to find in it?",
+        "response": "Lice",
+        "matched": "Lice/bugs",
+        "score": 45
+      },
+      {
+        "question": "Name something people deliver for a living.",
+        "response": "mail",
+        "matched": "Mail",
+        "score": 28
+      },
+      {
+        "question": "Name an animal that's easy to imitate in charades.",
+        "response": "Monkey",
+        "matched": "Monkey/ape",
+        "score": 32
+      },
+      {
+        "question": "After you murder someone, name something specific you must quickly get rid of.",
+        "response": "I can\u2019t help with that",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a kind of hoop.",
+        "response": "hula hoop",
+        "matched": "Hula-Hoop",
+        "score": 74
+      },
+      {
+        "question": "Tell me something you have that has lasted longer than most of your relationships.",
+        "response": "My favorite hoodie",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Give me one word you'd use to describe the last kiss your man gave you.",
+        "response": "Tender",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "What US state do you think has the most beautiful women?",
+        "response": "Beauty is everywhere, not state-specific",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that's cheap and greasy.",
+        "response": "Fast food",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: My man is a love ____.",
+        "response": "machine",
+        "matched": "Machine",
+        "score": 42
+      },
+      {
+        "question": "Tell me something of yours that you swear is possessed.",
+        "response": "My printer",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a kind of ball it might feel like a woman is pushing out when she gives birth.",
+        "response": "bowling ball",
+        "matched": "Bowling ball",
+        "score": 17
+      },
+      {
+        "question": "Name a word a dog understands.",
+        "response": "Sit",
+        "matched": "Sit",
+        "score": 54
+      },
+      {
+        "question": "Give me a phrase that starts with the words, \"Off the...\"",
+        "response": "Off the beaten path",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Tell me a country where you think the men are sexier than American men.",
+        "response": "Italy",
+        "matched": "Italy",
+        "score": 35
+      },
+      {
+        "question": "Name something you stuff just as full as you can get it.",
+        "response": "Suitcase",
+        "matched": "Suitcase",
+        "score": 6
+      },
+      {
+        "question": "If a man speaks seven languages, which one would he use when he wants to sound sexy?",
+        "response": "Body language",
+        "matched": "Body language",
+        "score": 2
+      },
+      {
+        "question": "Name a good musical instrument for someone who is full of hot air.",
+        "response": "bagpipes",
+        "matched": "Bagpipes",
+        "score": 8
+      },
+      {
+        "question": "Give me a word that rhymes with \"hustle.\"",
+        "response": "muscle",
+        "matched": "Muscle",
+        "score": 15
+      },
+      {
+        "question": "You know a guy is really into you if he kisses your what?",
+        "response": "forehead",
+        "matched": "Forehead/head",
+        "score": 30
+      },
+      {
+        "question": "Name an animal that doesn't have a leg to stand on.",
+        "response": "Snake",
+        "matched": "Snake",
+        "score": 59
+      },
+      {
+        "question": "What would it be hard to do if you accidentally put on superglue instead of lipstick?",
+        "response": "Open your mouth",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an animal that might like to watch the DVD Squirrels Gone Wild.",
+        "response": "Dog",
+        "matched": "Dog",
+        "score": 39
+      },
+      {
+        "question": "Name the first thing Steve Harvey would remove if he were in a game of strip poker.",
+        "response": "His mustache",
+        "matched": "His mustache",
+        "score": 4
+      },
+      {
+        "question": "Name a place you stop going to when you're broke.",
+        "response": "Restaurants",
+        "matched": "Restaurants",
+        "score": 32
+      },
+      {
+        "question": "Name something a mother might pick out for her adult son.",
+        "response": "Clothes",
+        "matched": "Clothes",
+        "score": 79
+      },
+      {
+        "question": "If they made a Judge Judy doll, name something it might come with.",
+        "response": "Gavel",
+        "matched": "Gavel/mallet",
+        "score": 64
+      },
+      {
+        "question": "Name something that parents can't wait for their children to get out of.",
+        "response": "Diapers",
+        "matched": "Diapers",
+        "score": 35
+      },
+      {
+        "question": "Name a place you'd hate to find toenail clippings.",
+        "response": "In your food",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "In one word, describe the underwear your man is wearing right now.",
+        "response": "Boxers",
+        "matched": "Boxers",
+        "score": 31
+      },
+      {
+        "question": "Name an American city where they know how to party hard.",
+        "response": "New Orleans",
+        "matched": "New Orleans",
+        "score": 31
+      },
+      {
+        "question": "Name something you associate with camels.",
+        "response": "desert",
+        "matched": "Desert",
+        "score": 13
+      },
+      {
+        "question": "If Steve Harvey were your neighbor, name something of his you might ask to borrow.",
+        "response": "A suit",
+        "matched": "Suits/clothes",
+        "score": 19
+      },
+      {
+        "question": "Name a place you'd hate to spend even one night.",
+        "response": "Jail",
+        "matched": "Jail/prison",
+        "score": 19
+      },
+      {
+        "question": "Name something you'd hate to have happen while you're taking a bath.",
+        "response": "Someone walks in",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "And name something of your wife's you like to wear because it's so soft.",
+        "response": "bathrobe",
+        "matched": null,
+        "score": 0
+      }
+    ]
+  },
+  "anthropic/claude-opus-4-6": {
+    "questions": 115,
+    "hits": 97,
+    "hit_rate": 0.8435,
+    "points": 3724,
+    "avg_points": 32.38,
+    "details": [
+      {
+        "question": "Name an occupation that begins with the letter 'J.'",
+        "response": "Judge",
+        "matched": "Judge/Justice",
+        "score": 19
+      },
+      {
+        "question": "Name something that might be brewing.",
+        "response": "Coffee",
+        "matched": "Coffee",
+        "score": 37
+      },
+      {
+        "question": "Name something with teeth.",
+        "response": "comb",
+        "matched": "A Comb",
+        "score": 8
+      },
+      {
+        "question": "Name the most useful body part that begins with the letter 'L.'",
+        "response": "Legs",
+        "matched": "Legs",
+        "score": 77
+      },
+      {
+        "question": "Name something an athlete might break.",
+        "response": "a record",
+        "matched": "A Record",
+        "score": 16
+      },
+      {
+        "question": "Name something associated with vampires.",
+        "response": "blood",
+        "matched": "Blood/Bloodsucker",
+        "score": 29
+      },
+      {
+        "question": "Name something in a bakery a baker might call his wife.",
+        "response": "Cupcake",
+        "matched": "Cupcake",
+        "score": 8
+      },
+      {
+        "question": "Name something in a person's closet that only comes out on special occasions.",
+        "response": "Fancy dress",
+        "matched": "Dress",
+        "score": 26
+      },
+      {
+        "question": "Name something you might see a commercial for during a baseball game.",
+        "response": "Beer",
+        "matched": "Beer",
+        "score": 4
+      },
+      {
+        "question": "If your dog ran away, name something you'd be surprised he took with him.",
+        "response": "His leash",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an occasion where parents force their kids to wear a certain outfit.",
+        "response": "Wedding",
+        "matched": "Wedding",
+        "score": 26
+      },
+      {
+        "question": "Name a reason that someone might ride their bike to work.",
+        "response": "Exercise",
+        "matched": "Exercise",
+        "score": 23
+      },
+      {
+        "question": "Name something that might come out of your nose when you laugh.",
+        "response": "snot",
+        "matched": "Snot",
+        "score": 48
+      },
+      {
+        "question": "Name qualities of a bad boss.",
+        "response": "Mean, unfair, micromanaging, dishonest, unapproachable, incompetent, lazy, disrespectful, inconsistent, selfish",
+        "matched": "Incompetent",
+        "score": 24
+      },
+      {
+        "question": "Name a food dogs love just as much as humans do.",
+        "response": "Steak",
+        "matched": "Steak",
+        "score": 48
+      },
+      {
+        "question": "Name something that shakes, rattles, and rolls.",
+        "response": "Car",
+        "matched": "An Old Car",
+        "score": 31
+      },
+      {
+        "question": "Other than feet, name something that runs.",
+        "response": "nose",
+        "matched": "Nose",
+        "score": 8
+      },
+      {
+        "question": "Name a word that rhymes with \u201celection.\u201d",
+        "response": "perfection",
+        "matched": "Perfection",
+        "score": 6
+      },
+      {
+        "question": "Name something you would ask the Wizard for in the Land of Oz.",
+        "response": "A brain",
+        "matched": "A Brain",
+        "score": 7
+      },
+      {
+        "question": "Name a soda that people like to drink.",
+        "response": "Coca-Cola",
+        "matched": "Coca Cola",
+        "score": 39
+      },
+      {
+        "question": "Name something people might only do once a week.",
+        "response": "Go to church",
+        "matched": "Go to church",
+        "score": 15
+      },
+      {
+        "question": "Name something you keep in your car.",
+        "response": "Spare tire",
+        "matched": "Spare Tire",
+        "score": 15
+      },
+      {
+        "question": "Name another word people say for \u201crear end.\u201d",
+        "response": "butt",
+        "matched": "Butt/Buttocks",
+        "score": 54
+      },
+      {
+        "question": "Name an activity that's easier to do when it's windy.",
+        "response": "Fly a kite",
+        "matched": "Fly a Kite",
+        "score": 89
+      },
+      {
+        "question": "Name an occasion for which you might wear lucky underwear.",
+        "response": "Job interview",
+        "matched": "Job Interview",
+        "score": 16
+      },
+      {
+        "question": "Name a food that you might lick.",
+        "response": "Ice cream",
+        "matched": "Ice cream",
+        "score": 40
+      },
+      {
+        "question": "Name something you'd do in front of a mirror.",
+        "response": "Brush my hair",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something people tend to fall out of.",
+        "response": "Love",
+        "matched": "Love",
+        "score": 25
+      },
+      {
+        "question": "Name a reason to celebrate a party.",
+        "response": "Birthday",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might eat with crackers.",
+        "response": "Cheese",
+        "matched": "Cheese",
+        "score": 24
+      },
+      {
+        "question": "Name ways to get rich quickly.",
+        "response": "- Win a lawsuit settlement",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might do at night.",
+        "response": "Sleep",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name hot things.",
+        "response": "The sun, fire, lava, a stovetop, boiling water, a desert, hot coals, a sauna, jalape\u00f1o peppers, coffee",
+        "matched": "Fire",
+        "score": 26
+      },
+      {
+        "question": "Name gifts to surprise a person you know.",
+        "response": "- Clothing or accessories",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name things you would post on social media.",
+        "response": "9",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an animal that starts with the letter \"E.\"",
+        "response": "Elephant",
+        "matched": "Elephant",
+        "score": 85
+      },
+      {
+        "question": "Name a word that rhymes with \"teeny.\"",
+        "response": "Meany",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that gets pumped up.",
+        "response": "Tire",
+        "matched": "Tire",
+        "score": 48
+      },
+      {
+        "question": "Name something you do that rhymes with \"grow up.\"",
+        "response": "Throw up",
+        "matched": "Throw up",
+        "score": 74
+      },
+      {
+        "question": "Name something that's easier to catch than catching a man.",
+        "response": "A cold",
+        "matched": "Cold/flu",
+        "score": 58
+      },
+      {
+        "question": "Name something to which a lot of kids seem almost addicted.",
+        "response": "Video games",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: You're in deep ____.",
+        "response": "trouble",
+        "matched": "Trouble",
+        "score": 22
+      },
+      {
+        "question": "Name something people ride that causes them to throw up.",
+        "response": "roller coaster",
+        "matched": "Roller coaster",
+        "score": 56
+      },
+      {
+        "question": "Fill in the blank: I did everything for my guy and I never got a ____.",
+        "response": "thank you",
+        "matched": "Thank-you",
+        "score": 74
+      },
+      {
+        "question": "Name something in your refrigerator that you should thank a cow for.",
+        "response": "Milk",
+        "matched": "Milk",
+        "score": 68
+      },
+      {
+        "question": "Name something that drips.",
+        "response": "faucet",
+        "matched": "Water/faucet",
+        "score": 92
+      },
+      {
+        "question": "Name something kids just love to jump on.",
+        "response": "A trampoline",
+        "matched": "Trampoline",
+        "score": 20
+      },
+      {
+        "question": "Give me a three-letter word that starts with the letter \"Z.\"",
+        "response": "zoo",
+        "matched": "Zoo",
+        "score": 40
+      },
+      {
+        "question": "Name something you'd do if your date took you to Chuck E. Cheese.",
+        "response": "Play video games",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name your favorite thing to do at parties.",
+        "response": "Dance",
+        "matched": "Dance",
+        "score": 45
+      },
+      {
+        "question": "Name something people say is on the house.",
+        "response": "drinks",
+        "matched": "Drink",
+        "score": 88
+      },
+      {
+        "question": "Which of the Seven Dwarfs describes how you feel after a couple of drinks?",
+        "response": "Happy",
+        "matched": "Happy",
+        "score": 56
+      },
+      {
+        "question": "Fill in the blank: Hold the ____.",
+        "response": "phone",
+        "matched": "Phone",
+        "score": 26
+      },
+      {
+        "question": "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?",
+        "response": "Daisies",
+        "matched": "Daisies",
+        "score": 39
+      },
+      {
+        "question": "Name a weather condition that would be a good name for a wrestler.",
+        "response": "Thunder",
+        "matched": "Thunder/thunderstorm",
+        "score": 16
+      },
+      {
+        "question": "Name a word that rhymes with \"will\" that's associated with doctors.",
+        "response": "Pill",
+        "matched": "Pill",
+        "score": 22
+      },
+      {
+        "question": "What's something that can turn an ordinary bath into a romantic one?",
+        "response": "Candles",
+        "matched": "Candles",
+        "score": 39
+      },
+      {
+        "question": "Name a place that's filled with people who don't want to be there.",
+        "response": "Jail",
+        "matched": "Jail/prison",
+        "score": 36
+      },
+      {
+        "question": "Name something specific you make sure to clean before company comes over.",
+        "response": "Bathroom",
+        "matched": "Bathroom",
+        "score": 59
+      },
+      {
+        "question": "Name a movie monster you think could take Dracula in a fight.",
+        "response": "Godzilla",
+        "matched": "Godzilla",
+        "score": 43
+      },
+      {
+        "question": "Name an office supply you'd use to pick food out of your teeth.",
+        "response": "Paper clip",
+        "matched": "Paper clip",
+        "score": 53
+      },
+      {
+        "question": "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.",
+        "response": "One Minute",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that might be referred to as a dead end.",
+        "response": "A job",
+        "matched": "A job",
+        "score": 28
+      },
+      {
+        "question": "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.",
+        "response": "Flour",
+        "matched": "Flour",
+        "score": 70
+      },
+      {
+        "question": "If Batman went broke, he just might have to sell his Bat-what?",
+        "response": "Batmobile",
+        "matched": "Batmobile",
+        "score": 81
+      },
+      {
+        "question": "Name someplace a teenager complains about having to go.",
+        "response": "School",
+        "matched": "School/college",
+        "score": 56
+      },
+      {
+        "question": "What's the most fun thing to do with another woman?",
+        "response": "Shopping",
+        "matched": "Shop",
+        "score": 46
+      },
+      {
+        "question": "Name a way eggs are prepared that could also describe a person.",
+        "response": "Beaten",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something specific that has a long neck.",
+        "response": "Giraffe",
+        "matched": "Giraffe",
+        "score": 78
+      },
+      {
+        "question": "Name something that some people are afraid to ride on or in.",
+        "response": "Roller coaster",
+        "matched": "Roller coaster",
+        "score": 16
+      },
+      {
+        "question": "Fill in the blank: Tongue ______.",
+        "response": "Twister",
+        "matched": "Tongue twister",
+        "score": 10
+      },
+      {
+        "question": "Name something that has the word \"super\" in it.",
+        "response": "Superman",
+        "matched": "Superman",
+        "score": 47
+      },
+      {
+        "question": "If a man ran out of deodorant, name a fruit he might rub under his pits to hide the odor.",
+        "response": "Lemon",
+        "matched": "Lemon",
+        "score": 35
+      },
+      {
+        "question": "Name something that comes in packs of six or 12.",
+        "response": "Beer",
+        "matched": "Beer",
+        "score": 35
+      },
+      {
+        "question": "Name a US city where lots of rich people live.",
+        "response": "Beverly Hills",
+        "matched": "LA/Beverly Hills",
+        "score": 48
+      },
+      {
+        "question": "Fill in the blank: Lady _____.",
+        "response": "Gaga",
+        "matched": "Lady Gaga",
+        "score": 27
+      },
+      {
+        "question": "Name a way your man is like a good cut of meat.",
+        "response": "Tender",
+        "matched": "Tender",
+        "score": 19
+      },
+      {
+        "question": "Fill in the blank: Having a bird poop on you is bad, but imagine how much worse it would be if ______ could fly.",
+        "response": "cows",
+        "matched": "Cows",
+        "score": 22
+      },
+      {
+        "question": "Name a good place to go when you want to cry.",
+        "response": "bedroom",
+        "matched": "Bed/bedroom",
+        "score": 46
+      },
+      {
+        "question": "If you ran your fingers through a man's hair, what would you hate to find in it?",
+        "response": "lice",
+        "matched": "Lice/bugs",
+        "score": 45
+      },
+      {
+        "question": "Name something people deliver for a living.",
+        "response": "mail",
+        "matched": "Mail",
+        "score": 28
+      },
+      {
+        "question": "Name an animal that's easy to imitate in charades.",
+        "response": "Elephant",
+        "matched": "Elephant",
+        "score": 4
+      },
+      {
+        "question": "After you murder someone, name something specific you must quickly get rid of.",
+        "response": "The murder weapon",
+        "matched": "The weapon",
+        "score": 58
+      },
+      {
+        "question": "Name a kind of hoop.",
+        "response": "hula hoop",
+        "matched": "Hula-Hoop",
+        "score": 74
+      },
+      {
+        "question": "Tell me something you have that has lasted longer than most of your relationships.",
+        "response": "A good pair of jeans",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Give me one word you'd use to describe the last kiss your man gave you.",
+        "response": "Passionate",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "What US state do you think has the most beautiful women?",
+        "response": "California",
+        "matched": "California",
+        "score": 53
+      },
+      {
+        "question": "Name something that's cheap and greasy.",
+        "response": "Fast food",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: My man is a love ____.",
+        "response": "machine",
+        "matched": "Machine",
+        "score": 42
+      },
+      {
+        "question": "Tell me something of yours that you swear is possessed.",
+        "response": "computer",
+        "matched": "Computer",
+        "score": 9
+      },
+      {
+        "question": "Name a kind of ball it might feel like a woman is pushing out when she gives birth.",
+        "response": "bowling ball",
+        "matched": "Bowling ball",
+        "score": 17
+      },
+      {
+        "question": "Name a word a dog understands.",
+        "response": "Sit",
+        "matched": "Sit",
+        "score": 54
+      },
+      {
+        "question": "Give me a phrase that starts with the words, \"Off the...\"",
+        "response": "Off the beaten path",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Tell me a country where you think the men are sexier than American men.",
+        "response": "Italy",
+        "matched": "Italy",
+        "score": 35
+      },
+      {
+        "question": "Name something you stuff just as full as you can get it.",
+        "response": "Turkey",
+        "matched": "Turkey",
+        "score": 39
+      },
+      {
+        "question": "If a man speaks seven languages, which one would he use when he wants to sound sexy?",
+        "response": "French",
+        "matched": "French",
+        "score": 60
+      },
+      {
+        "question": "Name a good musical instrument for someone who is full of hot air.",
+        "response": "tuba",
+        "matched": "Tuba",
+        "score": 56
+      },
+      {
+        "question": "Give me a word that rhymes with \"hustle.\"",
+        "response": "Muscle",
+        "matched": "Muscle",
+        "score": 15
+      },
+      {
+        "question": "You know a guy is really into you if he kisses your what?",
+        "response": "Neck",
+        "matched": "Neck",
+        "score": 15
+      },
+      {
+        "question": "Name an animal that doesn't have a leg to stand on.",
+        "response": "snake",
+        "matched": "Snake",
+        "score": 59
+      },
+      {
+        "question": "What would it be hard to do if you accidentally put on superglue instead of lipstick?",
+        "response": "open your mouth",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an animal that might like to watch the DVD Squirrels Gone Wild.",
+        "response": "Dog",
+        "matched": "Dog",
+        "score": 39
+      },
+      {
+        "question": "Name the first thing Steve Harvey would remove if he were in a game of strip poker.",
+        "response": "Shoes",
+        "matched": "His shoes",
+        "score": 15
+      },
+      {
+        "question": "Name a place you stop going to when you're broke.",
+        "response": "Restaurant",
+        "matched": "Restaurants",
+        "score": 32
+      },
+      {
+        "question": "Name something a mother might pick out for her adult son.",
+        "response": "Clothes",
+        "matched": "Clothes",
+        "score": 79
+      },
+      {
+        "question": "If they made a Judge Judy doll, name something it might come with.",
+        "response": "A gavel",
+        "matched": "Gavel/mallet",
+        "score": 64
+      },
+      {
+        "question": "Name something that parents can't wait for their children to get out of.",
+        "response": "Diapers",
+        "matched": "Diapers",
+        "score": 35
+      },
+      {
+        "question": "Name a place you'd hate to find toenail clippings.",
+        "response": "Bed",
+        "matched": "My bed",
+        "score": 36
+      },
+      {
+        "question": "In one word, describe the underwear your man is wearing right now.",
+        "response": "boxers",
+        "matched": "Boxers",
+        "score": 31
+      },
+      {
+        "question": "Name an American city where they know how to party hard.",
+        "response": "Las Vegas",
+        "matched": "Las Vegas",
+        "score": 19
+      },
+      {
+        "question": "Name something you associate with camels.",
+        "response": "Desert",
+        "matched": "Desert",
+        "score": 13
+      },
+      {
+        "question": "If Steve Harvey were your neighbor, name something of his you might ask to borrow.",
+        "response": "His mustache trimmer",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a place you'd hate to spend even one night.",
+        "response": "Jail",
+        "matched": "Jail/prison",
+        "score": 19
+      },
+      {
+        "question": "Name something you'd hate to have happen while you're taking a bath.",
+        "response": "Phone rings",
+        "matched": "Phone rings",
+        "score": 35
+      },
+      {
+        "question": "And name something of your wife's you like to wear because it's so soft.",
+        "response": "robe",
+        "matched": "Her robe",
+        "score": 33
+      }
+    ]
+  },
+  "google/gemini-pro-latest": {
+    "questions": 115,
+    "hits": 94,
+    "hit_rate": 0.8174,
+    "points": 3146,
+    "avg_points": 27.36,
+    "details": [
+      {
+        "question": "Name an occupation that begins with the letter 'J.'",
+        "response": "Judge",
+        "matched": "Judge/Justice",
+        "score": 19
+      },
+      {
+        "question": "Name something that might be brewing.",
+        "response": "coffee",
+        "matched": "Coffee",
+        "score": 37
+      },
+      {
+        "question": "Name something with teeth.",
+        "response": "shark",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name the most useful body part that begins with the letter 'L.'",
+        "response": "Lungs",
+        "matched": "Lungs",
+        "score": 6
+      },
+      {
+        "question": "Name something an athlete might break.",
+        "response": "record",
+        "matched": "A Record",
+        "score": 16
+      },
+      {
+        "question": "Name something associated with vampires.",
+        "response": "blood",
+        "matched": "Blood/Bloodsucker",
+        "score": 29
+      },
+      {
+        "question": "Name something in a bakery a baker might call his wife.",
+        "response": "Cupcake",
+        "matched": "Cupcake",
+        "score": 8
+      },
+      {
+        "question": "Name something in a person's closet that only comes out on special occasions.",
+        "response": "Tuxedo",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might see a commercial for during a baseball game.",
+        "response": "Beer",
+        "matched": "Beer",
+        "score": 4
+      },
+      {
+        "question": "If your dog ran away, name something you'd be surprised he took with him.",
+        "response": "suitcase",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an occasion where parents force their kids to wear a certain outfit.",
+        "response": "Wedding",
+        "matched": "Wedding",
+        "score": 26
+      },
+      {
+        "question": "Name a reason that someone might ride their bike to work.",
+        "response": "Exercise",
+        "matched": "Exercise",
+        "score": 23
+      },
+      {
+        "question": "Name something that might come out of your nose when you laugh.",
+        "response": "Milk",
+        "matched": "Milk",
+        "score": 32
+      },
+      {
+        "question": "Name qualities of a bad boss.",
+        "response": "Micromanaging, poor communication, lack of empathy, favoritism, inconsistency, taking credit for others' work, inflexibility.",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a food dogs love just as much as humans do.",
+        "response": "Bacon",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that shakes, rattles, and rolls.",
+        "response": "Dice",
+        "matched": "Dice",
+        "score": 4
+      },
+      {
+        "question": "Other than feet, name something that runs.",
+        "response": "Water",
+        "matched": "Water/Toilet",
+        "score": 37
+      },
+      {
+        "question": "Name a word that rhymes with \u201celection.\u201d",
+        "response": "Selection",
+        "matched": "Selection",
+        "score": 32
+      },
+      {
+        "question": "Name something you would ask the Wizard for in the Land of Oz.",
+        "response": "Courage",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a soda that people like to drink.",
+        "response": "Coca-Cola",
+        "matched": "Coca Cola",
+        "score": 39
+      },
+      {
+        "question": "Name something people might only do once a week.",
+        "response": "laundry",
+        "matched": "Laundry",
+        "score": 27
+      },
+      {
+        "question": "Name something you keep in your car.",
+        "response": "spare tire",
+        "matched": "Spare Tire",
+        "score": 15
+      },
+      {
+        "question": "Name another word people say for \u201crear end.\u201d",
+        "response": "Butt",
+        "matched": "Butt/Buttocks",
+        "score": 54
+      },
+      {
+        "question": "Name an activity that's easier to do when it's windy.",
+        "response": "Flying a kite",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an occasion for which you might wear lucky underwear.",
+        "response": "job interview",
+        "matched": "Job Interview",
+        "score": 16
+      },
+      {
+        "question": "Name a food that you might lick.",
+        "response": "ice cream",
+        "matched": "Ice cream",
+        "score": 40
+      },
+      {
+        "question": "Name something you'd do in front of a mirror.",
+        "response": "Brush hair",
+        "matched": "Brush hair",
+        "score": 23
+      },
+      {
+        "question": "Name something people tend to fall out of.",
+        "response": "Bed",
+        "matched": "Bed",
+        "score": 21
+      },
+      {
+        "question": "Name a reason to celebrate a party.",
+        "response": "Birthday",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might eat with crackers.",
+        "response": "cheese",
+        "matched": "Cheese",
+        "score": 24
+      },
+      {
+        "question": "Name ways to get rich quickly.",
+        "response": "Lottery, gambling, inheritance",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might do at night.",
+        "response": "Sleep",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name hot things.",
+        "response": "Fire, sun, lava, oven",
+        "matched": "Fire",
+        "score": 26
+      },
+      {
+        "question": "Name gifts to surprise a person you know.",
+        "response": "Concert tickets, personalized jewelry, weekend getaway, spa day, custom photo album",
+        "matched": "Jewelry",
+        "score": 11
+      },
+      {
+        "question": "Name things you would post on social media.",
+        "response": "Photos, videos, memes, selfies, status updates",
+        "matched": "Selfie",
+        "score": 31
+      },
+      {
+        "question": "Name an animal that starts with the letter \"E.\"",
+        "response": "Elephant",
+        "matched": "Elephant",
+        "score": 85
+      },
+      {
+        "question": "Name a word that rhymes with \"teeny.\"",
+        "response": "beanie",
+        "matched": "Beanie",
+        "score": 15
+      },
+      {
+        "question": "Name something that gets pumped up.",
+        "response": "Tire",
+        "matched": "Tire",
+        "score": 48
+      },
+      {
+        "question": "Name something you do that rhymes with \"grow up.\"",
+        "response": "Throw up",
+        "matched": "Throw up",
+        "score": 74
+      },
+      {
+        "question": "Name something that's easier to catch than catching a man.",
+        "response": "A cold",
+        "matched": "Cold/flu",
+        "score": 58
+      },
+      {
+        "question": "Name something to which a lot of kids seem almost addicted.",
+        "response": "Video games",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: You're in deep ____.",
+        "response": "trouble",
+        "matched": "Trouble",
+        "score": 22
+      },
+      {
+        "question": "Name something people ride that causes them to throw up.",
+        "response": "Rollercoaster",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: I did everything for my guy and I never got a ____.",
+        "response": "Thank you",
+        "matched": "Thank-you",
+        "score": 74
+      },
+      {
+        "question": "Name something in your refrigerator that you should thank a cow for.",
+        "response": "milk",
+        "matched": "Milk",
+        "score": 68
+      },
+      {
+        "question": "Name something that drips.",
+        "response": "Faucet",
+        "matched": "Water/faucet",
+        "score": 92
+      },
+      {
+        "question": "Name something kids just love to jump on.",
+        "response": "trampoline",
+        "matched": "Trampoline",
+        "score": 20
+      },
+      {
+        "question": "Give me a three-letter word that starts with the letter \"Z.\"",
+        "response": "zoo",
+        "matched": "Zoo",
+        "score": 40
+      },
+      {
+        "question": "Name something you'd do if your date took you to Chuck E. Cheese.",
+        "response": "Play games",
+        "matched": "Play games",
+        "score": 29
+      },
+      {
+        "question": "Name your favorite thing to do at parties.",
+        "response": "talk",
+        "matched": "Socialize/talk",
+        "score": 21
+      },
+      {
+        "question": "Name something people say is on the house.",
+        "response": "Drinks",
+        "matched": "Drink",
+        "score": 88
+      },
+      {
+        "question": "Which of the Seven Dwarfs describes how you feel after a couple of drinks?",
+        "response": "Happy",
+        "matched": "Happy",
+        "score": 56
+      },
+      {
+        "question": "Fill in the blank: Hold the ____.",
+        "response": "line",
+        "matched": "Line",
+        "score": 6
+      },
+      {
+        "question": "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?",
+        "response": "Tulips",
+        "matched": "Tulips",
+        "score": 6
+      },
+      {
+        "question": "Name a weather condition that would be a good name for a wrestler.",
+        "response": "Cyclone",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a word that rhymes with \"will\" that's associated with doctors.",
+        "response": "Pill",
+        "matched": "Pill",
+        "score": 22
+      },
+      {
+        "question": "What's something that can turn an ordinary bath into a romantic one?",
+        "response": "Candles",
+        "matched": "Candles",
+        "score": 39
+      },
+      {
+        "question": "Name a place that's filled with people who don't want to be there.",
+        "response": "Prison",
+        "matched": "Jail/prison",
+        "score": 36
+      },
+      {
+        "question": "Name something specific you make sure to clean before company comes over.",
+        "response": "Toilet",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a movie monster you think could take Dracula in a fight.",
+        "response": "Godzilla",
+        "matched": "Godzilla",
+        "score": 43
+      },
+      {
+        "question": "Name an office supply you'd use to pick food out of your teeth.",
+        "response": "paperclip",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.",
+        "response": "Minute",
+        "matched": "Minuteman",
+        "score": 14
+      },
+      {
+        "question": "Name something that might be referred to as a dead end.",
+        "response": "street",
+        "matched": "A street/road",
+        "score": 47
+      },
+      {
+        "question": "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.",
+        "response": "Flour",
+        "matched": "Flour",
+        "score": 70
+      },
+      {
+        "question": "If Batman went broke, he just might have to sell his Bat-what?",
+        "response": "Batmobile",
+        "matched": "Batmobile",
+        "score": 81
+      },
+      {
+        "question": "Name someplace a teenager complains about having to go.",
+        "response": "School",
+        "matched": "School/college",
+        "score": 56
+      },
+      {
+        "question": "What's the most fun thing to do with another woman?",
+        "response": "Talking",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a way eggs are prepared that could also describe a person.",
+        "response": "Hard-boiled",
+        "matched": "Hard-boiled",
+        "score": 13
+      },
+      {
+        "question": "Name something specific that has a long neck.",
+        "response": "Giraffe",
+        "matched": "Giraffe",
+        "score": 78
+      },
+      {
+        "question": "Name something that some people are afraid to ride on or in.",
+        "response": "Airplane",
+        "matched": "Airplane",
+        "score": 44
+      },
+      {
+        "question": "Fill in the blank: Tongue ______.",
+        "response": "twister",
+        "matched": "Tongue twister",
+        "score": 10
+      },
+      {
+        "question": "Name something that has the word \"super\" in it.",
+        "response": "Superman",
+        "matched": "Superman",
+        "score": 47
+      },
+      {
+        "question": "If a man ran out of deodorant, name a fruit he might rub under his pits to hide the odor.",
+        "response": "Lemon",
+        "matched": "Lemon",
+        "score": 35
+      },
+      {
+        "question": "Name something that comes in packs of six or 12.",
+        "response": "Eggs",
+        "matched": "Eggs",
+        "score": 9
+      },
+      {
+        "question": "Name a US city where lots of rich people live.",
+        "response": "Beverly Hills",
+        "matched": "LA/Beverly Hills",
+        "score": 48
+      },
+      {
+        "question": "Fill in the blank: Lady _____.",
+        "response": "Gaga",
+        "matched": "Lady Gaga",
+        "score": 27
+      },
+      {
+        "question": "Name a way your man is like a good cut of meat.",
+        "response": "Tender",
+        "matched": "Tender",
+        "score": 19
+      },
+      {
+        "question": "Fill in the blank: Having a bird poop on you is bad, but imagine how much worse it would be if ______ could fly.",
+        "response": "cows",
+        "matched": "Cows",
+        "score": 22
+      },
+      {
+        "question": "Name a good place to go when you want to cry.",
+        "response": "Shower",
+        "matched": "Shower/bathroom",
+        "score": 27
+      },
+      {
+        "question": "If you ran your fingers through a man's hair, what would you hate to find in it?",
+        "response": "Lice",
+        "matched": "Lice/bugs",
+        "score": 45
+      },
+      {
+        "question": "Name something people deliver for a living.",
+        "response": "pizza",
+        "matched": "Pizza",
+        "score": 20
+      },
+      {
+        "question": "Name an animal that's easy to imitate in charades.",
+        "response": "Monkey",
+        "matched": "Monkey/ape",
+        "score": 32
+      },
+      {
+        "question": "After you murder someone, name something specific you must quickly get rid of.",
+        "response": "The murder weapon",
+        "matched": "The weapon",
+        "score": 58
+      },
+      {
+        "question": "Name a kind of hoop.",
+        "response": "hula hoop",
+        "matched": "Hula-Hoop",
+        "score": 74
+      },
+      {
+        "question": "Tell me something you have that has lasted longer than most of your relationships.",
+        "response": "Cast iron skillet",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Give me one word you'd use to describe the last kiss your man gave you.",
+        "response": "Nonexistent",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "What US state do you think has the most beautiful women?",
+        "response": "California",
+        "matched": "California",
+        "score": 53
+      },
+      {
+        "question": "Name something that's cheap and greasy.",
+        "response": "Fast food",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: My man is a love ____.",
+        "response": "machine",
+        "matched": "Machine",
+        "score": 42
+      },
+      {
+        "question": "Tell me something of yours that you swear is possessed.",
+        "response": "printer",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a kind of ball it might feel like a woman is pushing out when she gives birth.",
+        "response": "Bowling ball",
+        "matched": "Bowling ball",
+        "score": 17
+      },
+      {
+        "question": "Name a word a dog understands.",
+        "response": "Sit",
+        "matched": "Sit",
+        "score": 54
+      },
+      {
+        "question": "Give me a phrase that starts with the words, \"Off the...\"",
+        "response": "Off the record",
+        "matched": "Off the record",
+        "score": 7
+      },
+      {
+        "question": "Tell me a country where you think the men are sexier than American men.",
+        "response": "Italy",
+        "matched": "Italy",
+        "score": 35
+      },
+      {
+        "question": "Name something you stuff just as full as you can get it.",
+        "response": "Suitcase",
+        "matched": "Suitcase",
+        "score": 6
+      },
+      {
+        "question": "If a man speaks seven languages, which one would he use when he wants to sound sexy?",
+        "response": "French",
+        "matched": "French",
+        "score": 60
+      },
+      {
+        "question": "Name a good musical instrument for someone who is full of hot air.",
+        "response": "Bagpipes",
+        "matched": "Bagpipes",
+        "score": 8
+      },
+      {
+        "question": "Give me a word that rhymes with \"hustle.\"",
+        "response": "Muscle",
+        "matched": "Muscle",
+        "score": 15
+      },
+      {
+        "question": "You know a guy is really into you if he kisses your what?",
+        "response": "Forehead",
+        "matched": "Forehead/head",
+        "score": 30
+      },
+      {
+        "question": "Name an animal that doesn't have a leg to stand on.",
+        "response": "snake",
+        "matched": "Snake",
+        "score": 59
+      },
+      {
+        "question": "What would it be hard to do if you accidentally put on superglue instead of lipstick?",
+        "response": "Talk",
+        "matched": "Talk",
+        "score": 32
+      },
+      {
+        "question": "Name an animal that might like to watch the DVD Squirrels Gone Wild.",
+        "response": "Dog",
+        "matched": "Dog",
+        "score": 39
+      },
+      {
+        "question": "Name the first thing Steve Harvey would remove if he were in a game of strip poker.",
+        "response": "Jacket",
+        "matched": "His jacket",
+        "score": 9
+      },
+      {
+        "question": "Name a place you stop going to when you're broke.",
+        "response": "Restaurant",
+        "matched": "Restaurants",
+        "score": 32
+      },
+      {
+        "question": "Name something a mother might pick out for her adult son.",
+        "response": "Shirt",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "If they made a Judge Judy doll, name something it might come with.",
+        "response": "Gavel",
+        "matched": "Gavel/mallet",
+        "score": 64
+      },
+      {
+        "question": "Name something that parents can't wait for their children to get out of.",
+        "response": "Diapers",
+        "matched": "Diapers",
+        "score": 35
+      },
+      {
+        "question": "Name a place you'd hate to find toenail clippings.",
+        "response": "Bed",
+        "matched": "My bed",
+        "score": 36
+      },
+      {
+        "question": "In one word, describe the underwear your man is wearing right now.",
+        "response": "Nonexistent",
+        "matched": "None",
+        "score": 6
+      },
+      {
+        "question": "Name an American city where they know how to party hard.",
+        "response": "Las Vegas",
+        "matched": "Las Vegas",
+        "score": 19
+      },
+      {
+        "question": "Name something you associate with camels.",
+        "response": "Desert",
+        "matched": "Desert",
+        "score": 13
+      },
+      {
+        "question": "If Steve Harvey were your neighbor, name something of his you might ask to borrow.",
+        "response": "Suit",
+        "matched": "Suits/clothes",
+        "score": 19
+      },
+      {
+        "question": "Name a place you'd hate to spend even one night.",
+        "response": "Prison",
+        "matched": "Jail/prison",
+        "score": 19
+      },
+      {
+        "question": "Name something you'd hate to have happen while you're taking a bath.",
+        "response": "Power outage",
+        "matched": "Power outage",
+        "score": 4
+      },
+      {
+        "question": "And name something of your wife's you like to wear because it's so soft.",
+        "response": "Sweater",
+        "matched": "Her sweater",
+        "score": 15
+      }
+    ]
+  },
+  "fireworks/qwen3p8-max": {
+    "questions": 115,
+    "hits": 85,
+    "hit_rate": 0.7391,
+    "points": 2966,
+    "avg_points": 25.79,
+    "details": [
+      {
+        "question": "Name an occupation that begins with the letter 'J.'",
+        "response": "judge",
+        "matched": "Judge/Justice",
+        "score": 19
+      },
+      {
+        "question": "Name something that might be brewing.",
+        "response": "coffee",
+        "matched": "Coffee",
+        "score": 37
+      },
+      {
+        "question": "Name something with teeth.",
+        "response": "dog",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name the most useful body part that begins with the letter 'L.'",
+        "response": "leg",
+        "matched": "Legs",
+        "score": 77
+      },
+      {
+        "question": "Name something an athlete might break.",
+        "response": "record",
+        "matched": "A Record",
+        "score": 16
+      },
+      {
+        "question": "Name something associated with vampires.",
+        "response": "blood",
+        "matched": "Blood/Bloodsucker",
+        "score": 29
+      },
+      {
+        "question": "Name something in a bakery a baker might call his wife.",
+        "response": "sugar",
+        "matched": "Sugar",
+        "score": 5
+      },
+      {
+        "question": "Name something in a person's closet that only comes out on special occasions.",
+        "response": "tuxedo",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might see a commercial for during a baseball game.",
+        "response": "Beer",
+        "matched": "Beer",
+        "score": 4
+      },
+      {
+        "question": "If your dog ran away, name something you'd be surprised he took with him.",
+        "response": "wallet",
+        "matched": "Wallet/Money",
+        "score": 4
+      },
+      {
+        "question": "Name an occasion where parents force their kids to wear a certain outfit.",
+        "response": "wedding",
+        "matched": "Wedding",
+        "score": 26
+      },
+      {
+        "question": "Name a reason that someone might ride their bike to work.",
+        "response": "Exercise",
+        "matched": "Exercise",
+        "score": 23
+      },
+      {
+        "question": "Name something that might come out of your nose when you laugh.",
+        "response": "snot",
+        "matched": "Snot",
+        "score": 48
+      },
+      {
+        "question": "Name qualities of a bad boss.",
+        "response": "micromanaging, poor communication, favoritism, lack of accountability, disrespect, unwillingness to delegate, inconsistent expectations, lack of empathy",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a food dogs love just as much as humans do.",
+        "response": "Peanut butter",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that shakes, rattles, and rolls.",
+        "response": "tambourine",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Other than feet, name something that runs.",
+        "response": "nose",
+        "matched": "Nose",
+        "score": 8
+      },
+      {
+        "question": "Name a word that rhymes with \u201celection.\u201d",
+        "response": "selection",
+        "matched": "Selection",
+        "score": 32
+      },
+      {
+        "question": "Name something you would ask the Wizard for in the Land of Oz.",
+        "response": "courage",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a soda that people like to drink.",
+        "response": "Coke",
+        "matched": "Diet Coke",
+        "score": 29
+      },
+      {
+        "question": "Name something people might only do once a week.",
+        "response": "grocery shopping",
+        "matched": "Grocery shop",
+        "score": 25
+      },
+      {
+        "question": "Name something you keep in your car.",
+        "response": "registration",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name another word people say for \u201crear end.\u201d",
+        "response": "butt",
+        "matched": "Butt/Buttocks",
+        "score": 54
+      },
+      {
+        "question": "Name an activity that's easier to do when it's windy.",
+        "response": "flying a kite",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an occasion for which you might wear lucky underwear.",
+        "response": "a job interview",
+        "matched": "Job Interview",
+        "score": 16
+      },
+      {
+        "question": "Name a food that you might lick.",
+        "response": "Ice cream",
+        "matched": "Ice cream",
+        "score": 40
+      },
+      {
+        "question": "Name something you'd do in front of a mirror.",
+        "response": "brush your teeth",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something people tend to fall out of.",
+        "response": "love",
+        "matched": "Love",
+        "score": 25
+      },
+      {
+        "question": "Name a reason to celebrate a party.",
+        "response": "birthday",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something you might eat with crackers.",
+        "response": "cheese",
+        "matched": "Cheese",
+        "score": 24
+      },
+      {
+        "question": "Name ways to get rich quickly.",
+        "response": "Start a scalable business, invest in high-growth assets, develop high-income skills, or create digital products.",
+        "matched": "Invest",
+        "score": 28
+      },
+      {
+        "question": "Name something you might do at night.",
+        "response": "sleep",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name hot things.",
+        "response": "fire, sun, lava",
+        "matched": "Fire",
+        "score": 26
+      },
+      {
+        "question": "Name gifts to surprise a person you know.",
+        "response": "flowers, chocolates, a book, a gift card, jewelry",
+        "matched": "Gift card",
+        "score": 20
+      },
+      {
+        "question": "Name things you would post on social media.",
+        "response": "photos, videos, status updates, links, memes",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an animal that starts with the letter \"E.\"",
+        "response": "elephant",
+        "matched": "Elephant",
+        "score": 85
+      },
+      {
+        "question": "Name a word that rhymes with \"teeny.\"",
+        "response": "weeny",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that gets pumped up.",
+        "response": "balloon",
+        "matched": "Balloon",
+        "score": 13
+      },
+      {
+        "question": "Name something you do that rhymes with \"grow up.\"",
+        "response": "throw up",
+        "matched": "Throw up",
+        "score": 74
+      },
+      {
+        "question": "Name something that's easier to catch than catching a man.",
+        "response": "a cold",
+        "matched": "Cold/flu",
+        "score": 58
+      },
+      {
+        "question": "Name something to which a lot of kids seem almost addicted.",
+        "response": "video games",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: You're in deep ____.",
+        "response": "trouble",
+        "matched": "Trouble",
+        "score": 22
+      },
+      {
+        "question": "Name something people ride that causes them to throw up.",
+        "response": "roller coaster",
+        "matched": "Roller coaster",
+        "score": 56
+      },
+      {
+        "question": "Fill in the blank: I did everything for my guy and I never got a ____.",
+        "response": "thank you",
+        "matched": "Thank-you",
+        "score": 74
+      },
+      {
+        "question": "Name something in your refrigerator that you should thank a cow for.",
+        "response": "milk",
+        "matched": "Milk",
+        "score": 68
+      },
+      {
+        "question": "Name something that drips.",
+        "response": "faucet",
+        "matched": "Water/faucet",
+        "score": 92
+      },
+      {
+        "question": "Name something kids just love to jump on.",
+        "response": "trampoline",
+        "matched": "Trampoline",
+        "score": 20
+      },
+      {
+        "question": "Give me a three-letter word that starts with the letter \"Z.\"",
+        "response": "zoo",
+        "matched": "Zoo",
+        "score": 40
+      },
+      {
+        "question": "Name something you'd do if your date took you to Chuck E. Cheese.",
+        "response": "play arcade games",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name your favorite thing to do at parties.",
+        "response": "people-watch",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something people say is on the house.",
+        "response": "drinks",
+        "matched": "Drink",
+        "score": 88
+      },
+      {
+        "question": "Which of the Seven Dwarfs describes how you feel after a couple of drinks?",
+        "response": "Doc",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: Hold the ____.",
+        "response": "line",
+        "matched": "Line",
+        "score": 6
+      },
+      {
+        "question": "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?",
+        "response": "dandelions",
+        "matched": "Dandelions",
+        "score": 3
+      },
+      {
+        "question": "Name a weather condition that would be a good name for a wrestler.",
+        "response": "Thunder",
+        "matched": "Thunder/thunderstorm",
+        "score": 16
+      },
+      {
+        "question": "Name a word that rhymes with \"will\" that's associated with doctors.",
+        "response": "pill",
+        "matched": "Pill",
+        "score": 22
+      },
+      {
+        "question": "What's something that can turn an ordinary bath into a romantic one?",
+        "response": "candles",
+        "matched": "Candles",
+        "score": 39
+      },
+      {
+        "question": "Name a place that's filled with people who don't want to be there.",
+        "response": "prison",
+        "matched": "Jail/prison",
+        "score": 36
+      },
+      {
+        "question": "Name something specific you make sure to clean before company comes over.",
+        "response": "bathroom",
+        "matched": "Bathroom",
+        "score": 59
+      },
+      {
+        "question": "Name a movie monster you think could take Dracula in a fight.",
+        "response": "The Wolf Man",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an office supply you'd use to pick food out of your teeth.",
+        "response": "paper clip",
+        "matched": "Paper clip",
+        "score": 53
+      },
+      {
+        "question": "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.",
+        "response": "isn't Man. If sleeps,",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something that might be referred to as a dead end.",
+        "response": "Street",
+        "matched": "A street/road",
+        "score": 47
+      },
+      {
+        "question": "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.",
+        "response": "Flour",
+        "matched": "Flour",
+        "score": 70
+      },
+      {
+        "question": "If Batman went broke, he just might have to sell his Bat-what?",
+        "response": "Bat-busted",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name someplace a teenager complains about having to go.",
+        "response": "school",
+        "matched": "School/college",
+        "score": 56
+      },
+      {
+        "question": "What's the most fun thing to do with another woman?",
+        "response": "girls\u2019 night out",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a way eggs are prepared that could also describe a person.",
+        "response": "scrambled",
+        "matched": "Scrambled",
+        "score": 53
+      },
+      {
+        "question": "Name something specific that has a long neck.",
+        "response": "giraffe",
+        "matched": "Giraffe",
+        "score": 78
+      },
+      {
+        "question": "Name something that some people are afraid to ride on or in.",
+        "response": "airplane",
+        "matched": "Airplane",
+        "score": 44
+      },
+      {
+        "question": "Fill in the blank: Tongue ______.",
+        "response": "twister",
+        "matched": "Tongue twister",
+        "score": 10
+      },
+      {
+        "question": "Name something that has the word \"super\" in it.",
+        "response": "supermarket",
+        "matched": "Supermarket",
+        "score": 9
+      },
+      {
+        "question": "If a man ran out of deodorant, name a fruit he might rub under his pits to hide the odor.",
+        "response": "lemon",
+        "matched": "Lemon",
+        "score": 35
+      },
+      {
+        "question": "Name something that comes in packs of six or 12.",
+        "response": "eggs",
+        "matched": "Eggs",
+        "score": 9
+      },
+      {
+        "question": "Name a US city where lots of rich people live.",
+        "response": "New York City",
+        "matched": "New York",
+        "score": 21
+      },
+      {
+        "question": "Fill in the blank: Lady _____.",
+        "response": "Gaga",
+        "matched": "Lady Gaga",
+        "score": 27
+      },
+      {
+        "question": "Name a way your man is like a good cut of meat.",
+        "response": "He\u2019s tender",
+        "matched": "Tender",
+        "score": 19
+      },
+      {
+        "question": "Fill in the blank: Having a bird poop on you is bad, but imagine how much worse it would be if ______ could fly.",
+        "response": "cows",
+        "matched": "Cows",
+        "score": 22
+      },
+      {
+        "question": "Name a good place to go when you want to cry.",
+        "response": "bathroom",
+        "matched": "Shower/bathroom",
+        "score": 27
+      },
+      {
+        "question": "If you ran your fingers through a man's hair, what would you hate to find in it?",
+        "response": "lice",
+        "matched": "Lice/bugs",
+        "score": 45
+      },
+      {
+        "question": "Name something people deliver for a living.",
+        "response": "mail",
+        "matched": "Mail",
+        "score": 28
+      },
+      {
+        "question": "Name an animal that's easy to imitate in charades.",
+        "response": "monkey",
+        "matched": "Monkey/ape",
+        "score": 32
+      },
+      {
+        "question": "After you murder someone, name something specific you must quickly get rid of.",
+        "response": "I can\u2019t help with that",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a kind of hoop.",
+        "response": "hula hoop",
+        "matched": "Hula-Hoop",
+        "score": 74
+      },
+      {
+        "question": "Tell me something you have that has lasted longer than most of your relationships.",
+        "response": "A coffee mug",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Give me one word you'd use to describe the last kiss your man gave you.",
+        "response": "Passionate",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "What US state do you think has the most beautiful women?",
+        "response": "California",
+        "matched": "California",
+        "score": 53
+      },
+      {
+        "question": "Name something that's cheap and greasy.",
+        "response": "Fast food",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Fill in the blank: My man is a love ____.",
+        "response": "machine",
+        "matched": "Machine",
+        "score": 42
+      },
+      {
+        "question": "Tell me something of yours that you swear is possessed.",
+        "response": "my keyboard",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name a kind of ball it might feel like a woman is pushing out when she gives birth.",
+        "response": "bowling ball",
+        "matched": "Bowling ball",
+        "score": 17
+      },
+      {
+        "question": "Name a word a dog understands.",
+        "response": "sit",
+        "matched": "Sit",
+        "score": 54
+      },
+      {
+        "question": "Give me a phrase that starts with the words, \"Off the...\"",
+        "response": "Off the record",
+        "matched": "Off the record",
+        "score": 7
+      },
+      {
+        "question": "Tell me a country where you think the men are sexier than American men.",
+        "response": "Italy",
+        "matched": "Italy",
+        "score": 35
+      },
+      {
+        "question": "Name something you stuff just as full as you can get it.",
+        "response": "suitcase",
+        "matched": "Suitcase",
+        "score": 6
+      },
+      {
+        "question": "If a man speaks seven languages, which one would he use when he wants to sound sexy?",
+        "response": "French",
+        "matched": "French",
+        "score": 60
+      },
+      {
+        "question": "Name a good musical instrument for someone who is full of hot air.",
+        "response": "bagpipes",
+        "matched": "Bagpipes",
+        "score": 8
+      },
+      {
+        "question": "Give me a word that rhymes with \"hustle.\"",
+        "response": "bustle",
+        "matched": "Bustle",
+        "score": 73
+      },
+      {
+        "question": "You know a guy is really into you if he kisses your what?",
+        "response": "forehead",
+        "matched": "Forehead/head",
+        "score": 30
+      },
+      {
+        "question": "Name an animal that doesn't have a leg to stand on.",
+        "response": "snake",
+        "matched": "Snake",
+        "score": 59
+      },
+      {
+        "question": "What would it be hard to do if you accidentally put on superglue instead of lipstick?",
+        "response": "open your mouth",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name an animal that might like to watch the DVD Squirrels Gone Wild.",
+        "response": "squirrel",
+        "matched": "Squirrel",
+        "score": 21
+      },
+      {
+        "question": "Name the first thing Steve Harvey would remove if he were in a game of strip poker.",
+        "response": "his jacket",
+        "matched": "His jacket",
+        "score": 9
+      },
+      {
+        "question": "Name a place you stop going to when you're broke.",
+        "response": "restaurant",
+        "matched": "Restaurants",
+        "score": 32
+      },
+      {
+        "question": "Name something a mother might pick out for her adult son.",
+        "response": "shirt",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "If they made a Judge Judy doll, name something it might come with.",
+        "response": "gavel",
+        "matched": "Gavel/mallet",
+        "score": 64
+      },
+      {
+        "question": "Name something that parents can't wait for their children to get out of.",
+        "response": "diapers",
+        "matched": "Diapers",
+        "score": 35
+      },
+      {
+        "question": "Name a place you'd hate to find toenail clippings.",
+        "response": "in your bed",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "In one word, describe the underwear your man is wearing right now.",
+        "response": "boxers",
+        "matched": "Boxers",
+        "score": 31
+      },
+      {
+        "question": "Name an American city where they know how to party hard.",
+        "response": "Las Vegas",
+        "matched": "Las Vegas",
+        "score": 19
+      },
+      {
+        "question": "Name something you associate with camels.",
+        "response": "desert",
+        "matched": "Desert",
+        "score": 13
+      },
+      {
+        "question": "If Steve Harvey were your neighbor, name something of his you might ask to borrow.",
+        "response": "suit",
+        "matched": "Suits/clothes",
+        "score": 19
+      },
+      {
+        "question": "Name a place you'd hate to spend even one night.",
+        "response": "jail",
+        "matched": "Jail/prison",
+        "score": 19
+      },
+      {
+        "question": "Name something you'd hate to have happen while you're taking a bath.",
+        "response": "the water turning cold",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "And name something of your wife's you like to wear because it's so soft.",
+        "response": "sweater",
+        "matched": "Her sweater",
+        "score": 15
+      }
+    ]
+  }
+}
