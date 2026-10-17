@@ -21,7 +21,7 @@ from typing import Any, Callable
 
 from dotenv import load_dotenv
 
-from response_format import make_result_entry
+from response_format import entry_response, make_result_entry
 
 load_dotenv()
 
@@ -534,6 +534,132 @@ def run_model_parallel(
     return contiguous
 
 
+def is_blank_entry(entry: dict[str, Any] | None) -> bool:
+    if not entry:
+        return True
+    return not str(entry_response(entry)).strip()
+
+
+def refill_blank_answers(
+    spec: ModelSpec,
+    questions: list[dict],
+    *,
+    existing: list[dict[str, Any]],
+    workers: int,
+    sleep_s: float,
+    results: dict[str, list[dict[str, Any]]],
+    output_path: Path,
+) -> list[dict[str, Any]]:
+    """Re-query only blank responses in-place (instrumented)."""
+    caller = CALLERS[spec.provider]
+    slots: list[dict[str, Any]] = list(existing)
+    # Extend if somehow shorter than question list (shouldn't happen often).
+    while len(slots) < len(questions):
+        slots.append({})
+
+    blank_indices = [
+        i
+        for i, entry in enumerate(slots)
+        if i < len(questions) and is_blank_entry(entry)
+    ]
+    if not blank_indices:
+        print(f"[{spec.key}] no blank answers to refill", flush=True)
+        return slots[: len(questions)]
+
+    print(
+        f"[{spec.key}] refilling {len(blank_indices)} blank answers "
+        f"(workers={workers})",
+        flush=True,
+    )
+
+    done = 0
+    done_since_checkpoint = 0
+    lock = threading.Lock()
+
+    def answer_one(index: int) -> tuple[int, dict[str, Any]]:
+        question = questions[index].get("question") or ""
+        # Nudge helps models that returned empty on first pass (often refusals).
+        nudged = (
+            f"{question}\n\n"
+            "Give one short Family Feud-style survey answer only. "
+            "Do not leave the answer blank."
+        )
+        # A few local attempts: some models occasionally return empty strings.
+        best = QueryResult(text="")
+        for attempt in range(3):
+            prompt = question if attempt == 0 else nudged
+            try:
+                result = caller(spec.model, prompt)
+            except Exception as exc:  # noqa: BLE001
+                result = QueryResult(text=f"ERROR: {type(exc).__name__}: {exc}")
+            best = result
+            if str(result.text).strip() and not str(result.text).startswith("ERROR:"):
+                break
+            time.sleep(0.5)
+        if sleep_s > 0:
+            time.sleep(sleep_s)
+        cost = estimate_cost_usd(
+            spec.key, best.prompt_tokens, best.completion_tokens
+        )
+        return index, make_result_entry(
+            question,
+            best.text,
+            latency_s=best.latency_s,
+            prompt_tokens=best.prompt_tokens,
+            completion_tokens=best.completion_tokens,
+            cost_usd=cost,
+        )
+
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+        futures = {pool.submit(answer_one, idx): idx for idx in blank_indices}
+        for future in as_completed(futures):
+            index, payload = future.result()
+            with lock:
+                slots[index] = payload
+                done += 1
+                done_since_checkpoint += 1
+                answer = str(payload.get("response", ""))
+                latency = payload.get("latency_s")
+                cost = payload.get("cost_usd")
+                extra = ""
+                if latency is not None:
+                    extra = f" ({latency:.2f}s"
+                    if cost:
+                        extra += f", ${cost:.6f}"
+                    extra += ")"
+                status = "still-blank" if not answer.strip() else "refilled"
+                print(
+                    f"[{spec.key} refill {done}/{len(blank_indices)} {status}] "
+                    f"{payload.get('question')} -> {answer}{extra}",
+                    flush=True,
+                )
+                if done_since_checkpoint >= CHECKPOINT_EVERY or done == len(
+                    blank_indices
+                ):
+                    with _RESULTS_LOCK:
+                        results[spec.key] = slots[: len(questions)]
+                        write_results(output_path, results)
+                    print(
+                        f"checkpoint {spec.key}: refilled {done}/"
+                        f"{len(blank_indices)} -> {output_path}",
+                        flush=True,
+                    )
+                    done_since_checkpoint = 0
+
+    with _RESULTS_LOCK:
+        results[spec.key] = slots[: len(questions)]
+        write_results(output_path, results)
+    still_blank = sum(
+        1 for i in blank_indices if is_blank_entry(slots[i])
+    )
+    print(
+        f"finished {spec.key} refill: attempted={len(blank_indices)} "
+        f"still_blank={still_blank}",
+        flush=True,
+    )
+    return slots[: len(questions)]
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -584,6 +710,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Print the configured latest models and exit",
     )
+    parser.add_argument(
+        "--refill-blanks",
+        action="store_true",
+        help="Re-query only blank/empty answers in --output (in-place)",
+    )
     return parser.parse_args()
 
 
@@ -605,24 +736,44 @@ def main() -> None:
         questions = questions[: args.limit]
 
     output_path = Path(args.output)
-    results = load_existing_results(output_path) if args.resume else {}
+    if args.refill_blanks:
+        results = load_existing_results(output_path)
+        if not results:
+            raise SystemExit(f"No existing results to refill at {output_path}")
+    else:
+        results = load_existing_results(output_path) if args.resume else {}
 
     print(f"questions={len(questions)} source={source}", flush=True)
     print("models=" + ", ".join(spec.key for spec in models), flush=True)
     print(
         f"concurrency: models_parallel={not args.sequential_models} "
-        f"workers_per_model={args.workers}",
+        f"workers_per_model={args.workers} refill_blanks={args.refill_blanks}",
         flush=True,
     )
-    if args.resume and results:
+    if results:
         print(
-            "resume counts="
+            "existing counts="
             + ", ".join(f"{k}:{len(v)}" for k, v in sorted(results.items())),
             flush=True,
         )
 
     def run_one(spec: ModelSpec) -> None:
-        existing = results.get(spec.key) if args.resume else None
+        existing = results.get(spec.key) or []
+        if args.refill_blanks:
+            if not existing:
+                print(f"[{spec.key}] no existing answers to refill", flush=True)
+                return
+            results[spec.key] = refill_blank_answers(
+                spec,
+                questions,
+                existing=existing,
+                workers=args.workers,
+                sleep_s=args.sleep,
+                results=results,
+                output_path=output_path,
+            )
+            return
+
         if existing and len(existing) >= len(questions):
             print(
                 f"[{spec.key}] already complete ({len(existing)} answers)",
@@ -633,7 +784,7 @@ def main() -> None:
             spec,
             questions,
             sleep_s=args.sleep,
-            existing=existing,
+            existing=existing if args.resume else None,
             workers=args.workers,
             results=results,
             output_path=output_path,

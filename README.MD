@@ -62,6 +62,17 @@ python run_benchmark.py \
 Wall-clock time tracks the slowest provider, not the sum of every model.
 Use `--sequential-models` only for the old one-at-a-time behavior.
 
+Re-query blank/empty answers in place:
+
+```bash
+python run_benchmark.py \
+  --questions questions/all_questions.json \
+  --output responses/multi_provider_all_questions.json \
+  --refill-blanks \
+  --providers gpt-5.5 qwen3p8-max \
+  --workers 8
+```
+
 Instrumented answers (latency, tokens, estimated USD from `pricing.json`) are
 stored on new results. Compare misses across models:
 
