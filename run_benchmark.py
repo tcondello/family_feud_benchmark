@@ -81,6 +81,8 @@ PROVIDER_ENV = {
 _CLIENTS: dict[str, Any] = {}
 _CLIENT_LOCK = threading.Lock()
 _RESULTS_LOCK = threading.Lock()
+# google-genai client calls are not reliably thread-safe.
+_GOOGLE_CALL_LOCK = threading.Lock()
 
 
 def load_questions(path: str | None) -> tuple[list[dict], str]:
@@ -245,15 +247,16 @@ def call_google(model: str, question: str) -> str:
     client = get_google_client()
 
     def _call() -> str:
-        response = client.models.generate_content(
-            model=model,
-            contents=question,
-            config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_PROMPT,
-                max_output_tokens=1024,
-            ),
-        )
-        return clean_answer(getattr(response, "text", None))
+        with _GOOGLE_CALL_LOCK:
+            response = client.models.generate_content(
+                model=model,
+                contents=question,
+                config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_PROMPT,
+                    max_output_tokens=1024,
+                ),
+            )
+            return clean_answer(getattr(response, "text", None))
 
     return with_retries(_call)
 
