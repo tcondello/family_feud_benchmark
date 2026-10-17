@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/llama-v3p1-8b-instruct",
+      "enabled": true
+    }
+  ],
+  "model_timeout_seconds": 60,
+  "max_retries": 3,
+  "backoff_base_seconds": 3,
+  "prompt_cache_affinity": true,
+  "row_delay_seconds": 0.25,
+  "limit": 10,
+  "questions": {
+    "input_file": "questions/buzzfeed/question_list.json",
+    "output_file": "responses/results.csv"
+  }
+}
