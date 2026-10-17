@@ -1,0 +1,158 @@
+{
+  "openai/gpt-5.5": {
+    "questions": 5,
+    "hits": 4,
+    "hit_rate": 0.8,
+    "points": 123,
+    "avg_points": 24.6,
+    "details": [
+      {
+        "question": "Name an occupation that begins with the letter 'J.'",
+        "response": "Janitor",
+        "matched": "Janitor",
+        "score": 62
+      },
+      {
+        "question": "Name something that might be brewing",
+        "response": "Coffee",
+        "matched": "Coffee",
+        "score": 37
+      },
+      {
+        "question": "Name something with teeth",
+        "response": "comb",
+        "matched": "A Comb",
+        "score": 8
+      },
+      {
+        "question": "Name the most useful body part that begins with the letter 'L.'",
+        "response": "",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name something an athlete might break.",
+        "response": "record",
+        "matched": "A Record",
+        "score": 16
+      }
+    ]
+  },
+  "anthropic/claude-opus-4-6": {
+    "questions": 5,
+    "hits": 5,
+    "hit_rate": 1.0,
+    "points": 157,
+    "avg_points": 31.4,
+    "details": [
+      {
+        "question": "Name an occupation that begins with the letter 'J.'",
+        "response": "Judge",
+        "matched": "Judge",
+        "score": 19
+      },
+      {
+        "question": "Name something that might be brewing",
+        "response": "Coffee",
+        "matched": "Coffee",
+        "score": 37
+      },
+      {
+        "question": "Name something with teeth",
+        "response": "Comb",
+        "matched": "A Comb",
+        "score": 8
+      },
+      {
+        "question": "Name the most useful body part that begins with the letter 'L.'",
+        "response": "Legs",
+        "matched": "Legs",
+        "score": 77
+      },
+      {
+        "question": "Name something an athlete might break.",
+        "response": "A record",
+        "matched": "A Record",
+        "score": 16
+      }
+    ]
+  },
+  "google/gemini-pro-latest": {
+    "questions": 5,
+    "hits": 4,
+    "hit_rate": 0.8,
+    "points": 78,
+    "avg_points": 15.6,
+    "details": [
+      {
+        "question": "Name an occupation that begins with the letter 'J.'",
+        "response": "Judge",
+        "matched": "Judge",
+        "score": 19
+      },
+      {
+        "question": "Name something that might be brewing",
+        "response": "Coffee",
+        "matched": "Coffee",
+        "score": 37
+      },
+      {
+        "question": "Name something with teeth",
+        "response": "shark",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name the most useful body part that begins with the letter 'L.'",
+        "response": "Lungs",
+        "matched": "Lungs",
+        "score": 6
+      },
+      {
+        "question": "Name something an athlete might break.",
+        "response": "record",
+        "matched": "A Record",
+        "score": 16
+      }
+    ]
+  },
+  "fireworks/qwen3p8-max": {
+    "questions": 5,
+    "hits": 4,
+    "hit_rate": 0.8,
+    "points": 149,
+    "avg_points": 29.8,
+    "details": [
+      {
+        "question": "Name an occupation that begins with the letter 'J.'",
+        "response": "judge",
+        "matched": "Judge",
+        "score": 19
+      },
+      {
+        "question": "Name something that might be brewing",
+        "response": "coffee",
+        "matched": "Coffee",
+        "score": 37
+      },
+      {
+        "question": "Name something with teeth",
+        "response": "shark",
+        "matched": null,
+        "score": 0
+      },
+      {
+        "question": "Name the most useful body part that begins with the letter 'L.'",
+        "response": "leg",
+        "matched": "Legs",
+        "score": 77
+      },
+      {
+        "question": "Name something an athlete might break.",
+        "response": "record",
+        "matched": "A Record",
+        "score": 16
+      }
+    ]
+  }
+}

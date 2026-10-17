@@ -1,0 +1,70 @@
+{
+    "openai/gpt-5.5": [
+        {
+            "Name an occupation that begins with the letter 'J.'": "Janitor"
+        },
+        {
+            "Name something that might be brewing": "Coffee"
+        },
+        {
+            "Name something with teeth": "comb"
+        },
+        {
+            "Name the most useful body part that begins with the letter 'L.'": ""
+        },
+        {
+            "Name something an athlete might break.": "record"
+        }
+    ],
+    "anthropic/claude-opus-4-6": [
+        {
+            "Name an occupation that begins with the letter 'J.'": "Judge"
+        },
+        {
+            "Name something that might be brewing": "Coffee"
+        },
+        {
+            "Name something with teeth": "Comb"
+        },
+        {
+            "Name the most useful body part that begins with the letter 'L.'": "Legs"
+        },
+        {
+            "Name something an athlete might break.": "A record"
+        }
+    ],
+    "google/gemini-pro-latest": [
+        {
+            "Name an occupation that begins with the letter 'J.'": "Judge"
+        },
+        {
+            "Name something that might be brewing": "Coffee"
+        },
+        {
+            "Name something with teeth": "shark"
+        },
+        {
+            "Name the most useful body part that begins with the letter 'L.'": "Lungs"
+        },
+        {
+            "Name something an athlete might break.": "record"
+        }
+    ],
+    "fireworks/qwen3p8-max": [
+        {
+            "Name an occupation that begins with the letter 'J.'": "judge"
+        },
+        {
+            "Name something that might be brewing": "coffee"
+        },
+        {
+            "Name something with teeth": "shark"
+        },
+        {
+            "Name the most useful body part that begins with the letter 'L.'": "leg"
+        },
+        {
+            "Name something an athlete might break.": "record"
+        }
+    ]
+}

@@ -20,10 +20,34 @@ for one source.
 
 ```bash
 pip install -r requirements.txt
-# set OPENAI_API_KEY in .env
-python openAI_family_feud.py
+# Runtime secrets / .env:
+#   OPENAI_API_KEY, ANTHROPIC_API_KEY, GOOGLE_API_KEY, FIREWORKS_API_KEY
+
+# Smoke test (5 questions x latest model per provider)
+python run_benchmark.py --questions questions/test_questions.json
+
+# Full combined set
+python run_benchmark.py
+
+# Score responses against the survey boards
+python score_benchmark.py \
+  --responses responses/multi_provider_response_list.json \
+  --questions questions/test_questions.json
 ```
 
-`openAI_family_feud.py` currently reads `question_list.json` from the working
-directory; point it at `questions/all_questions.json` (or copy/symlink) to use
-the expanded set.
+### Latest models used
+
+| Provider   | Model                                      | Secret               |
+|------------|--------------------------------------------|----------------------|
+| OpenAI     | `gpt-5.5`                                  | `OPENAI_API_KEY`     |
+| Anthropic  | `claude-opus-4-6`                          | `ANTHROPIC_API_KEY`  |
+| Google     | `gemini-pro-latest`                        | `GOOGLE_API_KEY`     |
+| Fireworks  | `accounts/fireworks/models/qwen3p8-max`    | `FIREWORKS_API_KEY`  |
+
+```bash
+python run_benchmark.py --list-models
+python run_benchmark.py --providers openai anthropic --limit 10
+```
+
+`openAI_family_feud.py` remains as a single-provider OpenAI helper (now on
+`gpt-5.5`). Prefer `run_benchmark.py` for multi-provider runs.
