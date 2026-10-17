@@ -117,7 +117,7 @@ def call_openai(model: str, question: str) -> str:
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": question},
         ],
-        max_completion_tokens=64,
+        max_completion_tokens=128,
     )
     return clean_answer(response.choices[0].message.content)
 
