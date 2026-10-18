@@ -9,7 +9,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
-from score_benchmark import load_questions, match_score
+from score_benchmark import load_question_meta, load_questions, match_score
 
 ROOT = Path(__file__).resolve().parent
 RESPONSES_PATH = ROOT / "responses" / "multi_provider_all_questions.json"
@@ -59,6 +59,7 @@ def entry_qa(item: dict[str, Any]) -> tuple[str, str]:
 
 def build_rows() -> dict[str, Any]:
     boards = load_questions(str(QUESTIONS_PATH))
+    meta = load_question_meta(str(QUESTIONS_PATH))
     raw = json.loads(RESPONSES_PATH.read_text(encoding="utf-8"))
 
     by_model: dict[str, dict[str, str]] = {}
@@ -84,6 +85,7 @@ def build_rows() -> dict[str, Any]:
 
     topic_n: Counter[str] = Counter()
     topic_miss: dict[str, list[int]] = defaultdict(lambda: [0] * len(MODELS))
+    source_n: Counter[str] = Counter()
 
     all_hit = all_miss = disagree = 0
 
@@ -112,8 +114,13 @@ def build_rows() -> dict[str, Any]:
         n_hits = bin(mask).count("1")
         tags = topic_tags(q)
         tag_str = ",".join(tags)
-        # [question, topics, hitMask, modelAnswers, points, board[[ans,pts]], matchedBoardAns]
-        row = [q, tag_str, mask, answers, pts, board, matched]
+        qmeta = meta.get(q, {})
+        qid = str(qmeta.get("id") or "")
+        source = str(qmeta.get("source") or "unknown")
+        source_ref = str(qmeta.get("source_ref") or "")
+        source_n[source] += 1
+        # [question, topics, hitMask, modelAnswers, points, board, matched, id, source, source_ref]
+        row = [q, tag_str, mask, answers, pts, board, matched, qid, source, source_ref]
 
         for t in tags:
             topic_n[t] += 1
@@ -202,8 +209,14 @@ def build_rows() -> dict[str, Any]:
             "disagree": disagree,
             "solo": {lab: len(solo_rows[lab]) for lab in labels},
             "uniqueMiss": {lab: len(unique_miss_rows[lab]) for lab in labels},
+            "bySource": dict(sorted(source_n.items())),
         },
         "topic": topic,
+        "sources": {
+            "buzzfeed": "BuzzFeed compiled list",
+            "mstiescott": "TV episode boards (Steve Harvey-era; often spicy wording)",
+            "protoqa": "ProtoQA research (fan surveys + crowdsourced clusters)",
+        },
         "miss": miss_rows,
         "disagree": disagree_rows,
         "hitSample": hit_rows[:150],
@@ -271,16 +284,17 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Question hit / miss explorer</h1>
-  <p class="sub">Click any question to see the survey board (correct answers), which models hit or missed, and each model’s raw answer. Soft-match scoring across Opus, Ember, Kimi, Qwen, and GPT on __N__ shared questions. Start with <b>All models wrong</b> to find unanimous misses.</p>
+  <p class="sub">Click any question to see its id, source, survey board (correct answers), and each model’s HIT/MISS. Soft-match follows Family Feud-style rules (plurals, compounds like eye patch/eyepatches, synonyms like bike/bicycle). Opus, Ember, Kimi, Qwen, GPT on __N__ shared questions.</p>
 </header>
 <div class="stats" id="stats"></div>
 <div class="topics"><h2 style="font-size:14px;margin:0 0 8px;color:var(--muted)">Miss rate by topic (higher = harder for that model)</h2><div class="topic-grid" id="topics"></div></div>
-<p class="hint">Tip: use <b>Only this model missed</b> to find blind spots unique to one model, or filter a topic like dating/sex to see where everyone struggles.</p>
+<p class="hint">Sources: <b>mstiescott</b> = real TV boards (often vulgar Steve Harvey-era wording like “Pop Some Spawn”), <b>protoqa</b> = research fan/crowd surveys, <b>buzzfeed</b> = compiled list. Filter by source to separate them.</p>
 <div class="controls">
   <select id="mode"></select>
   <select id="focus"></select>
+  <select id="source"></select>
   <select id="topic"></select>
-  <input id="q" type="search" placeholder="Search question text…" style="min-width:220px;flex:1"/>
+  <input id="q" type="search" placeholder="Search question text or id…" style="min-width:220px;flex:1"/>
 </div>
 <div class="wrap">
   <div class="panel">
@@ -303,6 +317,7 @@ const M = DATA.M;
 const pageSize = 40;
 let mode = 'allMiss';
 let focusModel = M[0];
+let source = 'all';
 let topic = 'all';
 let query = '';
 let page = 0;
@@ -341,20 +356,28 @@ function baseRows(){
 function filtered(){
   const q = query.trim().toLowerCase();
   return baseRows().filter(row=>{
+    if(source!=='all' && row[8]!==source) return false;
     if(topic!=='all' && !row[1].split(',').includes(topic)) return false;
-    if(q && !row[0].toLowerCase().includes(q)) return false;
+    if(q){
+      const id = String(row[7]||'').toLowerCase();
+      const ref = String(row[9]||'').toLowerCase();
+      if(!row[0].toLowerCase().includes(q) && !id.includes(q) && !ref.includes(q)) return false;
+    }
     return true;
   });
 }
 
 function renderStats(){
   const c=DATA.c;
+  const by=c.bySource||{};
+  const srcBits=Object.keys(by).map(k=>`${k}: ${by[k].toLocaleString()}`).join(' · ');
   document.getElementById('stats').innerHTML = `
     <div class="stat"><b>${c.miss.toLocaleString()}</b><span>All models wrong</span></div>
     <div class="stat"><b>${c.disagree.toLocaleString()}</b><span>Models disagree</span></div>
     <div class="stat"><b>${c.hit.toLocaleString()}</b><span>All models right</span></div>
     <div class="stat"><b>${Object.values(c.solo).reduce((a,b)=>a+b,0).toLocaleString()}</b><span>Solo hits (any)</span></div>
-    <div class="stat"><b>${Object.values(c.uniqueMiss||{}).reduce((a,b)=>a+b,0).toLocaleString()}</b><span>Unique misses (any)</span></div>`;
+    <div class="stat"><b>${Object.values(c.uniqueMiss||{}).reduce((a,b)=>a+b,0).toLocaleString()}</b><span>Unique misses (any)</span></div>
+    <div class="stat" style="grid-column:1/-1"><b style="font-size:14px">${srcBits||'—'}</b><span>Questions by source</span></div>`;
 }
 
 function renderTopics(){
@@ -395,6 +418,15 @@ function renderControls(){
   }
   focusEl.value=focusModel;
 
+  const sourceEl=document.getElementById('source');
+  const by=DATA.c.bySource||{};
+  const labels=DATA.sources||{};
+  sourceEl.innerHTML=`<option value="all">All sources</option>`+Object.keys(by).map(s=>{
+    const tip=labels[s]?` — ${labels[s]}`:'';
+    return `<option value="${s}">${s} (n=${by[s]})${tip}</option>`;
+  }).join('');
+  sourceEl.value=source;
+
   const topicEl=document.getElementById('topic');
   topicEl.innerHTML=`<option value="all">All topics</option>`+Object.keys(DATA.topic).map(t=>`<option value="${t}">${t} (n=${DATA.topic[t].n})</option>`).join('');
   topicEl.value=topic;
@@ -410,7 +442,10 @@ function renderList(){
     const nh=nHits(row[2]);
     const active = selected && selected[0]===row[0];
     const chips=row[1].split(',').map(t=>`<span class="chip">${t}</span>`).join('');
-    return `<button class="q ${active?'active':''}" data-i="${page*pageSize+idx}"><div class="t">${row[0].replace(/</g,'&lt;')}</div><div class="chips"><span class="chip on">${nh}/5 hit</span>${chips}</div></button>`;
+    const id=row[7]||'';
+    const src=row[8]||'';
+    const ref=row[9]?` · ${row[9]}`:'';
+    return `<button class="q ${active?'active':''}" data-i="${page*pageSize+idx}"><div class="t">${row[0].replace(/</g,'&lt;')}</div><div class="chips"><span class="chip on">${id||'no-id'}</span><span class="chip on">${src}${ref}</span><span class="chip on">${nh}/5 hit</span>${chips}</div></button>`;
   }).join('') || `<p style="padding:14px;color:var(--muted)">No questions match.</p>`;
   document.getElementById('pageLabel').textContent=`Page ${page+1} / ${pageCount}`;
   document.getElementById('prev').disabled=page<=0;
@@ -432,8 +467,11 @@ function renderDetail(){
   const chips=row[1].split(',').map(t=>`<span class="chip on">${t}</span>`).join('');
   const board = row[5] || [];
   const matched = row[6] || [];
+  const id = row[7] || '—';
+  const src = row[8] || 'unknown';
+  const ref = row[9] ? ` · ${row[9]}` : '';
   let body=`<div style="font-weight:650;margin-bottom:8px">${row[0].replace(/</g,'&lt;')}</div>
-    <div class="chips" style="margin-bottom:10px">${chips}</div>
+    <div class="chips" style="margin-bottom:10px"><span class="chip on">id: ${id}</span><span class="chip on">${src}${ref}</span>${chips}</div>
     <div class="chips" style="margin-bottom:12px"><span class="chip on">Hits: ${hits(row[2]).join(', ')||'none'}</span><span class="chip">Misses: ${misses(row[2]).join(', ')||'none'}</span></div>
     <div style="font-weight:650;margin:4px 0 6px;font-size:13px">Survey board (correct answers)</div>
     <table style="margin-bottom:14px"><thead><tr><th>#</th><th>Answer</th><th>Pts</th></tr></thead><tbody>`;
@@ -459,6 +497,7 @@ function renderDetail(){
 
 document.getElementById('mode').onchange=e=>{ mode=e.target.value; page=0; selected=null; renderControls(); renderList(); renderDetail(); };
 document.getElementById('focus').onchange=e=>{ focusModel=e.target.value; page=0; selected=null; renderList(); renderDetail(); };
+document.getElementById('source').onchange=e=>{ source=e.target.value; page=0; renderList(); };
 document.getElementById('topic').onchange=e=>{ topic=e.target.value; page=0; renderList(); };
 document.getElementById('q').oninput=e=>{ query=e.target.value; page=0; renderList(); };
 document.getElementById('prev').onclick=()=>{ page=Math.max(0,page-1); renderList(); };
@@ -499,16 +538,47 @@ def canvas_source(data: dict[str, Any]) -> str:
     def trim_row(r: list[Any]) -> list[Any]:
         # Keep full model answers; cap board to top 6 for canvas size.
         board = (r[5] or [])[:6]
-        return [r[0], r[1], r[2], r[3], r[4], board, r[6]]
+        return [
+            r[0],
+            r[1],
+            r[2],
+            r[3],
+            r[4],
+            board,
+            r[6],
+            r[7] if len(r) > 7 else "",
+            r[8] if len(r) > 8 else "unknown",
+            r[9] if len(r) > 9 else "",
+        ]
 
-    all_miss = [trim_row(r) for r in pick(data["miss"], 24)]
-    hard = [trim_row(r) for r in pick(data["disagree"], 18)]
+    # Prefer a mix of sources in the sample when possible.
+    def pick_by_source(rows: list, n: int) -> list:
+        by_s: dict[str, list] = defaultdict(list)
+        for r in rows:
+            by_s[str(r[8] if len(r) > 8 else "unknown")].append(r)
+        out: list = []
+        keys = list(by_s.keys()) or ["unknown"]
+        i = 0
+        while len(out) < n and keys:
+            k = keys[i % len(keys)]
+            if by_s[k]:
+                out.append(by_s[k].pop(0))
+            else:
+                keys = [x for x in keys if by_s[x]]
+                if not keys:
+                    break
+                continue
+            i += 1
+        return [trim_row(r) for r in out]
+
+    all_miss = pick_by_source(data["miss"], 18)
+    hard = pick_by_source(data["disagree"], 12)
     solo = {
-        lab: [trim_row(r) for r in (data["solo"].get(lab) or [])[:8]]
+        lab: [trim_row(r) for r in (data["solo"].get(lab) or [])[:6]]
         for lab in labels
     }
     unique = {
-        lab: [trim_row(r) for r in (data["uniqueMiss"].get(lab) or [])[:8]]
+        lab: [trim_row(r) for r in (data["uniqueMiss"].get(lab) or [])[:6]]
         for lab in labels
     }
 
@@ -516,6 +586,7 @@ def canvas_source(data: dict[str, Any]) -> str:
         "M": labels,
         "c": data["c"],
         "topic": topic,
+        "sources": data.get("sources", {}),
         "miss": all_miss,
         "hard": hard,
         "solo": solo,
@@ -548,7 +619,7 @@ def canvas_source(data: dict[str, Any]) -> str:
 }} from "cursor/canvas";
 
 type BoardAns = [string, number];
-type RowT = [string, string, number, string[], number[], BoardAns[], (string | null)[]];
+type RowT = [string, string, number, string[], number[], BoardAns[], (string | null)[], string, string, string];
 
 const DATA = {blob} as {{
   M: string[];
@@ -558,8 +629,10 @@ const DATA = {blob} as {{
     disagree: number;
     solo: Record<string, number>;
     uniqueMiss: Record<string, number>;
+    bySource?: Record<string, number>;
   }};
   topic: Record<string, {{ n: number; miss: number[] }}>;
+  sources?: Record<string, string>;
   miss: RowT[];
   hard: RowT[];
   solo: Record<string, RowT[]>;
@@ -585,6 +658,7 @@ type Mode = "allMiss" | "hard" | "solo" | "uniqueMiss";
 export default function QuestionExplorer() {{
   const [mode, setMode] = useState<Mode>("allMiss");
   const [topic, setTopic] = useState("all");
+  const [sourceFilter, setSourceFilter] = useState("all");
   const [focusModel, setFocusModel] = useState<string>(MODELS[0]);
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<RowT | null>(DATA.miss[0] ?? null);
@@ -599,6 +673,15 @@ export default function QuestionExplorer() {{
     return opts;
   }}, []);
 
+  const sourceOptions = useMemo(() => {{
+    const opts = [{{ value: "all", label: "All sources" }}];
+    const by = DATA.c.bySource || {{}};
+    for (const s of Object.keys(by)) {{
+      opts.push({{ value: s, label: `${{s}} (n=${{by[s]}})` }});
+    }}
+    return opts;
+  }}, []);
+
   const baseRows = useMemo(() => {{
     if (mode === "allMiss") return DATA.miss;
     if (mode === "hard") return DATA.hard;
@@ -609,11 +692,15 @@ export default function QuestionExplorer() {{
   const filtered = useMemo(() => {{
     const q = query.trim().toLowerCase();
     return baseRows.filter((row) => {{
+      if (sourceFilter !== "all" && row[8] !== sourceFilter) return false;
       if (topic !== "all" && !row[1].split(",").includes(topic)) return false;
-      if (q && !row[0].toLowerCase().includes(q)) return false;
+      if (q) {{
+        const id = String(row[7] || "").toLowerCase();
+        if (!row[0].toLowerCase().includes(q) && !id.includes(q)) return false;
+      }}
       return true;
     }});
-  }}, [baseRows, topic, query]);
+  }}, [baseRows, topic, sourceFilter, query]);
 
   const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
   const pageSafe = Math.min(page, pageCount - 1);
@@ -730,6 +817,14 @@ export default function QuestionExplorer() {{
             />
           ) : null}}
           <Select
+            value={{sourceFilter}}
+            onChange={{(v) => {{
+              setSourceFilter(v);
+              setPage(0);
+            }}}}
+            options={{sourceOptions}}
+          />
+          <Select
             value={{topic}}
             onChange={{(v) => {{
               setTopic(v);
@@ -744,7 +839,7 @@ export default function QuestionExplorer() {{
             setQuery(v);
             setPage(0);
           }}}}
-          placeholder="Search question text…"
+          placeholder="Search question text or id…"
         />
       </Stack>
 
@@ -783,6 +878,10 @@ export default function QuestionExplorer() {{
                         {{row[0]}}
                       </Text>
                       <Row gap={{6}} wrap>
+                        <Pill size="sm" active>
+                          {{row[7] || "no-id"}}
+                        </Pill>
+                        <Pill size="sm">{{row[8]}}</Pill>
                         <Pill size="sm" active={{nh === 0}}>
                           {{nh}}/5 hit
                         </Pill>
@@ -835,6 +934,12 @@ export default function QuestionExplorer() {{
               <Stack gap={{12}}>
                 <Text weight="semibold">{{selected[0]}}</Text>
                 <Row gap={{6}} wrap>
+                  <Pill size="sm" active>
+                    id: {{selected[7] || "—"}}
+                  </Pill>
+                  <Pill size="sm" active>
+                    {{selected[8]}}{{selected[9] ? ` · ${{selected[9]}}` : ""}}
+                  </Pill>
                   {{selected[1].split(",").map((t) => (
                     <Pill key={{t}} size="sm" active>
                       {{t}}

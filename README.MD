@@ -100,8 +100,12 @@ python build_question_explorer.py
 # opens responses/question_explorer.html (also copied to artifacts)
 ```
 
-Filter by topic (e.g. dating/sex), search question text, and click a row to
-see each model’s answer vs HIT/MISS.
+Each question shows its **id** (e.g. `ms-s20-0464`) and **source**
+(`buzzfeed` / `mstiescott` / `protoqa`). Filter by source — `mstiescott` is
+real TV board wording (often spicy Steve Harvey-era answers like “Pop Some
+Spawn”); `protoqa` is research fan/crowd surveys; `buzzfeed` is a compiled
+list. Soft-match follows Family Feud-style rules (plurals, compounds like
+eye patch ↔ Eyepatches, synonyms like bike ↔ bicycle).
 
 `openAI_family_feud.py` remains as a single-provider OpenAI helper (now on
 `gpt-5.5`). Prefer `run_benchmark.py` for multi-provider runs.
