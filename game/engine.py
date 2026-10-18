@@ -1,7 +1,11 @@
 """Pure Family Feud match state machine (UI-free).
 
-Phase 1: host picks a question, runs a mock face-off, then steps through
-board reveals and round completion. Live model buzz comes in Phase 2.
+Locked rules: see game/rules.py
+  - Solo contestants (one model each)
+  - Wrong face-off buzz = lockout only
+  - Main play Mode B: 3 strikes → one steal
+  - BuzzFeed 115 default pool
+  - Host always sees board answers
 """
 
 from __future__ import annotations
@@ -11,25 +15,18 @@ import random
 from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
-
-DEFAULT_CONTESTANTS: tuple[str, ...] = (
-    "Opus",
-    "Ember",
-    "gpt-5.5",
-    "Flash",
-    "Kimi",
-    "Qwen",
-)
+from game.rules import DEFAULT_CONTESTANTS, STRIKES_TO_STEAL
 
 
 class Phase(str, Enum):
-    LOBBY = "lobby"
     PICK_QUESTION = "pick_question"
     FACE_OFF_READY = "face_off_ready"
+    FACE_OFF_RUNNING = "face_off_running"
     FACE_OFF_RESULT = "face_off_result"
     MAIN_PLAY = "main_play"
+    STEAL = "steal"
     ROUND_OVER = "round_over"
 
 
@@ -48,6 +45,7 @@ class BuzzEvent:
     hit: bool
     matched: str | None = None
     points: int = 0
+    locked_out: bool = False  # True when face-off miss (wrong buzz)
 
 
 @dataclass
@@ -66,10 +64,18 @@ class MatchState:
     questions: list[Question]
     question: Question | None = None
     control: str | None = None
+    steal_challenger: str | None = None
     strikes: int = 0
+    round_points: int = 0  # points banked this question (awarded at resolve)
     buzz_log: list[BuzzEvent] = field(default_factory=list)
+    play_log: list[str] = field(default_factory=list)
     message: str = "Pick a question to start the face-off."
-    host_sees_answers: bool = True
+    host_sees_answers: bool = True  # locked rule
+    live: bool = False
+
+
+BuzzFn = Callable[[MatchState], MatchState]
+AnswerFn = Callable[[str, str, list[str]], tuple[str, float]]
 
 
 def _board_answers(raw: dict[str, Any]) -> list[dict[str, Any]]:
@@ -105,17 +111,11 @@ def load_question_bank(
             for entry in _board_answers(item)
             if str(entry.get("answer") or "").strip()
         ]
-        # Highest survey points first (classic board order).
         slots.sort(key=lambda slot: (-slot.points, slot.answer.lower()))
         if not slots:
             continue
         bank.append(
-            Question(
-                text=text,
-                slots=slots,
-                source=str(path),
-                index=index,
-            )
+            Question(text=text, slots=slots, source=str(path), index=index)
         )
         if limit is not None and len(bank) >= limit:
             break
@@ -126,6 +126,7 @@ def new_match(
     questions: list[Question],
     *,
     contestants: list[str] | None = None,
+    live: bool = False,
 ) -> MatchState:
     names = list(contestants or DEFAULT_CONTESTANTS)
     return MatchState(
@@ -133,7 +134,11 @@ def new_match(
         scores={name: 0 for name in names},
         phase=Phase.PICK_QUESTION,
         questions=questions,
-        message=f"Loaded {len(questions)} questions. Pick one to begin.",
+        live=live,
+        message=(
+            f"Loaded {len(questions)} questions. "
+            f"{'LIVE' if live else 'MOCK'} buzz. Pick one to begin."
+        ),
     )
 
 
@@ -142,7 +147,6 @@ def select_question(state: MatchState, question_index: int) -> MatchState:
         state.message = "Invalid question index."
         return state
     question = state.questions[question_index]
-    # Fresh reveal flags for this round.
     fresh = Question(
         text=question.text,
         slots=[
@@ -154,21 +158,27 @@ def select_question(state: MatchState, question_index: int) -> MatchState:
     )
     state.question = fresh
     state.control = None
+    state.steal_challenger = None
     state.strikes = 0
+    state.round_points = 0
     state.buzz_log = []
+    state.play_log = []
     state.phase = Phase.FACE_OFF_READY
+    mode = "LIVE" if state.live else "MOCK"
     state.message = (
-        f"Face-off ready. Press Space to buzz models on: {fresh.text}"
+        f"Face-off ready ({mode}). Space to buzz all models on: {fresh.text}"
     )
     return state
 
 
 def _normalize(text: str) -> str:
-    return " ".join("".join(ch.lower() if ch.isalnum() else " " for ch in text).split())
+    return " ".join(
+        "".join(ch.lower() if ch.isalnum() else " " for ch in text).split()
+    )
 
 
 def grade_against_board(
-    guess: str, slots: list[BoardSlot]
+    guess: str, slots: list[BoardSlot], *, revealed_only: bool = False
 ) -> tuple[bool, str | None, int]:
     needle = _normalize(guess)
     if not needle:
@@ -176,6 +186,11 @@ def grade_against_board(
     best_points = 0
     best_answer = None
     for slot in slots:
+        if revealed_only and not slot.revealed:
+            continue
+        if not revealed_only and slot.revealed:
+            # Main play: already-revealed answers don't count as new hits.
+            continue
         board = _normalize(slot.answer)
         if not board:
             continue
@@ -186,28 +201,87 @@ def grade_against_board(
     return best_answer is not None, best_answer, best_points
 
 
+def revealed_answers(state: MatchState) -> list[str]:
+    if not state.question:
+        return []
+    return [s.answer for s in state.question.slots if s.revealed]
+
+
+def unrevealed_slots(state: MatchState) -> list[BoardSlot]:
+    if not state.question:
+        return []
+    return [s for s in state.question.slots if not s.revealed]
+
+
+def reveal_matched_slot(state: MatchState, matched: str | None) -> int:
+    if not state.question or not matched:
+        return 0
+    for slot in state.question.slots:
+        if slot.answer == matched and not slot.revealed:
+            slot.revealed = True
+            return slot.points
+    return 0
+
+
+def pick_steal_challenger(state: MatchState) -> str | None:
+    """Fastest face-off board-hit among non-controllers; else fastest lockout."""
+    if not state.control:
+        return None
+    others_hit = [
+        e
+        for e in state.buzz_log
+        if e.model != state.control and e.hit and not e.locked_out
+    ]
+    if others_hit:
+        return sorted(others_hit, key=lambda e: e.latency_s)[0].model
+    others = [e for e in state.buzz_log if e.model != state.control]
+    if not others:
+        return None
+    return sorted(others, key=lambda e: e.latency_s)[0].model
+
+
+def apply_face_off_results(state: MatchState, events: list[BuzzEvent]) -> MatchState:
+    """Resolve face-off: first hit by latency wins; misses are lockout only."""
+    for event in events:
+        if not event.hit:
+            event.locked_out = True
+    events = sorted(events, key=lambda e: (0 if e.hit else 1, e.latency_s))
+    state.buzz_log = events
+    hits = [e for e in events if e.hit]
+    if hits:
+        winner = sorted(hits, key=lambda e: e.latency_s)[0]
+        state.control = winner.model
+        state.steal_challenger = None
+        state.phase = Phase.FACE_OFF_RESULT
+        state.message = (
+            f"{winner.model} buzzes in first with {winner.text!r} "
+            f"({winner.latency_s:.2f}s) → {winner.matched!r} ({winner.points}). "
+            "Wrong buzzes are locked out. Space to take control."
+        )
+    else:
+        state.control = None
+        state.phase = Phase.FACE_OFF_RESULT
+        state.message = (
+            "No one hit the board (all locked out). Space to end the round."
+        )
+    return state
+
+
 def mock_buzz(state: MatchState, *, seed: int | None = None) -> MatchState:
-    """Simulate a face-off: canned / random answers with fake latency."""
     if state.question is None:
         state.message = "Pick a question first."
         return state
-    if state.phase not in {Phase.FACE_OFF_READY, Phase.FACE_OFF_RESULT}:
-        state.message = "Face-off already resolved. Advance with Space."
-        return state
-
     rng = random.Random(seed)
     slots = state.question.slots
-    top_answers = [s.answer for s in slots[:3]]
+    top = [s.answer for s in slots[:3]]
     decoys = ["pass", "I don't know", "stuff", "things", "maybe"]
-
     events: list[BuzzEvent] = []
     for model in state.contestants:
-        # ~60% chance to hit a real board answer in the mock.
-        if rng.random() < 0.6 and top_answers:
-            text = rng.choice(top_answers)
+        if rng.random() < 0.55 and top:
+            text = rng.choice(top)
         else:
-            text = rng.choice(decoys + [s.answer for s in slots[3:4]] or decoys)
-        latency = round(rng.uniform(0.4, 2.8), 2)
+            text = rng.choice(decoys)
+        latency = round(rng.uniform(0.35, 2.6), 2)
         hit, matched, points = grade_against_board(text, slots)
         events.append(
             BuzzEvent(
@@ -219,98 +293,215 @@ def mock_buzz(state: MatchState, *, seed: int | None = None) -> MatchState:
                 points=points,
             )
         )
+    return apply_face_off_results(state, events)
 
-    # First valid hit by latency wins (classic buzz-in).
-    hits = sorted([e for e in events if e.hit], key=lambda e: e.latency_s)
-    events.sort(key=lambda e: (0 if e.hit else 1, e.latency_s))
-    state.buzz_log = events
 
-    if hits:
-        winner = hits[0]
-        state.control = winner.model
-        state.phase = Phase.FACE_OFF_RESULT
+def bank_points(state: MatchState, points: int) -> None:
+    state.round_points += points
+
+
+def resolve_round(state: MatchState, winner: str | None) -> MatchState:
+    """Award banked round points and close the question."""
+    if winner and state.round_points:
+        state.scores[winner] = state.scores.get(winner, 0) + state.round_points
+        state.play_log.append(
+            f"{winner} wins the round for {state.round_points} points."
+        )
         state.message = (
-            f"{winner.model} buzzes in first with {winner.text!r} "
-            f"({winner.latency_s:.2f}s) → matched {winner.matched!r} "
-            f"for {winner.points}. Press Space to take control."
+            f"Round over — {winner} takes {state.round_points}. "
+            "Space for next question."
         )
     else:
-        state.control = None
-        state.phase = Phase.FACE_OFF_RESULT
-        state.message = (
-            "No one hit the board. Press Space to reveal answers / end round."
-        )
+        state.message = "Round over — no points awarded. Space for next question."
+        state.play_log.append("Round over with no points awarded.")
+    state.phase = Phase.ROUND_OVER
     return state
 
 
-def reveal_matched_slot(state: MatchState, matched: str | None) -> None:
-    if not state.question or not matched:
-        return
-    for slot in state.question.slots:
-        if slot.answer == matched and not slot.revealed:
+def begin_main_play(state: MatchState) -> MatchState:
+    if state.question is None:
+        return state
+    if not state.control:
+        # Reveal remaining for show, no points.
+        for slot in state.question.slots:
             slot.revealed = True
-            return
+        state.round_points = 0
+        return resolve_round(state, None)
+
+    winner_event = next(e for e in state.buzz_log if e.model == state.control)
+    pts = reveal_matched_slot(state, winner_event.matched)
+    bank_points(state, pts)
+    state.strikes = 0
+    state.phase = Phase.MAIN_PLAY
+    state.play_log.append(
+        f"{state.control} takes control with {winner_event.matched!r} (+{pts})."
+    )
+    left = len(unrevealed_slots(state))
+    if left == 0:
+        return resolve_round(state, state.control)
+    state.message = (
+        f"{state.control} has control. Strikes 0/{STRIKES_TO_STEAL}. "
+        f"{left} answers left. Space for next guess (Mode B)."
+    )
+    return state
 
 
-def advance(state: MatchState) -> MatchState:
-    """Host Space: step one beat forward."""
+def apply_main_guess(state: MatchState, text: str, latency_s: float = 0.0) -> MatchState:
+    """One main-play guess from the controlling contestant."""
+    if state.phase != Phase.MAIN_PLAY or not state.control or not state.question:
+        return state
+    hit, matched, points = grade_against_board(text, state.question.slots)
+    if hit and matched:
+        pts = reveal_matched_slot(state, matched)
+        bank_points(state, pts)
+        state.play_log.append(
+            f"{state.control}: {text!r} → {matched!r} (+{pts}) [{latency_s:.2f}s]"
+        )
+        left = len(unrevealed_slots(state))
+        if left == 0:
+            return resolve_round(state, state.control)
+        state.message = (
+            f"Good answer! {matched!r} (+{pts}). "
+            f"Strikes {state.strikes}/{STRIKES_TO_STEAL}. "
+            f"{left} left. Space for next guess."
+        )
+        return state
+
+    state.strikes += 1
+    state.play_log.append(
+        f"{state.control}: {text!r} → STRIKE {state.strikes} [{latency_s:.2f}s]"
+    )
+    if state.strikes >= STRIKES_TO_STEAL:
+        challenger = pick_steal_challenger(state)
+        state.steal_challenger = challenger
+        state.phase = Phase.STEAL
+        if challenger:
+            state.message = (
+                f"3 strikes! {challenger} steals for one answer. "
+                f"Round bank={state.round_points}. Space for steal attempt."
+            )
+        else:
+            state.message = (
+                "3 strikes and no challenger. "
+                f"{state.control} keeps the bank ({state.round_points}). Space."
+            )
+            return resolve_round(state, state.control)
+        return state
+
+    state.message = (
+        f"Strike {state.strikes}/{STRIKES_TO_STEAL} on {text!r}. "
+        "Space for next guess."
+    )
+    return state
+
+
+def apply_steal_guess(state: MatchState, text: str, latency_s: float = 0.0) -> MatchState:
+    if state.phase != Phase.STEAL or not state.question:
+        return state
+    challenger = state.steal_challenger
+    if not challenger:
+        return resolve_round(state, state.control)
+
+    hit, matched, _points = grade_against_board(text, state.question.slots)
+    if hit and matched:
+        pts = reveal_matched_slot(state, matched)
+        bank_points(state, pts)
+        state.play_log.append(
+            f"STEAL {challenger}: {text!r} → {matched!r} (+{pts}) "
+            f"takes bank {state.round_points} [{latency_s:.2f}s]"
+        )
+        return resolve_round(state, challenger)
+
+    state.play_log.append(
+        f"STEAL {challenger}: {text!r} MISS — {state.control} keeps bank "
+        f"{state.round_points} [{latency_s:.2f}s]"
+    )
+    return resolve_round(state, state.control)
+
+
+def mock_answer(
+    model: str, question: str, already: list[str], *, seed: int | None = None
+) -> tuple[str, float]:
+    """Deterministic-ish mock answer for Mode B stepping."""
+    rng = random.Random(f"{seed}-{model}-{question}-{len(already)}")
+    # Prefer unused board-looking strings from already context — engine tests
+    # pass real remaining answers via a wrapper in TUI/tests.
+    decoys = ["lamp", "sandwich", "giraffe", "password", "trombone"]
+    text = rng.choice(decoys)
+    return text, round(rng.uniform(0.5, 2.0), 2)
+
+
+def advance(
+    state: MatchState,
+    *,
+    buzz_fn: BuzzFn | None = None,
+    answer_fn: AnswerFn | None = None,
+) -> MatchState:
+    """Host Space — one beat forward."""
     if state.phase == Phase.PICK_QUESTION:
         state.message = "Select a question from the list, then press Enter."
         return state
 
     if state.phase == Phase.FACE_OFF_READY:
-        return mock_buzz(state)
+        state.phase = Phase.FACE_OFF_RUNNING
+        state.message = "Buzzing models…"
+        fn = buzz_fn or mock_buzz
+        return fn(state)
+
+    if state.phase == Phase.FACE_OFF_RUNNING:
+        state.message = "Still buzzing…"
+        return state
 
     if state.phase == Phase.FACE_OFF_RESULT:
-        if state.control and state.buzz_log:
-            winner = next(e for e in state.buzz_log if e.model == state.control)
-            reveal_matched_slot(state, winner.matched)
-            state.scores[state.control] = state.scores.get(state.control, 0) + winner.points
-            state.phase = Phase.MAIN_PLAY
-            state.message = (
-                f"{state.control} has control. Press Space to reveal the "
-                "next board answer (Phase 1 mock main play)."
-            )
-        else:
-            state.phase = Phase.MAIN_PLAY
-            state.message = (
-                "No controller. Press Space to reveal board answers one by one."
-            )
-        return state
+        return begin_main_play(state)
 
     if state.phase == Phase.MAIN_PLAY:
-        if state.question is None:
-            state.phase = Phase.PICK_QUESTION
-            return state
-        hidden = [s for s in state.question.slots if not s.revealed]
-        if not hidden:
-            state.phase = Phase.ROUND_OVER
-            state.message = "Board clear. Press Space to pick another question."
-            return state
-        slot = hidden[0]
-        slot.revealed = True
-        if state.control:
-            state.scores[state.control] = state.scores.get(state.control, 0) + slot.points
-            state.message = (
-                f"Revealed {slot.answer!r} ({slot.points}). "
-                f"Points to {state.control}. "
-                f"{len(hidden) - 1} left — Space to continue."
-            )
+        if not state.control or not state.question:
+            return resolve_round(state, None)
+        already = revealed_answers(state)
+        remaining = [s.answer for s in unrevealed_slots(state)]
+        if answer_fn is None:
+            # Mock: 60% chance to hit a remaining answer.
+            rng = random.Random(len(state.play_log) + state.strikes)
+            if remaining and rng.random() < 0.55:
+                text = rng.choice(remaining)
+                latency = round(rng.uniform(0.4, 1.8), 2)
+            else:
+                text, latency = mock_answer(
+                    state.control, state.question.text, already
+                )
         else:
-            state.message = (
-                f"Revealed {slot.answer!r} ({slot.points}). "
-                f"{len(hidden) - 1} left — Space to continue."
+            text, latency = answer_fn(state.control, state.question.text, already)
+        return apply_main_guess(state, text, latency)
+
+    if state.phase == Phase.STEAL:
+        if not state.steal_challenger or not state.question:
+            return resolve_round(state, state.control)
+        already = revealed_answers(state)
+        remaining = [s.answer for s in unrevealed_slots(state)]
+        if answer_fn is None:
+            rng = random.Random(f"steal-{len(state.play_log)}")
+            if remaining and rng.random() < 0.45:
+                text = rng.choice(remaining)
+                latency = round(rng.uniform(0.4, 1.8), 2)
+            else:
+                text, latency = mock_answer(
+                    state.steal_challenger, state.question.text, already
+                )
+        else:
+            text, latency = answer_fn(
+                state.steal_challenger, state.question.text, already
             )
-        if all(s.revealed for s in state.question.slots):
-            state.phase = Phase.ROUND_OVER
-            state.message += " Round over."
-        return state
+        return apply_steal_guess(state, text, latency)
 
     if state.phase == Phase.ROUND_OVER:
         state.question = None
         state.control = None
+        state.steal_challenger = None
         state.strikes = 0
+        state.round_points = 0
         state.buzz_log = []
+        state.play_log = []
         state.phase = Phase.PICK_QUESTION
         state.message = "Pick the next question."
         return state
@@ -319,14 +510,16 @@ def advance(state: MatchState) -> MatchState:
 
 
 def reveal_next_host(state: MatchState) -> MatchState:
-    """Host 'r': reveal next hidden answer without awarding points."""
+    """Host 'r': reveal next hidden answer without changing the point bank."""
     if state.question is None:
         state.message = "No active question."
         return state
     for slot in state.question.slots:
         if not slot.revealed:
             slot.revealed = True
-            state.message = f"Host reveal: {slot.answer!r} ({slot.points})."
+            state.message = (
+                f"Host reveal (no points): {slot.answer!r} ({slot.points})."
+            )
             return state
     state.message = "Nothing left to reveal."
     return state

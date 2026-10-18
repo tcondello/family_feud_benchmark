@@ -2,9 +2,6 @@ beautifulsoup4>=4.12
 lxml>=5.0
 openai>=1.0
 python-dotenv>=1.0
-<<<<<<< HEAD
-=======
 anthropic>=0.40
 google-genai>=1.0
 textual>=0.80
->>>>>>> f2a413b (Add Phase 1 Family Feud host TUI with mock buzz-in)
