@@ -87,15 +87,39 @@ def test_mode_b_three_strikes_then_steal() -> None:
     state = apply_main_guess(state, "nope1")
     state = apply_main_guess(state, "nope2")
     assert state.strikes == 2
+    assert state.wrong_guesses == ["nope1", "nope2"]
     state = apply_main_guess(state, "nope3")
     assert state.phase == Phase.STEAL
     assert state.steal_challenger == "Opus"
+    assert state.wrong_guesses == ["nope1", "nope2", "nope3"]
 
     # Successful steal takes the bank.
     state = apply_steal_guess(state, "Beer")
     assert state.phase == Phase.ROUND_OVER
     assert state.scores["Opus"] == state.round_points or state.scores["Opus"] > 0
     assert state.scores["Opus"] >= 37 + 28
+
+
+def test_used_question_cannot_be_reselected(tmp_path: Path) -> None:
+    path = tmp_path / "q.json"
+    path.write_text(
+        """
+        {"questions": [
+          {"question": "Q1", "answers": [{"answer": "A", "score": 10}]},
+          {"question": "Q2", "answers": [{"answer": "B", "score": 10}]}
+        ]}
+        """,
+        encoding="utf-8",
+    )
+    state = new_match(load_question_bank(path), contestants=["Opus"])
+    state = select_question(state, 0)
+    assert 0 in state.used_questions
+    state = select_question(state, 0)
+    assert state.phase == Phase.FACE_OFF_READY  # still on first selection
+    assert "already used" in state.message.lower()
+    state = select_question(state, 1)
+    assert state.phase == Phase.FACE_OFF_READY
+    assert state.question and state.question.text == "Q2"
 
 
 def test_grade_against_board() -> None:

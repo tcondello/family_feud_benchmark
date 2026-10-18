@@ -37,6 +37,6 @@ FACE_OFF_SYSTEM = (
 
 MAIN_PLAY_SYSTEM = (
     "You are playing Family Feud and have control of the board. Give ONE new "
-    "short survey answer that is NOT in the already-revealed list. Reply with "
-    "only the answer words."
+    "short survey answer. Never repeat anything listed as already revealed or "
+    "already tried/wrong. Reply with only the answer words."
 )

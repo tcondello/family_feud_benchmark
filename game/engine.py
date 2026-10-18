@@ -69,13 +69,18 @@ class MatchState:
     round_points: int = 0  # points banked this question (awarded at resolve)
     buzz_log: list[BuzzEvent] = field(default_factory=list)
     play_log: list[str] = field(default_factory=list)
+    # Wrong main-play / steal guesses this round — must be sent back to the model.
+    wrong_guesses: list[str] = field(default_factory=list)
+    # Question bank indices already played this episode (until process restart).
+    used_questions: set[int] = field(default_factory=set)
     message: str = "Pick a question to start the face-off."
     host_sees_answers: bool = True  # locked rule
     live: bool = False
 
 
 BuzzFn = Callable[[MatchState], MatchState]
-AnswerFn = Callable[[str, str, list[str]], tuple[str, float]]
+# name, question, revealed_answers, wrong_guesses → (text, latency_s)
+AnswerFn = Callable[[str, str, list[str], list[str]], tuple[str, float]]
 
 
 def _board_answers(raw: dict[str, Any]) -> list[dict[str, Any]]:
@@ -146,6 +151,12 @@ def select_question(state: MatchState, question_index: int) -> MatchState:
     if question_index < 0 or question_index >= len(state.questions):
         state.message = "Invalid question index."
         return state
+    if question_index in state.used_questions:
+        state.message = (
+            "That question was already used this episode. "
+            "Pick another (used ones stay marked until you quit)."
+        )
+        return state
     question = state.questions[question_index]
     fresh = Question(
         text=question.text,
@@ -157,12 +168,14 @@ def select_question(state: MatchState, question_index: int) -> MatchState:
         index=question.index,
     )
     state.question = fresh
+    state.used_questions.add(question_index)
     state.control = None
     state.steal_challenger = None
     state.strikes = 0
     state.round_points = 0
     state.buzz_log = []
     state.play_log = []
+    state.wrong_guesses = []
     state.phase = Phase.FACE_OFF_READY
     mode = "LIVE" if state.live else "MOCK"
     state.message = (
@@ -368,6 +381,8 @@ def apply_main_guess(state: MatchState, text: str, latency_s: float = 0.0) -> Ma
         return state
 
     state.strikes += 1
+    if text.strip():
+        state.wrong_guesses.append(text.strip())
     state.play_log.append(
         f"{state.control}: {text!r} → STRIKE {state.strikes} [{latency_s:.2f}s]"
     )
@@ -459,6 +474,7 @@ def advance(
         if not state.control or not state.question:
             return resolve_round(state, None)
         already = revealed_answers(state)
+        wrongs = list(state.wrong_guesses)
         remaining = [s.answer for s in unrevealed_slots(state)]
         if answer_fn is None:
             # Mock: 60% chance to hit a remaining answer.
@@ -468,16 +484,19 @@ def advance(
                 latency = round(rng.uniform(0.4, 1.8), 2)
             else:
                 text, latency = mock_answer(
-                    state.control, state.question.text, already
+                    state.control, state.question.text, already + wrongs
                 )
         else:
-            text, latency = answer_fn(state.control, state.question.text, already)
+            text, latency = answer_fn(
+                state.control, state.question.text, already, wrongs
+            )
         return apply_main_guess(state, text, latency)
 
     if state.phase == Phase.STEAL:
         if not state.steal_challenger or not state.question:
             return resolve_round(state, state.control)
         already = revealed_answers(state)
+        wrongs = list(state.wrong_guesses)
         remaining = [s.answer for s in unrevealed_slots(state)]
         if answer_fn is None:
             rng = random.Random(f"steal-{len(state.play_log)}")
@@ -486,11 +505,11 @@ def advance(
                 latency = round(rng.uniform(0.4, 1.8), 2)
             else:
                 text, latency = mock_answer(
-                    state.steal_challenger, state.question.text, already
+                    state.steal_challenger, state.question.text, already + wrongs
                 )
         else:
             text, latency = answer_fn(
-                state.steal_challenger, state.question.text, already
+                state.steal_challenger, state.question.text, already, wrongs
             )
         return apply_steal_guess(state, text, latency)
 
@@ -502,8 +521,12 @@ def advance(
         state.round_points = 0
         state.buzz_log = []
         state.play_log = []
+        state.wrong_guesses = []
         state.phase = Phase.PICK_QUESTION
-        state.message = "Pick the next question."
+        used = len(state.used_questions)
+        state.message = (
+            f"Pick the next question ({used} used this episode — marked in list)."
+        )
         return state
 
     return state

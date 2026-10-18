@@ -42,7 +42,7 @@ Step through a Family Feud episode as host. Locked rules:
 pip install -r requirements.txt
 
 # Mock buzz (no API keys) — practice pacing
-python -m game
+python3 -m game
 
 # Live models (needs runtime secrets / .env)
 python3 -m game --live
@@ -53,7 +53,11 @@ python3 -m game --live --contestants Opus Ember gpt-5.5 Kimi Qwen
 
 Gemini Flash often hits free-tier **429** when all contestants buzz together;
 live Google calls retry with backoff, or drop Flash from `--contestants`.
-```
+
+Used questions stay **red/strikethrough** and cannot be re-selected until you
+quit (episode reset). Live API prompts/responses are appended to
+`responses/game_traces/live_*.jsonl` for harness debugging (including the
+revealed + wrong-guess lists sent on each main-play call).
 
 | Key | Action |
 |-----|--------|

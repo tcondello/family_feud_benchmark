@@ -75,14 +75,16 @@ class StatusPanel(Static):
     def update_status(self, state: MatchState) -> None:
         q = state.question.text if state.question else "(none)"
         mode = "LIVE" if state.live else "MOCK"
+        wrongs = ", ".join(state.wrong_guesses[-4:]) if state.wrong_guesses else "—"
         self.update(
             f"[bold]Mode:[/bold] {mode} · Mode B ({STRIKES_TO_STEAL} strikes) · "
-            f"wrong buzz = lockout\n"
+            f"wrong buzz = lockout · used Qs: {len(state.used_questions)}\n"
             f"[bold]Phase:[/bold] {state.phase.value}   "
             f"[bold]Control:[/bold] {state.control or '—'}   "
             f"[bold]Steal:[/bold] {state.steal_challenger or '—'}   "
             f"[bold]Strikes:[/bold] {state.strikes}/{STRIKES_TO_STEAL}\n"
             f"[bold]Q:[/bold] {q}\n"
+            f"[bold]Wrong tries:[/bold] {wrongs}\n"
             f"[bold]Host:[/bold] {state.message}"
         )
 
@@ -99,7 +101,7 @@ class HostApp(App[None]):
     #stage { width: 3fr; layout: vertical; }
     #scoreboard { height: 3; padding: 1; border: solid $success; }
     #board { height: 1fr; padding: 1; border: solid $warning; }
-    #status { height: 6; padding: 0 1; border: solid $primary; }
+    #status { height: 7; padding: 0 1; border: solid $primary; }
     #buzz { height: 12; border: solid $secondary; }
     ListView { height: 1fr; }
     """
@@ -165,7 +167,14 @@ class HostApp(App[None]):
             if needle and needle not in question.text.lower():
                 continue
             self._visible_indices.append(index)
-            label = f"{index + 1:03d}  {question.text}"
+            used = index in self.state.used_questions
+            if used:
+                # Red + strikethrough so hosts see spent questions at a glance.
+                label = (
+                    f"[strike red]{index + 1:03d}  {question.text}[/strike red]"
+                )
+            else:
+                label = f"{index + 1:03d}  {question.text}"
             list_view.append(ListItem(Label(label), name=str(index)))
         if self._visible_indices:
             list_view.index = 0
@@ -222,7 +231,11 @@ class HostApp(App[None]):
     def _apply_question(self, bank_index: int) -> None:
         if self._busy:
             return
+        before = set(self.state.used_questions)
         self.state = select_question(self.state, bank_index)
+        # Rebuild list so the newly used question shows strikethrough.
+        if self.state.used_questions != before or bank_index in self.state.used_questions:
+            self._rebuild_question_list()
         self._refresh()
 
     def action_advance(self) -> None:
@@ -278,11 +291,16 @@ class HostApp(App[None]):
         self.state.question = None
         self.state.buzz_log = []
         self.state.play_log = []
+        self.state.wrong_guesses = []
         self.state.control = None
         self.state.steal_challenger = None
         self.state.strikes = 0
         self.state.round_points = 0
-        self.state.message = "Pick the next question from the list."
+        used = len(self.state.used_questions)
+        self.state.message = (
+            f"Pick the next question ({used} already used — red/strike)."
+        )
+        self._rebuild_question_list()
         self._refresh()
         self.query_one("#question-list", ListView).focus()
 

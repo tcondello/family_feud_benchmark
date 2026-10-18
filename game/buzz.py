@@ -22,6 +22,7 @@ from game.rules import (
     MAIN_PLAY_SYSTEM,
     PROVIDER_ENV,
 )
+from game.trace import log_event
 
 load_dotenv()
 
@@ -174,12 +175,44 @@ def _clean(text: str) -> str:
     return text
 
 
-def query_contestant(name: str, system: str, user: str) -> tuple[str, float]:
+def query_contestant(
+    name: str,
+    system: str,
+    user: str,
+    *,
+    phase: str = "unknown",
+) -> tuple[str, float]:
     provider, model = CONTESTANT_MODELS[name]
     if not os.getenv(PROVIDER_ENV[provider]):
         raise RuntimeError(f"Missing {PROVIDER_ENV[provider]} for {name}")
-    text, latency = _CALLERS[provider](model, system, user)
-    return _clean(text), latency
+    try:
+        text, latency = _CALLERS[provider](model, system, user)
+    except Exception as exc:  # noqa: BLE001
+        log_event(
+            "model_error",
+            phase=phase,
+            contestant=name,
+            provider=provider,
+            model=model,
+            system=system,
+            user=user,
+            error=f"{type(exc).__name__}: {exc}",
+        )
+        raise
+    cleaned = _clean(text)
+    log_event(
+        "model_call",
+        phase=phase,
+        contestant=name,
+        provider=provider,
+        model=model,
+        system=system,
+        user=user,
+        raw=text,
+        cleaned=cleaned,
+        latency_s=round(latency, 4),
+    )
+    return cleaned, latency
 
 
 def live_buzz(state: MatchState) -> MatchState:
@@ -192,9 +225,17 @@ def live_buzz(state: MatchState) -> MatchState:
     slots = state.question.slots
     events: list[BuzzEvent] = []
 
+    log_event(
+        "face_off_start",
+        question=question,
+        contestants=list(state.contestants),
+    )
+
     def one(name: str) -> BuzzEvent:
         try:
-            text, latency = query_contestant(name, FACE_OFF_SYSTEM, question)
+            text, latency = query_contestant(
+                name, FACE_OFF_SYSTEM, question, phase="face_off"
+            )
         except Exception as exc:  # noqa: BLE001
             return BuzzEvent(
                 model=name,
@@ -220,14 +261,23 @@ def live_buzz(state: MatchState) -> MatchState:
     return apply_face_off_results(state, events)
 
 
-def live_answer(name: str, question: str, already: list[str]) -> tuple[str, float]:
-    revealed = ", ".join(already) if already else "(none yet)"
+def live_answer(
+    name: str,
+    question: str,
+    revealed: list[str],
+    wrong_guesses: list[str] | None = None,
+) -> tuple[str, float]:
+    """Main-play / steal prompt — must include strikes so models don't repeat misses."""
+    wrong_guesses = wrong_guesses or []
+    revealed_s = ", ".join(revealed) if revealed else "(none yet)"
+    wrong_s = ", ".join(wrong_guesses) if wrong_guesses else "(none yet)"
     user = (
         f"Survey question: {question}\n"
-        f"Already revealed (do not repeat): {revealed}\n"
-        "Your one new answer:"
+        f"Already revealed on the board (do not repeat): {revealed_s}\n"
+        f"Already tried and WRONG / strikes (do not repeat): {wrong_s}\n"
+        "Give ONE new short survey answer that is not in either list above."
     )
-    return query_contestant(name, MAIN_PLAY_SYSTEM, user)
+    return query_contestant(name, MAIN_PLAY_SYSTEM, user, phase="main_or_steal")
 
 
 def make_buzz_fn(*, live: bool):
