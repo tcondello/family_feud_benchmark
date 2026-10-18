@@ -90,5 +90,18 @@ python compare_misses.py \
   --output-csv responses/miss_comparison.csv
 ```
 
+### Interactive hit/miss explorer
+
+Browse questions all models missed, hard disagreements, solo hits, and
+per-model unique misses:
+
+```bash
+python build_question_explorer.py
+# opens responses/question_explorer.html (also copied to artifacts)
+```
+
+Filter by topic (e.g. dating/sex), search question text, and click a row to
+see each model’s answer vs HIT/MISS.
+
 `openAI_family_feud.py` remains as a single-provider OpenAI helper (now on
 `gpt-5.5`). Prefer `run_benchmark.py` for multi-provider runs.
