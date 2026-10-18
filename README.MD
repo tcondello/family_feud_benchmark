@@ -41,7 +41,7 @@ python score_benchmark.py \
 |------------|--------------------------------------------|----------------------|
 | OpenAI     | `gpt-5.5`                                  | `OPENAI_API_KEY`     |
 | Anthropic  | `claude-opus-4-6`                          | `ANTHROPIC_API_KEY`  |
-| Google     | `gemini-4-argon`                        | `GOOGLE_API_KEY`     |
+| Google     | `gemini-flash-latest`                        | `GOOGLE_API_KEY`     |
 | Fireworks  | `accounts/fireworks/models/qwen3p8-max`    | `FIREWORKS_API_KEY`  |
 | Fireworks  | `accounts/fireworks/models/ember-1`        | `FIREWORKS_API_KEY`  |
 | Fireworks  | `accounts/fireworks/models/kimi-k3`        | `FIREWORKS_API_KEY`  |
