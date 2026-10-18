@@ -88,20 +88,32 @@ def build_rows() -> dict[str, Any]:
     all_hit = all_miss = disagree = 0
 
     for q in questions:
+        board_raw = boards.get(q, [])
+        board = sorted(
+            [
+                [str(a.get("answer", "")), int(a.get("score") or 0)]
+                for a in board_raw
+                if a.get("answer")
+            ],
+            key=lambda pair: (-pair[1], pair[0].lower()),
+        )
         answers = []
         pts = []
+        matched: list[str | None] = []
         mask = 0
         for i, (key, _lab) in enumerate(MODELS):
             ans = by_model[key].get(q, "")
-            score, _ = match_score(ans, boards.get(q, []))
+            score, matched_ans = match_score(ans, board_raw)
             answers.append(ans)
             pts.append(int(score))
+            matched.append(matched_ans)
             if score > 0:
                 mask |= 1 << i
         n_hits = bin(mask).count("1")
         tags = topic_tags(q)
         tag_str = ",".join(tags)
-        row = [q, tag_str, mask, answers, pts]
+        # [question, topics, hitMask, modelAnswers, points, board[[ans,pts]], matchedBoardAns]
+        row = [q, tag_str, mask, answers, pts, board, matched]
 
         for t in tags:
             topic_n[t] += 1
@@ -259,7 +271,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Question hit / miss explorer</h1>
-  <p class="sub">Click any question to see which models hit the survey board and which missed — plus their raw answers. Soft-match scoring across Opus, Ember, Kimi, Qwen, and GPT on __N__ shared questions. Start with <b>All models wrong</b> to find unanimous misses.</p>
+  <p class="sub">Click any question to see the survey board (correct answers), which models hit or missed, and each model’s raw answer. Soft-match scoring across Opus, Ember, Kimi, Qwen, and GPT on __N__ shared questions. Start with <b>All models wrong</b> to find unanimous misses.</p>
 </header>
 <div class="stats" id="stats"></div>
 <div class="topics"><h2 style="font-size:14px;margin:0 0 8px;color:var(--muted)">Miss rate by topic (higher = harder for that model)</h2><div class="topic-grid" id="topics"></div></div>
@@ -418,13 +430,28 @@ function renderDetail(){
   if(!selected){ el.innerHTML=`<p style="color:var(--muted)">Select a question to compare answers.</p>`; return; }
   const row=selected;
   const chips=row[1].split(',').map(t=>`<span class="chip on">${t}</span>`).join('');
+  const board = row[5] || [];
+  const matched = row[6] || [];
   let body=`<div style="font-weight:650;margin-bottom:8px">${row[0].replace(/</g,'&lt;')}</div>
     <div class="chips" style="margin-bottom:10px">${chips}</div>
     <div class="chips" style="margin-bottom:12px"><span class="chip on">Hits: ${hits(row[2]).join(', ')||'none'}</span><span class="chip">Misses: ${misses(row[2]).join(', ')||'none'}</span></div>
-    <table><thead><tr><th>Model</th><th>Result</th><th>Answer</th><th>Pts</th></tr></thead><tbody>`;
+    <div style="font-weight:650;margin:4px 0 6px;font-size:13px">Survey board (correct answers)</div>
+    <table style="margin-bottom:14px"><thead><tr><th>#</th><th>Answer</th><th>Pts</th></tr></thead><tbody>`;
+  if(!board.length){
+    body+=`<tr><td colspan="3" style="color:var(--muted)">No board answers found for this question.</td></tr>`;
+  } else {
+    board.forEach((pair, idx)=>{
+      const ans = String(pair[0]||'').replace(/</g,'&lt;');
+      body+=`<tr><td style="color:var(--muted)">${idx+1}</td><td>${ans}</td><td>${pair[1]}</td></tr>`;
+    });
+  }
+  body+=`</tbody></table>
+    <div style="font-weight:650;margin:4px 0 6px;font-size:13px">Model answers</div>
+    <table><thead><tr><th>Model</th><th>Result</th><th>Answer</th><th>Matched board</th><th>Pts</th></tr></thead><tbody>`;
   for(let i=0;i<M.length;i++){
     const hit=(row[2]&(1<<i))!==0;
-    body+=`<tr><td>${M[i]}</td><td class="${hit?'hit':'miss'}">${hit?'HIT':'MISS'}</td><td>${(row[3][i]||'—').replace(/</g,'&lt;')}</td><td>${row[4][i]}</td></tr>`;
+    const matchedAns = matched[i] ? String(matched[i]).replace(/</g,'&lt;') : '—';
+    body+=`<tr><td>${M[i]}</td><td class="${hit?'hit':'miss'}">${hit?'HIT':'MISS'}</td><td>${(row[3][i]||'—').replace(/</g,'&lt;')}</td><td style="color:var(--muted)">${matchedAns}</td><td>${row[4][i]}</td></tr>`;
   }
   body+='</tbody></table>';
   el.innerHTML=body;
@@ -469,10 +496,21 @@ def canvas_source(data: dict[str, Any]) -> str:
             i += 1
         return out
 
-    all_miss = pick(data["miss"], 40)
-    hard = pick(data["disagree"], 30)
-    solo = {lab: (data["solo"].get(lab) or [])[:12] for lab in labels}
-    unique = {lab: (data["uniqueMiss"].get(lab) or [])[:12] for lab in labels}
+    def trim_row(r: list[Any]) -> list[Any]:
+        # Keep full model answers; cap board to top 6 for canvas size.
+        board = (r[5] or [])[:6]
+        return [r[0], r[1], r[2], r[3], r[4], board, r[6]]
+
+    all_miss = [trim_row(r) for r in pick(data["miss"], 24)]
+    hard = [trim_row(r) for r in pick(data["disagree"], 18)]
+    solo = {
+        lab: [trim_row(r) for r in (data["solo"].get(lab) or [])[:8]]
+        for lab in labels
+    }
+    unique = {
+        lab: [trim_row(r) for r in (data["uniqueMiss"].get(lab) or [])[:8]]
+        for lab in labels
+    }
 
     payload = {
         "M": labels,
@@ -509,7 +547,8 @@ def canvas_source(data: dict[str, Any]) -> str:
   useState,
 }} from "cursor/canvas";
 
-type RowT = [string, string, number, string[], number[]];
+type BoardAns = [string, number];
+type RowT = [string, string, number, string[], number[], BoardAns[], (string | null)[]];
 
 const DATA = {blob} as {{
   M: string[];
@@ -806,15 +845,31 @@ export default function QuestionExplorer() {{
                   Hits: {{hitsFromMask(selected[2]).join(", ") || "none"}} ·
                   Misses: {{missesFromMask(selected[2]).join(", ") || "none"}}
                 </Text>
+                <Text weight="semibold" size="small">
+                  Survey board (correct answers)
+                </Text>
                 <Table
-                  headers={{["Model", "Result", "Answer", "Pts"]}}
-                  columnAlign={{["left", "left", "left", "right"]}}
+                  headers={{["#", "Answer", "Pts"]}}
+                  columnAlign={{["right", "left", "right"]}}
+                  rows={{(selected[5] || []).map((pair, idx) => [
+                    String(idx + 1),
+                    pair[0],
+                    String(pair[1]),
+                  ])}}
+                />
+                <Text weight="semibold" size="small">
+                  Model answers
+                </Text>
+                <Table
+                  headers={{["Model", "Result", "Answer", "Matched board", "Pts"]}}
+                  columnAlign={{["left", "left", "left", "left", "right"]}}
                   rows={{MODELS.map((name, i) => {{
                     const hit = (selected[2] & (1 << i)) !== 0;
                     return [
                       name,
                       hit ? "HIT" : "MISS",
                       selected[3][i] || "—",
+                      (selected[6] && selected[6][i]) || "—",
                       String(selected[4][i]),
                     ];
                   }})}}
