@@ -89,7 +89,7 @@ def estimate_cost_usd(model_key: str, prompt_tokens: int, completion_tokens: int
 LATEST_MODELS: tuple[ModelSpec, ...] = (
     ModelSpec("openai", "gpt-5.5", "gpt-5.5"),
     ModelSpec("anthropic", "claude-opus-4-6", "claude-opus-4-6"),
-    ModelSpec("google", "gemini-pro-latest", "gemini-pro-latest"),
+    ModelSpec("google", "gemini-4-argon", "gemini-4-argon"),
     ModelSpec(
         "fireworks",
         "accounts/fireworks/models/qwen3p8-max",
