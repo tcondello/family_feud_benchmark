@@ -30,14 +30,31 @@ PROVIDER_ENV = {
     "fireworks": "FIREWORKS_API_KEY",
 }
 
+# Completion budgets. Fireworks reasoning models often leak CoT into `content`
+# and get truncated mid-list when this is too small (Ember → "election" loop).
+# Give them headroom; `_clean` still collapses to a short survey phrase.
+MAX_TOKENS_BY_PROVIDER: dict[str, int] = {
+    "openai": 64,
+    "anthropic": 64,
+    "google": 64,
+    "fireworks": 256,
+}
+
 FACE_OFF_SYSTEM = (
     "You are a contestant on Family Feud. Reply with ONLY a short survey answer "
-    "(1–4 words). No reasoning, no punctuation fluff, no 'Final:'. "
+    "(1–4 words). No reasoning, no lists, no punctuation fluff, no 'Final:'. "
+    "Do not repeat words from the question itself. "
     "Example: name something with 4 wheels → car"
 )
 
 MAIN_PLAY_SYSTEM = (
     "You are playing Family Feud and have control of the board. Reply with ONLY "
     "one new short survey answer (1–4 words). Never repeat anything listed as "
-    "already revealed or already tried/wrong. No reasoning or explanations."
+    "already revealed or already tried/wrong. No reasoning, lists, or explanations."
+)
+
+REPAIR_SYSTEM = (
+    "Your previous reply was invalid (too long, truncated, repeated a forbidden "
+    "word, or echoed the question). Reply with ONLY one new short survey answer "
+    "(1–4 words). No reasoning."
 )

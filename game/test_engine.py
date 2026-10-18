@@ -145,6 +145,19 @@ def test_grade_rejects_reasoning_dump_mentions() -> None:
     assert hit is False and matched is None
 
 
+def test_election_does_not_match_selection() -> None:
+    """Ember face-off bug: 'election' must not substring-hit 'Selection'."""
+    slots = [
+        BoardSlot("Selection", 40),
+        BoardSlot("Protection", 20),
+        BoardSlot("Collection", 10),
+    ]
+    hit, matched, _ = grade_against_board("election", slots)
+    assert hit is False and matched is None
+    hit2, matched2, _ = grade_against_board("Protection", slots)
+    assert hit2 and matched2 == "Protection"
+
+
 def test_mock_advance_path(tmp_path: Path) -> None:
     path = tmp_path / "q.json"
     path.write_text(

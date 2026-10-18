@@ -190,28 +190,48 @@ def _normalize(text: str) -> str:
     )
 
 
-def _guess_matches_board(needle: str, board: str) -> bool:
-    """True when guess matches a board slot without CoT false positives.
+def _light_stem(token: str) -> str:
+    if len(token) > 4 and token.endswith("ies"):
+        return token[:-3] + "y"
+    if len(token) > 3 and token.endswith("es") and token[-3] not in "aeiou":
+        return token[:-2]
+    if len(token) > 3 and token.endswith("s") and not token.endswith("ss"):
+        return token[:-1]
+    return token
 
-    Rejects cases like a 80-word reasoning dump that merely *mentions*
-    'Jeweler' — that used to count as a hit via `board in needle`.
+
+def _guess_matches_board(needle: str, board: str) -> bool:
+    """True when guess matches a board slot without CoT / infix false positives.
+
+    Rejects:
+    - long monologues that merely *mention* a board word
+    - single-token infix traps like election ⊂ selection
     """
     if not needle or not board:
         return False
     if needle == board:
         return True
-    # Short phrase contained in a slightly longer board answer (or vice versa).
-    shorter, longer = (needle, board) if len(needle) <= len(board) else (board, needle)
-    if len(shorter) < 3:
-        return False
-    # If the guess is a long monologue, only allow exact equality (handled above).
     if len(needle.split()) > 6 or len(needle) > 48:
         return False
-    if shorter in longer:
-        # Avoid tiny accidental hits (car/card-ish) when lengths diverge a lot.
-        if len(longer) > max(len(shorter) * 3, len(shorter) + 12):
-            return False
-        return True
+
+    n_toks = [_light_stem(t) for t in needle.split()]
+    b_toks = [_light_stem(t) for t in board.split()]
+    if not n_toks or not b_toks:
+        return False
+
+    # Single-token answers: equality / light stem only — never raw substring.
+    # ("election" must not hit "selection".)
+    if len(n_toks) == 1 and len(b_toks) == 1:
+        return n_toks[0] == b_toks[0]
+
+    # Multi-word: allow either phrase as a contiguous token sequence in the other.
+    if len(n_toks) <= len(b_toks):
+        shorter, longer = n_toks, b_toks
+    else:
+        shorter, longer = b_toks, n_toks
+    for i in range(len(longer) - len(shorter) + 1):
+        if longer[i : i + len(shorter)] == shorter:
+            return True
     return False
 
 
