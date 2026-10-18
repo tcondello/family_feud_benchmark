@@ -45,7 +45,14 @@ pip install -r requirements.txt
 python -m game
 
 # Live models (needs runtime secrets / .env)
-python -m game --live
+python3 -m game --live
+
+# Skip Flash if Gemini is 429 / RESOURCE_EXHAUSTED
+python3 -m game --live --contestants Opus Ember gpt-5.5 Kimi Qwen
+```
+
+Gemini Flash often hits free-tier **429** when all contestants buzz together;
+live Google calls retry with backoff, or drop Flash from `--contestants`.
 ```
 
 | Key | Action |

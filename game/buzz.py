@@ -72,23 +72,60 @@ def _call_anthropic(model: str, system: str, user: str) -> tuple[str, float]:
     return text, latency
 
 
+def _is_rate_limited(exc: BaseException) -> bool:
+    text = f"{type(exc).__name__}: {exc}".lower()
+    return (
+        "429" in text
+        or "resource_exhausted" in text
+        or "rate limit" in text
+        or "too many requests" in text
+    )
+
+
+def _call_with_retries(
+    fn: Callable[[], tuple[str, float]],
+    *,
+    attempts: int = 4,
+    base_delay_s: float = 1.5,
+) -> tuple[str, float]:
+    """Retry transient provider rate limits (esp. Gemini free-tier 429s)."""
+    last: BaseException | None = None
+    for attempt in range(attempts):
+        try:
+            return fn()
+        except Exception as exc:  # noqa: BLE001
+            last = exc
+            if not _is_rate_limited(exc) or attempt >= attempts - 1:
+                raise
+            # Exponential backoff + small jitter so concurrent Flash retries don't sync.
+            delay = base_delay_s * (2**attempt) + (0.1 * attempt)
+            time.sleep(delay)
+    assert last is not None
+    raise last
+
+
 def _call_google(model: str, system: str, user: str) -> tuple[str, float]:
     from google import genai
     from google.genai import types
 
     client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
-    start = time.perf_counter()
-    response = client.models.generate_content(
-        model=model,
-        contents=user,
-        config=types.GenerateContentConfig(
-            system_instruction=system,
-            max_output_tokens=64,
-        ),
-    )
-    latency = time.perf_counter() - start
-    text = (getattr(response, "text", None) or "").strip()
-    return text, latency
+
+    def once() -> tuple[str, float]:
+        start = time.perf_counter()
+        response = client.models.generate_content(
+            model=model,
+            contents=user,
+            config=types.GenerateContentConfig(
+                system_instruction=system,
+                max_output_tokens=64,
+            ),
+        )
+        latency = time.perf_counter() - start
+        text = (getattr(response, "text", None) or "").strip()
+        return text, latency
+
+    # Gemini free / flash quotas are tight when 6 models buzz at once.
+    return _call_with_retries(once, attempts=5, base_delay_s=2.0)
 
 
 def _call_fireworks(model: str, system: str, user: str) -> tuple[str, float]:
