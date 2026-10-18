@@ -118,7 +118,9 @@ _CLIENTS: dict[str, Any] = {}
 _CLIENT_LOCK = threading.Lock()
 _RESULTS_LOCK = threading.Lock()
 # google-genai client calls are not reliably thread-safe.
-_GOOGLE_CALL_LOCK = threading.Lock()
+# Cap concurrent Google calls; a hard Lock previously hung the whole pool when
+# one request stalled indefinitely.
+_GOOGLE_CALL_SEMAPHORE = threading.Semaphore(4)
 
 
 def load_questions(path: str | None) -> tuple[list[dict], str]:
@@ -193,8 +195,12 @@ def get_anthropic_client():
 def get_google_client():
     def factory():
         from google import genai
+        from google.genai import types
 
-        return genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+        return genai.Client(
+            api_key=os.environ["GOOGLE_API_KEY"],
+            http_options=types.HttpOptions(timeout=60_000),
+        )
 
     return _cached_client("google", factory)
 
@@ -324,7 +330,7 @@ def call_google(model: str, question: str) -> QueryResult:
     client = get_google_client()
 
     def _call() -> QueryResult:
-        with _GOOGLE_CALL_LOCK:
+        with _GOOGLE_CALL_SEMAPHORE:
             start = time.perf_counter()
             response = client.models.generate_content(
                 model=model,
