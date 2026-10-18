@@ -403122,6 +403122,406 @@
             "prompt_tokens": 52,
             "completion_tokens": 2,
             "cost_usd": 0.0
+        },
+        {
+            "question": "Name something teens often do as their first job.",
+            "response": "Babysitting",
+            "latency_s": 1.7719,
+            "prompt_tokens": 48,
+            "completion_tokens": 3,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a piece of sporting equipment that has its own carrying case.",
+            "response": "Tennis racket",
+            "latency_s": 3.4028,
+            "prompt_tokens": 51,
+            "completion_tokens": 2,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name the first thing that tells you to go on a diet.",
+            "response": "Scale",
+            "latency_s": 3.0079,
+            "prompt_tokens": 51,
+            "completion_tokens": 1,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that was built better in the good old days.",
+            "response": "Appliances",
+            "latency_s": 2.2592,
+            "prompt_tokens": 50,
+            "completion_tokens": 2,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people ride in a 4th of July parade.",
+            "response": "Float",
+            "latency_s": 1.693,
+            "prompt_tokens": 51,
+            "completion_tokens": 1,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an ingredient you find in most Italian food.",
+            "response": "ERROR: ReadTimeout: The read operation timed out",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a family occasion where dad might bring out the video camera.",
+            "response": "ERROR: ReadTimeout: The read operation timed out",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an annoying habit.",
+            "response": "ERROR: ReadTimeout: The read operation timed out",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something People Do On Your Answering Machine That Drives You Crazy.",
+            "response": "ERROR: ReadTimeout: The read operation timed out",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you do on your way to work.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a famous person named \"Jane\".",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might blend.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something You Tap.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something dads do today that they didn\u2019t do 50 years ago.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something medieval knights used in combat.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might find on a miniature golf course.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you would not want to stick your nose into.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a country that ends in 'stan'.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you fold. (\"Clothes\" is not an answer, be more specific.)",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might do while visiting New York City.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people get kicked out of.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that causes a lot of damage or destruction if it overflows.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that nervous parents do in the passenger seat while their teen is learning to drive.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people have delivered on a regular basis.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something men think they know more about than women.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something a mom shouldn't still have to do for her grown-up son.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might see floating in the sky.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name someplace you keep your valuables.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something a guy hates giving up in a divorce.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something most people do not miss about high school.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might do on Facebook.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you should never try to take from a cowboy.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might find in a teenage girl's bedroom.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you take with you wherever you go.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that keeps kids indoors:",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you need if you plan to scuba dive.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a clothing fabric.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something parents are always telling children they're lucky to have.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name the place where you\u2019d most hate to be stood up.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that people might go to during the summer.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a place you go to once or twice a week.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a TV show set in high school.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you shouldn't eat before a dental checkup.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something a good relationship has.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a game kids better not play inside the house.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a body part you might need to replace as you get older.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Weapon A Scuba Diver Might Use Underwater.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a musical instrument played with the mouth.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that, once you learned how to do it, you never forget",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that can light up the sky.",
+            "response": "ERROR: Timeout",
+            "latency_s": 0.0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0
         }
     ]
 }
