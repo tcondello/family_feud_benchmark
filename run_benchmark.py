@@ -469,7 +469,14 @@ def run_model_parallel(
         if not question:
             return index, make_result_entry("", "")
         try:
-            result = caller(spec.model, question)
+            # Hard per-question timeout so one stalled provider call cannot
+            # pin a slot forever and freeze contiguous checkpoints.
+            with ThreadPoolExecutor(max_workers=1) as one:
+                result = one.submit(caller, spec.model, question).result(
+                    timeout=90
+                )
+        except TimeoutError:
+            result = QueryResult(text="ERROR: Timeout")
         except Exception as exc:  # noqa: BLE001
             result = QueryResult(text=f"ERROR: {type(exc).__name__}: {exc}")
         if sleep_s > 0:
