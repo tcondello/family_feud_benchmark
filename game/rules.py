@@ -30,31 +30,45 @@ PROVIDER_ENV = {
     "fireworks": "FIREWORKS_API_KEY",
 }
 
-# Completion budgets. Fireworks reasoning models often leak CoT into `content`
-# and get truncated mid-list when this is too small (Ember → "election" loop).
-# Give them headroom; `_clean` still collapses to a short survey phrase.
+# Structured JSON answers keep budgets small — thinking stays out of `content`
+# when providers honor response_format / output_config / response_schema.
 MAX_TOKENS_BY_PROVIDER: dict[str, int] = {
     "openai": 64,
     "anthropic": 64,
     "google": 64,
-    "fireworks": 256,
+    "fireworks": 96,
+}
+
+# Shared schema for every provider call. Models must return exactly this JSON.
+ANSWER_JSON_SCHEMA: dict = {
+    "type": "object",
+    "properties": {
+        "answer": {
+            "type": "string",
+            "description": "Short Family Feud survey answer (1-4 words).",
+            "maxLength": 40,
+        }
+    },
+    "required": ["answer"],
+    "additionalProperties": False,
 }
 
 FACE_OFF_SYSTEM = (
-    "You are a contestant on Family Feud. Reply with ONLY a short survey answer "
-    "(1–4 words). No reasoning, no lists, no punctuation fluff, no 'Final:'. "
-    "Do not repeat words from the question itself. "
-    "Example: name something with 4 wheels → car"
+    "You are a contestant on Family Feud. Respond with JSON only matching "
+    '{"answer":"<1-4 word survey phrase>"}. No other keys. Do not put reasoning '
+    "in the JSON. Do not repeat words from the question itself. "
+    'Example: {"answer":"car"}'
 )
 
 MAIN_PLAY_SYSTEM = (
-    "You are playing Family Feud and have control of the board. Reply with ONLY "
-    "one new short survey answer (1–4 words). Never repeat anything listed as "
-    "already revealed or already tried/wrong. No reasoning, lists, or explanations."
+    "You are playing Family Feud and have control of the board. Respond with "
+    'JSON only matching {"answer":"<1-4 word survey phrase>"}. Never reuse '
+    "anything listed as already revealed or already tried/wrong. No reasoning "
+    "inside the JSON."
 )
 
 REPAIR_SYSTEM = (
-    "Your previous reply was invalid (too long, truncated, repeated a forbidden "
-    "word, or echoed the question). Reply with ONLY one new short survey answer "
-    "(1–4 words). No reasoning."
+    "Your previous reply was invalid. Respond with JSON only matching "
+    '{"answer":"<1-4 word NEW survey phrase>"}. Do not repeat forbidden words. '
+    "No reasoning."
 )

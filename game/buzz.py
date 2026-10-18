@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import json
 import os
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
@@ -18,6 +20,7 @@ from game.engine import (
     mock_buzz,
 )
 from game.rules import (
+    ANSWER_JSON_SCHEMA,
     CONTESTANT_MODELS,
     FACE_OFF_SYSTEM,
     MAIN_PLAY_SYSTEM,
@@ -38,6 +41,7 @@ class ProviderResult:
     latency_s: float
     request: dict[str, Any]
     response: Any = None
+    reasoning: str = ""  # provider thinking channel (never used as the answer)
 
 
 def available_contestants() -> list[str]:
@@ -82,6 +86,17 @@ def _looks_truncated(text: str, finish_reason: str | None) -> bool:
     return False
 
 
+def _openai_response_format() -> dict[str, Any]:
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "feud_answer",
+            "strict": True,
+            "schema": ANSWER_JSON_SCHEMA,
+        },
+    }
+
+
 def _call_openai(model: str, system: str, user: str) -> ProviderResult:
     from openai import OpenAI
 
@@ -96,16 +111,26 @@ def _call_openai(model: str, system: str, user: str) -> ProviderResult:
             {"role": "user", "content": user},
         ],
         "max_completion_tokens": max_tok,
+        "response_format": _openai_response_format(),
     }
     start = time.perf_counter()
     response = client.chat.completions.create(
         model=model,
         messages=request["messages"],
         max_completion_tokens=max_tok,
+        response_format=request["response_format"],
     )
     latency = time.perf_counter() - start
-    text = (response.choices[0].message.content or "").strip()
-    return ProviderResult(text=text, latency_s=latency, request=request, response=response)
+    message = response.choices[0].message
+    text = (message.content or "").strip()
+    reasoning = (getattr(message, "reasoning_content", None) or "").strip()
+    return ProviderResult(
+        text=text,
+        latency_s=latency,
+        request=request,
+        response=response,
+        reasoning=reasoning,
+    )
 
 
 def _call_anthropic(model: str, system: str, user: str) -> ProviderResult:
@@ -120,6 +145,9 @@ def _call_anthropic(model: str, system: str, user: str) -> ProviderResult:
         "max_tokens": max_tok,
         "system": system,
         "messages": [{"role": "user", "content": user}],
+        "output_config": {
+            "format": {"type": "json_schema", "schema": ANSWER_JSON_SCHEMA}
+        },
     }
     start = time.perf_counter()
     response = client.messages.create(
@@ -127,12 +155,19 @@ def _call_anthropic(model: str, system: str, user: str) -> ProviderResult:
         max_tokens=max_tok,
         system=system,
         messages=[{"role": "user", "content": user}],
+        output_config=request["output_config"],
     )
     latency = time.perf_counter() - start
     text = "".join(
-        block.text for block in response.content if hasattr(block, "text")
+        block.text for block in response.content if getattr(block, "type", "") == "text"
     ).strip()
-    return ProviderResult(text=text, latency_s=latency, request=request, response=response)
+    if not text:
+        text = "".join(
+            block.text for block in response.content if hasattr(block, "text")
+        ).strip()
+    return ProviderResult(
+        text=text, latency_s=latency, request=request, response=response
+    )
 
 
 def _is_rate_limited(exc: BaseException) -> bool:
@@ -180,6 +215,8 @@ def _call_google(model: str, system: str, user: str) -> ProviderResult:
         "config": {
             "system_instruction": system,
             "max_output_tokens": max_tok,
+            "response_mime_type": "application/json",
+            "response_json_schema": ANSWER_JSON_SCHEMA,
         },
     }
 
@@ -191,6 +228,8 @@ def _call_google(model: str, system: str, user: str) -> ProviderResult:
             config=types.GenerateContentConfig(
                 system_instruction=system,
                 max_output_tokens=max_tok,
+                response_mime_type="application/json",
+                response_json_schema=ANSWER_JSON_SCHEMA,
             ),
         )
         latency = time.perf_counter() - start
@@ -210,8 +249,17 @@ def _call_fireworks(model: str, system: str, user: str) -> ProviderResult:
         api_key=os.environ["FIREWORKS_API_KEY"],
         base_url="https://api.fireworks.ai/inference/v1",
     )
-    # Higher budget than OpenAI/Anthropic: Ember/Qwen often write CoT into content.
-    # Still capped; `_clean` + repair retry strip to a short survey phrase.
+    # Ember/Kimi/Qwen are reasoning models. Without reasoning_effort=none they
+    # often dump CoT into `content`, hit max_tokens, and never emit the JSON
+    # answer. json_schema + reasoning off keeps content = {"answer":"..."}.
+    response_format = {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "feud_answer",
+            "schema": ANSWER_JSON_SCHEMA,
+        },
+    }
+    extra_body = {"reasoning_effort": "none"}
     request = {
         "provider": "fireworks",
         "endpoint": "chat.completions.create",
@@ -223,6 +271,8 @@ def _call_fireworks(model: str, system: str, user: str) -> ProviderResult:
         ],
         "max_tokens": max_tok,
         "temperature": 0,
+        "response_format": response_format,
+        "extra_body": extra_body,
     }
     start = time.perf_counter()
     response = client.chat.completions.create(
@@ -230,13 +280,48 @@ def _call_fireworks(model: str, system: str, user: str) -> ProviderResult:
         messages=request["messages"],
         max_tokens=max_tok,
         temperature=0,
+        response_format=response_format,
+        extra_body=extra_body,
     )
     latency = time.perf_counter() - start
     message = response.choices[0].message
     text = (message.content or "").strip()
-    if not text:
-        text = (getattr(message, "reasoning_content", None) or "").strip()
-    return ProviderResult(text=text, latency_s=latency, request=request, response=response)
+    reasoning = (getattr(message, "reasoning_content", None) or "").strip()
+    # Never promote reasoning_content to the answer — that caused Ember loops.
+    return ProviderResult(
+        text=text,
+        latency_s=latency,
+        request=request,
+        response=response,
+        reasoning=reasoning,
+    )
+
+
+def _parse_structured_answer(text: str) -> str:
+    """Pull `answer` from provider JSON; fall back to free-text cleaner."""
+    raw = (text or "").strip()
+    if not raw:
+        return ""
+    if raw.startswith("```"):
+        raw = re.sub(r"^```(?:json)?\s*", "", raw)
+        raw = re.sub(r"\s*```$", "", raw)
+    try:
+        data = json.loads(raw)
+        if isinstance(data, dict) and "answer" in data:
+            return str(data.get("answer") or "").strip()
+        if isinstance(data, str):
+            return data.strip()
+    except json.JSONDecodeError:
+        # Sometimes models wrap JSON in prose; find the first object.
+        match = re.search(r"\{[^{}]*\"answer\"[^{}]*\}", raw, flags=re.S)
+        if match:
+            try:
+                data = json.loads(match.group(0))
+                if isinstance(data, dict) and "answer" in data:
+                    return str(data.get("answer") or "").strip()
+            except json.JSONDecodeError:
+                pass
+    return ""
 
 
 _CALLERS: dict[str, Callable[[str, str, str], ProviderResult]] = {
@@ -404,7 +489,7 @@ def query_contestant(
                 f"{user}\n\n"
                 f"Forbidden (do not say these): "
                 f"{', '.join(sorted(forbid)) if forbid else '(none)'}.\n"
-                "Reply with ONLY one new 1-4 word survey answer."
+                'Respond with JSON only: {"answer":"<1-4 word NEW phrase>"}'
             ),
             "repair",
         ),
@@ -443,7 +528,19 @@ def query_contestant(
 
         total_latency += result.latency_s
         finish = _finish_reason(result.response)
-        cleaned = _clean(result.text, forbidden=forbid)
+        structured = _parse_structured_answer(result.text)
+        cleaned = structured or _clean(result.text, forbidden=forbid)
+        # If structured answer is forbidden/echo, try free-text clean as backup.
+        if structured and _needs_repair(
+            structured,
+            result.text,
+            finish_reason=None,
+            forbidden=forbid,
+            question=question or user_prompt,
+        ):
+            alt = _clean(result.text, forbidden=forbid | {structured})
+            if alt:
+                cleaned = alt
         last_cleaned = cleaned
         reason = _needs_repair(
             cleaned,
@@ -463,6 +560,8 @@ def query_contestant(
             request=to_jsonable(result.request),
             response=to_jsonable(result.response),
             raw=result.text,
+            reasoning=result.reasoning,
+            structured_answer=structured,
             cleaned=cleaned,
             finish_reason=finish,
             attempt=attempt_name,
