@@ -341418,6 +341418,718 @@
             "prompt_tokens": 84,
             "completion_tokens": 6,
             "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that some people do clothed that others do in the nude.",
+            "response": "Sleep",
+            "latency_s": 5.3754,
+            "prompt_tokens": 86,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something in the house that kids monopolize from their parents.",
+            "response": "Television",
+            "latency_s": 1.956,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something many people say a little prayer before doing.",
+            "response": "Eating",
+            "latency_s": 7.0279,
+            "prompt_tokens": 83,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an animal you expect to see on an African Safari.",
+            "response": "Lion",
+            "latency_s": 2.3259,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a villain Batman and Robin are always fighting.",
+            "response": "The Joker",
+            "latency_s": 2.622,
+            "prompt_tokens": 82,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a prop a stripper uses.",
+            "response": "pole",
+            "latency_s": 1.8771,
+            "prompt_tokens": 79,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might see on a house roof.",
+            "response": "Chimney",
+            "latency_s": 2.1021,
+            "prompt_tokens": 82,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an exercise you haven't done since high school gym class.",
+            "response": "Rope climb",
+            "latency_s": 48.9861,
+            "prompt_tokens": 86,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name someplace a man goes where he wouldn't want his wife to go with him.",
+            "response": "bathroom",
+            "latency_s": 4.6933,
+            "prompt_tokens": 90,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something People Ride On Snow.",
+            "response": "sled",
+            "latency_s": 2.4173,
+            "prompt_tokens": 79,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people usually have less of as they get older.",
+            "response": "Hair",
+            "latency_s": 2.9557,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a place where people hope to go someday.",
+            "response": "Heaven",
+            "latency_s": 8.1901,
+            "prompt_tokens": 82,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Other Than Stars\u2019 Salaries, Name The Most Expensive Thing That Goes Into Making A Movie.",
+            "response": "Special effects",
+            "latency_s": 3.4014,
+            "prompt_tokens": 90,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Past or present, name a way to travel around the world.",
+            "response": "Airplane",
+            "latency_s": 1.8332,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Tell Me The Age At Which Children Start Buying Their Parents Christmas Gifts",
+            "response": "12",
+            "latency_s": 2.402,
+            "prompt_tokens": 85,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Tell Me Something In A Teenager\u2019s Room That They Wouldn\u2019t Want Touched",
+            "response": "Diary",
+            "latency_s": 2.1308,
+            "prompt_tokens": 90,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Tell me something many wives encourage their husbands to do as they get older.",
+            "response": "exercise",
+            "latency_s": 2.9517,
+            "prompt_tokens": 87,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Tell me something you do before you go to bed.",
+            "response": "Brush your teeth",
+            "latency_s": 1.7334,
+            "prompt_tokens": 83,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Tell me something the human body has lots of.",
+            "response": "cells",
+            "latency_s": 2.3377,
+            "prompt_tokens": 82,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Tell me something men do to combat hair loss.",
+            "response": "Rogaine",
+            "latency_s": 38.1314,
+            "prompt_tokens": 82,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Tell me something you might skip doing if you're running late for work.",
+            "response": "Eating breakfast",
+            "latency_s": 2.2331,
+            "prompt_tokens": 88,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Until what time does the average kid sleep in during summer vacation.",
+            "response": "10:00 AM",
+            "latency_s": 2.6005,
+            "prompt_tokens": 85,
+            "completion_tokens": 10,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What Should A Man Dress As If He Wants To Get A Lot Of Dates On Halloween",
+            "response": "Doctor",
+            "latency_s": 4.1303,
+            "prompt_tokens": 89,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Where Might A Man Take You On A First Date That Would Keep Him From Getting A Second Date",
+            "response": "Fast food restaurant",
+            "latency_s": 15.5234,
+            "prompt_tokens": 91,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What Might You Do On Family Feud, That Makes Your Family Upset With You?",
+            "response": "Give a bad answer",
+            "latency_s": 13.1305,
+            "prompt_tokens": 90,
+            "completion_tokens": 8,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What Might Someone Use While Cutting Their Own Hair",
+            "response": "Mirror",
+            "latency_s": 48.6984,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Which Word Or Phrase Is Often Used As A Magician\u2019s Magic Word(s)?",
+            "response": "Abracadabra",
+            "latency_s": 6.1473,
+            "prompt_tokens": 89,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What is the biggest complaint that people have about public transportation?",
+            "response": "Delays",
+            "latency_s": 3.4898,
+            "prompt_tokens": 84,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "When you're upset, name a way you let off steam.",
+            "response": "exercise",
+            "latency_s": 3.8328,
+            "prompt_tokens": 86,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What might be the most famous hotel chain in America?",
+            "response": "Hilton",
+            "latency_s": 3.504,
+            "prompt_tokens": 83,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What do airline passengers do when they're stuck on a runway for hours?",
+            "response": "complain",
+            "latency_s": 1.9783,
+            "prompt_tokens": 88,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "We surveyed 100 women...Name something, late at night, you might ask your husband to do for you.",
+            "response": "get water",
+            "latency_s": 3.3079,
+            "prompt_tokens": 97,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What's something people do in their cars while driving that you think is crazy?",
+            "response": "Texting",
+            "latency_s": 4.8886,
+            "prompt_tokens": 89,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "As well as a baby, name something you need to bath a baby.",
+            "response": "Water",
+            "latency_s": 9.3142,
+            "prompt_tokens": 87,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Besides Maple, Name A Flavor Of Syrup.",
+            "response": "Strawberry",
+            "latency_s": 32.736,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Besides books, name something you find at a bookstore.",
+            "response": "Magazines",
+            "latency_s": 1.8164,
+            "prompt_tokens": 83,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Fact or fiction, name a famous pirate.",
+            "response": "Blackbeard",
+            "latency_s": 2.5803,
+            "prompt_tokens": 81,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "If Doc Were To Examine The Other Dwarfs Whose Problem Might He Try And Medicate",
+            "response": "Sneezy",
+            "latency_s": 19.0638,
+            "prompt_tokens": 89,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "If Einstein Failed A Subject In School, What Might It Have Been?",
+            "response": "Math",
+            "latency_s": 3.372,
+            "prompt_tokens": 86,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "In these recessionary times, name an inexpensive food that many people have for dinner.",
+            "response": "Pasta",
+            "latency_s": 10.0736,
+            "prompt_tokens": 89,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "If you walked into a public restroom, name a reason you might walk right back out.",
+            "response": "Bad smell",
+            "latency_s": 2.1115,
+            "prompt_tokens": 90,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something You Wouldn\u2019t Want To Do On A Rope Bridge.",
+            "response": "Jump",
+            "latency_s": 35.0434,
+            "prompt_tokens": 86,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something That Can Get Tangled.",
+            "response": "Hair",
+            "latency_s": 2.7275,
+            "prompt_tokens": 80,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something You Might Find On Top Of A Tall Office Building",
+            "response": "Helipad",
+            "latency_s": 3.4743,
+            "prompt_tokens": 84,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something About Which Friends Say, \u201cKeep Looking. You Can Do Better.\u201d",
+            "response": "Mate",
+            "latency_s": 2.9566,
+            "prompt_tokens": 88,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Food Someone Might Use More Than One Hand To Eat",
+            "response": "Burger",
+            "latency_s": 3.1583,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Reason Why A Couple Decides To Move In Together",
+            "response": "Save money",
+            "latency_s": 1.4105,
+            "prompt_tokens": 84,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "name A Talent You Rarely See Women Do Outside A Beauty Pageant",
+            "response": "Baton twirling",
+            "latency_s": 2.7866,
+            "prompt_tokens": 85,
+            "completion_tokens": 8,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something People Do While They\u2019re Waiting For The Doctor.",
+            "response": "Read a magazine",
+            "latency_s": 6.8078,
+            "prompt_tokens": 85,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name An Instance In Which You\u2019d Hear Applause",
+            "response": "Concert",
+            "latency_s": 3.0628,
+            "prompt_tokens": 83,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something That People Today Probably Wash More Than They Need To.",
+            "response": "hair",
+            "latency_s": 3.4053,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something Pros Do On A Golf Course That Youd Look Silly Doing For Mini Golf",
+            "response": "Using a caddy",
+            "latency_s": 2.4614,
+            "prompt_tokens": 90,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something That Shines At Night.",
+            "response": "Moon",
+            "latency_s": 2.1721,
+            "prompt_tokens": 80,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something You\u2019d Have To Get Used To If You Were A Zoo Animal",
+            "response": "Being stared at",
+            "latency_s": 2.4292,
+            "prompt_tokens": 88,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Specific Object On Which You Might See The Word Caution",
+            "response": "Coffee cup",
+            "latency_s": 12.0829,
+            "prompt_tokens": 84,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Someplace Where They Sell Cotton Candy.",
+            "response": "carnival",
+            "latency_s": 3.734,
+            "prompt_tokens": 81,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something A Small Town May Lack.",
+            "response": "Stoplight",
+            "latency_s": 23.6398,
+            "prompt_tokens": 80,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Reason You Would Go To Grandma\u2019s House For Dinner Instead Of A Restaurant.",
+            "response": "Free food",
+            "latency_s": 1.6863,
+            "prompt_tokens": 90,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Someone You Might Tip At A Hotel.",
+            "response": "Bellhop",
+            "latency_s": 2.9832,
+            "prompt_tokens": 81,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Game Show That Gives Away A Lot Of Money",
+            "response": "Who Wants to Be a Millionaire",
+            "latency_s": 1.8281,
+            "prompt_tokens": 83,
+            "completion_tokens": 11,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something You\u2019re Told To Turn Off Before An Airplane Takes Flight",
+            "response": "Cell phone",
+            "latency_s": 2.2421,
+            "prompt_tokens": 86,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name One Word That You Always See On The Covers Of Celebrity Magazines",
+            "response": "Exclusive",
+            "latency_s": 2.6086,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Type Of Beverage You Are Allowed To Drink While Driving.",
+            "response": "Water",
+            "latency_s": 3.3106,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name An Organization Thats Only For Females",
+            "response": "Girl Scouts",
+            "latency_s": 2.3922,
+            "prompt_tokens": 79,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Celebrity Who You\u2019d Like To Be BFFs With Just So You Could Get The Scoop On Her Personal Life.",
+            "response": "Taylor Swift",
+            "latency_s": 2.6919,
+            "prompt_tokens": 98,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something That Might Happen If You Had Bad Luck On Your Honeymoon.",
+            "response": "Food poisoning",
+            "latency_s": 5.4475,
+            "prompt_tokens": 87,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something You Should Never Wear As The Guest At Someones Wedding",
+            "response": "White",
+            "latency_s": 2.494,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Cartoon Character Whose Head You Might Find At The Top Of A Pez Dispenser",
+            "response": "Mickey Mouse",
+            "latency_s": 12.1813,
+            "prompt_tokens": 90,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something Embarrassing That You Might Do While Listening To Headphones.",
+            "response": "Sing out loud",
+            "latency_s": 2.2388,
+            "prompt_tokens": 86,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Classical Music Composer That Most Know About",
+            "response": "Mozart",
+            "latency_s": 1.6779,
+            "prompt_tokens": 81,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something A Kindergarten Teacher Wears To Work That A Banker Never Would",
+            "response": "Smock",
+            "latency_s": 5.3618,
+            "prompt_tokens": 86,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something People dye A Different Color",
+            "response": "Hair",
+            "latency_s": 2.7529,
+            "prompt_tokens": 79,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something You\u2019d Find In A Boy\u2019s High School Gym Locker Room.",
+            "response": "Lockers",
+            "latency_s": 8.2761,
+            "prompt_tokens": 89,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something A Young Man Would Not Want To Talk To A Girlfriends Father About",
+            "response": "Sex",
+            "latency_s": 3.0061,
+            "prompt_tokens": 88,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a Rowdy Star Who Might Benefit From Going To Charm School",
+            "response": "Charlie Sheen",
+            "latency_s": 6.0164,
+            "prompt_tokens": 132,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something That Makes A Startling Sound",
+            "response": "Alarm clock",
+            "latency_s": 4.1555,
+            "prompt_tokens": 80,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something That A Businesswoman Must Always Wear To Work.",
+            "response": "suit",
+            "latency_s": 2.1273,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Christmas Story That A Parent Might Read To Their Child.",
+            "response": "The Night Before Christmas",
+            "latency_s": 4.8044,
+            "prompt_tokens": 85,
+            "completion_tokens": 8,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something A Teen Might Need Their Parent\u2019s Permission To Do Before They\u2019re 18.",
+            "response": "Get a tattoo",
+            "latency_s": 1.8595,
+            "prompt_tokens": 93,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name A Complaint People Have About Their Cell Phones",
+            "response": "Short battery life",
+            "latency_s": 1.8963,
+            "prompt_tokens": 81,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name Something Your House Is Full Of After Christmas",
+            "response": "Wrapping paper",
+            "latency_s": 14.9893,
+            "prompt_tokens": 81,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people lose when they're not paying attention.",
+            "response": "keys",
+            "latency_s": 2.8965,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something a woman who is dating several men needs a lot of.",
+            "response": "Energy",
+            "latency_s": 2.2043,
+            "prompt_tokens": 86,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name The Worst Movie Starring Arnold Schwazenegger.",
+            "response": "Hercules in New York",
+            "latency_s": 2.6309,
+            "prompt_tokens": 130,
+            "completion_tokens": 9,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a reason most people would not want to be a farmer.",
+            "response": "Hard work",
+            "latency_s": 4.8701,
+            "prompt_tokens": 85,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a type of worker who often goes on strike.",
+            "response": "Teacher",
+            "latency_s": 2.6328,
+            "prompt_tokens": 83,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something a five year old might pray for.",
+            "response": "Puppy",
+            "latency_s": 1.8951,
+            "prompt_tokens": 82,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that never works just when you need it the most.",
+            "response": "Printer",
+            "latency_s": 3.0338,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an animal that best describes your boss.",
+            "response": "Lion",
+            "latency_s": 2.3464,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
         }
     ]
 }
