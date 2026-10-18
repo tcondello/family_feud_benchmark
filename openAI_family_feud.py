@@ -10,7 +10,9 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def call_openAI(question):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo-1106",
+        # Kept for backwards compatibility; prefer `run_benchmark.py` for
+        # the multi-provider latest-model suite.
+        model="gpt-5.5",
         messages=[
             {
                 "role": "system",
@@ -18,6 +20,7 @@ def call_openAI(question):
             },
             {"role": "user", "content": question},
         ],
+        max_completion_tokens=64,
     )
     # print(response.choices[0].message.content)
     return response.choices[0].message.content

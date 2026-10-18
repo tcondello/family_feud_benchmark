@@ -1,0 +1,80 @@
+{
+  "openai/gpt-5.5": {
+    "questions": 19734,
+    "hits": 13566,
+    "hit_rate": 0.6874,
+    "points": 495104,
+    "avg_points": 25.09,
+    "instrumented_answers": 395,
+    "avg_latency_s": 4.1262,
+    "prompt_tokens": 25223,
+    "completion_tokens": 68818,
+    "cost_usd": 0.719709,
+    "complete": true
+  },
+  "anthropic/claude-opus-4-6": {
+    "questions": 19734,
+    "hits": 14088,
+    "hit_rate": 0.7139,
+    "points": 507670,
+    "avg_points": 25.73,
+    "instrumented_answers": 0,
+    "avg_latency_s": null,
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "cost_usd": null,
+    "complete": true
+  },
+  "fireworks/qwen3p8-max": {
+    "questions": 19734,
+    "hits": 12370,
+    "hit_rate": 0.6268,
+    "points": 438864,
+    "avg_points": 22.24,
+    "instrumented_answers": 33,
+    "avg_latency_s": 5.186,
+    "prompt_tokens": 3585,
+    "completion_tokens": 15715,
+    "cost_usd": 0.074165,
+    "complete": true
+  },
+  "fireworks/ember-1": {
+    "questions": 19734,
+    "hits": 13754,
+    "hit_rate": 0.697,
+    "points": 492721,
+    "avg_points": 24.97,
+    "instrumented_answers": 0,
+    "avg_latency_s": null,
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "cost_usd": null,
+    "complete": true
+  },
+  "fireworks/kimi-k3": {
+    "questions": 19734,
+    "hits": 13746,
+    "hit_rate": 0.6966,
+    "points": 496336,
+    "avg_points": 25.15,
+    "instrumented_answers": 7991,
+    "avg_latency_s": 10.2431,
+    "prompt_tokens": 1210081,
+    "completion_tokens": 1525266,
+    "cost_usd": 26.509233,
+    "complete": true
+  },
+  "google/gemini-flash-latest": {
+    "questions": 8975,
+    "hits": 5624,
+    "hit_rate": 0.6266,
+    "points": 197601,
+    "avg_points": 22.02,
+    "instrumented_answers": 8975,
+    "avg_latency_s": 2.3661,
+    "prompt_tokens": 410262,
+    "completion_tokens": 15810,
+    "cost_usd": 0.0,
+    "complete": false
+  }
+}
