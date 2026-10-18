@@ -25,9 +25,27 @@ def _newest(directory: Path) -> Path | None:
     return files[-1] if files else None
 
 
-def _fmt(row: dict, *, verbose: bool) -> str | None:
+def _fmt(row: dict, *, verbose: bool, dump_json: bool) -> str | None:
     kind = row.get("kind", "?")
     ts = str(row.get("ts", ""))[11:19]
+    if dump_json and kind in {"model_call", "model_error"}:
+        slim = {
+            "ts": row.get("ts"),
+            "kind": kind,
+            "contestant": row.get("contestant"),
+            "provider": row.get("provider"),
+            "model": row.get("model"),
+            "phase": row.get("phase"),
+            "latency_s": row.get("latency_s"),
+            "cleaned": row.get("cleaned"),
+            "raw": row.get("raw"),
+            "request": row.get("request"),
+            "response": row.get("response"),
+            "error": row.get("error"),
+            "error_body": row.get("error_body"),
+        }
+        return json.dumps(slim, ensure_ascii=False, indent=2, default=str)
+
     if kind == "face_off_start":
         return (
             f"{ts} ▶ FACE-OFF  {row.get('question')!r}  "
@@ -35,7 +53,12 @@ def _fmt(row: dict, *, verbose: bool) -> str | None:
         )
     if kind == "model_error":
         err = str(row.get("error") or "")[:160]
-        return f"{ts} ✗ ERROR   {row.get('contestant')}: {err}"
+        line = f"{ts} ✗ ERROR   {row.get('contestant')}: {err}"
+        if verbose and row.get("request"):
+            line += "\n    request: " + json.dumps(row["request"], ensure_ascii=False)[:500]
+        if verbose and row.get("error_body"):
+            line += "\n    error_body: " + json.dumps(row["error_body"], ensure_ascii=False)[:500]
+        return line
     if kind == "model_call":
         who = row.get("contestant", "?")
         phase = row.get("phase", "?")
@@ -44,18 +67,29 @@ def _fmt(row: dict, *, verbose: bool) -> str | None:
         cleaned = row.get("cleaned")
         line = f"{ts} · {who:<8} {phase:<14} {lat_s:>6}  → {cleaned!r}"
         if verbose:
-            raw = row.get("raw")
-            user = row.get("user")
             bits = [line]
-            if user:
-                bits.append("    prompt:")
-                for pline in str(user).splitlines():
-                    bits.append(f"      {pline}")
+            if row.get("request"):
+                bits.append("    request:")
+                bits.append(
+                    "      "
+                    + json.dumps(row["request"], ensure_ascii=False, indent=2).replace(
+                        "\n", "\n      "
+                    )
+                )
+            if row.get("response") is not None:
+                bits.append("    response:")
+                bits.append(
+                    "      "
+                    + json.dumps(row["response"], ensure_ascii=False, indent=2, default=str).replace(
+                        "\n", "\n      "
+                    )[:4000]
+                )
+            raw = row.get("raw")
             if raw and raw != cleaned:
-                bits.append(f"    raw: {raw!r}"[:400])
+                bits.append(f"    raw_text: {raw!r}"[:500])
             return "\n".join(bits)
         return line
-    return f"{ts} · {kind} { {k: row[k] for k in row if k not in ('ts', 'kind', 'system', 'user', 'raw')} }"
+    return f"{ts} · {kind}"
 
 
 def main() -> None:
@@ -81,7 +115,13 @@ def main() -> None:
         "-v",
         "--verbose",
         action="store_true",
-        help="Show full prompt + raw model text",
+        help="Show request/response JSON + raw text",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        dest="dump_json",
+        help="Pretty-print each model_call/model_error as JSON (request+response)",
     )
     parser.add_argument(
         "--once",
@@ -139,9 +179,11 @@ def main() -> None:
                 ):
                     # still show face-off headers for context
                     pass
-            text = _fmt(row, verbose=args.verbose)
+            text = _fmt(row, verbose=args.verbose, dump_json=args.dump_json)
             if text:
                 print(text, flush=True)
+                if args.dump_json:
+                    print("—", flush=True)
 
         if args.once:
             break

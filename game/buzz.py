@@ -5,7 +5,8 @@ from __future__ import annotations
 import os
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Callable
+from dataclasses import dataclass
+from typing import Any, Callable
 
 from dotenv import load_dotenv
 
@@ -22,9 +23,19 @@ from game.rules import (
     MAIN_PLAY_SYSTEM,
     PROVIDER_ENV,
 )
-from game.trace import log_event
+from game.trace import log_event, to_jsonable
 
 load_dotenv()
+
+
+@dataclass
+class ProviderResult:
+    """Exact client I/O for harness traces."""
+
+    text: str
+    latency_s: float
+    request: dict[str, Any]
+    response: Any = None
 
 
 def available_contestants() -> list[str]:
@@ -37,28 +48,43 @@ def available_contestants() -> list[str]:
     return names
 
 
-def _call_openai(model: str, system: str, user: str) -> tuple[str, float]:
+def _call_openai(model: str, system: str, user: str) -> ProviderResult:
     from openai import OpenAI
 
     client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    start = time.perf_counter()
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
+    request = {
+        "provider": "openai",
+        "endpoint": "chat.completions.create",
+        "model": model,
+        "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
+        "max_completion_tokens": 64,
+    }
+    start = time.perf_counter()
+    response = client.chat.completions.create(
+        model=model,
+        messages=request["messages"],
         max_completion_tokens=64,
     )
     latency = time.perf_counter() - start
     text = (response.choices[0].message.content or "").strip()
-    return text, latency
+    return ProviderResult(text=text, latency_s=latency, request=request, response=response)
 
 
-def _call_anthropic(model: str, system: str, user: str) -> tuple[str, float]:
+def _call_anthropic(model: str, system: str, user: str) -> ProviderResult:
     import anthropic
 
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    request = {
+        "provider": "anthropic",
+        "endpoint": "messages.create",
+        "model": model,
+        "max_tokens": 64,
+        "system": system,
+        "messages": [{"role": "user", "content": user}],
+    }
     start = time.perf_counter()
     response = client.messages.create(
         model=model,
@@ -70,7 +96,7 @@ def _call_anthropic(model: str, system: str, user: str) -> tuple[str, float]:
     text = "".join(
         block.text for block in response.content if hasattr(block, "text")
     ).strip()
-    return text, latency
+    return ProviderResult(text=text, latency_s=latency, request=request, response=response)
 
 
 def _is_rate_limited(exc: BaseException) -> bool:
@@ -84,11 +110,11 @@ def _is_rate_limited(exc: BaseException) -> bool:
 
 
 def _call_with_retries(
-    fn: Callable[[], tuple[str, float]],
+    fn: Callable[[], ProviderResult],
     *,
     attempts: int = 4,
     base_delay_s: float = 1.5,
-) -> tuple[str, float]:
+) -> ProviderResult:
     """Retry transient provider rate limits (esp. Gemini free-tier 429s)."""
     last: BaseException | None = None
     for attempt in range(attempts):
@@ -98,20 +124,29 @@ def _call_with_retries(
             last = exc
             if not _is_rate_limited(exc) or attempt >= attempts - 1:
                 raise
-            # Exponential backoff + small jitter so concurrent Flash retries don't sync.
             delay = base_delay_s * (2**attempt) + (0.1 * attempt)
             time.sleep(delay)
     assert last is not None
     raise last
 
 
-def _call_google(model: str, system: str, user: str) -> tuple[str, float]:
+def _call_google(model: str, system: str, user: str) -> ProviderResult:
     from google import genai
     from google.genai import types
 
     client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+    request = {
+        "provider": "google",
+        "endpoint": "models.generate_content",
+        "model": model,
+        "contents": user,
+        "config": {
+            "system_instruction": system,
+            "max_output_tokens": 64,
+        },
+    }
 
-    def once() -> tuple[str, float]:
+    def once() -> ProviderResult:
         start = time.perf_counter()
         response = client.models.generate_content(
             model=model,
@@ -123,13 +158,14 @@ def _call_google(model: str, system: str, user: str) -> tuple[str, float]:
         )
         latency = time.perf_counter() - start
         text = (getattr(response, "text", None) or "").strip()
-        return text, latency
+        return ProviderResult(
+            text=text, latency_s=latency, request=request, response=response
+        )
 
-    # Gemini free / flash quotas are tight when 6 models buzz at once.
     return _call_with_retries(once, attempts=5, base_delay_s=2.0)
 
 
-def _call_fireworks(model: str, system: str, user: str) -> tuple[str, float]:
+def _call_fireworks(model: str, system: str, user: str) -> ProviderResult:
     from openai import OpenAI
 
     client = OpenAI(
@@ -137,13 +173,22 @@ def _call_fireworks(model: str, system: str, user: str) -> tuple[str, float]:
         base_url="https://api.fireworks.ai/inference/v1",
     )
     # Keep completions tiny — Qwen/Kimi otherwise dump chain-of-thought into content.
-    start = time.perf_counter()
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
+    request = {
+        "provider": "fireworks",
+        "endpoint": "chat.completions.create",
+        "base_url": "https://api.fireworks.ai/inference/v1",
+        "model": model,
+        "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
+        "max_tokens": 48,
+        "temperature": 0,
+    }
+    start = time.perf_counter()
+    response = client.chat.completions.create(
+        model=model,
+        messages=request["messages"],
         max_tokens=48,
         temperature=0,
     )
@@ -152,10 +197,10 @@ def _call_fireworks(model: str, system: str, user: str) -> tuple[str, float]:
     text = (message.content or "").strip()
     if not text:
         text = (getattr(message, "reasoning_content", None) or "").strip()
-    return text, latency
+    return ProviderResult(text=text, latency_s=latency, request=request, response=response)
 
 
-_CALLERS: dict[str, Callable[[str, str, str], tuple[str, float]]] = {
+_CALLERS: dict[str, Callable[[str, str, str], ProviderResult]] = {
     "openai": _call_openai,
     "anthropic": _call_anthropic,
     "google": _call_google,
@@ -229,8 +274,14 @@ def query_contestant(
     provider, model = CONTESTANT_MODELS[name]
     if not os.getenv(PROVIDER_ENV[provider]):
         raise RuntimeError(f"Missing {PROVIDER_ENV[provider]} for {name}")
+    request_preview = {
+        "provider": provider,
+        "model": model,
+        "system": system,
+        "user": user,
+    }
     try:
-        text, latency = _CALLERS[provider](model, system, user)
+        result = _CALLERS[provider](model, system, user)
     except Exception as exc:  # noqa: BLE001
         log_event(
             "model_error",
@@ -240,10 +291,12 @@ def query_contestant(
             model=model,
             system=system,
             user=user,
+            request=request_preview,
             error=f"{type(exc).__name__}: {exc}",
+            error_body=to_jsonable(getattr(exc, "body", None) or getattr(exc, "response", None) or str(exc)),
         )
         raise
-    cleaned = _clean(text)
+    cleaned = _clean(result.text)
     log_event(
         "model_call",
         phase=phase,
@@ -252,11 +305,13 @@ def query_contestant(
         model=model,
         system=system,
         user=user,
-        raw=text,
+        request=to_jsonable(result.request),
+        response=to_jsonable(result.response),
+        raw=result.text,
         cleaned=cleaned,
-        latency_s=round(latency, 4),
+        latency_s=round(result.latency_s, 4),
     )
-    return cleaned, latency
+    return cleaned, result.latency_s
 
 
 def live_buzz(state: MatchState) -> MatchState:

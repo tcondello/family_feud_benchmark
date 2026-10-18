@@ -55,9 +55,13 @@ Gemini Flash often hits free-tier **429** when all contestants buzz together;
 live Google calls retry with backoff, or drop Flash from `--contestants`.
 
 Used questions stay **red/strikethrough** and cannot be re-selected until you
-quit (episode reset). Live API prompts/responses are appended to
-`responses/game_traces/live_*.jsonl` for harness debugging (including the
-revealed + wrong-guess lists sent on each main-play call).
+quit (episode reset). Live API **request + response JSON** is appended to
+`responses/game_traces/live_*.jsonl`. Tail them with:
+
+```bash
+PYTHONPATH=/workspace python3 -m game.watch_traces --contestant Ember -v
+PYTHONPATH=/workspace python3 -m game.watch_traces --contestant Ember --json
+```
 
 | Key | Action |
 |-----|--------|
