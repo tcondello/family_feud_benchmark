@@ -136,6 +136,7 @@ def _call_fireworks(model: str, system: str, user: str) -> tuple[str, float]:
         api_key=os.environ["FIREWORKS_API_KEY"],
         base_url="https://api.fireworks.ai/inference/v1",
     )
+    # Keep completions tiny — Qwen/Kimi otherwise dump chain-of-thought into content.
     start = time.perf_counter()
     response = client.chat.completions.create(
         model=model,
@@ -143,7 +144,7 @@ def _call_fireworks(model: str, system: str, user: str) -> tuple[str, float]:
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
-        max_tokens=128,
+        max_tokens=48,
         temperature=0,
     )
     latency = time.perf_counter() - start
@@ -151,9 +152,6 @@ def _call_fireworks(model: str, system: str, user: str) -> tuple[str, float]:
     text = (message.content or "").strip()
     if not text:
         text = (getattr(message, "reasoning_content", None) or "").strip()
-        # Prefer last short line if reasoning leaked.
-        lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-        text = lines[-1] if lines else ""
     return text, latency
 
 
@@ -166,12 +164,58 @@ _CALLERS: dict[str, Callable[[str, str, str], tuple[str, float]]] = {
 
 
 def _clean(text: str) -> str:
-    text = text.strip().strip('"').strip("'")
-    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    """Collapse model output to a short survey phrase.
+
+    Reasoning models (esp. Qwen on Fireworks) often return a monologue that
+    *mentions* board answers. Feeding that whole blob back as a wrong-guess
+    — or grading with substring match — creates infinite strike loops.
+    """
+    import re
+
+    text = (text or "").strip().strip('"').strip("'")
+    if not text:
+        return ""
+
+    # Prefer explicit final-answer markers.
+    for pattern in (
+        r"(?is)\bfinal(?:\s+answer)?\s*:\s*(.+)$",
+        r"(?is)\banswer\s*:\s*(.+)$",
+        r"(?is)\bchoose\s*[\"']?([A-Za-z][^\"'\n.]{0,40})",
+    ):
+        match = re.search(pattern, text)
+        if match:
+            text = match.group(1).strip()
+            break
+
+    # Last quoted short phrase wins (common in CoT dumps).
+    quotes = re.findall(r"[\"']([^\"']{1,40})[\"']", text)
+    short_quotes = [q.strip() for q in quotes if 0 < len(q.split()) <= 5]
+    if short_quotes and (
+        len(text.split()) > 6 or "need" in text.lower() or "final" in text.lower()
+    ):
+        text = short_quotes[-1]
+
+    lines = [ln.strip().strip('"').strip("'") for ln in text.splitlines() if ln.strip()]
     if lines:
         text = lines[-1]
-    if text.endswith(".") and text.count(" ") <= 4:
+
+    # Drop trailing meta.
+    text = re.sub(r"(?i)\s*(ensure only|only answer words|final).*$", "", text).strip()
+    if text.endswith(".") and len(text.split()) <= 5:
         text = text[:-1]
+
+    # If still a monologue, refuse to treat it as an answer (empty → strike,
+    # but short enough that we won't pollute the next prompt).
+    words = text.split()
+    if len(words) > 8 or len(text) > 60:
+        # Last ditch: take a trailing Capitalized phrase of ≤4 words.
+        trail = re.findall(r"\b([A-Z][A-Za-z]+(?:\s+[A-Z]?[A-Za-z]+){0,3})\b", text)
+        if trail:
+            text = trail[-1]
+        else:
+            return ""
+        if len(text.split()) > 5:
+            return ""
     return text
 
 

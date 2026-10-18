@@ -190,6 +190,31 @@ def _normalize(text: str) -> str:
     )
 
 
+def _guess_matches_board(needle: str, board: str) -> bool:
+    """True when guess matches a board slot without CoT false positives.
+
+    Rejects cases like a 80-word reasoning dump that merely *mentions*
+    'Jeweler' — that used to count as a hit via `board in needle`.
+    """
+    if not needle or not board:
+        return False
+    if needle == board:
+        return True
+    # Short phrase contained in a slightly longer board answer (or vice versa).
+    shorter, longer = (needle, board) if len(needle) <= len(board) else (board, needle)
+    if len(shorter) < 3:
+        return False
+    # If the guess is a long monologue, only allow exact equality (handled above).
+    if len(needle.split()) > 6 or len(needle) > 48:
+        return False
+    if shorter in longer:
+        # Avoid tiny accidental hits (car/card-ish) when lengths diverge a lot.
+        if len(longer) > max(len(shorter) * 3, len(shorter) + 12):
+            return False
+        return True
+    return False
+
+
 def grade_against_board(
     guess: str, slots: list[BoardSlot], *, revealed_only: bool = False
 ) -> tuple[bool, str | None, int]:
@@ -207,7 +232,7 @@ def grade_against_board(
         board = _normalize(slot.answer)
         if not board:
             continue
-        if needle == board or needle in board or board in needle:
+        if _guess_matches_board(needle, board):
             if slot.points >= best_points:
                 best_points = slot.points
                 best_answer = slot.answer
@@ -381,11 +406,18 @@ def apply_main_guess(state: MatchState, text: str, latency_s: float = 0.0) -> Ma
         return state
 
     state.strikes += 1
-    if text.strip():
-        state.wrong_guesses.append(text.strip())
+    # Only store short wrongs — never CoT dumps (they poison the next prompt).
+    wrong = text.strip()
+    if wrong and len(wrong.split()) <= 8 and len(wrong) <= 60:
+        state.wrong_guesses.append(wrong)
+    elif wrong:
+        state.play_log.append(
+            f"(omitted long/invalid guess from wrong list: {len(wrong)} chars)"
+        )
     state.play_log.append(
         f"{state.control}: {text!r} → STRIKE {state.strikes} [{latency_s:.2f}s]"
     )
+
     if state.strikes >= STRIKES_TO_STEAL:
         challenger = pick_steal_challenger(state)
         state.steal_challenger = challenger

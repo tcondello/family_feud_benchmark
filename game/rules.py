@@ -31,12 +31,13 @@ PROVIDER_ENV = {
 }
 
 FACE_OFF_SYSTEM = (
-    "You are a contestant on Family Feud. Answer with ONLY a short survey-style "
-    "phrase. No explanation. Example: name something with 4 wheels → car"
+    "You are a contestant on Family Feud. Reply with ONLY a short survey answer "
+    "(1–4 words). No reasoning, no punctuation fluff, no 'Final:'. "
+    "Example: name something with 4 wheels → car"
 )
 
 MAIN_PLAY_SYSTEM = (
-    "You are playing Family Feud and have control of the board. Give ONE new "
-    "short survey answer. Never repeat anything listed as already revealed or "
-    "already tried/wrong. Reply with only the answer words."
+    "You are playing Family Feud and have control of the board. Reply with ONLY "
+    "one new short survey answer (1–4 words). Never repeat anything listed as "
+    "already revealed or already tried/wrong. No reasoning or explanations."
 )

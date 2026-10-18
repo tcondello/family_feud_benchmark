@@ -128,6 +128,23 @@ def test_grade_against_board() -> None:
     assert hit and matched == "Coffee" and points == 37
 
 
+def test_grade_rejects_reasoning_dump_mentions() -> None:
+    """Qwen CoT that mentions 'Jeweler' must not auto-hit that board slot."""
+    slots = [
+        BoardSlot("Janitor", 62),
+        BoardSlot("Jeweler", 5),
+        BoardSlot("Journalist", 4),
+    ]
+    rant = (
+        "We need answer user's request: Family Feud, one new short survey "
+        "answer, occupation begins with J, not Janitor, Judge/Justice. "
+        "Need likely common survey answer: Journalist? Jockey? Jeweler? "
+        'Jogger? Choose one. Final: Journalist.'
+    )
+    hit, matched, _ = grade_against_board(rant, slots)
+    assert hit is False and matched is None
+
+
 def test_mock_advance_path(tmp_path: Path) -> None:
     path = tmp_path / "q.json"
     path.write_text(
