@@ -333920,6 +333920,4198 @@
             "prompt_tokens": 158,
             "completion_tokens": 174,
             "cost_usd": 0.003084
+        },
+        {
+            "question": "Snoop Dogg said, \"My new weed will get you higher than a\" what?",
+            "response": "<|open|>",
+            "latency_s": 18.8636,
+            "prompt_tokens": 154,
+            "completion_tokens": 512,
+            "cost_usd": 0.008142
+        },
+        {
+            "question": "Name a place that's inappropriate for a stripper to try out her moves.",
+            "response": "Church",
+            "latency_s": 5.3404,
+            "prompt_tokens": 150,
+            "completion_tokens": 150,
+            "cost_usd": 0.0027
+        },
+        {
+            "question": "Name something a tough guy has that you'd be surprised was the color pink.",
+            "response": "Motorcycle",
+            "latency_s": 7.2097,
+            "prompt_tokens": 150,
+            "completion_tokens": 148,
+            "cost_usd": 0.00267
+        },
+        {
+            "question": "Name something specific that a female secret agent's bra might be able to do.",
+            "response": "Shoot bullets",
+            "latency_s": 12.8363,
+            "prompt_tokens": 151,
+            "completion_tokens": 277,
+            "cost_usd": 0.004608
+        },
+        {
+            "question": "Name someone who'd be offended if you gave them a plastic surgery gift card.",
+            "response": "Wife",
+            "latency_s": 7.2076,
+            "prompt_tokens": 151,
+            "completion_tokens": 179,
+            "cost_usd": 0.003138
+        },
+        {
+            "question": "Name something parents tell their teenager he can't do that he'd respond \"But you do it.\"",
+            "response": "Swear",
+            "latency_s": 6.1862,
+            "prompt_tokens": 153,
+            "completion_tokens": 158,
+            "cost_usd": 0.002829
+        },
+        {
+            "question": "Name something every late-night TV show host has.",
+            "response": "A desk",
+            "latency_s": 8.011,
+            "prompt_tokens": 145,
+            "completion_tokens": 140,
+            "cost_usd": 0.002535
+        },
+        {
+            "question": "Name something a person does that slows down the checkout line at the store.",
+            "response": "Writing a check",
+            "latency_s": 5.6668,
+            "prompt_tokens": 150,
+            "completion_tokens": 161,
+            "cost_usd": 0.002865
+        },
+        {
+            "question": "What does a dog do when you come home that would be weird if your spouse did it too?",
+            "response": "Licks your face",
+            "latency_s": 9.3693,
+            "prompt_tokens": 155,
+            "completion_tokens": 274,
+            "cost_usd": 0.004575
+        },
+        {
+            "question": "Living or dead, name an artist you'd love to paint your portrait.",
+            "response": "Van Gogh",
+            "latency_s": 3.051,
+            "prompt_tokens": 149,
+            "completion_tokens": 47,
+            "cost_usd": 0.001152
+        },
+        {
+            "question": "Give me one good reason you're not a nudist.",
+            "response": "No body",
+            "latency_s": 6.4379,
+            "prompt_tokens": 147,
+            "completion_tokens": 172,
+            "cost_usd": 0.003021
+        },
+        {
+            "question": "Name a subject that women get tired of men mansplaining to them.",
+            "response": "Cars",
+            "latency_s": 13.2101,
+            "prompt_tokens": 150,
+            "completion_tokens": 328,
+            "cost_usd": 0.00537
+        },
+        {
+            "question": "Name a celebrity with enough kids to fill a basketball team.",
+            "response": "Nick Cannon",
+            "latency_s": 6.3857,
+            "prompt_tokens": 147,
+            "completion_tokens": 177,
+            "cost_usd": 0.003096
+        },
+        {
+            "question": "We asked 100 men... If you're on the kiss cam at a football game, name someone you would not want to be sitting next to.",
+            "response": "My mother-in-law",
+            "latency_s": 9.0985,
+            "prompt_tokens": 164,
+            "completion_tokens": 225,
+            "cost_usd": 0.003867
+        },
+        {
+            "question": "If babies were on Instagram, what would they post pictures of?",
+            "response": "Milk bottles and blurry selfies",
+            "latency_s": 9.038,
+            "prompt_tokens": 148,
+            "completion_tokens": 243,
+            "cost_usd": 0.004089
+        },
+        {
+            "question": "Name something football players do to hype up their teammates.",
+            "response": "Cheer",
+            "latency_s": 8.9409,
+            "prompt_tokens": 146,
+            "completion_tokens": 180,
+            "cost_usd": 0.003138
+        },
+        {
+            "question": "Tell me something a naughty kid might put in the cookies he left out for Santa.",
+            "response": "Hot sauce",
+            "latency_s": 7.8593,
+            "prompt_tokens": 153,
+            "completion_tokens": 168,
+            "cost_usd": 0.002979
+        },
+        {
+            "question": "Grandma got famous on TikTok for showing off her what?",
+            "response": "Dance moves",
+            "latency_s": 6.9575,
+            "prompt_tokens": 148,
+            "completion_tokens": 185,
+            "cost_usd": 0.003219
+        },
+        {
+            "question": "Madam Zala is a different kind of psychic. Instead of your palms, she reads your what?",
+            "response": "Actually wait -",
+            "latency_s": 620.6378,
+            "prompt_tokens": 156,
+            "completion_tokens": 512,
+            "cost_usd": 0.008148
+        },
+        {
+            "question": "Fill in the blank: A woman might tell her man, \"Give me ______ or give me another man.\"",
+            "response": "satisfaction",
+            "latency_s": 11.4479,
+            "prompt_tokens": 157,
+            "completion_tokens": 358,
+            "cost_usd": 0.005841
+        },
+        {
+            "question": "Name something you might find in Beyonc\u00e9's dressing room.",
+            "response": "Makeup",
+            "latency_s": 3.7579,
+            "prompt_tokens": 148,
+            "completion_tokens": 98,
+            "cost_usd": 0.001914
+        },
+        {
+            "question": "We asked 100 men... If your nickname in the bedroom was something from the ocean, what would it be?",
+            "response": "The Big Kahuna",
+            "latency_s": 9.0983,
+            "prompt_tokens": 158,
+            "completion_tokens": 293,
+            "cost_usd": 0.004869
+        },
+        {
+            "question": "Name something that you don't have when you go to Vegas, but you might have when you come back.",
+            "response": "A spouse",
+            "latency_s": 8.8245,
+            "prompt_tokens": 156,
+            "completion_tokens": 242,
+            "cost_usd": 0.004098
+        },
+        {
+            "question": "We asked 100 women... What do men do for women in chick flicks that you wish your man did for you?",
+            "response": "Bring me flowers",
+            "latency_s": 613.9471,
+            "prompt_tokens": 160,
+            "completion_tokens": 384,
+            "cost_usd": 0.00624
+        },
+        {
+            "question": "We asked 100 men... When you get to heaven, you'll be sad if there's no what there?",
+            "response": "Beer",
+            "latency_s": 612.4799,
+            "prompt_tokens": 156,
+            "completion_tokens": 338,
+            "cost_usd": 0.005538
+        },
+        {
+            "question": "Name something you'd see in London, England, that you'd be surprised to see in London, Kentucky.",
+            "response": "Big Ben",
+            "latency_s": 4.7677,
+            "prompt_tokens": 155,
+            "completion_tokens": 135,
+            "cost_usd": 0.00249
+        },
+        {
+            "question": "Name a way you'd describe bakery buns and your own buns.",
+            "response": "Soft",
+            "latency_s": 5.9446,
+            "prompt_tokens": 147,
+            "completion_tokens": 176,
+            "cost_usd": 0.003081
+        },
+        {
+            "question": "Name something a robber might steal from a funeral home.",
+            "response": "Coffin",
+            "latency_s": 605.1408,
+            "prompt_tokens": 147,
+            "completion_tokens": 107,
+            "cost_usd": 0.002046
+        },
+        {
+            "question": "Fill in the blank with the name of a rapper: Lil ______.",
+            "response": "Wayne",
+            "latency_s": 607.5748,
+            "prompt_tokens": 149,
+            "completion_tokens": 125,
+            "cost_usd": 0.002322
+        },
+        {
+            "question": "Name an occupation that weighs things on a scale.",
+            "response": "Butcher",
+            "latency_s": 606.1973,
+            "prompt_tokens": 145,
+            "completion_tokens": 99,
+            "cost_usd": 0.00192
+        },
+        {
+            "question": "Name something little kids do on an airplane that would be weird if adults did it.",
+            "response": "Kick the seat in front of them",
+            "latency_s": 609.2746,
+            "prompt_tokens": 152,
+            "completion_tokens": 155,
+            "cost_usd": 0.002781
+        },
+        {
+            "question": "Name something the class clown might put up his nose that isn't so funny if it gets stuck.",
+            "response": "Crayon",
+            "latency_s": 607.4451,
+            "prompt_tokens": 154,
+            "completion_tokens": 128,
+            "cost_usd": 0.002382
+        },
+        {
+            "question": "We asked 100 parents... Your kid is officially too old to sleep in your bed when they can do what?",
+            "response": "Walk",
+            "latency_s": 12.6416,
+            "prompt_tokens": 158,
+            "completion_tokens": 276,
+            "cost_usd": 0.004614
+        },
+        {
+            "question": "Tell me the worst thing to do in your sleep.",
+            "response": "Sleepwalk",
+            "latency_s": 9.2822,
+            "prompt_tokens": 146,
+            "completion_tokens": 255,
+            "cost_usd": 0.004263
+        },
+        {
+            "question": "Name an activity you'd be surprised to see Megan Thee Stallion teaching at the old folks' home.",
+            "response": "Twerking",
+            "latency_s": 5.8335,
+            "prompt_tokens": 156,
+            "completion_tokens": 151,
+            "cost_usd": 0.002733
+        },
+        {
+            "question": "We asked 100 people over 40... What do you regret not doing more of in your twenties?",
+            "response": "Traveling",
+            "latency_s": 6.5423,
+            "prompt_tokens": 156,
+            "completion_tokens": 171,
+            "cost_usd": 0.003033
+        },
+        {
+            "question": "Name an innocent reason you've got your butt in the air.",
+            "response": "Yoga",
+            "latency_s": 5.3935,
+            "prompt_tokens": 147,
+            "completion_tokens": 132,
+            "cost_usd": 0.002421
+        },
+        {
+            "question": "We asked 100 women... I bet Channing Tatum smells like what?",
+            "response": "Heaven",
+            "latency_s": 6.6787,
+            "prompt_tokens": 151,
+            "completion_tokens": 157,
+            "cost_usd": 0.002808
+        },
+        {
+            "question": "Fill in the blank: A woman might say, \"I can't believe I ______ed my ex.\"",
+            "response": "dated",
+            "latency_s": 6.6479,
+            "prompt_tokens": 155,
+            "completion_tokens": 191,
+            "cost_usd": 0.00333
+        },
+        {
+            "question": "Name a magazine cover you think Steve Harvey has been on more than once.",
+            "response": "Essence",
+            "latency_s": 4.785,
+            "prompt_tokens": 150,
+            "completion_tokens": 102,
+            "cost_usd": 0.00198
+        },
+        {
+            "question": "What would you do if your divorced dad started dating a 21-year-old party girl?",
+            "response": "Mind my own business",
+            "latency_s": 10.5609,
+            "prompt_tokens": 153,
+            "completion_tokens": 311,
+            "cost_usd": 0.005124
+        },
+        {
+            "question": "Fill in the blank: I have the worst ______.",
+            "response": "luck",
+            "latency_s": 4.919,
+            "prompt_tokens": 146,
+            "completion_tokens": 80,
+            "cost_usd": 0.001638
+        },
+        {
+            "question": "Name a Christmas movie people never get tired of.",
+            "response": "Home Alone",
+            "latency_s": 5.1302,
+            "prompt_tokens": 145,
+            "completion_tokens": 109,
+            "cost_usd": 0.00207
+        },
+        {
+            "question": "Name a word they use in a comic strip to represent the sound of hitting someone.",
+            "response": "Pow",
+            "latency_s": 6.3426,
+            "prompt_tokens": 152,
+            "completion_tokens": 96,
+            "cost_usd": 0.001896
+        },
+        {
+            "question": "Name something a man has that he thinks is badass but women think is just bad.",
+            "response": "A mullet",
+            "latency_s": 5.7135,
+            "prompt_tokens": 153,
+            "completion_tokens": 143,
+            "cost_usd": 0.002604
+        },
+        {
+            "question": "I want my teeth to be as white as what?",
+            "response": "snow",
+            "latency_s": 5.7913,
+            "prompt_tokens": 146,
+            "completion_tokens": 119,
+            "cost_usd": 0.002223
+        },
+        {
+            "question": "Name a term or phrase an old person might use for bedroom fun.",
+            "response": "Hanky panky",
+            "latency_s": 16.5915,
+            "prompt_tokens": 149,
+            "completion_tokens": 400,
+            "cost_usd": 0.006447
+        },
+        {
+            "question": "Name a pop singer, past or present, whose dance moves should not be tried at a nursing home.",
+            "response": "Michael Jackson",
+            "latency_s": 9.9648,
+            "prompt_tokens": 156,
+            "completion_tokens": 248,
+            "cost_usd": 0.004188
+        },
+        {
+            "question": "Name a job where people worry about being relatable to the public.",
+            "response": "politician",
+            "latency_s": 3.806,
+            "prompt_tokens": 149,
+            "completion_tokens": 93,
+            "cost_usd": 0.001842
+        },
+        {
+            "question": "Name something that makes an otherwise average person seem more attractive.",
+            "response": "Confidence",
+            "latency_s": 4.8847,
+            "prompt_tokens": 147,
+            "completion_tokens": 129,
+            "cost_usd": 0.002376
+        },
+        {
+            "question": "Give me a word or expression that contains \"foot.\"",
+            "response": "football",
+            "latency_s": 4.8459,
+            "prompt_tokens": 146,
+            "completion_tokens": 97,
+            "cost_usd": 0.001893
+        },
+        {
+            "question": "Name a celebrity known for their wild fashion.",
+            "response": "Lady Gaga",
+            "latency_s": 6.8066,
+            "prompt_tokens": 144,
+            "completion_tokens": 75,
+            "cost_usd": 0.001557
+        },
+        {
+            "question": "Fill in the blank: You've walked into a party and thought, \"I'm the ______est person in this room.\"",
+            "response": "drunkest",
+            "latency_s": 12.9308,
+            "prompt_tokens": 158,
+            "completion_tokens": 317,
+            "cost_usd": 0.005229
+        },
+        {
+            "question": "Name something of yours that you think would be very hard to sell.",
+            "response": "Used mattress",
+            "latency_s": 9.1167,
+            "prompt_tokens": 149,
+            "completion_tokens": 187,
+            "cost_usd": 0.003252
+        },
+        {
+            "question": "Name something you have in your car that a cowboy might like to have on his horse.",
+            "response": "Radio",
+            "latency_s": 15.2519,
+            "prompt_tokens": 153,
+            "completion_tokens": 389,
+            "cost_usd": 0.006294
+        },
+        {
+            "question": "Name a kind of dance that would be more fun to do naked.",
+            "response": "Pole dancing",
+            "latency_s": 10.0039,
+            "prompt_tokens": 149,
+            "completion_tokens": 286,
+            "cost_usd": 0.004737
+        },
+        {
+            "question": "Name a creature that is deadlier than it looks.",
+            "response": "Blue-ringed octopus",
+            "latency_s": 10.514,
+            "prompt_tokens": 146,
+            "completion_tokens": 271,
+            "cost_usd": 0.004503
+        },
+        {
+            "question": "Fill in the blank: I hope when I get to heaven, they let me be a professional ______.",
+            "response": "golfer",
+            "latency_s": 6.7544,
+            "prompt_tokens": 156,
+            "completion_tokens": 172,
+            "cost_usd": 0.003048
+        },
+        {
+            "question": "Who is the funniest person alive right now?",
+            "response": "Dave Chappelle",
+            "latency_s": 7.6814,
+            "prompt_tokens": 145,
+            "completion_tokens": 130,
+            "cost_usd": 0.002385
+        },
+        {
+            "question": "If someone's funky aroma stayed on your clothes, name something you'd do to get rid of it.",
+            "response": "Wash them",
+            "latency_s": 4.8433,
+            "prompt_tokens": 154,
+            "completion_tokens": 121,
+            "cost_usd": 0.002277
+        },
+        {
+            "question": "Fill in the blank: A woman might say to her man, \"If you love me, you also have to love my ______.\"",
+            "response": "kids",
+            "latency_s": 8.0911,
+            "prompt_tokens": 162,
+            "completion_tokens": 236,
+            "cost_usd": 0.004026
+        },
+        {
+            "question": "If the booty fairy granted you one wish, you'd ask them to make your booty what?",
+            "response": "Bigger",
+            "latency_s": 9.9146,
+            "prompt_tokens": 155,
+            "completion_tokens": 218,
+            "cost_usd": 0.003735
+        },
+        {
+            "question": "We asked 100 single women... His ring is off, but how can you tell that the guy you're on a date with is married?",
+            "response": "Tan line on his ring finger",
+            "latency_s": 8.9734,
+            "prompt_tokens": 163,
+            "completion_tokens": 217,
+            "cost_usd": 0.003744
+        },
+        {
+            "question": "Name something that might be fun about dating Willy Wonka.",
+            "response": "Free chocolate",
+            "latency_s": 4.4951,
+            "prompt_tokens": 148,
+            "completion_tokens": 101,
+            "cost_usd": 0.001959
+        },
+        {
+            "question": "We asked 100 women... Name an activity you'd put on the itinerary for a Vegas divorce party.",
+            "response": "Gambling at the casino",
+            "latency_s": 9.986,
+            "prompt_tokens": 155,
+            "completion_tokens": 259,
+            "cost_usd": 0.00435
+        },
+        {
+            "question": "We asked 100 women... What do women talk about when you go to the restroom together?",
+            "response": "Men",
+            "latency_s": 5.8249,
+            "prompt_tokens": 154,
+            "completion_tokens": 130,
+            "cost_usd": 0.002412
+        },
+        {
+            "question": "We asked 100 women... Name something about Mister Rogers that would be a turnoff in your man.",
+            "response": "His cardigan sweaters",
+            "latency_s": 9.6231,
+            "prompt_tokens": 157,
+            "completion_tokens": 230,
+            "cost_usd": 0.003921
+        },
+        {
+            "question": "Name something the person carrying the Olympic torch hopes doesn't happen.",
+            "response": "The flame goes out",
+            "latency_s": 7.8427,
+            "prompt_tokens": 147,
+            "completion_tokens": 91,
+            "cost_usd": 0.001806
+        },
+        {
+            "question": "We asked 100 men... The last name you'd want to accidentally call your wife in a passionate moment is whose?",
+            "response": "Your ex's (ex-girlfriend/ex-wife)",
+            "latency_s": 7.5291,
+            "prompt_tokens": 158,
+            "completion_tokens": 232,
+            "cost_usd": 0.003954
+        },
+        {
+            "question": "We asked 100 married men... Tell me something you notice that makes you think your wife is becoming a nun.",
+            "response": "She prays all the time",
+            "latency_s": 13.7774,
+            "prompt_tokens": 158,
+            "completion_tokens": 400,
+            "cost_usd": 0.006474
+        },
+        {
+            "question": "We asked 100 women... You just discovered the diamond in your engagement ring is fake. What do you do?",
+            "response": "Confront him",
+            "latency_s": 6.9932,
+            "prompt_tokens": 158,
+            "completion_tokens": 176,
+            "cost_usd": 0.003114
+        },
+        {
+            "question": "We asked 100 married men... What does your wife do when she thinks you're not listening to her?",
+            "response": "Yells at me",
+            "latency_s": 8.2725,
+            "prompt_tokens": 156,
+            "completion_tokens": 199,
+            "cost_usd": 0.003453
+        },
+        {
+            "question": "We asked 100 women... Some men you've dated smell like what stinky animal?",
+            "response": "Skunk",
+            "latency_s": 6.9409,
+            "prompt_tokens": 152,
+            "completion_tokens": 132,
+            "cost_usd": 0.002436
+        },
+        {
+            "question": "Name a sound people make while eating that ruins everyone else's appetite.",
+            "response": "Slurping",
+            "latency_s": 4.7223,
+            "prompt_tokens": 148,
+            "completion_tokens": 127,
+            "cost_usd": 0.002349
+        },
+        {
+            "question": "What would you do if you suspected your significant other was lying about what they did for work?",
+            "response": "Talk to them directly about my concerns",
+            "latency_s": 11.0887,
+            "prompt_tokens": 154,
+            "completion_tokens": 325,
+            "cost_usd": 0.005337
+        },
+        {
+            "question": "Fill in the blank: After winning the hot dog eating contest, the first thing Big Billy wanted to do was ______.",
+            "response": "lie down",
+            "latency_s": 6.0483,
+            "prompt_tokens": 159,
+            "completion_tokens": 162,
+            "cost_usd": 0.002907
+        },
+        {
+            "question": "If you want to play cops and robbers in the bedroom, name a prop you might use.",
+            "response": "Handcuffs",
+            "latency_s": 8.5936,
+            "prompt_tokens": 155,
+            "completion_tokens": 234,
+            "cost_usd": 0.003975
+        },
+        {
+            "question": "We asked 100 women... You'd never tell your boo that you had a freaky dream about who?",
+            "response": "His best friend",
+            "latency_s": 5.7523,
+            "prompt_tokens": 157,
+            "completion_tokens": 169,
+            "cost_usd": 0.003006
+        },
+        {
+            "question": "A married man learns never to ask his wife for what when she's mad at him?",
+            "response": "Sex",
+            "latency_s": 6.8818,
+            "prompt_tokens": 152,
+            "completion_tokens": 122,
+            "cost_usd": 0.002286
+        },
+        {
+            "question": "Name something specific about the Joker that'd be a turnoff to his blind date.",
+            "response": "His maniacal laugh",
+            "latency_s": 11.2522,
+            "prompt_tokens": 153,
+            "completion_tokens": 262,
+            "cost_usd": 0.004389
+        },
+        {
+            "question": "What props does a stripper dressed as a \"Harry Potter\" character need?",
+            "response": "Wand, Gryffindor robe, house tie, round glasses, lightning bolt scar, broomstick",
+            "latency_s": 14.616,
+            "prompt_tokens": 151,
+            "completion_tokens": 324,
+            "cost_usd": 0.005313
+        },
+        {
+            "question": "People might call you a party pooper if you do what while the party's going on?",
+            "response": "Leave early",
+            "latency_s": 4.8727,
+            "prompt_tokens": 154,
+            "completion_tokens": 100,
+            "cost_usd": 0.001962
+        },
+        {
+            "question": "Name a way that Hot Santa might be different from regular Santa.",
+            "response": "He's fit and muscular instead of fat.",
+            "latency_s": 11.8554,
+            "prompt_tokens": 148,
+            "completion_tokens": 250,
+            "cost_usd": 0.004194
+        },
+        {
+            "question": "We asked 100 married women... What would you do if you saw a dating app on your husband's phone?",
+            "response": "Confront him",
+            "latency_s": 10.1546,
+            "prompt_tokens": 158,
+            "completion_tokens": 201,
+            "cost_usd": 0.003489
+        },
+        {
+            "question": "We asked 100 married women... When your husband is hoping for a little romance, he puts on what?",
+            "response": "Cologne",
+            "latency_s": 7.7325,
+            "prompt_tokens": 157,
+            "completion_tokens": 190,
+            "cost_usd": 0.003321
+        },
+        {
+            "question": "We asked 100 women... Name something about the underwear your man is wearing that's a turnoff.",
+            "response": "Holes in them",
+            "latency_s": 10.3451,
+            "prompt_tokens": 155,
+            "completion_tokens": 257,
+            "cost_usd": 0.00432
+        },
+        {
+            "question": "We asked 100 men... What's the sexiest thing about you?",
+            "response": "My smile",
+            "latency_s": 7.7911,
+            "prompt_tokens": 149,
+            "completion_tokens": 153,
+            "cost_usd": 0.002742
+        },
+        {
+            "question": "If you're getting a Brazilian butt lift, you probably live in what U.S. city?",
+            "response": "Miami",
+            "latency_s": 6.2979,
+            "prompt_tokens": 153,
+            "completion_tokens": 162,
+            "cost_usd": 0.002889
+        },
+        {
+            "question": "We asked 100 married men... Your boss comes to dinner and hits on your wife. What do you do?",
+            "response": "Punch him",
+            "latency_s": 7.0327,
+            "prompt_tokens": 158,
+            "completion_tokens": 201,
+            "cost_usd": 0.003489
+        },
+        {
+            "question": "We asked 100 married men... You might practice what to impress your wife on your anniversary?",
+            "response": "A dance",
+            "latency_s": 6.0748,
+            "prompt_tokens": 154,
+            "completion_tokens": 179,
+            "cost_usd": 0.003147
+        },
+        {
+            "question": "Name something you might say to avoid eating a terrible meal someone cooked for you.",
+            "response": "I'm not hungry",
+            "latency_s": 5.4859,
+            "prompt_tokens": 151,
+            "completion_tokens": 111,
+            "cost_usd": 0.002118
+        },
+        {
+            "question": "We asked 100 married men... You just found out that your marriage is invalid. What do you do?",
+            "response": "Get remarried",
+            "latency_s": 11.719,
+            "prompt_tokens": 157,
+            "completion_tokens": 249,
+            "cost_usd": 0.004206
+        },
+        {
+            "question": "We asked 100 women... Give me an affectionate term your man calls you that starts with \"baby.\"",
+            "response": "Baby girl",
+            "latency_s": 5.847,
+            "prompt_tokens": 157,
+            "completion_tokens": 134,
+            "cost_usd": 0.002481
+        },
+        {
+            "question": "What would you do at an open-casket funeral if you noticed the deceased's pants were unzipped?",
+            "response": "Discreetly notify the funeral director",
+            "latency_s": 9.4282,
+            "prompt_tokens": 157,
+            "completion_tokens": 215,
+            "cost_usd": 0.003696
+        },
+        {
+            "question": "We asked 100 single men... Name something you hope a girl doesn't bring with her on a date.",
+            "response": "Her ex-boyfriend",
+            "latency_s": 9.6142,
+            "prompt_tokens": 156,
+            "completion_tokens": 239,
+            "cost_usd": 0.004053
+        },
+        {
+            "question": "The kids didn't want to go to their aunt's house for the summer because she makes them do what?",
+            "response": "chores",
+            "latency_s": 4.9423,
+            "prompt_tokens": 156,
+            "completion_tokens": 126,
+            "cost_usd": 0.002358
+        },
+        {
+            "question": "To make your ex jealous, you'd post a pic of what?",
+            "response": "New partner",
+            "latency_s": 9.7089,
+            "prompt_tokens": 148,
+            "completion_tokens": 258,
+            "cost_usd": 0.004314
+        },
+        {
+            "question": "Name something that might go from sharp to dull.",
+            "response": "Knife",
+            "latency_s": 5.464,
+            "prompt_tokens": 145,
+            "completion_tokens": 125,
+            "cost_usd": 0.00231
+        },
+        {
+            "question": "Name something a rich guy might spend thousands of dollars on when he throws a party.",
+            "response": "Champagne",
+            "latency_s": 5.3953,
+            "prompt_tokens": 152,
+            "completion_tokens": 114,
+            "cost_usd": 0.002166
+        },
+        {
+            "question": "Name something that might go wrong at a beach wedding.",
+            "response": "Rain",
+            "latency_s": 6.8512,
+            "prompt_tokens": 146,
+            "completion_tokens": 168,
+            "cost_usd": 0.002958
+        },
+        {
+            "question": "What's a simple way to look busy at work without actually doing any work?",
+            "response": "Walk briskly while carrying papers",
+            "latency_s": 18.6887,
+            "prompt_tokens": 150,
+            "completion_tokens": 401,
+            "cost_usd": 0.006465
+        },
+        {
+            "question": "Name something you wish you could change about your elbows.",
+            "response": "dryness",
+            "latency_s": 5.5108,
+            "prompt_tokens": 146,
+            "completion_tokens": 112,
+            "cost_usd": 0.002118
+        },
+        {
+            "question": "A man knows it's going nowhere if a woman compares him to her who?",
+            "response": "ex",
+            "latency_s": 9.7311,
+            "prompt_tokens": 150,
+            "completion_tokens": 249,
+            "cost_usd": 0.004185
+        },
+        {
+            "question": "Name something that's gross to do before touching a shared bowling ball.",
+            "response": "Pick your nose",
+            "latency_s": 5.6111,
+            "prompt_tokens": 148,
+            "completion_tokens": 151,
+            "cost_usd": 0.002709
+        },
+        {
+            "question": "Name an occasion when you should not give someone a congratulations card.",
+            "response": "Funeral",
+            "latency_s": 7.0165,
+            "prompt_tokens": 148,
+            "completion_tokens": 87,
+            "cost_usd": 0.001749
+        },
+        {
+            "question": "When the romance has died, you and your partner stop doing what before bed?",
+            "response": "Kissing goodnight",
+            "latency_s": 4.8953,
+            "prompt_tokens": 151,
+            "completion_tokens": 139,
+            "cost_usd": 0.002538
+        },
+        {
+            "question": "What would you do if you saw your friend shoplifting while you were with them?",
+            "response": "Tell them to put it back",
+            "latency_s": 6.2967,
+            "prompt_tokens": 152,
+            "completion_tokens": 170,
+            "cost_usd": 0.003006
+        },
+        {
+            "question": "Name a reason someone wouldn't want their picture on social media.",
+            "response": "privacy",
+            "latency_s": 3.6136,
+            "prompt_tokens": 147,
+            "completion_tokens": 61,
+            "cost_usd": 0.001356
+        },
+        {
+            "question": "Fill in the blank: Before a date, I have to shave my ______.",
+            "response": "face",
+            "latency_s": 3.8156,
+            "prompt_tokens": 151,
+            "completion_tokens": 104,
+            "cost_usd": 0.002013
+        },
+        {
+            "question": "What's the best way to make sure no one sits next to you on a bus?",
+            "response": "Smile and pat the seat next to you as people board.",
+            "latency_s": 8.7326,
+            "prompt_tokens": 152,
+            "completion_tokens": 235,
+            "cost_usd": 0.003981
+        },
+        {
+            "question": "Name a place where you will not get in trouble for being naked.",
+            "response": "Shower",
+            "latency_s": 6.8419,
+            "prompt_tokens": 149,
+            "completion_tokens": 160,
+            "cost_usd": 0.002847
+        },
+        {
+            "question": "What might a professional chef be disappointed by in your kitchen?",
+            "response": "Dull knives",
+            "latency_s": 3.1355,
+            "prompt_tokens": 147,
+            "completion_tokens": 84,
+            "cost_usd": 0.001701
+        },
+        {
+            "question": "Name something that's easy to squeeze out but hard to put back in.",
+            "response": "Toothpaste",
+            "latency_s": 4.9506,
+            "prompt_tokens": 149,
+            "completion_tokens": 79,
+            "cost_usd": 0.001632
+        },
+        {
+            "question": "Name something you'd hate to have happen while you were making love in a tent in the woods.",
+            "response": "A bear shows up",
+            "latency_s": 8.8175,
+            "prompt_tokens": 154,
+            "completion_tokens": 199,
+            "cost_usd": 0.003447
+        },
+        {
+            "question": "Name something dad gets on Father's Day that he has to pretend he likes.",
+            "response": "A tie",
+            "latency_s": 7.8273,
+            "prompt_tokens": 151,
+            "completion_tokens": 109,
+            "cost_usd": 0.002088
+        },
+        {
+            "question": "Name something you do with your bottom.",
+            "response": "Sit",
+            "latency_s": 6.9583,
+            "prompt_tokens": 143,
+            "completion_tokens": 160,
+            "cost_usd": 0.002829
+        },
+        {
+            "question": "Name a part of a man's body that he'd hate to look exactly like his mom's.",
+            "response": "Chest",
+            "latency_s": 9.5814,
+            "prompt_tokens": 153,
+            "completion_tokens": 243,
+            "cost_usd": 0.004104
+        },
+        {
+            "question": "Name a part of your body you like the smell of.",
+            "response": "Hair",
+            "latency_s": 4.4162,
+            "prompt_tokens": 147,
+            "completion_tokens": 138,
+            "cost_usd": 0.002511
+        },
+        {
+            "question": "We asked 100 men... If you woke up as a woman tomorrow, what would you do?",
+            "response": "Play with my boobs",
+            "latency_s": 14.6936,
+            "prompt_tokens": 155,
+            "completion_tokens": 303,
+            "cost_usd": 0.00501
+        },
+        {
+            "question": "We asked 100 women... Why might you think your date is older than his dating profile?",
+            "response": "Gray hair",
+            "latency_s": 13.6249,
+            "prompt_tokens": 154,
+            "completion_tokens": 228,
+            "cost_usd": 0.003882
+        },
+        {
+            "question": "Uh-oh -- you hooked up with your coworker over the weekend. What do you do on Monday?",
+            "response": "Act normal and keep it professional",
+            "latency_s": 12.1527,
+            "prompt_tokens": 157,
+            "completion_tokens": 218,
+            "cost_usd": 0.003741
+        },
+        {
+            "question": "What do you do to cover up bodily noises when you're in the bathroom?",
+            "response": "Run the faucet",
+            "latency_s": 8.2003,
+            "prompt_tokens": 150,
+            "completion_tokens": 173,
+            "cost_usd": 0.003045
+        },
+        {
+            "question": "Name a reason a wife approves of her husband's new assistant.",
+            "response": "She's unattractive",
+            "latency_s": 7.7949,
+            "prompt_tokens": 149,
+            "completion_tokens": 181,
+            "cost_usd": 0.003162
+        },
+        {
+            "question": "We asked 100 married women... Your husband said he's going to pamper you this weekend. What are you hoping he'll do?",
+            "response": "Massage",
+            "latency_s": 5.6945,
+            "prompt_tokens": 161,
+            "completion_tokens": 159,
+            "cost_usd": 0.002868
+        },
+        {
+            "question": "Name something your mate's booty has in common with a basketball.",
+            "response": "Round",
+            "latency_s": 6.3429,
+            "prompt_tokens": 149,
+            "completion_tokens": 166,
+            "cost_usd": 0.002937
+        },
+        {
+            "question": "Where does a nerdy guy go to pick up a nerdy gal?",
+            "response": "I think the safest answer is \"Comic-Con\" or \"a comic book store\" or \"the library.",
+            "latency_s": 17.3604,
+            "prompt_tokens": 150,
+            "completion_tokens": 512,
+            "cost_usd": 0.00813
+        },
+        {
+            "question": "Name a sound you'd play on your phone if you heard a burglar in your home.",
+            "response": "Police siren",
+            "latency_s": 7.0981,
+            "prompt_tokens": 153,
+            "completion_tokens": 191,
+            "cost_usd": 0.003324
+        },
+        {
+            "question": "Name something a widow does at her husband's funeral that makes you suspect she doesn't miss him too much.",
+            "response": "Flirts with other men",
+            "latency_s": 11.185,
+            "prompt_tokens": 156,
+            "completion_tokens": 271,
+            "cost_usd": 0.004533
+        },
+        {
+            "question": "We asked 100 women... When you picture the man of your dreams, he's holding what?",
+            "response": "Flowers",
+            "latency_s": 8.9776,
+            "prompt_tokens": 154,
+            "completion_tokens": 240,
+            "cost_usd": 0.004062
+        },
+        {
+            "question": "When sharks get together for movie night, tell me a movie they might all want to watch.",
+            "response": "Jaws",
+            "latency_s": 4.2253,
+            "prompt_tokens": 154,
+            "completion_tokens": 91,
+            "cost_usd": 0.001827
+        },
+        {
+            "question": "When a guy's last remaining hair on his head falls out, tell me something specific he might do with it.",
+            "response": "Frame it",
+            "latency_s": 5.9009,
+            "prompt_tokens": 158,
+            "completion_tokens": 180,
+            "cost_usd": 0.003174
+        },
+        {
+            "question": "Name something a cat lady might do like a cat to fit in with her cat family.",
+            "response": "Meow",
+            "latency_s": 6.146,
+            "prompt_tokens": 153,
+            "completion_tokens": 188,
+            "cost_usd": 0.003279
+        },
+        {
+            "question": "If you fall in love fast, you might be doing what by the third date?",
+            "response": "Saying \"I love you",
+            "latency_s": 8.1951,
+            "prompt_tokens": 152,
+            "completion_tokens": 232,
+            "cost_usd": 0.003936
+        },
+        {
+            "question": "At Christmas, grandma got confused. Instead of hanging a stocking on the mantel, she hung up her what?",
+            "response": "sock",
+            "latency_s": 6.0029,
+            "prompt_tokens": 158,
+            "completion_tokens": 171,
+            "cost_usd": 0.003039
+        },
+        {
+            "question": "You'd hate someone to say \"Wow -- I've never done this before\" as they were about to do what to you?",
+            "response": "Surgery",
+            "latency_s": 10.9676,
+            "prompt_tokens": 160,
+            "completion_tokens": 235,
+            "cost_usd": 0.004005
+        },
+        {
+            "question": "Name a tool in a toolbox that you'd hate to see your dentist holding.",
+            "response": "Pliers",
+            "latency_s": 6.4563,
+            "prompt_tokens": 150,
+            "completion_tokens": 164,
+            "cost_usd": 0.00291
+        },
+        {
+            "question": "If a stripper called himself The Mailman, name a prop he might use in his act.",
+            "response": "Mailbag",
+            "latency_s": 7.4672,
+            "prompt_tokens": 155,
+            "completion_tokens": 172,
+            "cost_usd": 0.003045
+        },
+        {
+            "question": "Name something a toddler does when they're mad that you shouldn't do when you're mad.",
+            "response": "Throw a tantrum",
+            "latency_s": 7.4638,
+            "prompt_tokens": 151,
+            "completion_tokens": 146,
+            "cost_usd": 0.002643
+        },
+        {
+            "question": "Name a food you expect to see at a carnival.",
+            "response": "Cotton candy",
+            "latency_s": 8.0008,
+            "prompt_tokens": 146,
+            "completion_tokens": 138,
+            "cost_usd": 0.002508
+        },
+        {
+            "question": "Your favorite celebrity is sitting next to you at a restaurant. What do you do?",
+            "response": "Ask for a selfie",
+            "latency_s": 7.5164,
+            "prompt_tokens": 152,
+            "completion_tokens": 217,
+            "cost_usd": 0.003711
+        },
+        {
+            "question": "If wives designed wedding rings for their husbands, what would happen if he took it off?",
+            "response": "It would set off an alarm",
+            "latency_s": 9.6759,
+            "prompt_tokens": 153,
+            "completion_tokens": 273,
+            "cost_usd": 0.004554
+        },
+        {
+            "question": "Name a physical sport that you'd be shocked they play at a nursing home.",
+            "response": "Rugby",
+            "latency_s": 8.9885,
+            "prompt_tokens": 150,
+            "completion_tokens": 247,
+            "cost_usd": 0.004155
+        },
+        {
+            "question": "Name an inappropriate occasion to hit on someone no matter how hot they are.",
+            "response": "Funeral",
+            "latency_s": 6.1318,
+            "prompt_tokens": 150,
+            "completion_tokens": 192,
+            "cost_usd": 0.00333
+        },
+        {
+            "question": "Name something that pairs well with biscuits.",
+            "response": "Gravy",
+            "latency_s": 3.5101,
+            "prompt_tokens": 143,
+            "completion_tokens": 46,
+            "cost_usd": 0.001119
+        },
+        {
+            "question": "What's a dead giveaway that a teenager threw a party when their parents were gone?",
+            "response": "Empty beer cans in the trash",
+            "latency_s": 5.8208,
+            "prompt_tokens": 151,
+            "completion_tokens": 134,
+            "cost_usd": 0.002463
+        },
+        {
+            "question": "Name an emoji you would never text to your parents.",
+            "response": "\ud83c\udf46",
+            "latency_s": 11.0995,
+            "prompt_tokens": 146,
+            "completion_tokens": 246,
+            "cost_usd": 0.004128
+        },
+        {
+            "question": "Tell me the worst place to be when you realize that brownie you ate was a pot brownie.",
+            "response": "Job interview",
+            "latency_s": 14.6933,
+            "prompt_tokens": 156,
+            "completion_tokens": 387,
+            "cost_usd": 0.006273
+        },
+        {
+            "question": "Name a tropical cocktail you crave when you're on the beach.",
+            "response": "Pi\u00f1a colada",
+            "latency_s": 2.4068,
+            "prompt_tokens": 147,
+            "completion_tokens": 45,
+            "cost_usd": 0.001116
+        },
+        {
+            "question": "Pretend you're back in kindergarten right now. What are you doing?",
+            "response": "napping",
+            "latency_s": 5.9025,
+            "prompt_tokens": 150,
+            "completion_tokens": 133,
+            "cost_usd": 0.002445
+        },
+        {
+            "question": "Grandma wants to have a hot girl summer, so she started taking what classes at the gym?",
+            "response": "Hot yoga",
+            "latency_s": 6.6326,
+            "prompt_tokens": 155,
+            "completion_tokens": 154,
+            "cost_usd": 0.002775
+        },
+        {
+            "question": "Name a circus act that reminds you of your job.",
+            "response": "Juggling",
+            "latency_s": 5.5401,
+            "prompt_tokens": 146,
+            "completion_tokens": 155,
+            "cost_usd": 0.002763
+        },
+        {
+            "question": "Fill in the blank: You're not getting older, you're getting ______er.",
+            "response": "bett",
+            "latency_s": 14.1363,
+            "prompt_tokens": 150,
+            "completion_tokens": 459,
+            "cost_usd": 0.007335
+        },
+        {
+            "question": "Name something that starts with \"a barrel of...\"",
+            "response": "monkeys",
+            "latency_s": 5.7533,
+            "prompt_tokens": 145,
+            "completion_tokens": 167,
+            "cost_usd": 0.00294
+        },
+        {
+            "question": "If a woman married a much older man, what might her husband and their newborn baby have in common?",
+            "response": "They both wear diapers (and both may be bald and toothless)",
+            "latency_s": 6.395,
+            "prompt_tokens": 156,
+            "completion_tokens": 159,
+            "cost_usd": 0.002853
+        },
+        {
+            "question": "There should be a fairy like the Tooth Fairy that gives you cash when you lose what?",
+            "response": "Weight",
+            "latency_s": 9.1257,
+            "prompt_tokens": 153,
+            "completion_tokens": 272,
+            "cost_usd": 0.004539
+        },
+        {
+            "question": "What's something you might regret texting your ex?",
+            "response": "I miss you",
+            "latency_s": 6.9519,
+            "prompt_tokens": 144,
+            "completion_tokens": 130,
+            "cost_usd": 0.002382
+        },
+        {
+            "question": "Name something a frog might have trouble adjusting to after he turns into a prince.",
+            "response": "Wearing clothes",
+            "latency_s": 9.0238,
+            "prompt_tokens": 151,
+            "completion_tokens": 195,
+            "cost_usd": 0.003378
+        },
+        {
+            "question": "To be the best Elvis impersonator in Vegas, you have to have what?",
+            "response": "The voice",
+            "latency_s": 13.8831,
+            "prompt_tokens": 151,
+            "completion_tokens": 318,
+            "cost_usd": 0.005223
+        },
+        {
+            "question": "We asked 100 men... What do other men do in a sexier way than you do?",
+            "response": "Dance",
+            "latency_s": 8.8912,
+            "prompt_tokens": 155,
+            "completion_tokens": 164,
+            "cost_usd": 0.002925
+        },
+        {
+            "question": "Bob returned his dentures because they kept popping out when he did what?",
+            "response": "Eating",
+            "latency_s": 7.5993,
+            "prompt_tokens": 149,
+            "completion_tokens": 183,
+            "cost_usd": 0.003192
+        },
+        {
+            "question": "Name something that Steve Harvey and Cedric the Entertainer have in common.",
+            "response": "They're both comedians",
+            "latency_s": 6.4396,
+            "prompt_tokens": 151,
+            "completion_tokens": 136,
+            "cost_usd": 0.002493
+        },
+        {
+            "question": "We asked 100 women... Name something that you just don't understand why men like it so much.",
+            "response": "Sports",
+            "latency_s": 8.1459,
+            "prompt_tokens": 155,
+            "completion_tokens": 162,
+            "cost_usd": 0.002895
+        },
+        {
+            "question": "Why wouldn't you recommend your friend for a position at your job?",
+            "response": "Lazy",
+            "latency_s": 13.0364,
+            "prompt_tokens": 148,
+            "completion_tokens": 309,
+            "cost_usd": 0.005079
+        },
+        {
+            "question": "Name something you'd do if you got in your boss's car and it smelled bad.",
+            "response": "Roll down the window",
+            "latency_s": 6.4196,
+            "prompt_tokens": 152,
+            "completion_tokens": 157,
+            "cost_usd": 0.002811
+        },
+        {
+            "question": "We asked 100 men... Name a work uniform you might wear in the bedroom.",
+            "response": "Maid",
+            "latency_s": 11.4411,
+            "prompt_tokens": 152,
+            "completion_tokens": 307,
+            "cost_usd": 0.005061
+        },
+        {
+            "question": "Name something at a nightclub that would make a person over 40 say \"I'm too old for this.\"",
+            "response": "Loud music",
+            "latency_s": 6.4002,
+            "prompt_tokens": 156,
+            "completion_tokens": 128,
+            "cost_usd": 0.002388
+        },
+        {
+            "question": "Name something wife #2 does when she hears that wife #1 is stopping by.",
+            "response": "Hide",
+            "latency_s": 8.8064,
+            "prompt_tokens": 152,
+            "completion_tokens": 257,
+            "cost_usd": 0.004311
+        },
+        {
+            "question": "No matter how bad the breakup, name a gift from an ex that you'd never give back.",
+            "response": "Jewelry",
+            "latency_s": 8.9052,
+            "prompt_tokens": 155,
+            "completion_tokens": 164,
+            "cost_usd": 0.002925
+        },
+        {
+            "question": "Bad news: Your phone was hacked. Worse news: They sent your naughty selfies to who?",
+            "response": "Your grandma",
+            "latency_s": 9.0415,
+            "prompt_tokens": 156,
+            "completion_tokens": 244,
+            "cost_usd": 0.004128
+        },
+        {
+            "question": "If your dogs could trash-talk your house, what would they say?",
+            "response": "I've buried better",
+            "latency_s": 12.9326,
+            "prompt_tokens": 149,
+            "completion_tokens": 285,
+            "cost_usd": 0.004722
+        },
+        {
+            "question": "Fill in the blank: A woman might tell her ex-husband, \"The next time I see you, I hope you're in ______.\"",
+            "response": "a coffin",
+            "latency_s": 9.6737,
+            "prompt_tokens": 163,
+            "completion_tokens": 261,
+            "cost_usd": 0.004404
+        },
+        {
+            "question": "Give me a reason your date might remind you of Elmo.",
+            "response": "High-pitched giggle",
+            "latency_s": 9.9981,
+            "prompt_tokens": 148,
+            "completion_tokens": 200,
+            "cost_usd": 0.003444
+        },
+        {
+            "question": "Name something you might accidentally leave on the nightstand of a one-night stand.",
+            "response": "Phone",
+            "latency_s": 6.7843,
+            "prompt_tokens": 151,
+            "completion_tokens": 200,
+            "cost_usd": 0.003453
+        },
+        {
+            "question": "Name something that's rude to do while watching the vows at a wedding.",
+            "response": "Talking",
+            "latency_s": 4.116,
+            "prompt_tokens": 149,
+            "completion_tokens": 94,
+            "cost_usd": 0.001857
+        },
+        {
+            "question": "Name a good gift for someone who needs help relaxing.",
+            "response": "Scented candle",
+            "latency_s": 3.8954,
+            "prompt_tokens": 146,
+            "completion_tokens": 89,
+            "cost_usd": 0.001773
+        },
+        {
+            "question": "You're not a good therapist if you do what to your patients?",
+            "response": "Judge them",
+            "latency_s": 14.9007,
+            "prompt_tokens": 148,
+            "completion_tokens": 425,
+            "cost_usd": 0.006819
+        },
+        {
+            "question": "Your date might tell you to do what right before kissing?",
+            "response": "Close your eyes",
+            "latency_s": 8.3135,
+            "prompt_tokens": 148,
+            "completion_tokens": 125,
+            "cost_usd": 0.002319
+        },
+        {
+            "question": "Taylor Swift and Beyonc\u00e9 might argue over who has more what?",
+            "response": "Grammys",
+            "latency_s": 8.6026,
+            "prompt_tokens": 149,
+            "completion_tokens": 186,
+            "cost_usd": 0.003237
+        },
+        {
+            "question": "What's a lie that a woman might tell her mom about her new boyfriend?",
+            "response": "How they met",
+            "latency_s": 7.1692,
+            "prompt_tokens": 150,
+            "completion_tokens": 201,
+            "cost_usd": 0.003465
+        },
+        {
+            "question": "Name a reason you might suspect your date is a prisoner.",
+            "response": "They're wearing handcuffs",
+            "latency_s": 7.6955,
+            "prompt_tokens": 147,
+            "completion_tokens": 208,
+            "cost_usd": 0.003561
+        },
+        {
+            "question": "If you ever go see a shrink, it will definitely be because of your who?",
+            "response": "mother",
+            "latency_s": 9.1195,
+            "prompt_tokens": 152,
+            "completion_tokens": 202,
+            "cost_usd": 0.003486
+        },
+        {
+            "question": "Name a place you wouldn't want to end up sitting next to someone with an annoying laugh.",
+            "response": "Airplane",
+            "latency_s": 6.5595,
+            "prompt_tokens": 153,
+            "completion_tokens": 178,
+            "cost_usd": 0.003129
+        },
+        {
+            "question": "A funeral is not the best place to tell your mate what?",
+            "response": "A joke",
+            "latency_s": 9.2117,
+            "prompt_tokens": 148,
+            "completion_tokens": 231,
+            "cost_usd": 0.003909
+        },
+        {
+            "question": "Name something you'd do if you saw a joint in your Uber driver's car.",
+            "response": "Get out of the car",
+            "latency_s": 8.0954,
+            "prompt_tokens": 150,
+            "completion_tokens": 197,
+            "cost_usd": 0.003405
+        },
+        {
+            "question": "Name someone you've cussed out when you know they can't hear you.",
+            "response": "My boss",
+            "latency_s": 12.2429,
+            "prompt_tokens": 150,
+            "completion_tokens": 248,
+            "cost_usd": 0.00417
+        },
+        {
+            "question": "Name an animal that's easy to imitate during charades.",
+            "response": "Monkey",
+            "latency_s": 5.9218,
+            "prompt_tokens": 146,
+            "completion_tokens": 102,
+            "cost_usd": 0.001968
+        },
+        {
+            "question": "Name something a kid might be tempted to put on his teacher's chair.",
+            "response": "Whoopee cushion",
+            "latency_s": 5.9735,
+            "prompt_tokens": 150,
+            "completion_tokens": 108,
+            "cost_usd": 0.00207
+        },
+        {
+            "question": "After a bad breakup, name something a woman might leave in her ex's house for him to remember her by.",
+            "response": "A photo",
+            "latency_s": 12.439,
+            "prompt_tokens": 159,
+            "completion_tokens": 341,
+            "cost_usd": 0.005592
+        },
+        {
+            "question": "Name something a movie director might say on a set that they might also say to their mate in bed.",
+            "response": "Action!",
+            "latency_s": 11.5912,
+            "prompt_tokens": 156,
+            "completion_tokens": 249,
+            "cost_usd": 0.004203
+        },
+        {
+            "question": "Fill in the blank: Soul ______.",
+            "response": "mate",
+            "latency_s": 7.3711,
+            "prompt_tokens": 143,
+            "completion_tokens": 120,
+            "cost_usd": 0.002229
+        },
+        {
+            "question": "We asked 100 women... What pizza topping would make a good pet name for your man?",
+            "response": "Pepperoni",
+            "latency_s": 8.1355,
+            "prompt_tokens": 154,
+            "completion_tokens": 197,
+            "cost_usd": 0.003417
+        },
+        {
+            "question": "We asked 100 women... Name something men lie about that you pretend to believe.",
+            "response": "Their height",
+            "latency_s": 7.8596,
+            "prompt_tokens": 152,
+            "completion_tokens": 182,
+            "cost_usd": 0.003186
+        },
+        {
+            "question": "Name a smell that might remind a woman of her ex.",
+            "response": "Cologne",
+            "latency_s": 7.3206,
+            "prompt_tokens": 147,
+            "completion_tokens": 95,
+            "cost_usd": 0.001866
+        },
+        {
+            "question": "If they made cereal with prizes for adults, you'd love to find what at the bottom of the box?",
+            "response": "Money",
+            "latency_s": 6.1184,
+            "prompt_tokens": 156,
+            "completion_tokens": 116,
+            "cost_usd": 0.002208
+        },
+        {
+            "question": "What does the bathroom attendant do for you in the world's fanciest bathroom?",
+            "response": "Hands you a towel",
+            "latency_s": 13.3956,
+            "prompt_tokens": 150,
+            "completion_tokens": 346,
+            "cost_usd": 0.00564
+        },
+        {
+            "question": "Name an occupation where cutting something for people is part of the job.",
+            "response": "barber",
+            "latency_s": 2.2827,
+            "prompt_tokens": 149,
+            "completion_tokens": 64,
+            "cost_usd": 0.001407
+        },
+        {
+            "question": "Name something you associate with Canada.",
+            "response": "Maple syrup",
+            "latency_s": 4.9024,
+            "prompt_tokens": 142,
+            "completion_tokens": 105,
+            "cost_usd": 0.002001
+        },
+        {
+            "question": "Name a game at which you're ashamed to say you've cheated.",
+            "response": "Monopoly",
+            "latency_s": 11.4295,
+            "prompt_tokens": 148,
+            "completion_tokens": 247,
+            "cost_usd": 0.004149
+        },
+        {
+            "question": "Name something from a supermarket that's too big to steal by hiding it in your underwear.",
+            "response": "Watermelon",
+            "latency_s": 7.4619,
+            "prompt_tokens": 152,
+            "completion_tokens": 206,
+            "cost_usd": 0.003546
+        },
+        {
+            "question": "Name a food you love that comes out of a can.",
+            "response": "Soup",
+            "latency_s": 5.7206,
+            "prompt_tokens": 147,
+            "completion_tokens": 139,
+            "cost_usd": 0.002526
+        },
+        {
+            "question": "You woud be insulted if someone compared your skin to what type of fabric?",
+            "response": "Burlap",
+            "latency_s": 8.5889,
+            "prompt_tokens": 152,
+            "completion_tokens": 223,
+            "cost_usd": 0.003801
+        },
+        {
+            "question": "Name a scary movie character a lot of people dress up as for Halloween.",
+            "response": "Freddy Krueger",
+            "latency_s": 8.4029,
+            "prompt_tokens": 150,
+            "completion_tokens": 98,
+            "cost_usd": 0.00192
+        },
+        {
+            "question": "Name a place you've made love where you knew you might get in trouble but you did it anyway.",
+            "response": "Nowhere\u2014I'm an AI, so I don't have experiences like that. Try me with another question!",
+            "latency_s": 19.982,
+            "prompt_tokens": 155,
+            "completion_tokens": 483,
+            "cost_usd": 0.00771
+        },
+        {
+            "question": "Name a type of ball you could balance on that booty of yours.",
+            "response": "I don't have a body, so no booty to balance anything on \u2014 but if you just want a type of ball: beach ball.",
+            "latency_s": 12.4758,
+            "prompt_tokens": 150,
+            "completion_tokens": 349,
+            "cost_usd": 0.005685
+        },
+        {
+            "question": "Name a state someone might be named after.",
+            "response": "Georgia",
+            "latency_s": 5.2146,
+            "prompt_tokens": 144,
+            "completion_tokens": 119,
+            "cost_usd": 0.002217
+        },
+        {
+            "question": "Name a word or phrase that starts with \"snap.\"",
+            "response": "snapshot",
+            "latency_s": 3.6175,
+            "prompt_tokens": 146,
+            "completion_tokens": 91,
+            "cost_usd": 0.001803
+        },
+        {
+            "question": "Other than a whistle, name something you blow in public.",
+            "response": "Your nose",
+            "latency_s": 6.6017,
+            "prompt_tokens": 147,
+            "completion_tokens": 165,
+            "cost_usd": 0.002916
+        },
+        {
+            "question": "If a wife finds out on Monday that her husband is cheating, name something of his she'd sell on Tuesday.",
+            "response": "His golf clubs",
+            "latency_s": 10.889,
+            "prompt_tokens": 157,
+            "completion_tokens": 359,
+            "cost_usd": 0.005856
+        },
+        {
+            "question": "Name a sport that you're better at when you're drunk.",
+            "response": "Bowling",
+            "latency_s": 5.5958,
+            "prompt_tokens": 146,
+            "completion_tokens": 168,
+            "cost_usd": 0.002958
+        },
+        {
+            "question": "If you call a man an eagle, it's a compliment. If you call him what kind of bird, it's an insult?",
+            "response": "Turkey",
+            "latency_s": 5.2209,
+            "prompt_tokens": 160,
+            "completion_tokens": 154,
+            "cost_usd": 0.00279
+        },
+        {
+            "question": "Name an ice cream topping that's an even sweeter pet name for your boo.",
+            "response": "honey",
+            "latency_s": 5.3431,
+            "prompt_tokens": 150,
+            "completion_tokens": 133,
+            "cost_usd": 0.002445
+        },
+        {
+            "question": "Name a place that isn't as much fun if you go there alone.",
+            "response": "Amusement park",
+            "latency_s": 4.5206,
+            "prompt_tokens": 149,
+            "completion_tokens": 104,
+            "cost_usd": 0.002007
+        },
+        {
+            "question": "We asked 100 men... What celebrity would make the best gym partner?",
+            "response": "Dwayne \"The Rock\" Johnson",
+            "latency_s": 6.307,
+            "prompt_tokens": 150,
+            "completion_tokens": 141,
+            "cost_usd": 0.002565
+        },
+        {
+            "question": "Name a reason you might wear a shirt with a person's face on it.",
+            "response": "You're a fan of that person (like a favorite musician or celebrity)",
+            "latency_s": 4.3753,
+            "prompt_tokens": 150,
+            "completion_tokens": 92,
+            "cost_usd": 0.00183
+        },
+        {
+            "question": "Name a pop star a dancer dreams of working with.",
+            "response": "Beyonc\u00e9",
+            "latency_s": 4.5185,
+            "prompt_tokens": 146,
+            "completion_tokens": 107,
+            "cost_usd": 0.002043
+        },
+        {
+            "question": "Name a reason a Sunday school teacher asks you to never bring your kid back.",
+            "response": "Bad behavior",
+            "latency_s": 8.1241,
+            "prompt_tokens": 151,
+            "completion_tokens": 185,
+            "cost_usd": 0.003228
+        },
+        {
+            "question": "Name a female rapper who is the perfect combination of brains and booty.",
+            "response": "I'd rather not rate women by their bodies, even in a quick-answer format. But if you want female rappers known for being sharp and talented: Rapsody, Little Simz, or Megan Thee Stallion (who earned a health administration degree while building her career).",
+            "latency_s": 13.8495,
+            "prompt_tokens": 150,
+            "completion_tokens": 403,
+            "cost_usd": 0.006495
+        },
+        {
+            "question": "You've never seen it, but you're sure what exists?",
+            "response": "tomorrow",
+            "latency_s": 8.8954,
+            "prompt_tokens": 146,
+            "completion_tokens": 251,
+            "cost_usd": 0.004203
+        },
+        {
+            "question": "Name something grandpa might leave you in his will that makes you think he didn't really love you all that much.",
+            "response": "His debts",
+            "latency_s": 8.0649,
+            "prompt_tokens": 158,
+            "completion_tokens": 208,
+            "cost_usd": 0.003594
+        },
+        {
+            "question": "Name a word you might use to describe a cup of coffee and your boss.",
+            "response": "Strong",
+            "latency_s": 10.4897,
+            "prompt_tokens": 151,
+            "completion_tokens": 256,
+            "cost_usd": 0.004293
+        },
+        {
+            "question": "If you can't sing, name an artist you should avoid choosing at karaoke.",
+            "response": "Whitney Houston",
+            "latency_s": 6.8043,
+            "prompt_tokens": 150,
+            "completion_tokens": 152,
+            "cost_usd": 0.00273
+        },
+        {
+            "question": "When little kids are playacting, they pretend to be what?",
+            "response": "Superheroes",
+            "latency_s": 7.0605,
+            "prompt_tokens": 148,
+            "completion_tokens": 170,
+            "cost_usd": 0.002994
+        },
+        {
+            "question": "Name something you had as a teenager that the one you have now is much better.",
+            "response": "Car",
+            "latency_s": 6.8636,
+            "prompt_tokens": 152,
+            "completion_tokens": 176,
+            "cost_usd": 0.003096
+        },
+        {
+            "question": "Name a cocktail you'd be surprised to see a pro wrestler drinking.",
+            "response": "Cosmopolitan",
+            "latency_s": 8.2915,
+            "prompt_tokens": 149,
+            "completion_tokens": 164,
+            "cost_usd": 0.002907
+        },
+        {
+            "question": "If your shower could talk, it might say to you, \"You're really\" what?",
+            "response": "dirty",
+            "latency_s": 4.8449,
+            "prompt_tokens": 153,
+            "completion_tokens": 120,
+            "cost_usd": 0.002259
+        },
+        {
+            "question": "We asked 100 women... Name a sexy Halloween costume you'd wear to make an ex jealous.",
+            "response": "Nurse",
+            "latency_s": 8.6594,
+            "prompt_tokens": 155,
+            "completion_tokens": 255,
+            "cost_usd": 0.00429
+        },
+        {
+            "question": "Name something annoying a man does that a woman is willing to put up with if he's sexy.",
+            "response": "Leaving the toilet seat up",
+            "latency_s": 9.2421,
+            "prompt_tokens": 155,
+            "completion_tokens": 286,
+            "cost_usd": 0.004755
+        },
+        {
+            "question": "Some dogs can't taste any difference between shoes from Payless and shoes from which fancy store?",
+            "response": "Jimmy Choo",
+            "latency_s": 9.3977,
+            "prompt_tokens": 153,
+            "completion_tokens": 270,
+            "cost_usd": 0.004509
+        },
+        {
+            "question": "Fill in the blank: I'm in ______.",
+            "response": "love",
+            "latency_s": 4.5161,
+            "prompt_tokens": 144,
+            "completion_tokens": 113,
+            "cost_usd": 0.002127
+        },
+        {
+            "question": "Name an occupation of a man who could take a woman to new heights.",
+            "response": "pilot",
+            "latency_s": 11.3487,
+            "prompt_tokens": 150,
+            "completion_tokens": 259,
+            "cost_usd": 0.004335
+        },
+        {
+            "question": "We asked 100 women... Fill in the blank: If a date asked you to drive him to ______, you'd run away.",
+            "response": "His mother's house",
+            "latency_s": 10.1398,
+            "prompt_tokens": 161,
+            "completion_tokens": 316,
+            "cost_usd": 0.005223
+        },
+        {
+            "question": "Name something specific that you haven't done since high school P.E. class.",
+            "response": "Climbed a rope",
+            "latency_s": 5.717,
+            "prompt_tokens": 150,
+            "completion_tokens": 137,
+            "cost_usd": 0.002505
+        },
+        {
+            "question": "Instead of five servings of fruits and vegetables a day, you'd rather have five servings of what?",
+            "response": "Pizza",
+            "latency_s": 4.4152,
+            "prompt_tokens": 154,
+            "completion_tokens": 101,
+            "cost_usd": 0.001977
+        },
+        {
+            "question": "If I asked you to think of your favorite thing in the world, what just popped into your head?",
+            "response": "A really good conversation",
+            "latency_s": 10.0765,
+            "prompt_tokens": 156,
+            "completion_tokens": 241,
+            "cost_usd": 0.004083
+        },
+        {
+            "question": "Give me a word starting with I that describes your husband.",
+            "response": "I don't have a husband\u2014I'm an AI, so I don't have relationships or a spouse.",
+            "latency_s": 12.2661,
+            "prompt_tokens": 147,
+            "completion_tokens": 228,
+            "cost_usd": 0.003861
+        },
+        {
+            "question": "Name a living celebrity you'd love to share a joint with.",
+            "response": "Snoop Dogg",
+            "latency_s": 7.0361,
+            "prompt_tokens": 147,
+            "completion_tokens": 183,
+            "cost_usd": 0.003186
+        },
+        {
+            "question": "Name something you pretend to like because everyone else does.",
+            "response": "Sushi",
+            "latency_s": 8.5163,
+            "prompt_tokens": 146,
+            "completion_tokens": 178,
+            "cost_usd": 0.003108
+        },
+        {
+            "question": "Name an occupation in which someone with a baby face might have a hard time.",
+            "response": "Bouncer",
+            "latency_s": 7.6657,
+            "prompt_tokens": 151,
+            "completion_tokens": 172,
+            "cost_usd": 0.003033
+        },
+        {
+            "question": "Name something they sell at the gift shop in hell.",
+            "response": "Sunscreen",
+            "latency_s": 10.6907,
+            "prompt_tokens": 146,
+            "completion_tokens": 290,
+            "cost_usd": 0.004788
+        },
+        {
+            "question": "Name something you like that's big and round.",
+            "response": "Pizza",
+            "latency_s": 9.1226,
+            "prompt_tokens": 144,
+            "completion_tokens": 153,
+            "cost_usd": 0.002727
+        },
+        {
+            "question": "Name a country you would love your company to transfer you to for a year.",
+            "response": "Japan",
+            "latency_s": 3.9559,
+            "prompt_tokens": 151,
+            "completion_tokens": 98,
+            "cost_usd": 0.001923
+        },
+        {
+            "question": "Fill in the blank: ______ horse.",
+            "response": "Dark",
+            "latency_s": 8.577,
+            "prompt_tokens": 143,
+            "completion_tokens": 154,
+            "cost_usd": 0.002739
+        },
+        {
+            "question": "Name someone you probably shouldn't ask to give you a back rub.",
+            "response": "Stranger",
+            "latency_s": 4.5091,
+            "prompt_tokens": 148,
+            "completion_tokens": 133,
+            "cost_usd": 0.002439
+        },
+        {
+            "question": "Name a school subject parents pray their teenager doesn't need help with.",
+            "response": "Math",
+            "latency_s": 6.9392,
+            "prompt_tokens": 148,
+            "completion_tokens": 138,
+            "cost_usd": 0.002514
+        },
+        {
+            "question": "We asked 100 married women... Name something Mickey Mouse has that would be weird if your husband had it too.",
+            "response": "Big round ears",
+            "latency_s": 12.1062,
+            "prompt_tokens": 158,
+            "completion_tokens": 378,
+            "cost_usd": 0.006144
+        },
+        {
+            "question": "We asked 100 women... Name something you do to a bald man's head to get him in the mood.",
+            "response": "Rub it",
+            "latency_s": 7.2208,
+            "prompt_tokens": 157,
+            "completion_tokens": 185,
+            "cost_usd": 0.003246
+        },
+        {
+            "question": "Name something that gets harvested.",
+            "response": "Corn",
+            "latency_s": 2.8773,
+            "prompt_tokens": 141,
+            "completion_tokens": 77,
+            "cost_usd": 0.001578
+        },
+        {
+            "question": "You'd be annoyed to find out that the flowers your date gave you came from where?",
+            "response": "A graveyard",
+            "latency_s": 8.8021,
+            "prompt_tokens": 153,
+            "completion_tokens": 193,
+            "cost_usd": 0.003354
+        },
+        {
+            "question": "It would be weird to make out on a quilt with a photo of your deceased who printed on it?",
+            "response": "Grandmother",
+            "latency_s": 8.3248,
+            "prompt_tokens": 156,
+            "completion_tokens": 241,
+            "cost_usd": 0.004083
+        },
+        {
+            "question": "We asked 100 women... What Vegas casino game best describes your man in bed?",
+            "response": "Poker",
+            "latency_s": 14.0662,
+            "prompt_tokens": 152,
+            "completion_tokens": 352,
+            "cost_usd": 0.005736
+        },
+        {
+            "question": "If a man is extremely cheap, name a place he may suggest for a first date.",
+            "response": "McDonald's",
+            "latency_s": 4.0043,
+            "prompt_tokens": 153,
+            "completion_tokens": 130,
+            "cost_usd": 0.002409
+        },
+        {
+            "question": "Name something you do to imitate a rooster.",
+            "response": "Crow",
+            "latency_s": 3.5068,
+            "prompt_tokens": 145,
+            "completion_tokens": 66,
+            "cost_usd": 0.001425
+        },
+        {
+            "question": "If a woman mentions her clown phase, what specifically about her appearance might she be referring to?",
+            "response": "Her makeup",
+            "latency_s": 5.476,
+            "prompt_tokens": 154,
+            "completion_tokens": 149,
+            "cost_usd": 0.002697
+        },
+        {
+            "question": "Name an award an actor can win.",
+            "response": "Oscar",
+            "latency_s": 5.5156,
+            "prompt_tokens": 143,
+            "completion_tokens": 68,
+            "cost_usd": 0.001449
+        },
+        {
+            "question": "We asked 100 women... If you saw your friend's groom kiss the wedding planner before the ceremony, what would you do?",
+            "response": "Tell the bride",
+            "latency_s": 7.2411,
+            "prompt_tokens": 160,
+            "completion_tokens": 181,
+            "cost_usd": 0.003195
+        },
+        {
+            "question": "Name something a dog does when it hears thunder that you'd be surprised a person would do.",
+            "response": "Hide under the bed",
+            "latency_s": 10.729,
+            "prompt_tokens": 153,
+            "completion_tokens": 299,
+            "cost_usd": 0.004944
+        },
+        {
+            "question": "Name something a super-polite mugger does after mugging you.",
+            "response": "Says \"thank you",
+            "latency_s": 9.271,
+            "prompt_tokens": 149,
+            "completion_tokens": 228,
+            "cost_usd": 0.003867
+        },
+        {
+            "question": "We asked 100 married men... Admit it: Just once, you'd like to try on your wife's what?",
+            "response": "Clothes",
+            "latency_s": 7.2574,
+            "prompt_tokens": 158,
+            "completion_tokens": 201,
+            "cost_usd": 0.003489
+        },
+        {
+            "question": "Fill in the blank: ______ whiz.",
+            "response": "Gee",
+            "latency_s": 3.7747,
+            "prompt_tokens": 144,
+            "completion_tokens": 120,
+            "cost_usd": 0.002232
+        },
+        {
+            "question": "What kind of music would be hard to fall asleep to?",
+            "response": "Heavy metal",
+            "latency_s": 4.3236,
+            "prompt_tokens": 147,
+            "completion_tokens": 112,
+            "cost_usd": 0.002121
+        },
+        {
+            "question": "Name a word other than \"dude\" that men call their male friends.",
+            "response": "Bro",
+            "latency_s": 3.4471,
+            "prompt_tokens": 151,
+            "completion_tokens": 70,
+            "cost_usd": 0.001503
+        },
+        {
+            "question": "We asked 100 married men... You'd be willing to renew your vows if you could skip which one this time?",
+            "response": "For better or worse",
+            "latency_s": 14.1205,
+            "prompt_tokens": 159,
+            "completion_tokens": 466,
+            "cost_usd": 0.007467
+        },
+        {
+            "question": "Fill in the blank: Steve Harvey makes me laugh so hard, I ______.",
+            "response": "cry",
+            "latency_s": 5.3553,
+            "prompt_tokens": 151,
+            "completion_tokens": 183,
+            "cost_usd": 0.003198
+        },
+        {
+            "question": "Name something you see when you look in the mirror and realize for the first time you're getting old.",
+            "response": "Gray hair",
+            "latency_s": 4.6672,
+            "prompt_tokens": 155,
+            "completion_tokens": 129,
+            "cost_usd": 0.0024
+        },
+        {
+            "question": "Name something you'd get kicked out of a mattress store for doing on one of their beds.",
+            "response": "Sleeping",
+            "latency_s": 7.6269,
+            "prompt_tokens": 153,
+            "completion_tokens": 196,
+            "cost_usd": 0.003399
+        },
+        {
+            "question": "We asked 100 women... Name something your man would look sexy riding.",
+            "response": "Motorcycle",
+            "latency_s": 5.7261,
+            "prompt_tokens": 151,
+            "completion_tokens": 136,
+            "cost_usd": 0.002493
+        },
+        {
+            "question": "Name a reason you might suspect you're turning into an elf.",
+            "response": "Your ears are getting pointy",
+            "latency_s": 6.9381,
+            "prompt_tokens": 147,
+            "completion_tokens": 145,
+            "cost_usd": 0.002616
+        },
+        {
+            "question": "What's the worst thing about a public steam room?",
+            "response": "Other people's sweat",
+            "latency_s": 5.2188,
+            "prompt_tokens": 145,
+            "completion_tokens": 141,
+            "cost_usd": 0.00255
+        },
+        {
+            "question": "Name something a quarterback hopes the center doesn't do when hiking the ball.",
+            "response": "Fumble it",
+            "latency_s": 4.3542,
+            "prompt_tokens": 149,
+            "completion_tokens": 120,
+            "cost_usd": 0.002247
+        },
+        {
+            "question": "If there were a casino just for kids, what card game would they have instead of poker?",
+            "response": "Go Fish",
+            "latency_s": 10.815,
+            "prompt_tokens": 154,
+            "completion_tokens": 156,
+            "cost_usd": 0.002802
+        },
+        {
+            "question": "We asked 100 men... It's your first day in prison. Tell me how you're going to make friends with your cellmate.",
+            "response": "Share my commissary snacks",
+            "latency_s": 10.096,
+            "prompt_tokens": 161,
+            "completion_tokens": 180,
+            "cost_usd": 0.003183
+        },
+        {
+            "question": "We asked 100 single women... Oh no -- your boyfriend just confessed to you that he's what?",
+            "response": "Married",
+            "latency_s": 12.4713,
+            "prompt_tokens": 156,
+            "completion_tokens": 227,
+            "cost_usd": 0.003873
+        },
+        {
+            "question": "We asked 100 married women... You'd be furious if your husband did what while you did a sexy dance for him?",
+            "response": "Fell asleep",
+            "latency_s": 7.0113,
+            "prompt_tokens": 161,
+            "completion_tokens": 207,
+            "cost_usd": 0.003588
+        },
+        {
+            "question": "We asked 100 single women... Name something you do on a first date that your mom would not have done.",
+            "response": "Kiss",
+            "latency_s": 12.6994,
+            "prompt_tokens": 158,
+            "completion_tokens": 265,
+            "cost_usd": 0.004449
+        },
+        {
+            "question": "We asked 100 women... What might you prefer to do with your gay guy friend than with your boyfriend?",
+            "response": "Go shopping",
+            "latency_s": 6.6586,
+            "prompt_tokens": 157,
+            "completion_tokens": 167,
+            "cost_usd": 0.002976
+        },
+        {
+            "question": "Name a \"Sesame Street\" character who would be fun to hang out with at a wedding.",
+            "response": "Cookie Monster",
+            "latency_s": 6.316,
+            "prompt_tokens": 155,
+            "completion_tokens": 92,
+            "cost_usd": 0.001845
+        },
+        {
+            "question": "Name something that would make you pucker.",
+            "response": "lemon",
+            "latency_s": 3.2773,
+            "prompt_tokens": 144,
+            "completion_tokens": 80,
+            "cost_usd": 0.001632
+        },
+        {
+            "question": "Name something coworkers do in the office kitchen that drives everyone crazy.",
+            "response": "Leaving dirty dishes in the sink",
+            "latency_s": 5.982,
+            "prompt_tokens": 148,
+            "completion_tokens": 121,
+            "cost_usd": 0.002259
+        },
+        {
+            "question": "Name a famous Jennifer.",
+            "response": "Jennifer Lawrence",
+            "latency_s": 2.433,
+            "prompt_tokens": 140,
+            "completion_tokens": 45,
+            "cost_usd": 0.001095
+        },
+        {
+            "question": "Name a reason you are wearing gloves.",
+            "response": "Cold weather",
+            "latency_s": 4.1,
+            "prompt_tokens": 143,
+            "completion_tokens": 125,
+            "cost_usd": 0.002304
+        },
+        {
+            "question": "Fill in the blank: You call someone who won't stop talking a ______ mouth.",
+            "response": "motor",
+            "latency_s": 2.9992,
+            "prompt_tokens": 151,
+            "completion_tokens": 71,
+            "cost_usd": 0.001518
+        },
+        {
+            "question": "Name something that goes \"flip-flop.\"",
+            "response": "Sandals",
+            "latency_s": 4.1909,
+            "prompt_tokens": 144,
+            "completion_tokens": 99,
+            "cost_usd": 0.001917
+        },
+        {
+            "question": "What do you think is America's most popular NBA basketball team?",
+            "response": "Los Angeles Lakers",
+            "latency_s": 6.4205,
+            "prompt_tokens": 147,
+            "completion_tokens": 178,
+            "cost_usd": 0.003111
+        },
+        {
+            "question": "Name a kind of professional you might not want anyone to know you paid to see.",
+            "response": "Psychiatrist",
+            "latency_s": 8.7553,
+            "prompt_tokens": 152,
+            "completion_tokens": 180,
+            "cost_usd": 0.003156
+        },
+        {
+            "question": "Name something the ghost of a cat might do to let their owner know they're still around.",
+            "response": "Knock things off shelves",
+            "latency_s": 3.444,
+            "prompt_tokens": 153,
+            "completion_tokens": 79,
+            "cost_usd": 0.001644
+        },
+        {
+            "question": "We asked 100 women... You hope your friends tell you if your what is lopsided?",
+            "response": "Hair",
+            "latency_s": 9.1903,
+            "prompt_tokens": 155,
+            "completion_tokens": 238,
+            "cost_usd": 0.004035
+        },
+        {
+            "question": "Name a hand gesture everyone understands no matter what language you speak.",
+            "response": "Thumbs up",
+            "latency_s": 5.8653,
+            "prompt_tokens": 148,
+            "completion_tokens": 146,
+            "cost_usd": 0.002634
+        },
+        {
+            "question": "Name a word that starts with \"cow.\"",
+            "response": "cowboy",
+            "latency_s": 3.1501,
+            "prompt_tokens": 144,
+            "completion_tokens": 47,
+            "cost_usd": 0.001137
+        },
+        {
+            "question": "What might a guy give his girlfriend that she'd say \"My ex gave me a better one\"?",
+            "response": "A ring",
+            "latency_s": 7.2727,
+            "prompt_tokens": 154,
+            "completion_tokens": 171,
+            "cost_usd": 0.003027
+        },
+        {
+            "question": "Name something of which you wish you could get a new one every three years.",
+            "response": "Car",
+            "latency_s": 6.1962,
+            "prompt_tokens": 151,
+            "completion_tokens": 148,
+            "cost_usd": 0.002673
+        },
+        {
+            "question": "Name a costume that if you wore it, might make people come and ask you for help.",
+            "response": "Police officer",
+            "latency_s": 6.797,
+            "prompt_tokens": 154,
+            "completion_tokens": 158,
+            "cost_usd": 0.002832
+        },
+        {
+            "question": "Name a Britney Spears song that describes you in the bedroom.",
+            "response": "Actually, since I'm an AI, something like \"E-Mail My Heart\" is clever because",
+            "latency_s": 18.5541,
+            "prompt_tokens": 149,
+            "completion_tokens": 512,
+            "cost_usd": 0.008127
+        },
+        {
+            "question": "Name something that swings.",
+            "response": "pendulum",
+            "latency_s": 7.8819,
+            "prompt_tokens": 140,
+            "completion_tokens": 169,
+            "cost_usd": 0.002955
+        },
+        {
+            "question": "Name something specific you yell at the screen when watching a horror movie.",
+            "response": "Don't go in there!",
+            "latency_s": 5.3236,
+            "prompt_tokens": 149,
+            "completion_tokens": 80,
+            "cost_usd": 0.001647
+        },
+        {
+            "question": "We asked 100 men... If you lost your pocket square, what could you stuff in your suit pocket as a substitute?",
+            "response": "Tissue",
+            "latency_s": 8.9317,
+            "prompt_tokens": 160,
+            "completion_tokens": 204,
+            "cost_usd": 0.00354
+        },
+        {
+            "question": "You're at a serious function. You are overcome with the giggles. What do you do?",
+            "response": "Excuse yourself and leave the room",
+            "latency_s": 9.6475,
+            "prompt_tokens": 154,
+            "completion_tokens": 257,
+            "cost_usd": 0.004317
+        },
+        {
+            "question": "You'd panic if a bee flew into your what?",
+            "response": "car",
+            "latency_s": 5.94,
+            "prompt_tokens": 146,
+            "completion_tokens": 147,
+            "cost_usd": 0.002643
+        },
+        {
+            "question": "Name a type of bank a really dumb guy might try to rob.",
+            "response": "River bank",
+            "latency_s": 12.3656,
+            "prompt_tokens": 149,
+            "completion_tokens": 323,
+            "cost_usd": 0.005292
+        },
+        {
+            "question": "If two circus clowns got married, what might the wedding guests throw instead of rice?",
+            "response": "Confetti",
+            "latency_s": 4.4674,
+            "prompt_tokens": 153,
+            "completion_tokens": 104,
+            "cost_usd": 0.002019
+        },
+        {
+            "question": "Name a gift you'd give to someone you know nothing about.",
+            "response": "Candle",
+            "latency_s": 4.7303,
+            "prompt_tokens": 147,
+            "completion_tokens": 133,
+            "cost_usd": 0.002436
+        },
+        {
+            "question": "Susan said, \"My boyfriend's proposal wasn't very romantic. He had the ring in one hand and ______ in the other.\"",
+            "response": "a beer",
+            "latency_s": 8.1519,
+            "prompt_tokens": 160,
+            "completion_tokens": 181,
+            "cost_usd": 0.003195
+        },
+        {
+            "question": "Name a popular female country singer.",
+            "response": "Dolly Parton",
+            "latency_s": 3.2615,
+            "prompt_tokens": 142,
+            "completion_tokens": 70,
+            "cost_usd": 0.001476
+        },
+        {
+            "question": "Name something a magician might pretend to cut in half as part of his divorce settlement.",
+            "response": "His wife",
+            "latency_s": 5.7898,
+            "prompt_tokens": 152,
+            "completion_tokens": 118,
+            "cost_usd": 0.002226
+        },
+        {
+            "question": "Fill in the blank: A woman might call her man \"honey ______.\"",
+            "response": "bun",
+            "latency_s": 4.3333,
+            "prompt_tokens": 151,
+            "completion_tokens": 104,
+            "cost_usd": 0.002013
+        },
+        {
+            "question": "Name a reason you might give someone a side hug instead of a real hug.",
+            "response": "You don't know them very well",
+            "latency_s": 3.7507,
+            "prompt_tokens": 151,
+            "completion_tokens": 87,
+            "cost_usd": 0.001758
+        },
+        {
+            "question": "Name an occupation where you'd be surprised someone had a lot of tattoos and piercings.",
+            "response": "Doctor",
+            "latency_s": 5.3562,
+            "prompt_tokens": 153,
+            "completion_tokens": 140,
+            "cost_usd": 0.002559
+        },
+        {
+            "question": "Name an activity you've always been bad at.",
+            "response": "Dancing",
+            "latency_s": 8.6116,
+            "prompt_tokens": 144,
+            "completion_tokens": 194,
+            "cost_usd": 0.003342
+        },
+        {
+            "question": "Name an animal a man with a huge nose might be compared to.",
+            "response": "Elephant",
+            "latency_s": 2.932,
+            "prompt_tokens": 149,
+            "completion_tokens": 89,
+            "cost_usd": 0.001782
+        },
+        {
+            "question": "Tell me something women probably find attractive about Prince Harry.",
+            "response": "His smile",
+            "latency_s": 4.1844,
+            "prompt_tokens": 146,
+            "completion_tokens": 106,
+            "cost_usd": 0.002028
+        },
+        {
+            "question": "Fill in the blank: Grandma said, \"Grandpa is so cheap, we've still got the same ______ we had when we got married.\"",
+            "response": "mattress",
+            "latency_s": 5.3208,
+            "prompt_tokens": 163,
+            "completion_tokens": 143,
+            "cost_usd": 0.002634
+        },
+        {
+            "question": "Flll in the blank: Daddy ______.",
+            "response": "longlegs",
+            "latency_s": 6.7378,
+            "prompt_tokens": 145,
+            "completion_tokens": 175,
+            "cost_usd": 0.00306
+        },
+        {
+            "question": "Name a car brand that a car-loving dad might name his kid.",
+            "response": "Mercedes",
+            "latency_s": 7.1879,
+            "prompt_tokens": 149,
+            "completion_tokens": 123,
+            "cost_usd": 0.002292
+        },
+        {
+            "question": "Fill in the blank: ______ on it.",
+            "response": "Put a ring",
+            "latency_s": 17.2478,
+            "prompt_tokens": 144,
+            "completion_tokens": 452,
+            "cost_usd": 0.007212
+        },
+        {
+            "question": "Name something enjoyable that once it's over, you might want to do it again.",
+            "response": "Vacation",
+            "latency_s": 7.7605,
+            "prompt_tokens": 151,
+            "completion_tokens": 104,
+            "cost_usd": 0.002013
+        },
+        {
+            "question": "Name a fruit you would not want on your head if someone were going to shoot it off with an arrow.",
+            "response": "Grape",
+            "latency_s": 6.2838,
+            "prompt_tokens": 157,
+            "completion_tokens": 174,
+            "cost_usd": 0.003081
+        },
+        {
+            "question": "Fill in the blank: Pink ______.",
+            "response": "Panther",
+            "latency_s": 6.5298,
+            "prompt_tokens": 143,
+            "completion_tokens": 140,
+            "cost_usd": 0.002529
+        },
+        {
+            "question": "Name a type of character you see in every teen movie.",
+            "response": "The jock",
+            "latency_s": 3.9688,
+            "prompt_tokens": 147,
+            "completion_tokens": 108,
+            "cost_usd": 0.002061
+        },
+        {
+            "question": "Name something that people get removed from their bodies.",
+            "response": "Appendix",
+            "latency_s": 4.7046,
+            "prompt_tokens": 145,
+            "completion_tokens": 147,
+            "cost_usd": 0.00264
+        },
+        {
+            "question": "Tell me the U.S. state that has the most manly men.",
+            "response": "Texas",
+            "latency_s": 13.2815,
+            "prompt_tokens": 150,
+            "completion_tokens": 337,
+            "cost_usd": 0.005505
+        },
+        {
+            "question": "Name an S word that describes how you think of yourself.",
+            "response": "Sincere",
+            "latency_s": 7.7618,
+            "prompt_tokens": 147,
+            "completion_tokens": 197,
+            "cost_usd": 0.003396
+        },
+        {
+            "question": "Name an animal that people keep as pets but probably shouldn't.",
+            "response": "Tiger",
+            "latency_s": 7.0619,
+            "prompt_tokens": 147,
+            "completion_tokens": 166,
+            "cost_usd": 0.002931
+        },
+        {
+            "question": "Name something people say is never around when you need one.",
+            "response": "A cop",
+            "latency_s": 3.6333,
+            "prompt_tokens": 147,
+            "completion_tokens": 106,
+            "cost_usd": 0.002031
+        },
+        {
+            "question": "Name a bug that a wrestler might use as their stage name.",
+            "response": "Spider",
+            "latency_s": 7.3553,
+            "prompt_tokens": 149,
+            "completion_tokens": 157,
+            "cost_usd": 0.002802
+        },
+        {
+            "question": "You hate people rushing you when you're doing what?",
+            "response": "Eating",
+            "latency_s": 8.0152,
+            "prompt_tokens": 145,
+            "completion_tokens": 211,
+            "cost_usd": 0.0036
+        },
+        {
+            "question": "Fill in the blank: ______ truck.",
+            "response": "Fire",
+            "latency_s": 6.5107,
+            "prompt_tokens": 143,
+            "completion_tokens": 134,
+            "cost_usd": 0.002439
+        },
+        {
+            "question": "Name a phrase that starts with \"down the...\"",
+            "response": "down the drain",
+            "latency_s": 3.5596,
+            "prompt_tokens": 145,
+            "completion_tokens": 91,
+            "cost_usd": 0.0018
+        },
+        {
+            "question": "Name a movie that you think everyone in the U.S. has seen at least once.",
+            "response": "The Wizard of Oz",
+            "latency_s": 7.0056,
+            "prompt_tokens": 153,
+            "completion_tokens": 180,
+            "cost_usd": 0.003159
+        },
+        {
+            "question": "Name something that's better when it's thick.",
+            "response": "milkshake",
+            "latency_s": 4.2389,
+            "prompt_tokens": 143,
+            "completion_tokens": 110,
+            "cost_usd": 0.002079
+        },
+        {
+            "question": "Name an artist whose music is responsible for a lot of babies being made.",
+            "response": "Barry White",
+            "latency_s": 5.0774,
+            "prompt_tokens": 150,
+            "completion_tokens": 136,
+            "cost_usd": 0.00249
+        },
+        {
+            "question": "Name something you wouldn't do, even for a million bucks.",
+            "response": "Kill someone",
+            "latency_s": 9.3729,
+            "prompt_tokens": 147,
+            "completion_tokens": 242,
+            "cost_usd": 0.004071
+        },
+        {
+            "question": "Name a city that's close to being heaven on Earth for someone who likes to travel.",
+            "response": "Paris",
+            "latency_s": 4.9697,
+            "prompt_tokens": 152,
+            "completion_tokens": 158,
+            "cost_usd": 0.002826
+        },
+        {
+            "question": "Name a musical artist who gets you in the mood for love.",
+            "response": "Marvin Gaye",
+            "latency_s": 8.6508,
+            "prompt_tokens": 148,
+            "completion_tokens": 201,
+            "cost_usd": 0.003459
+        },
+        {
+            "question": "Name an NBA team in California.",
+            "response": "Lakers",
+            "latency_s": 2.9612,
+            "prompt_tokens": 142,
+            "completion_tokens": 46,
+            "cost_usd": 0.001116
+        },
+        {
+            "question": "Gross -- I just found what in my ear?",
+            "response": "earwax",
+            "latency_s": 5.9102,
+            "prompt_tokens": 146,
+            "completion_tokens": 165,
+            "cost_usd": 0.002913
+        },
+        {
+            "question": "Name something you might be referring to when you use the word \"joker.\"",
+            "response": "Playing card",
+            "latency_s": 3.8939,
+            "prompt_tokens": 151,
+            "completion_tokens": 116,
+            "cost_usd": 0.002193
+        },
+        {
+            "question": "Which key on your keychain sees the most action?",
+            "response": "monkey",
+            "latency_s": 6.0646,
+            "prompt_tokens": 146,
+            "completion_tokens": 111,
+            "cost_usd": 0.002103
+        },
+        {
+            "question": "Tell me a nut that starts with P.",
+            "response": "Pecan",
+            "latency_s": 5.8675,
+            "prompt_tokens": 144,
+            "completion_tokens": 96,
+            "cost_usd": 0.001872
+        },
+        {
+            "question": "If Santa drank too much spiked eggnog, who might be his designated sleigh driver?",
+            "response": "Rudolph",
+            "latency_s": 4.3453,
+            "prompt_tokens": 154,
+            "completion_tokens": 107,
+            "cost_usd": 0.002067
+        },
+        {
+            "question": "Name a reason a lifeguard might tell everyone, \"Get out of the ocean.\"",
+            "response": "shark sighting",
+            "latency_s": 2.5616,
+            "prompt_tokens": 152,
+            "completion_tokens": 46,
+            "cost_usd": 0.001146
+        },
+        {
+            "question": "Besides the headlines, name something you turn on the local news to see.",
+            "response": "Weather",
+            "latency_s": 4.1707,
+            "prompt_tokens": 150,
+            "completion_tokens": 105,
+            "cost_usd": 0.002025
+        },
+        {
+            "question": "We asked 100 women... Who might pull on your hair?",
+            "response": "Hairdresser",
+            "latency_s": 11.5405,
+            "prompt_tokens": 148,
+            "completion_tokens": 282,
+            "cost_usd": 0.004674
+        },
+        {
+            "question": "We asked 100 women... Name something ugly you put on at night so you look beautiful in the morning.",
+            "response": "Face mask",
+            "latency_s": 8.6278,
+            "prompt_tokens": 157,
+            "completion_tokens": 220,
+            "cost_usd": 0.003771
+        },
+        {
+            "question": "We asked 100 single women... If you love bad boys, you'll find plenty of them where?",
+            "response": "Prison",
+            "latency_s": 5.6317,
+            "prompt_tokens": 155,
+            "completion_tokens": 149,
+            "cost_usd": 0.0027
+        },
+        {
+            "question": "Name a place where it's okay to not wear shoes.",
+            "response": "beach",
+            "latency_s": 8.1692,
+            "prompt_tokens": 146,
+            "completion_tokens": 90,
+            "cost_usd": 0.001788
+        },
+        {
+            "question": "Name something you need to do the limbo.",
+            "response": "A limbo stick",
+            "latency_s": 5.8899,
+            "prompt_tokens": 145,
+            "completion_tokens": 172,
+            "cost_usd": 0.003015
+        },
+        {
+            "question": "Name a sport where you try to get something into a net.",
+            "response": "basketball",
+            "latency_s": 3.8991,
+            "prompt_tokens": 148,
+            "completion_tokens": 54,
+            "cost_usd": 0.001254
+        },
+        {
+            "question": "Name something that you hang up.",
+            "response": "coat",
+            "latency_s": 2.545,
+            "prompt_tokens": 142,
+            "completion_tokens": 70,
+            "cost_usd": 0.001476
+        },
+        {
+            "question": "Name something that might screw up outdoor wedding photos.",
+            "response": "Rain",
+            "latency_s": 3.2199,
+            "prompt_tokens": 145,
+            "completion_tokens": 81,
+            "cost_usd": 0.00165
+        },
+        {
+            "question": "Let's face it: You'd never go to a nude beach with anyone other than who?",
+            "response": "Your significant other",
+            "latency_s": 8.5017,
+            "prompt_tokens": 154,
+            "completion_tokens": 233,
+            "cost_usd": 0.003957
+        },
+        {
+            "question": "Name a pasta that's long and thin.",
+            "response": "spaghetti",
+            "latency_s": 2.0355,
+            "prompt_tokens": 143,
+            "completion_tokens": 38,
+            "cost_usd": 0.000999
+        },
+        {
+            "question": "We asked 100 women... Name a Disney Princess you'd ask to borrow a dress from for the ball.",
+            "response": "Cinderella",
+            "latency_s": 6.3777,
+            "prompt_tokens": 156,
+            "completion_tokens": 173,
+            "cost_usd": 0.003063
+        },
+        {
+            "question": "Name something siblings fight over in the morning.",
+            "response": "bathroom",
+            "latency_s": 6.1293,
+            "prompt_tokens": 144,
+            "completion_tokens": 83,
+            "cost_usd": 0.001677
+        },
+        {
+            "question": "Fill in the blank: You'll probably live longer if you give up ______.",
+            "response": "smoking",
+            "latency_s": 6.2313,
+            "prompt_tokens": 150,
+            "completion_tokens": 145,
+            "cost_usd": 0.002625
+        },
+        {
+            "question": "Name something kids always have a lame excuse for not doing.",
+            "response": "Homework",
+            "latency_s": 5.6735,
+            "prompt_tokens": 147,
+            "completion_tokens": 110,
+            "cost_usd": 0.002091
+        },
+        {
+            "question": "Name an occasion when people buy a gift for their pet.",
+            "response": "Birthday",
+            "latency_s": 3.8046,
+            "prompt_tokens": 147,
+            "completion_tokens": 56,
+            "cost_usd": 0.001281
+        },
+        {
+            "question": "Name the first phrase a baseball umpire's child might learn to say.",
+            "response": "You're out!",
+            "latency_s": 3.688,
+            "prompt_tokens": 150,
+            "completion_tokens": 89,
+            "cost_usd": 0.001785
+        },
+        {
+            "question": "Name something a parent hopes a store doesn't run out of right before Easter.",
+            "response": "Easter eggs",
+            "latency_s": 4.9526,
+            "prompt_tokens": 150,
+            "completion_tokens": 110,
+            "cost_usd": 0.0021
+        },
+        {
+            "question": "Name the loudest musical instrument in a marching band.",
+            "response": "Trumpet",
+            "latency_s": 6.3602,
+            "prompt_tokens": 146,
+            "completion_tokens": 120,
+            "cost_usd": 0.002238
+        },
+        {
+            "question": "Name a fruit you pick from a tree.",
+            "response": "apple",
+            "latency_s": 2.3982,
+            "prompt_tokens": 144,
+            "completion_tokens": 40,
+            "cost_usd": 0.001032
+        },
+        {
+            "question": "Name something specific you use to help improve your eyesight.",
+            "response": "Glasses",
+            "latency_s": 4.4291,
+            "prompt_tokens": 147,
+            "completion_tokens": 75,
+            "cost_usd": 0.001566
+        },
+        {
+            "question": "Tell me a bird that lays really big eggs.",
+            "response": "ostrich",
+            "latency_s": 2.2126,
+            "prompt_tokens": 145,
+            "completion_tokens": 42,
+            "cost_usd": 0.001065
+        },
+        {
+            "question": "Name a U.S. city with a lot of skyscrapers.",
+            "response": "New York City",
+            "latency_s": 3.4603,
+            "prompt_tokens": 149,
+            "completion_tokens": 49,
+            "cost_usd": 0.001182
+        },
+        {
+            "question": "Who is the greatest boxer of all time?",
+            "response": "Muhammad Ali",
+            "latency_s": 4.2744,
+            "prompt_tokens": 144,
+            "completion_tokens": 115,
+            "cost_usd": 0.002157
+        },
+        {
+            "question": "Name a food people eat on a stick.",
+            "response": "Corn dog",
+            "latency_s": 2.7336,
+            "prompt_tokens": 144,
+            "completion_tokens": 58,
+            "cost_usd": 0.001302
+        },
+        {
+            "question": "Name something people keep in their garage.",
+            "response": "Car",
+            "latency_s": 4.9247,
+            "prompt_tokens": 143,
+            "completion_tokens": 97,
+            "cost_usd": 0.001884
+        },
+        {
+            "question": "Name a sign that winter is coming.",
+            "response": "Falling leaves",
+            "latency_s": 5.6983,
+            "prompt_tokens": 143,
+            "completion_tokens": 137,
+            "cost_usd": 0.002484
+        },
+        {
+            "question": "Name something an older sibling does with their toy so they don't have to share.",
+            "response": "Hides it",
+            "latency_s": 4.2896,
+            "prompt_tokens": 151,
+            "completion_tokens": 116,
+            "cost_usd": 0.002193
+        },
+        {
+            "question": "We asked 100 married women... Name something your mother-in-law thinks she does better than you.",
+            "response": "Cooking",
+            "latency_s": 3.8706,
+            "prompt_tokens": 155,
+            "completion_tokens": 126,
+            "cost_usd": 0.002355
+        },
+        {
+            "question": "What do radio DJs give away?",
+            "response": "prizes",
+            "latency_s": 4.6974,
+            "prompt_tokens": 142,
+            "completion_tokens": 116,
+            "cost_usd": 0.002166
+        },
+        {
+            "question": "Name something that the crust on it might be the best part.",
+            "response": "pizza",
+            "latency_s": 4.0849,
+            "prompt_tokens": 148,
+            "completion_tokens": 117,
+            "cost_usd": 0.002199
+        },
+        {
+            "question": "Name something that goes on top of a cake.",
+            "response": "Candles",
+            "latency_s": 4.7901,
+            "prompt_tokens": 145,
+            "completion_tokens": 117,
+            "cost_usd": 0.00219
+        },
+        {
+            "question": "Name something a person who's obsessed with Christmas might do all year long.",
+            "response": "Listen to Christmas music",
+            "latency_s": 4.0287,
+            "prompt_tokens": 149,
+            "completion_tokens": 83,
+            "cost_usd": 0.001692
+        },
+        {
+            "question": "Name a city that's famous for its pizza.",
+            "response": "Naples",
+            "latency_s": 2.719,
+            "prompt_tokens": 144,
+            "completion_tokens": 55,
+            "cost_usd": 0.001257
+        },
+        {
+            "question": "Name something that you should never literally try to grab by the horns.",
+            "response": "bull",
+            "latency_s": 4.8541,
+            "prompt_tokens": 149,
+            "completion_tokens": 88,
+            "cost_usd": 0.001767
+        },
+        {
+            "question": "Name a tattoo that's popular with sailors.",
+            "response": "anchor",
+            "latency_s": 2.8262,
+            "prompt_tokens": 143,
+            "completion_tokens": 35,
+            "cost_usd": 0.000954
+        },
+        {
+            "question": "Name an occasion when people take a lot of photographs.",
+            "response": "Wedding",
+            "latency_s": 3.0588,
+            "prompt_tokens": 146,
+            "completion_tokens": 61,
+            "cost_usd": 0.001353
+        },
+        {
+            "question": "Name something a bridesmaid knocks over in a desperate attempt to catch the bouquet.",
+            "response": "Chair",
+            "latency_s": 8.4504,
+            "prompt_tokens": 152,
+            "completion_tokens": 212,
+            "cost_usd": 0.003636
+        },
+        {
+            "question": "We asked 100 single women... You'd be annoyed if a guy asked you to do what on a date?",
+            "response": "Pay for the meal",
+            "latency_s": 6.5661,
+            "prompt_tokens": 158,
+            "completion_tokens": 169,
+            "cost_usd": 0.003009
+        },
+        {
+            "question": "Fill in the blank: I wish I could use a straw to suck the fat right out of my what?",
+            "response": "thighs",
+            "latency_s": 11.7815,
+            "prompt_tokens": 157,
+            "completion_tokens": 368,
+            "cost_usd": 0.005991
+        },
+        {
+            "question": "We asked 100 men... Name a bad moment to confuse your girlfriend and your ex's names.",
+            "response": "During sex",
+            "latency_s": 9.0972,
+            "prompt_tokens": 155,
+            "completion_tokens": 247,
+            "cost_usd": 0.00417
+        },
+        {
+            "question": "Name the sport with the most overpaid players.",
+            "response": "Soccer",
+            "latency_s": 9.7168,
+            "prompt_tokens": 145,
+            "completion_tokens": 262,
+            "cost_usd": 0.004365
+        },
+        {
+            "question": "Name a place you might hang out just for the free Wi-Fi.",
+            "response": "coffee shop",
+            "latency_s": 4.8397,
+            "prompt_tokens": 149,
+            "completion_tokens": 111,
+            "cost_usd": 0.002112
+        },
+        {
+            "question": "Name something you hope isn't trying to get inside your house.",
+            "response": "Burglar",
+            "latency_s": 4.562,
+            "prompt_tokens": 147,
+            "completion_tokens": 103,
+            "cost_usd": 0.001986
+        },
+        {
+            "question": "Tell me the last thing you stuck up your nose.",
+            "response": "I don't have a nose \u2014 I'm an AI, so there's nothing I've stuck up one!",
+            "latency_s": 7.4755,
+            "prompt_tokens": 146,
+            "completion_tokens": 196,
+            "cost_usd": 0.003378
+        },
+        {
+            "question": "Name something in a Monopoly game that you wish you had for real.",
+            "response": "Money",
+            "latency_s": 4.8222,
+            "prompt_tokens": 150,
+            "completion_tokens": 110,
+            "cost_usd": 0.0021
+        },
+        {
+            "question": "When choosing a toilet paper, name something that's most important to you.",
+            "response": "Softness",
+            "latency_s": 3.9657,
+            "prompt_tokens": 149,
+            "completion_tokens": 77,
+            "cost_usd": 0.001602
+        },
+        {
+            "question": "Name something that you might shake at someone.",
+            "response": "Fist",
+            "latency_s": 6.0994,
+            "prompt_tokens": 144,
+            "completion_tokens": 156,
+            "cost_usd": 0.002772
+        },
+        {
+            "question": "Name an animal you can find in a swamp.",
+            "response": "alligator",
+            "latency_s": 1.6112,
+            "prompt_tokens": 145,
+            "completion_tokens": 35,
+            "cost_usd": 0.00096
+        },
+        {
+            "question": "The welcome mat at the Tooth Fairy's house might have a picture of what on it?",
+            "response": "tooth",
+            "latency_s": 4.5909,
+            "prompt_tokens": 153,
+            "completion_tokens": 53,
+            "cost_usd": 0.001254
+        },
+        {
+            "question": "What cereal brand mascot would win in a bar fight?",
+            "response": "Tony the Tiger",
+            "latency_s": 8.5288,
+            "prompt_tokens": 146,
+            "completion_tokens": 211,
+            "cost_usd": 0.003603
+        },
+        {
+            "question": "Tell me something people know about Sylvester Stallone.",
+            "response": "He played Rocky Balboa",
+            "latency_s": 5.5204,
+            "prompt_tokens": 146,
+            "completion_tokens": 84,
+            "cost_usd": 0.001698
+        },
+        {
+            "question": "Tell me a place you sit on a bench.",
+            "response": "park",
+            "latency_s": 2.2631,
+            "prompt_tokens": 145,
+            "completion_tokens": 52,
+            "cost_usd": 0.001215
+        },
+        {
+            "question": "If someone pretended to be a doctor on a dating site, name a prop they might show up to a date with.",
+            "response": "Stethoscope",
+            "latency_s": 3.9273,
+            "prompt_tokens": 160,
+            "completion_tokens": 51,
+            "cost_usd": 0.001245
+        },
+        {
+            "question": "Name something you might want within reach when you're on the toilet.",
+            "response": "Toilet paper",
+            "latency_s": 3.1991,
+            "prompt_tokens": 148,
+            "completion_tokens": 85,
+            "cost_usd": 0.001719
+        },
+        {
+            "question": "Tell me America's most popular beer.",
+            "response": "Modelo Especial",
+            "latency_s": 7.6366,
+            "prompt_tokens": 142,
+            "completion_tokens": 137,
+            "cost_usd": 0.002481
+        },
+        {
+            "question": "Name a reason someone tells you not to move.",
+            "response": "There's a spider on you",
+            "latency_s": 7.9193,
+            "prompt_tokens": 145,
+            "completion_tokens": 188,
+            "cost_usd": 0.003255
+        },
+        {
+            "question": "You might tell someone to get a what?",
+            "response": "life",
+            "latency_s": 6.4031,
+            "prompt_tokens": 144,
+            "completion_tokens": 174,
+            "cost_usd": 0.003042
+        },
+        {
+            "question": "Name a place you go where they ask you your age.",
+            "response": "Bar",
+            "latency_s": 7.0302,
+            "prompt_tokens": 147,
+            "completion_tokens": 102,
+            "cost_usd": 0.001971
+        },
+        {
+            "question": "You really shouldn't run while you're holding what?",
+            "response": "scissors",
+            "latency_s": 3.4079,
+            "prompt_tokens": 144,
+            "completion_tokens": 85,
+            "cost_usd": 0.001707
+        },
+        {
+            "question": "Name someone who might tell you to strip down to your underwear.",
+            "response": "Doctor",
+            "latency_s": 5.8459,
+            "prompt_tokens": 148,
+            "completion_tokens": 152,
+            "cost_usd": 0.002724
+        },
+        {
+            "question": "Name something you might accidentally hit while learning how to parallel park.",
+            "response": "Curb",
+            "latency_s": 4.4095,
+            "prompt_tokens": 148,
+            "completion_tokens": 87,
+            "cost_usd": 0.001749
+        },
+        {
+            "question": "A woman might call her husband a big softy because his what is soft?",
+            "response": "heart",
+            "latency_s": 5.4477,
+            "prompt_tokens": 151,
+            "completion_tokens": 107,
+            "cost_usd": 0.002058
+        },
+        {
+            "question": "Before you have a baby, you might practice parenting on what?",
+            "response": "Pet",
+            "latency_s": 13.3839,
+            "prompt_tokens": 148,
+            "completion_tokens": 190,
+            "cost_usd": 0.003294
+        },
+        {
+            "question": "Couples fight over control of what in their house?",
+            "response": "Remote control",
+            "latency_s": 7.3603,
+            "prompt_tokens": 146,
+            "completion_tokens": 149,
+            "cost_usd": 0.002673
+        },
+        {
+            "question": "Tell me a country that starts with the letter T.",
+            "response": "Thailand",
+            "latency_s": 3.3293,
+            "prompt_tokens": 146,
+            "completion_tokens": 46,
+            "cost_usd": 0.001128
+        },
+        {
+            "question": "Name a living celebrity whose first name starts with the letter O.",
+            "response": "Oprah Winfrey",
+            "latency_s": 3.0182,
+            "prompt_tokens": 148,
+            "completion_tokens": 81,
+            "cost_usd": 0.001659
+        },
+        {
+            "question": "Give me a way you can shorten the name Elizabeth.",
+            "response": "Liz",
+            "latency_s": 6.0654,
+            "prompt_tokens": 146,
+            "completion_tokens": 89,
+            "cost_usd": 0.001773
+        },
+        {
+            "question": "Name a public place where it's appropriate to yell.",
+            "response": "Stadium",
+            "latency_s": 6.5974,
+            "prompt_tokens": 145,
+            "completion_tokens": 109,
+            "cost_usd": 0.00207
+        },
+        {
+            "question": "Name any brand of laundry detergent.",
+            "response": "Tide",
+            "latency_s": 3.6782,
+            "prompt_tokens": 142,
+            "completion_tokens": 66,
+            "cost_usd": 0.001416
+        },
+        {
+            "question": "Name something you'd have to change if you were in the Witness Protection Program.",
+            "response": "Your name",
+            "latency_s": 3.6022,
+            "prompt_tokens": 150,
+            "completion_tokens": 99,
+            "cost_usd": 0.001935
+        },
+        {
+            "question": "Name an animal in the jungle that looks at a safari group like they're an all-you-can-eat buffet.",
+            "response": "Lion",
+            "latency_s": 13.7509,
+            "prompt_tokens": 157,
+            "completion_tokens": 289,
+            "cost_usd": 0.004806
+        },
+        {
+            "question": "Name a place you'd be surprised to see a nun hanging out.",
+            "response": "Bar",
+            "latency_s": 4.4192,
+            "prompt_tokens": 148,
+            "completion_tokens": 120,
+            "cost_usd": 0.002244
+        },
+        {
+            "question": "Name a sport where there's a whole lot of swinging going on.",
+            "response": "baseball",
+            "latency_s": 3.4948,
+            "prompt_tokens": 148,
+            "completion_tokens": 60,
+            "cost_usd": 0.001344
+        },
+        {
+            "question": "If you lived next to a farm, name a specific noise you might complain about.",
+            "response": "Rooster crowing",
+            "latency_s": 7.4357,
+            "prompt_tokens": 152,
+            "completion_tokens": 160,
+            "cost_usd": 0.002856
+        },
+        {
+            "question": "Which of the Seven Dwarfs would give the worst TED Talk?",
+            "response": "Bashful",
+            "latency_s": 9.0483,
+            "prompt_tokens": 149,
+            "completion_tokens": 215,
+            "cost_usd": 0.003672
+        },
+        {
+            "question": "Name the most dangerous piece of workout equipment to use if you're tipsy.",
+            "response": "Treadmill",
+            "latency_s": 7.1305,
+            "prompt_tokens": 150,
+            "completion_tokens": 162,
+            "cost_usd": 0.00288
+        },
+        {
+            "question": "What playground equipment would be voted most popular amongst toddlers?",
+            "response": "Slide",
+            "latency_s": 3.5673,
+            "prompt_tokens": 146,
+            "completion_tokens": 65,
+            "cost_usd": 0.001413
+        },
+        {
+            "question": "Name the first thing you check out when you enter a hotel room.",
+            "response": "The bed",
+            "latency_s": 8.129,
+            "prompt_tokens": 149,
+            "completion_tokens": 142,
+            "cost_usd": 0.002577
+        },
+        {
+            "question": "Fill in the blank: If your ______ is hung crookedly, it will drive a perfectionist crazy.",
+            "response": "picture",
+            "latency_s": 3.9392,
+            "prompt_tokens": 157,
+            "completion_tokens": 86,
+            "cost_usd": 0.001761
+        },
+        {
+            "question": "Name a country that always does well at the Olympics.",
+            "response": "USA",
+            "latency_s": 4.2125,
+            "prompt_tokens": 146,
+            "completion_tokens": 56,
+            "cost_usd": 0.001278
+        },
+        {
+            "question": "Fill in the blank: Aliens from other planets might have bigger ______s than we do.",
+            "response": "brain",
+            "latency_s": 7.3939,
+            "prompt_tokens": 154,
+            "completion_tokens": 145,
+            "cost_usd": 0.002637
+        },
+        {
+            "question": "Name a seafood appetizer.",
+            "response": "Shrimp cocktail",
+            "latency_s": 2.1776,
+            "prompt_tokens": 140,
+            "completion_tokens": 37,
+            "cost_usd": 0.000975
+        },
+        {
+            "question": "Name a TV show where you see a judge being too hard on someone.",
+            "response": "Judge Judy",
+            "latency_s": 5.7202,
+            "prompt_tokens": 150,
+            "completion_tokens": 129,
+            "cost_usd": 0.002385
+        },
+        {
+            "question": "Tell me something that starts with the letter P that you order in an Italian restaurant.",
+            "response": "pizza",
+            "latency_s": 4.5309,
+            "prompt_tokens": 152,
+            "completion_tokens": 77,
+            "cost_usd": 0.001611
+        },
+        {
+            "question": "Name something a parent asks their kid to do that sets off a tantrum.",
+            "response": "Clean their room",
+            "latency_s": 6.2458,
+            "prompt_tokens": 152,
+            "completion_tokens": 207,
+            "cost_usd": 0.003561
+        },
+        {
+            "question": "Name something that has wax in it.",
+            "response": "Candle",
+            "latency_s": 6.3262,
+            "prompt_tokens": 143,
+            "completion_tokens": 153,
+            "cost_usd": 0.002724
+        },
+        {
+            "question": "We asked 100 husbands... What's a two-word phrase that will end an argument with your spouse?",
+            "response": "You're right",
+            "latency_s": 9.0369,
+            "prompt_tokens": 155,
+            "completion_tokens": 230,
+            "cost_usd": 0.003915
+        },
+        {
+            "question": "Name a reference book you don't need anymore because there's Google.",
+            "response": "Dictionary",
+            "latency_s": 4.6076,
+            "prompt_tokens": 147,
+            "completion_tokens": 123,
+            "cost_usd": 0.002286
+        },
+        {
+            "question": "Name something for which Kentucky is famous.",
+            "response": "The Kentucky Derby",
+            "latency_s": 3.0704,
+            "prompt_tokens": 143,
+            "completion_tokens": 77,
+            "cost_usd": 0.001584
+        },
+        {
+            "question": "We asked 100 parents... Tell me something your kids know more about than you.",
+            "response": "Technology",
+            "latency_s": 6.0484,
+            "prompt_tokens": 152,
+            "completion_tokens": 116,
+            "cost_usd": 0.002196
+        },
+        {
+            "question": "Name a special event people dress up for.",
+            "response": "Halloween",
+            "latency_s": 3.1277,
+            "prompt_tokens": 144,
+            "completion_tokens": 82,
+            "cost_usd": 0.001662
+        },
+        {
+            "question": "Name a place every kid dreams of going.",
+            "response": "Disneyland",
+            "latency_s": 5.9496,
+            "prompt_tokens": 144,
+            "completion_tokens": 77,
+            "cost_usd": 0.001587
+        },
+        {
+            "question": "Name something a person driving alone might use to get away with driving in the carpool lane.",
+            "response": "Mannequin",
+            "latency_s": 8.2406,
+            "prompt_tokens": 154,
+            "completion_tokens": 118,
+            "cost_usd": 0.002232
+        },
+        {
+            "question": "Fill in the blank: ______ eagle.",
+            "response": "bald",
+            "latency_s": 2.6355,
+            "prompt_tokens": 143,
+            "completion_tokens": 83,
+            "cost_usd": 0.001674
+        },
+        {
+            "question": "What's the hardest thing to do with your non-dominant hand?",
+            "response": "Write",
+            "latency_s": 4.7194,
+            "prompt_tokens": 149,
+            "completion_tokens": 77,
+            "cost_usd": 0.001602
+        },
+        {
+            "question": "Swimming with dolphins is fun. Swimming with what sea creature is a bad idea?",
+            "response": "shark",
+            "latency_s": 3.9628,
+            "prompt_tokens": 152,
+            "completion_tokens": 97,
+            "cost_usd": 0.001911
+        },
+        {
+            "question": "Fill in the blank: I'm falling asleep -- this ______ is so boring.",
+            "response": "movie",
+            "latency_s": 4.3178,
+            "prompt_tokens": 150,
+            "completion_tokens": 96,
+            "cost_usd": 0.00189
+        },
+        {
+            "question": "Name something hard to do with your eyes open.",
+            "response": "Sneeze",
+            "latency_s": 6.3599,
+            "prompt_tokens": 145,
+            "completion_tokens": 203,
+            "cost_usd": 0.00348
+        },
+        {
+            "question": "Past or present, give me the first name of a judge from \"American Idol.\"",
+            "response": "Simon",
+            "latency_s": 5.5263,
+            "prompt_tokens": 152,
+            "completion_tokens": 124,
+            "cost_usd": 0.002316
+        },
+        {
+            "question": "Name something that a wimp might need to hold onto while getting a tattoo.",
+            "response": "Someone's hand",
+            "latency_s": 4.551,
+            "prompt_tokens": 151,
+            "completion_tokens": 110,
+            "cost_usd": 0.002103
+        },
+        {
+            "question": "We asked 100 married women... Give me a B word or phrase you'd use to describe your husband's belly.",
+            "response": "Big",
+            "latency_s": 8.2498,
+            "prompt_tokens": 158,
+            "completion_tokens": 162,
+            "cost_usd": 0.002904
+        },
+        {
+            "question": "Name a procedure a witch might have done to make her more beautiful.",
+            "response": "Facelift",
+            "latency_s": 5.3913,
+            "prompt_tokens": 149,
+            "completion_tokens": 160,
+            "cost_usd": 0.002847
+        },
+        {
+            "question": "Name an animal that, if it talked, would say, \"Why yes, I actually do live in a barn.\"",
+            "response": "Horse",
+            "latency_s": 5.4004,
+            "prompt_tokens": 159,
+            "completion_tokens": 150,
+            "cost_usd": 0.002727
+        },
+        {
+            "question": "Fill in the blank: Sometimes I just want to ______ all day.",
+            "response": "sleep",
+            "latency_s": 9.0606,
+            "prompt_tokens": 149,
+            "completion_tokens": 80,
+            "cost_usd": 0.001647
+        },
+        {
+            "question": "Name something you put on every night.",
+            "response": "Pajamas",
+            "latency_s": 6.1228,
+            "prompt_tokens": 143,
+            "completion_tokens": 112,
+            "cost_usd": 0.002109
+        },
+        {
+            "question": "Name a creature whose date might tell them \"My, what a big horn you have.\"",
+            "response": "Rhinoceros",
+            "latency_s": 5.2375,
+            "prompt_tokens": 153,
+            "completion_tokens": 143,
+            "cost_usd": 0.002604
+        },
+        {
+            "question": "Name a sport where the spectators stay really quiet.",
+            "response": "golf",
+            "latency_s": 2.6772,
+            "prompt_tokens": 145,
+            "completion_tokens": 56,
+            "cost_usd": 0.001275
+        },
+        {
+            "question": "Name someone Winnie the Pooh probably has on speed dial.",
+            "response": "Piglet",
+            "latency_s": 3.7275,
+            "prompt_tokens": 148,
+            "completion_tokens": 107,
+            "cost_usd": 0.002049
+        },
+        {
+            "question": "Name an occupation where you might wear an apron.",
+            "response": "Chef",
+            "latency_s": 1.9631,
+            "prompt_tokens": 145,
+            "completion_tokens": 49,
+            "cost_usd": 0.00117
+        },
+        {
+            "question": "If a man's nickname is \"The Hammer,\" what occupation might he work in?",
+            "response": "Boxer",
+            "latency_s": 7.356,
+            "prompt_tokens": 151,
+            "completion_tokens": 153,
+            "cost_usd": 0.002748
+        },
+        {
+            "question": "Name a document you might frame and put on the wall.",
+            "response": "Diploma",
+            "latency_s": 2.8926,
+            "prompt_tokens": 147,
+            "completion_tokens": 52,
+            "cost_usd": 0.001221
+        },
+        {
+            "question": "Name something that might be missing a button.",
+            "response": "shirt",
+            "latency_s": 5.0055,
+            "prompt_tokens": 144,
+            "completion_tokens": 113,
+            "cost_usd": 0.002127
+        },
+        {
+            "question": "Tell me a non-living thing with a horn.",
+            "response": "Car",
+            "latency_s": 7.4946,
+            "prompt_tokens": 146,
+            "completion_tokens": 202,
+            "cost_usd": 0.003468
+        },
+        {
+            "question": "We asked 100 men... Which color of nail polish looks the best on women?",
+            "response": "Red",
+            "latency_s": 5.6394,
+            "prompt_tokens": 152,
+            "completion_tokens": 107,
+            "cost_usd": 0.002061
+        },
+        {
+            "question": "Name a bad job for someone who counts very slowly.",
+            "response": "Cashier",
+            "latency_s": 3.8992,
+            "prompt_tokens": 146,
+            "completion_tokens": 65,
+            "cost_usd": 0.001413
+        },
+        {
+            "question": "If an astronaut got stuck in space for months, name something they would wish they packed more of.",
+            "response": "Food",
+            "latency_s": 5.8127,
+            "prompt_tokens": 155,
+            "completion_tokens": 87,
+            "cost_usd": 0.00177
+        },
+        {
+            "question": "Name a U.S. city that's not part of the South where people are known to have an accent.",
+            "response": "Boston",
+            "latency_s": 3.532,
+            "prompt_tokens": 156,
+            "completion_tokens": 75,
+            "cost_usd": 0.001593
+        },
+        {
+            "question": "Name something that signals the start of the fall season.",
+            "response": "Leaves changing color",
+            "latency_s": 6.1058,
+            "prompt_tokens": 146,
+            "completion_tokens": 111,
+            "cost_usd": 0.002103
+        },
+        {
+            "question": "Besides a bird, tell me a creature that can fly.",
+            "response": "bat",
+            "latency_s": 4.2471,
+            "prompt_tokens": 147,
+            "completion_tokens": 60,
+            "cost_usd": 0.001341
+        },
+        {
+            "question": "Name a specific exercise you do in the gym that might cause your pants to rip.",
+            "response": "Squats",
+            "latency_s": 4.1424,
+            "prompt_tokens": 152,
+            "completion_tokens": 99,
+            "cost_usd": 0.001941
+        },
+        {
+            "question": "Name something that might be all over your sheets after having breakfast in bed.",
+            "response": "Crumbs",
+            "latency_s": 5.194,
+            "prompt_tokens": 150,
+            "completion_tokens": 77,
+            "cost_usd": 0.001605
+        },
+        {
+            "question": "Name a topic that's guaranteed to start a fight at a family dinner.",
+            "response": "Politics",
+            "latency_s": 3.3975,
+            "prompt_tokens": 149,
+            "completion_tokens": 84,
+            "cost_usd": 0.001707
+        },
+        {
+            "question": "Name something teenagers are better at doing than their parents.",
+            "response": "technology",
+            "latency_s": 3.5174,
+            "prompt_tokens": 146,
+            "completion_tokens": 44,
+            "cost_usd": 0.001098
+        },
+        {
+            "question": "Name something that you buy rolls of.",
+            "response": "toilet paper",
+            "latency_s": 6.2829,
+            "prompt_tokens": 143,
+            "completion_tokens": 87,
+            "cost_usd": 0.001734
+        },
+        {
+            "question": "Fill in the blank: Game of ______.",
+            "response": "Thrones",
+            "latency_s": 2.8522,
+            "prompt_tokens": 144,
+            "completion_tokens": 70,
+            "cost_usd": 0.001482
+        },
+        {
+            "question": "Name an app on your phone you'd never open in front of your parents.",
+            "response": "Tinder",
+            "latency_s": 8.2122,
+            "prompt_tokens": 150,
+            "completion_tokens": 211,
+            "cost_usd": 0.003615
+        },
+        {
+            "question": "What might a criminal known as \"The Plumber\" leave at the scene of the crime?",
+            "response": "A pipe",
+            "latency_s": 18.6273,
+            "prompt_tokens": 154,
+            "completion_tokens": 483,
+            "cost_usd": 0.007707
+        },
+        {
+            "question": "Tell me the worst thing to get in your hair.",
+            "response": "Gum",
+            "latency_s": 5.1428,
+            "prompt_tokens": 146,
+            "completion_tokens": 106,
+            "cost_usd": 0.002028
+        },
+        {
+            "question": "Name a company known for its chocolate.",
+            "response": "Hershey's",
+            "latency_s": 5.0389,
+            "prompt_tokens": 143,
+            "completion_tokens": 62,
+            "cost_usd": 0.001359
+        },
+        {
+            "question": "Name a country that has a reputation for having rude people.",
+            "response": "France",
+            "latency_s": 14.2527,
+            "prompt_tokens": 147,
+            "completion_tokens": 326,
+            "cost_usd": 0.005331
+        },
+        {
+            "question": "Fill in the blank: Count ______.",
+            "response": "Dracula",
+            "latency_s": 5.193,
+            "prompt_tokens": 143,
+            "completion_tokens": 123,
+            "cost_usd": 0.002274
+        },
+        {
+            "question": "Name something a child might expect to get from their older sibling.",
+            "response": "Hand-me-downs",
+            "latency_s": 5.7181,
+            "prompt_tokens": 148,
+            "completion_tokens": 134,
+            "cost_usd": 0.002454
+        },
+        {
+            "question": "Bad news -- a truck spilled its load in front of you. Good news -- it was carrying what?",
+            "response": "Money",
+            "latency_s": 9.2866,
+            "prompt_tokens": 156,
+            "completion_tokens": 273,
+            "cost_usd": 0.004563
+        },
+        {
+            "question": "If there were a kids' court, who might a 10-year-old boy sue?",
+            "response": "His little brother",
+            "latency_s": 7.8892,
+            "prompt_tokens": 153,
+            "completion_tokens": 231,
+            "cost_usd": 0.003924
+        },
+        {
+            "question": "Fill in the blank: ______ hound.",
+            "response": "Basset",
+            "latency_s": 4.0389,
+            "prompt_tokens": 144,
+            "completion_tokens": 113,
+            "cost_usd": 0.002127
+        },
+        {
+            "question": "Name something you don't miss about being a teenager.",
+            "response": "acne",
+            "latency_s": 3.7156,
+            "prompt_tokens": 145,
+            "completion_tokens": 130,
+            "cost_usd": 0.002385
+        },
+        {
+            "question": "We asked 100 single women... If I ever get married, I'm going to want my own what?",
+            "response": "Bathroom",
+            "latency_s": 10.4996,
+            "prompt_tokens": 156,
+            "completion_tokens": 295,
+            "cost_usd": 0.004893
+        },
+        {
+            "question": "In my book, it's not a real burrito unless it has what in it?",
+            "response": "Actually, traditional Mexican burritos are often quite simple - just one or",
+            "latency_s": 14.9529,
+            "prompt_tokens": 152,
+            "completion_tokens": 512,
+            "cost_usd": 0.008136
+        },
+        {
+            "question": "What do you do when you eat something that's too spicy?",
+            "response": "Drink milk",
+            "latency_s": 7.4042,
+            "prompt_tokens": 147,
+            "completion_tokens": 129,
+            "cost_usd": 0.002376
+        },
+        {
+            "question": "Fill in the blank: Bottom of the ______.",
+            "response": "barrel",
+            "latency_s": 5.3568,
+            "prompt_tokens": 145,
+            "completion_tokens": 148,
+            "cost_usd": 0.002655
+        },
+        {
+            "question": "Willy Wonka just got busted for making what in the factory instead of chocolate?",
+            "response": "Meth",
+            "latency_s": 9.2937,
+            "prompt_tokens": 153,
+            "completion_tokens": 196,
+            "cost_usd": 0.003399
+        },
+        {
+            "question": "If cars were replaced by animals, what animal would you ride to work?",
+            "response": "Horse",
+            "latency_s": 5.2418,
+            "prompt_tokens": 150,
+            "completion_tokens": 113,
+            "cost_usd": 0.002145
+        },
+        {
+            "question": "Fill in the blank: ______ beauty.",
+            "response": "Sleeping",
+            "latency_s": 6.9259,
+            "prompt_tokens": 143,
+            "completion_tokens": 176,
+            "cost_usd": 0.003069
+        },
+        {
+            "question": "We asked 100 women... It would be creepy to date a man who looks like your who?",
+            "response": "Father",
+            "latency_s": 5.451,
+            "prompt_tokens": 155,
+            "completion_tokens": 136,
+            "cost_usd": 0.002505
+        },
+        {
+            "question": "Name a contact sport you'd like to play with your number one enemy.",
+            "response": "Boxing",
+            "latency_s": 6.0439,
+            "prompt_tokens": 149,
+            "completion_tokens": 152,
+            "cost_usd": 0.002727
+        },
+        {
+            "question": "We asked 100 married people... What do you wear to bed so your spouse knows you're not in the mood?",
+            "response": "Flannel pajamas",
+            "latency_s": 8.9887,
+            "prompt_tokens": 158,
+            "completion_tokens": 303,
+            "cost_usd": 0.005019
+        },
+        {
+            "question": "Name an occupation in which you'd have to worry about leaks.",
+            "response": "Plumber",
+            "latency_s": 5.8693,
+            "prompt_tokens": 147,
+            "completion_tokens": 100,
+            "cost_usd": 0.001941
+        },
+        {
+            "question": "Fill in the blank: Forest ______.",
+            "response": "Gump",
+            "latency_s": 8.2322,
+            "prompt_tokens": 143,
+            "completion_tokens": 200,
+            "cost_usd": 0.003429
+        },
+        {
+            "question": "Name something people ride that requires good balance.",
+            "response": "Bicycle",
+            "latency_s": 2.411,
+            "prompt_tokens": 144,
+            "completion_tokens": 66,
+            "cost_usd": 0.001422
+        },
+        {
+            "question": "Name a job that might require you to cut your hair.",
+            "response": "Soldier",
+            "latency_s": 5.3129,
+            "prompt_tokens": 147,
+            "completion_tokens": 139,
+            "cost_usd": 0.002526
+        },
+        {
+            "question": "It would be nuts to put a squirrel in your what?",
+            "response": "mouth",
+            "latency_s": 6.079,
+            "prompt_tokens": 147,
+            "completion_tokens": 165,
+            "cost_usd": 0.002916
+        },
+        {
+            "question": "You should never ever tell someone what by text message?",
+            "response": "That you're breaking up with them",
+            "latency_s": 11.4984,
+            "prompt_tokens": 146,
+            "completion_tokens": 260,
+            "cost_usd": 0.004338
+        },
+        {
+            "question": "Fill in the blank: Adam might have asked God, \"Why is Eve's ______ bigger than mine?\"",
+            "response": "Given the user wants just the answer, I'll go with \"fig leaf\" as it's the cleverest clean",
+            "latency_s": 21.5994,
+            "prompt_tokens": 156,
+            "completion_tokens": 512,
+            "cost_usd": 0.008148
+        },
+        {
+            "question": "Name the single best place for a romantic date.",
+            "response": "Beach at sunset",
+            "latency_s": 4.6028,
+            "prompt_tokens": 145,
+            "completion_tokens": 94,
+            "cost_usd": 0.001845
+        },
+        {
+            "question": "Name something Matt Damon and Ben Affleck have in common.",
+            "response": "Actors",
+            "latency_s": 4.9294,
+            "prompt_tokens": 148,
+            "completion_tokens": 105,
+            "cost_usd": 0.002019
+        },
+        {
+            "question": "There's a fire in the grocery store. The manager grabs what to put it out?",
+            "response": "fire extinguisher",
+            "latency_s": 5.4091,
+            "prompt_tokens": 152,
+            "completion_tokens": 62,
+            "cost_usd": 0.001386
+        },
+        {
+            "question": "Name a short celebrity who's big on talent.",
+            "response": "Kevin Hart",
+            "latency_s": 10.3738,
+            "prompt_tokens": 144,
+            "completion_tokens": 305,
+            "cost_usd": 0.005007
+        },
+        {
+            "question": "Name a medical TV show that some people trust more than their own doctor.",
+            "response": "House",
+            "latency_s": 7.0505,
+            "prompt_tokens": 150,
+            "completion_tokens": 182,
+            "cost_usd": 0.00318
+        },
+        {
+            "question": "Batman might be annoyed to see that Robin had a picture of which superhero on his bedroom wall?",
+            "response": "Superman",
+            "latency_s": 5.4312,
+            "prompt_tokens": 155,
+            "completion_tokens": 146,
+            "cost_usd": 0.002655
+        },
+        {
+            "question": "Name a type of movie that's better on a big movie theater screen.",
+            "response": "Action movie",
+            "latency_s": 3.3434,
+            "prompt_tokens": 149,
+            "completion_tokens": 69,
+            "cost_usd": 0.001482
+        },
+        {
+            "question": "Name a place that has a lot of security cameras.",
+            "response": "Bank",
+            "latency_s": 5.332,
+            "prompt_tokens": 146,
+            "completion_tokens": 121,
+            "cost_usd": 0.002253
+        },
+        {
+            "question": "Tell me a souvenir you might bring back from Hawaii.",
+            "response": "Lei",
+            "latency_s": 2.791,
+            "prompt_tokens": 146,
+            "completion_tokens": 52,
+            "cost_usd": 0.001218
+        },
+        {
+            "question": "Name someone you should never lie to, but you have.",
+            "response": "Let me go with something brief: \"No one \u2014 I don't lie. I can be wrong, but I",
+            "latency_s": 16.6912,
+            "prompt_tokens": 147,
+            "completion_tokens": 512,
+            "cost_usd": 0.008121
+        },
+        {
+            "question": "Name something kids open more than they close.",
+            "response": "Refrigerator",
+            "latency_s": 6.4526,
+            "prompt_tokens": 144,
+            "completion_tokens": 138,
+            "cost_usd": 0.002502
+        },
+        {
+            "question": "Name something in a limousine that you'd love to have in your car.",
+            "response": "TV",
+            "latency_s": 7.5941,
+            "prompt_tokens": 149,
+            "completion_tokens": 138,
+            "cost_usd": 0.002517
+        },
+        {
+            "question": "We asked 100 married people... What might you put in your spouse's face to wake them up in the morning?",
+            "response": "Coffee",
+            "latency_s": 12.6811,
+            "prompt_tokens": 159,
+            "completion_tokens": 289,
+            "cost_usd": 0.004812
+        },
+        {
+            "question": "If someone turns you upside down, name something that will fall out of your pockets.",
+            "response": "Loose change",
+            "latency_s": 6.2558,
+            "prompt_tokens": 152,
+            "completion_tokens": 113,
+            "cost_usd": 0.002151
+        },
+        {
+            "question": "Name an ingredient some people would say makes all food taste better.",
+            "response": "Salt",
+            "latency_s": 6.71,
+            "prompt_tokens": 148,
+            "completion_tokens": 161,
+            "cost_usd": 0.002859
+        },
+        {
+            "question": "Name a city where it's easier to take the train than drive.",
+            "response": "New York City",
+            "latency_s": 4.8967,
+            "prompt_tokens": 148,
+            "completion_tokens": 62,
+            "cost_usd": 0.001374
+        },
+        {
+            "question": "Name a place a teacher tells a student to go.",
+            "response": "Principal's office",
+            "latency_s": 5.7784,
+            "prompt_tokens": 146,
+            "completion_tokens": 101,
+            "cost_usd": 0.001953
+        },
+        {
+            "question": "Tell me the last thing you did all night long.",
+            "response": "slept",
+            "latency_s": 9.6053,
+            "prompt_tokens": 146,
+            "completion_tokens": 312,
+            "cost_usd": 0.005118
+        },
+        {
+            "question": "Fill in the blank: ______ pole.",
+            "response": "North",
+            "latency_s": 5.9113,
+            "prompt_tokens": 143,
+            "completion_tokens": 143,
+            "cost_usd": 0.002574
+        },
+        {
+            "question": "Name a job in a celebrity's entourage.",
+            "response": "Bodyguard",
+            "latency_s": 3.0131,
+            "prompt_tokens": 145,
+            "completion_tokens": 66,
+            "cost_usd": 0.001425
+        },
+        {
+            "question": "Everyone likes French kissing. But what other country has good kissers?",
+            "response": "Italy",
+            "latency_s": 8.2042,
+            "prompt_tokens": 150,
+            "completion_tokens": 216,
+            "cost_usd": 0.00369
+        },
+        {
+            "question": "Name something a teen keeps by their window if they're going to sneak out at night.",
+            "response": "Ladder",
+            "latency_s": 10.0511,
+            "prompt_tokens": 152,
+            "completion_tokens": 202,
+            "cost_usd": 0.003486
+        },
+        {
+            "question": "You just stepped on the scale. You've gained ten pounds. What's the first thing you do?",
+            "response": "Get off the scale",
+            "latency_s": 11.0884,
+            "prompt_tokens": 154,
+            "completion_tokens": 295,
+            "cost_usd": 0.004887
+        },
+        {
+            "question": "When the sun goes down, what creature wakes up?",
+            "response": "owl",
+            "latency_s": 5.2499,
+            "prompt_tokens": 146,
+            "completion_tokens": 90,
+            "cost_usd": 0.001788
+        },
+        {
+            "question": "Name something a college student might use as a dinner plate when they don't feel like washing dishes.",
+            "response": "Paper plate",
+            "latency_s": 11.9838,
+            "prompt_tokens": 154,
+            "completion_tokens": 349,
+            "cost_usd": 0.005697
+        },
+        {
+            "question": "Name something you did when you told your spouse \"Don't get mad, but...\"",
+            "response": "Crashed the car",
+            "latency_s": 9.2104,
+            "prompt_tokens": 151,
+            "completion_tokens": 205,
+            "cost_usd": 0.003528
+        },
+        {
+            "question": "Name something that the older it is, the more valuable it is.",
+            "response": "wine",
+            "latency_s": 4.1707,
+            "prompt_tokens": 149,
+            "completion_tokens": 40,
+            "cost_usd": 0.001047
+        },
+        {
+            "question": "Only beautiful people end up on the cover of what past or present magazine?",
+            "response": "People",
+            "latency_s": 4.361,
+            "prompt_tokens": 150,
+            "completion_tokens": 99,
+            "cost_usd": 0.001935
+        },
+        {
+            "question": "We asked 100 women... If a man loves you, he should be willing to do what for you?",
+            "response": "Die for you",
+            "latency_s": 10.3802,
+            "prompt_tokens": 157,
+            "completion_tokens": 291,
+            "cost_usd": 0.004836
+        },
+        {
+            "question": "Name something that gets dropped.",
+            "response": "Ball",
+            "latency_s": 6.2838,
+            "prompt_tokens": 141,
+            "completion_tokens": 125,
+            "cost_usd": 0.002298
+        },
+        {
+            "question": "Rumor has it that if you kiss a vegetarian, their lips taste like what vegetable?",
+            "response": "Or maybe the joke is \"tofu\"?",
+            "latency_s": 18.1506,
+            "prompt_tokens": 153,
+            "completion_tokens": 512,
+            "cost_usd": 0.008139
         }
     ],
     "google/gemini-pro-latest": [
