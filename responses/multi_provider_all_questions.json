@@ -338113,5 +338113,559 @@
             "completion_tokens": 512,
             "cost_usd": 0.008139
         }
+    ],
+    "google/gemini-4-argon": [
+        {
+            "question": "Name an occupation that begins with the letter 'J.'",
+            "response": "Janitor",
+            "latency_s": 3.9535,
+            "prompt_tokens": 83,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that might be brewing.",
+            "response": "coffee",
+            "latency_s": 2.858,
+            "prompt_tokens": 79,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something with teeth.",
+            "response": "comb",
+            "latency_s": 2.48,
+            "prompt_tokens": 77,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name the most useful body part that begins with the letter 'L.'",
+            "response": "Lungs",
+            "latency_s": 3.136,
+            "prompt_tokens": 86,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something an athlete might break.",
+            "response": "Record",
+            "latency_s": 2.306,
+            "prompt_tokens": 79,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something associated with vampires.",
+            "response": "Garlic",
+            "latency_s": 8.8105,
+            "prompt_tokens": 78,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something in a bakery a baker might call his wife.",
+            "response": "Sweetie pie",
+            "latency_s": 2.7226,
+            "prompt_tokens": 84,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something in a person's closet that only comes out on special occasions.",
+            "response": "suit",
+            "latency_s": 1.8177,
+            "prompt_tokens": 88,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might see a commercial for during a baseball game.",
+            "response": "Beer",
+            "latency_s": 3.3392,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "If your dog ran away, name something you'd be surprised he took with him.",
+            "response": "Suitcase",
+            "latency_s": 4.0611,
+            "prompt_tokens": 90,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an occasion where parents force their kids to wear a certain outfit.",
+            "response": "Wedding",
+            "latency_s": 2.1642,
+            "prompt_tokens": 86,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a reason that someone might ride their bike to work.",
+            "response": "Exercise",
+            "latency_s": 1.8281,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that might come out of your nose when you laugh.",
+            "response": "Snot",
+            "latency_s": 2.1034,
+            "prompt_tokens": 85,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name qualities of a bad boss.",
+            "response": "Micromanagement, poor communication, lack of empathy, favoritism, and indecisiveness.",
+            "latency_s": 2.6754,
+            "prompt_tokens": 79,
+            "completion_tokens": 23,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a food dogs love just as much as humans do.",
+            "response": "Bacon",
+            "latency_s": 3.5087,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that shakes, rattles, and rolls.",
+            "response": "Dice",
+            "latency_s": 3.7512,
+            "prompt_tokens": 82,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Other than feet, name something that runs.",
+            "response": "Water",
+            "latency_s": 1.7732,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a word that rhymes with \u201celection.\u201d",
+            "response": "selection",
+            "latency_s": 4.5499,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you would ask the Wizard for in the Land of Oz.",
+            "response": "brain",
+            "latency_s": 3.9212,
+            "prompt_tokens": 86,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a soda that people like to drink.",
+            "response": "Coca-Cola",
+            "latency_s": 6.3281,
+            "prompt_tokens": 81,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people might only do once a week.",
+            "response": "Go to church",
+            "latency_s": 2.4613,
+            "prompt_tokens": 82,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you keep in your car.",
+            "response": "Spare tire",
+            "latency_s": 17.3922,
+            "prompt_tokens": 80,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name another word people say for \u201crear end.\u201d",
+            "response": "Butt",
+            "latency_s": 2.8962,
+            "prompt_tokens": 82,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an activity that's easier to do when it's windy.",
+            "response": "flying a kite",
+            "latency_s": 2.1769,
+            "prompt_tokens": 87,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an occasion for which you might wear lucky underwear.",
+            "response": "A job interview",
+            "latency_s": 2.7253,
+            "prompt_tokens": 83,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a food that you might lick.",
+            "response": "Ice cream",
+            "latency_s": 3.508,
+            "prompt_tokens": 80,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you'd do in front of a mirror.",
+            "response": "Brush your teeth",
+            "latency_s": 2.9578,
+            "prompt_tokens": 84,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people tend to fall out of.",
+            "response": "Love",
+            "latency_s": 1.7715,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a reason to celebrate a party.",
+            "response": "Birthday",
+            "latency_s": 3.1999,
+            "prompt_tokens": 80,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might eat with crackers.",
+            "response": "Cheese",
+            "latency_s": 2.2977,
+            "prompt_tokens": 80,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name ways to get rich quickly.",
+            "response": "Winning the lottery, receiving an inheritance, day trading, gambling, or selling a successful startup.",
+            "latency_s": 2.175,
+            "prompt_tokens": 79,
+            "completion_tokens": 23,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you might do at night.",
+            "response": "sleep",
+            "latency_s": 2.6084,
+            "prompt_tokens": 80,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name hot things.",
+            "response": "Fire, lava, the sun, boiling water, jalape\u00f1o peppers.",
+            "latency_s": 2.3329,
+            "prompt_tokens": 76,
+            "completion_tokens": 18,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name gifts to surprise a person you know.",
+            "response": "Flowers",
+            "latency_s": 2.6061,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name things you would post on social media.",
+            "response": "Photos",
+            "latency_s": 2.3854,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an animal that starts with the letter \"E.\"",
+            "response": "Elephant",
+            "latency_s": 11.7246,
+            "prompt_tokens": 83,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a word that rhymes with \"teeny.\"",
+            "response": "weeny",
+            "latency_s": 3.1783,
+            "prompt_tokens": 82,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that gets pumped up.",
+            "response": "Tire",
+            "latency_s": 4.1805,
+            "prompt_tokens": 79,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you do that rhymes with \"grow up.\"",
+            "response": "Throw up",
+            "latency_s": 2.5955,
+            "prompt_tokens": 83,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that's easier to catch than catching a man.",
+            "response": "A cold",
+            "latency_s": 2.3901,
+            "prompt_tokens": 85,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something to which a lot of kids seem almost addicted.",
+            "response": "video games",
+            "latency_s": 2.919,
+            "prompt_tokens": 84,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Fill in the blank: You're in deep ____.",
+            "response": "Trouble",
+            "latency_s": 1.9799,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people ride that causes them to throw up.",
+            "response": "roller coaster",
+            "latency_s": 3.3275,
+            "prompt_tokens": 83,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Fill in the blank: I did everything for my guy and I never got a ____.",
+            "response": "thank you",
+            "latency_s": 1.7887,
+            "prompt_tokens": 90,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something in your refrigerator that you should thank a cow for.",
+            "response": "milk",
+            "latency_s": 2.2973,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that drips.",
+            "response": "faucet",
+            "latency_s": 3.0298,
+            "prompt_tokens": 77,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something kids just love to jump on.",
+            "response": "Bed",
+            "latency_s": 2.1027,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Give me a three-letter word that starts with the letter \"Z.\"",
+            "response": "zoo",
+            "latency_s": 2.7876,
+            "prompt_tokens": 87,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something you'd do if your date took you to Chuck E. Cheese.",
+            "response": "Play games",
+            "latency_s": 2.4481,
+            "prompt_tokens": 89,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name your favorite thing to do at parties.",
+            "response": "Socialize",
+            "latency_s": 5.8402,
+            "prompt_tokens": 81,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something people say is on the house.",
+            "response": "Drinks",
+            "latency_s": 1.8219,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Which of the Seven Dwarfs describes how you feel after a couple of drinks?",
+            "response": "Happy",
+            "latency_s": 7.1791,
+            "prompt_tokens": 88,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Fill in the blank: Hold the ____.",
+            "response": "door",
+            "latency_s": 3.1892,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?",
+            "response": "Carnations",
+            "latency_s": 2.9575,
+            "prompt_tokens": 92,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a weather condition that would be a good name for a wrestler.",
+            "response": "Hurricane",
+            "latency_s": 2.4908,
+            "prompt_tokens": 86,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a word that rhymes with \"will\" that's associated with doctors.",
+            "response": "Pill",
+            "latency_s": 2.6506,
+            "prompt_tokens": 88,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What's something that can turn an ordinary bath into a romantic one?",
+            "response": "Candles",
+            "latency_s": 2.527,
+            "prompt_tokens": 87,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a place that's filled with people who don't want to be there.",
+            "response": "Prison",
+            "latency_s": 2.7209,
+            "prompt_tokens": 90,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something specific you make sure to clean before company comes over.",
+            "response": "bathroom",
+            "latency_s": 5.3516,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a movie monster you think could take Dracula in a fight.",
+            "response": "Godzilla",
+            "latency_s": 2.9192,
+            "prompt_tokens": 85,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name an office supply you'd use to pick food out of your teeth.",
+            "response": "Paperclip",
+            "latency_s": 3.7042,
+            "prompt_tokens": 88,
+            "completion_tokens": 6,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Fill in the blank: In the bedroom, my husband's superhero name would be ____ Man.",
+            "response": "Minute",
+            "latency_s": 2.1864,
+            "prompt_tokens": 92,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something that might be referred to as a dead end.",
+            "response": "street",
+            "latency_s": 3.302,
+            "prompt_tokens": 84,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something a husband might find all over the bed that makes him suspect his wife is having an affair with a baker.",
+            "response": "Flour",
+            "latency_s": 1.7097,
+            "prompt_tokens": 96,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "If Batman went broke, he just might have to sell his Bat-what?",
+            "response": "mobile",
+            "latency_s": 2.605,
+            "prompt_tokens": 88,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name someplace a teenager complains about having to go.",
+            "response": "school",
+            "latency_s": 2.4448,
+            "prompt_tokens": 82,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "What's the most fun thing to do with another woman?",
+            "response": "Travel",
+            "latency_s": 1.9912,
+            "prompt_tokens": 85,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name a way eggs are prepared that could also describe a person.",
+            "response": "Hard-boiled",
+            "latency_s": 2.6997,
+            "prompt_tokens": 85,
+            "completion_tokens": 7,
+            "cost_usd": 0.0
+        },
+        {
+            "question": "Name something specific that has a long neck.",
+            "response": "giraffe",
+            "latency_s": 6.7088,
+            "prompt_tokens": 81,
+            "completion_tokens": 5,
+            "cost_usd": 0.0
+        }
     ]
 }
