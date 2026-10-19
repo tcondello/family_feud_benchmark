@@ -158,6 +158,19 @@ def test_election_does_not_match_selection() -> None:
     assert hit2 and matched2 == "Protection"
 
 
+def test_grocery_shopping_matches_grocery_shop() -> None:
+    """Feud-style stem: Ember 'grocery shopping' must hit board 'Grocery shop'."""
+    slots = [
+        BoardSlot("Laundry", 27),
+        BoardSlot("Grocery shop", 25),
+        BoardSlot("Go to church", 15),
+    ]
+    hit, matched, pts = grade_against_board("grocery shopping", slots)
+    assert hit and matched == "Grocery shop" and pts == 25
+    hit2, matched2, _ = grade_against_board("go to church", slots)
+    assert hit2 and matched2 == "Go to church"
+
+
 def test_mock_advance_path(tmp_path: Path) -> None:
     path = tmp_path / "q.json"
     path.write_text(

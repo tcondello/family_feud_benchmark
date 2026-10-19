@@ -191,6 +191,13 @@ def _normalize(text: str) -> str:
 
 
 def _light_stem(token: str) -> str:
+    """Light inflection fold: shopping→shop, cars→car. Not election→select."""
+    if len(token) > 5 and token.endswith("ing"):
+        base = token[:-3]
+        # shopping → shopp → shop; brewing → brew
+        if len(base) > 2 and base[-1] == base[-2] and base[-1] not in "aeiou":
+            base = base[:-1]
+        return base
     if len(token) > 4 and token.endswith("ies"):
         return token[:-3] + "y"
     if len(token) > 3 and token.endswith("es") and token[-3] not in "aeiou":
@@ -203,9 +210,8 @@ def _light_stem(token: str) -> str:
 def _guess_matches_board(needle: str, board: str) -> bool:
     """True when guess matches a board slot without CoT / infix false positives.
 
-    Rejects:
-    - long monologues that merely *mention* a board word
-    - single-token infix traps like election ⊂ selection
+    Accepts: grocery shopping ↔ Grocery shop (stem).
+    Rejects: election ⊄ selection (single-token infix).
     """
     if not needle or not board:
         return False
@@ -220,11 +226,10 @@ def _guess_matches_board(needle: str, board: str) -> bool:
         return False
 
     # Single-token answers: equality / light stem only — never raw substring.
-    # ("election" must not hit "selection".)
     if len(n_toks) == 1 and len(b_toks) == 1:
         return n_toks[0] == b_toks[0]
 
-    # Multi-word: allow either phrase as a contiguous token sequence in the other.
+    # Multi-word: either phrase as a contiguous stemmed-token sequence in the other.
     if len(n_toks) <= len(b_toks):
         shorter, longer = n_toks, b_toks
     else:
@@ -311,10 +316,19 @@ def apply_face_off_results(state: MatchState, events: list[BuzzEvent]) -> MatchS
         state.control = winner.model
         state.steal_challenger = None
         state.phase = Phase.FACE_OFF_RESULT
+        fastest = sorted(events, key=lambda e: e.latency_s)[0]
+        if fastest.model != winner.model:
+            note = (
+                f" Fastest buzz was {fastest.model} "
+                f"({fastest.latency_s:.2f}s, {fastest.text!r}) but missed the board."
+            )
+        else:
+            note = ""
         state.message = (
-            f"{winner.model} buzzes in first with {winner.text!r} "
+            f"{winner.model} wins face-off with {winner.text!r} "
             f"({winner.latency_s:.2f}s) → {winner.matched!r} ({winner.points}). "
-            "Wrong buzzes are locked out. Space to take control."
+            f"Control goes to the fastest board hit, not the fastest miss.{note} "
+            "Space to take control."
         )
     else:
         state.control = None
