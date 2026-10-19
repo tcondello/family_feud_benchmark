@@ -27,3 +27,47 @@ python openAI_family_feud.py
 `openAI_family_feud.py` currently reads `question_list.json` from the working
 directory; point it at `questions/all_questions.json` (or copy/symlink) to use
 the expanded set.
+
+## Host TUI
+
+Step through a Family Feud episode as host. Locked rules:
+
+- **Contestants:** each model alone (Opus, Ember, gpt-5.5, Flash, Kimi, Qwen)
+- **Wrong buzz:** lockout only (no strike)
+- **Main round:** Mode B — classic 3 strikes, then one steal attempt
+- **Question pool:** BuzzFeed 115 (`questions/question_list.json`)
+- **Board:** host always sees answers (dimmed until revealed)
+
+```bash
+pip install -r requirements.txt
+
+# Mock buzz (no API keys) — practice pacing
+python3 -m game
+
+# Live models (needs runtime secrets / .env)
+python3 -m game --live
+
+# Skip Flash if Gemini is 429 / RESOURCE_EXHAUSTED
+python3 -m game --live --contestants Opus Ember gpt-5.5 Kimi Qwen
+```
+
+Gemini Flash often hits free-tier **429** when all contestants buzz together;
+live Google calls retry with backoff, or drop Flash from `--contestants`.
+
+Used questions stay **red/strikethrough** and cannot be re-selected until you
+quit (episode reset). Live API **request + response JSON** is appended to
+`responses/game_traces/live_*.jsonl`. Tail them with:
+
+```bash
+PYTHONPATH=/workspace python3 -m game.watch_traces --contestant Ember -v
+PYTHONPATH=/workspace python3 -m game.watch_traces --contestant Ember --json
+```
+
+| Key | Action |
+|-----|--------|
+| `Enter` | Select highlighted question |
+| `Space` | Advance (buzz → control → guess / steal → next Q) |
+| `r` | Host-reveal next answer (no points) |
+| `/` | Focus question filter |
+| `n` | Back to question picker |
+| `q` | Quit |

@@ -15,6 +15,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+### Host live traces (local debugging) ###
+responses/game_traces/
+
 ### CDK ###
 .ckd.staging
 cdk.out
